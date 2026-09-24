@@ -26,7 +26,7 @@ jobs:
       - name: Instalar dependencias
         run: |
           pip install -r api/requirements.txt
-          pip install pytest ruff
+          pip install pytest pytest-cov ruff
 
       - name: Erros de sintaxe e nomes indefinidos
         run: ruff check --select E9,F63,F7,F82 .
@@ -34,8 +34,22 @@ jobs:
       - name: Compilar todos os modulos
         run: python -m compileall -q api app frontend tests
 
-      - name: Testes
-        run: pytest tests/ -q
+      # Cobertura so de api/. app/requirements.txt nao e instalado neste job
+      # (ver comentario acima: torch/faiss passam de 2 GB), entao app/ sairia
+      # como 0% e o numero mentiria. A cobertura do nucleo RAG tem de ser medida
+      # localmente, com o stack completo instalado.
+      - name: Testes com cobertura
+        run: pytest tests/ -q --cov=api --cov-report=term-missing --cov-report=xml
+
+      # Guardado como artefato para que o numero possa ser recuperado depois,
+      # por execucao, sem precisar reabrir o log do job.
+      - name: Guardar relatorio de cobertura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-api
+          path: coverage.xml
+          if-no-files-found: error
 
   migracoes:
     runs-on: ubuntu-latest
