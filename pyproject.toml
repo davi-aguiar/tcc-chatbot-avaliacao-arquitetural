@@ -1,0 +1,22 @@
+# Configuracao de ferramentas apenas. Sem [project] nem [build-system] de
+# proposito: o repositorio nao e um pacote instalavel, sao dois pacotes (app/ e
+# api/) que rodam no mesmo processo.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Permite rodar `pytest` da raiz sem depender do sys.path.insert que cada modulo
+# de teste repete hoje.
+pythonpath = ["."]
+
+[tool.coverage.run]
+branch = true
+source = ["api"]
+omit = [
+    # Migracoes sao executadas pelo alembic, nunca importadas pelos testes.
+    # Contadas, entram como centenas de linhas descobertas e afundam o numero
+    # sem dizer nada sobre o que esta ou nao exercitado.
+    "api/alembic/*",
+]
+
+[tool.coverage.report]
+show_missing = true

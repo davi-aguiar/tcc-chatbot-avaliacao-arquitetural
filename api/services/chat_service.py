@@ -1,4 +1,5 @@
 import logging
+import time
 from typing import TYPE_CHECKING, Optional
 
 from api.models.models import User, Chat, Message
@@ -31,13 +32,46 @@ def normalizar_id_wpp(id_wpp: str) -> str:
     return "".join(c for c in (id_wpp or "") if c.isdigit())
 
 
+class _NLPCronometrado:
+    """Envelope que cronometra cada chamada ao RAG.
+
+    Existe porque ha dois caminhos ate o NLPService: texto livre passa por
+    `_perguntar_ao_rag`, mas opcao de menu com `query` chama o servico direto,
+    de dentro de `handle_dynamic_menu`. Medir so no primeiro deixaria de fora a
+    maior parte do trafego — quase todo o menu responde por query de RAG.
+
+    Acumula em vez de sobrescrever: uma mensagem pode, em tese, disparar mais de
+    uma chamada, e nesse caso a soma e o que interessa para a latencia.
+    """
+
+    def __init__(self, nlp):
+        self._nlp = nlp
+        self.duracao_ms = 0.0
+        self.chamadas = 0
+
+    def process(self, text, user_name=None):
+        inicio = time.perf_counter()
+        try:
+            return self._nlp.process(text, user_name=user_name)
+        finally:
+            # finally, e nao depois do return: chamada que levanta excecao
+            # tambem consumiu tempo, e e justamente o caso lento (timeout da
+            # Groq) que mais interessa medir.
+            self.duracao_ms += (time.perf_counter() - inicio) * 1000
+            self.chamadas += 1
+
+
 class ChatService:
     def __init__(self, db, nlp_service: "NLPService"):
         self.db = db
-        self.nlp = nlp_service
+        self.nlp = _NLPCronometrado(nlp_service)
         self.config_service = ConfigService(db)
 
     async def process_message(self, id_wpp: str, text: str) -> ChatResponse:
+        # Marcado antes de qualquer trabalho: o que se quer medir e o tempo de
+        # processamento inteiro, nao o trecho depois das validacoes.
+        inicio = time.perf_counter()
+
         # Guardado a parte: depois de um rollback, tocar no objeto User pode
         # disparar refresh e estourar de novo dentro do proprio except.
         user_id = None
@@ -51,6 +85,7 @@ class ChatService:
 
             user = self._get_or_create_user(id_wpp)
             user_id = user.id
+            estado_entrada = user.state
             chat = self._get_or_create_chat(user)
 
             DbLogger.log_event(
@@ -67,7 +102,21 @@ class ChatService:
             response = self._ensure_chat_response(response)
 
             self._save_message(chat, response.text, "bot")
+
+            # Lidos antes do commit: depois dele os atributos do User expiram e
+            # cada leitura dispara um SELECT de refresh so para montar o log.
+            id_wpp_log, estado_saida = user.id_wpp, user.state
+
             self.db.commit()
+
+            self._registrar_envio(
+                user_id=user_id,
+                id_wpp=id_wpp_log,
+                estado_entrada=estado_entrada,
+                estado_saida=estado_saida,
+                response=response,
+                inicio=inicio,
+            )
 
             return response
 
@@ -80,9 +129,76 @@ class ChatService:
                 "MESSAGE_FAILED",
                 f"Falha ao processar mensagem: {e}",
                 user_id=user_id,
-                meta={"id_wpp": id_wpp, "erro": type(e).__name__},
+                meta={
+                    "id_wpp": id_wpp,
+                    "erro": type(e).__name__,
+                    "duracao_total_ms": self._ms_desde(inicio),
+                    "duracao_rag_ms": self._ms_rag(),
+                },
             )
             return ChatResponse(text="Desculpe, ocorreu um erro interno.")
+
+    def _registrar_envio(
+        self,
+        user_id: Optional[int],
+        id_wpp: str,
+        estado_entrada: Optional[str],
+        estado_saida: Optional[str],
+        response: ChatResponse,
+        inicio: float,
+    ) -> None:
+        """Fecha o par com MESSAGE_RECEIVED.
+
+        Sem este evento existe um unico timestamp por mensagem e a latencia
+        fim a fim fica inobservavel: nao ha o que subtrair. Registrar o tempo
+        aqui, e nao no gateway, mede exatamente o trecho sob responsabilidade
+        da aplicacao — recepcao, decisao, RAG, persistencia e commit.
+
+        O texto da pergunta e o da resposta ficam de fora do meta de proposito.
+        audit_logs e tabela de operacao e a conversa ja esta inteira em
+        `messages`; repetir aqui o que o cidadao escreveu duplicaria dado de
+        saude em mais um lugar, sem finalidade propria, contra o principio de
+        minimizacao da LGPD. Vao so grandezas: duracao, estado e tamanho.
+        """
+        meta = {
+            "duracao_total_ms": self._ms_desde(inicio),
+            "estado_entrada": estado_entrada,
+            "estado_saida": estado_saida,
+            "chamou_rag": self.nlp.chamadas > 0,
+            "chamadas_rag": self.nlp.chamadas,
+            "tem_imagem": bool(response.image_url),
+            "tamanho_resposta": len(response.text or ""),
+        }
+
+        duracao_rag = self._ms_rag()
+        if duracao_rag is not None:
+            meta["duracao_rag_ms"] = duracao_rag
+
+        DbLogger.log_event(
+            self.db,
+            "INFO",
+            "MESSAGE_SENT",
+            f"Resposta enviada para {id_wpp}",
+            user_id=user_id,
+            meta=meta,
+        )
+
+    @staticmethod
+    def _ms_desde(inicio: float) -> float:
+        # perf_counter e nao datetime.now(): relogio monotonico, imune a ajuste
+        # de horario (NTP) no meio da requisicao, que produziria duracao
+        # negativa ou inflada justamente sob carga.
+        return round((time.perf_counter() - inicio) * 1000, 2)
+
+    def _ms_rag(self) -> Optional[float]:
+        """None quando o RAG nao foi acionado — menu puro, onboarding, reset.
+
+        Distinguir 'nao chamou' de 'chamou e levou 0 ms' importa: a media de
+        latencia do RAG so faz sentido sobre as mensagens que passaram por ele.
+        """
+        if not self.nlp.chamadas:
+            return None
+        return round(self.nlp.duracao_ms, 2)
 
     def _responder(self, user: User, clean_text: str) -> ChatResponse:
         if clean_text.lower() == COMANDO_RESETAR:
