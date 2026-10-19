@@ -1,0 +1,9 @@
+{
+  "inicio": "2026-10-19T17:25:50-0300",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "plataforma": "Windows-10-10.0.19045-SP0",
+  "branch": "experimento/c01-modificabilidade",
+  "commit": "46b6da2213733a809adfefffecb5336023f4d401",
+  "ambiente": "venv com system-site-packages; pytest instalado localmente; dependencias herdadas, sem equiparar ao CI",
+  "fim": "2026-10-19T17:28:15-0300"
+}

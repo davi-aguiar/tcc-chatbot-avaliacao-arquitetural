@@ -6,7 +6,7 @@
 - Atributo: modificabilidade.
 - Versão de referência: `c2028d50da878bfcecede18ca8822eca64672990`.
 - Estado do repositório antes deste registro: sem alterações indicadas por `git status --short`.
-- Situação: protocolo definido; alteração experimental e verificações ainda não executadas.
+- Situação atual (19/10/2026): C01-A executado e atendido; C01-B verificado com NLP substituto. Integração RAG real ainda não avaliada. Ver [relatório de execução](C01-relatorio-execucao.md).
 - Avaliação conduzida pelo autor com apoio de IA. Registrar essa assistência na análise das limitações, especialmente ao interpretar esforço e tempo.
 - Método: avaliação baseada em cenários inspirada no ATAM, adaptada ao estudo individual; este exercício não constitui aplicação completa do ATAM.
 
@@ -71,7 +71,9 @@ Essas observações indicam viabilidade do ensaio, mas não constituem seu resul
 
 Reinício e reindexação são custos operacionais a registrar, não reprovações automáticas do critério de localização da mudança. Tempo é descritivo, sem limite de aceitação arbitrário: separar edição, estudo, espera por dependências, execução e assistência de IA.
 
-## Relatório de execução — a preencher
+## Formulário original — preservado como registro do planejamento
+
+Os campos abaixo representam o estado anterior ao ensaio. Os resultados de 19/10/2026 estão no [relatório preenchido](C01-relatorio-execucao.md).
 
 | Campo | Resultado |
 |---|---|

@@ -1,0 +1,10 @@
+{
+  "GROQ_API_KEY_presente": false,
+  "arquivo_env_na_raiz": false,
+  "modulos": {
+    "langchain_groq": false,
+    "sentence_transformers": true,
+    "faiss": true,
+    "langchain_community": true
+  }
+}

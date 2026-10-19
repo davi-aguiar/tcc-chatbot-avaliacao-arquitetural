@@ -1,0 +1,71 @@
+{
+  "nivel": "ChatService real, SQLite em memoria, NLP substituto",
+  "percursos": [
+    {
+      "entrada": "/menu",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    {
+      "entrada": "4",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "17",
+      "estado": "WAITING_4_17_C01",
+      "saida": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n0 - Voltar ao menu de serviços"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    {
+      "entrada": "4",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "17",
+      "estado": "WAITING_4_17_C01",
+      "saida": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n0 - Voltar ao menu de serviços"
+    },
+    {
+      "entrada": "99",
+      "estado": "WAITING_4_17_C01",
+      "saida": "Opção inválida. Por favor, digite um número válido:\n\nSERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n0 - Voltar ao menu de serviços"
+    },
+    {
+      "entrada": "/menu",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    {
+      "entrada": "4",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "2",
+      "estado": "WAITING_4_2_CEMERF",
+      "saida": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    }
+  ],
+  "chamadas_nlp": []
+}

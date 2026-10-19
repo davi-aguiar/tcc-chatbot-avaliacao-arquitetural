@@ -1,0 +1,37 @@
+diff --git a/api/services/menu_texts.json b/api/services/menu_texts.json
+index 6f1cf24..126b078 100644
+--- a/api/services/menu_texts.json
++++ b/api/services/menu_texts.json
+@@ -142,7 +142,7 @@
+   },
+ 
+   "WAITING_4_SERVICOS": {
+-    "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
++    "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+     "options": {
+       "1": { "query": "Serviço Facilita Saúde" },
+       "2": { "next_state": "WAITING_4_2_CEMERF" },
+@@ -160,6 +160,7 @@
+       "14": { "query": "Conselho do Idoso" },
+       "15": { "query": "Serviço de Convivência ao Idoso" },
+       "16": { "query": "Delegacias" },
++      "17": { "next_state": "WAITING_4_17_C01" },
+       "0": { "next_state": "WAITING_MAIN_MENU" }
+     }
+   },
+@@ -332,5 +333,13 @@
+     "options": {
+       "0": { "next_state": "WAITING_MAIN_MENU" }
+     }
++  },
++  "WAITING_4_17_C01": {
++  "text": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n0 - Voltar ao menu de serviços",
++  "options": {
++    "0": {
++      "next_state": "WAITING_4_SERVICOS"
++    }
+   }
+-}
+\ No newline at end of file
++}
++}
