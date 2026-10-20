@@ -21,6 +21,16 @@ busca semântica sobre documentos oficiais.
 | [11 — Integração Contínua](11-ci.md) | GitHub Actions, testes, cobertura, como rodar os checks localmente |
 | [12 — Instrumentação e Medições](12-instrumentacao-e-medicoes.md) | Latência, cobertura e tempo de indexação: o que é medido, como coletar, o que fica de fora |
 
+## Avaliação arquitetural
+
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne o resultado do C01 e orienta a leitura. Os arquivos técnicos estão explicados no [índice das evidências](avaliacao/evidencias-c01/README.md).
+
+| Documento | Conteúdo |
+|---|---|
+| [C01 — Registro inicial](avaliacao/C01-modificabilidade-registro-inicial.md) | Cenário de modificabilidade, hipótese e procedimento |
+| [C01 — Relatório de execução](avaliacao/C01-relatorio-execucao.md) | C01-A atendido; C01-B parcial na configuração original e percurso completo com modelo alternativo |
+| [C01 — Análise para o TCC](avaliacao/C01-analise-resultados.md) | Interpretação arquitetural, limitações e fechamento com ressalvas |
+
 ## Início rápido
 
 ```powershell

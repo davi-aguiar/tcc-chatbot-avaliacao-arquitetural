@@ -1,0 +1,397 @@
+{
+  "data": "2026-10-19T21:50:50-0300",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "plataforma": "Windows-11-10.0.26200-SP0",
+  "ambiente": ".venv isolado, sem system-site-packages; dependencias minimas do percurso e da suite; nao equivale aos pins do CI",
+  "commit": "2ad213cd659c01ff92f8a17106ee4f5f41b15348",
+  "dependencias": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5"
+    },
+    {
+      "name": "aiohttp-retry",
+      "version": "2.9.1"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "alembic",
+      "version": "1.20.0"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.18"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0"
+    },
+    {
+      "name": "faiss-cpu",
+      "version": "1.15.1"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.150.0"
+    },
+    {
+      "name": "filelock",
+      "version": "4.2.4"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "groq",
+      "version": "0.37.1"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.15.1"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "httpx-sse",
+      "version": "0.4.3"
+    },
+    {
+      "name": "httpx2",
+      "version": "2.15.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0"
+    },
+    {
+      "name": "jsonpatch",
+      "version": "1.36"
+    },
+    {
+      "name": "jsonpointer",
+      "version": "3.4"
+    },
+    {
+      "name": "langchain-classic",
+      "version": "1.0.8"
+    },
+    {
+      "name": "langchain-community",
+      "version": "0.4.2"
+    },
+    {
+      "name": "langchain-core",
+      "version": "1.6.12"
+    },
+    {
+      "name": "langchain-groq",
+      "version": "1.1.3"
+    },
+    {
+      "name": "langchain-protocol",
+      "version": "0.0.19"
+    },
+    {
+      "name": "langchain-text-splitters",
+      "version": "1.1.3"
+    },
+    {
+      "name": "langsmith",
+      "version": "0.14.11"
+    },
+    {
+      "name": "Mako",
+      "version": "1.4.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.4"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "multidict",
+      "version": "7.1.0"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.27.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.7"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1"
+    },
+    {
+      "name": "orjson",
+      "version": "3.13.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.1"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.1"
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.16.0"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.15.1"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4"
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "requests-toolbelt",
+      "version": "1.0.0"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.1"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "sentence-transformers",
+      "version": "6.1.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.0"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.1.5"
+    },
+    {
+      "name": "starlette",
+      "version": "1.9.0"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tenacity",
+      "version": "9.2.1"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.23.3"
+    },
+    {
+      "name": "torch",
+      "version": "2.14.1"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "transformers",
+      "version": "5.20.2"
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.5"
+    },
+    {
+      "name": "twilio",
+      "version": "9.12.0"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.3"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "uuid_utils",
+      "version": "0.18.0"
+    },
+    {
+      "name": "websockets",
+      "version": "17.3"
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.2"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1"
+    },
+    {
+      "name": "zstandard",
+      "version": "0.25.0"
+    }
+  ]
+}

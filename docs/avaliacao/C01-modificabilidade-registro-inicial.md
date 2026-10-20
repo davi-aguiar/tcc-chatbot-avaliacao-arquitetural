@@ -6,7 +6,7 @@
 - Atributo: modificabilidade.
 - Versão de referência: `c2028d50da878bfcecede18ca8822eca64672990`.
 - Estado do repositório antes deste registro: sem alterações indicadas por `git status --short`.
-- Situação atual (19/10/2026): C01-A executado e atendido; C01-B verificado com NLP substituto. Integração RAG real ainda não avaliada. Ver [relatório de execução](C01-relatorio-execucao.md).
+- Situação atual (19/10/2026): coleta encerrada com ressalvas. C01-A atendido; C01-B parcialmente atendido na configuração original (modelo remoto retornou 404). Ensaio complementar com modelo disponível executou o percurso completo com geração real e retorno. Ver [relatório de execução](C01-relatorio-execucao.md) e [análise para o TCC](C01-analise-resultados.md).
 - Avaliação conduzida pelo autor com apoio de IA. Registrar essa assistência na análise das limitações, especialmente ao interpretar esforço e tempo.
 - Método: avaliação baseada em cenários inspirada no ATAM, adaptada ao estudo individual; este exercício não constitui aplicação completa do ATAM.
 
@@ -98,4 +98,4 @@ Os campos abaixo representam o estado anterior ao ensaio. Os resultados de 19/10
 - Bass, Clements e Kazman (2021), [Software Architecture in Practice, 4ª ed.](https://www.informit.com/store/software-architecture-in-practice-9780136885672): cenários de atributos de qualidade e modificabilidade, capítulos 3 e 8.
 - Bachmann, Bass e Nord (2007), [Modifiability Tactics](https://www.sei.cmu.edu/library/modifiability-tactics/): análise de modificabilidade por acoplamento, coesão e custo de mudança.
 
-Ver o [roteiro de estudo](../material-de-estudo.md) para prioridades e fontes complementares.
+As referências acima fundamentam o planejamento do cenário.
