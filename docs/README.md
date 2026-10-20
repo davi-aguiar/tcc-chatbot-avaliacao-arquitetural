@@ -23,7 +23,11 @@ busca semântica sobre documentos oficiais.
 
 ## Avaliação arquitetural
 
+As fronteiras entre componentes estão descritas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), como preparação para os próximos cenários.
+
 Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne o resultado do C01 e orienta a leitura. Os arquivos técnicos estão explicados no [índice das evidências](avaliacao/evidencias-c01/README.md).
+
+O escopo dos próximos cenários está na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos seis atributos previstos no projeto de pesquisa.
 
 | Documento | Conteúdo |
 |---|---|

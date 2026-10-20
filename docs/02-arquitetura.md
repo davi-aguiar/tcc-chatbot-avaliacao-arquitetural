@@ -1,5 +1,7 @@
 # 02 — Arquitetura
 
+Complemento: [interfaces e contratos atuais](13-interfaces-e-contratos.md), com entradas, saídas, efeitos colaterais, falhas e lacunas identificadas por inspeção antes dos próximos cenários.
+
 ## Visão de componentes
 
 ```mermaid
@@ -35,7 +37,7 @@ O projeto tem dois pacotes Python que rodam juntos:
 
 | Pacote | Responsabilidade | Depende de |
 |---|---|---|
-| `app/` | Núcleo RAG puro. Não conhece HTTP, banco nem WhatsApp. | LangChain, FAISS, HuggingFace, Groq |
+| `app/` | Núcleo RAG, separado das rotas HTTP, persistência de conversas e WhatsApp. Inclui acesso ao provedor e carga de modelos/documentos. | LangChain, FAISS, HuggingFace, Groq |
 | `api/` | Backend FastAPI. Estado da conversa, menus, persistência, webhooks. | FastAPI, SQLAlchemy, Alembic, `app/` |
 
 `api/main.py` amarra os dois:
@@ -104,8 +106,12 @@ testá-los — e testar quem os usa — sem baixar o modelo de embeddings no CI.
    - Twilio: devolve TwiML XML com `<Body>` e opcional `<Media>`;
    - REST: devolve JSON `MessageOut`.
 
-Erros dentro de `process_message` fazem `rollback` e devolvem
-`"Desculpe, ocorreu um erro interno."` — a conversa nunca quebra para o usuário.
+O tratamento geral de erros em `process_message` tenta fazer `rollback` e devolver
+`"Desculpe, ocorreu um erro interno."`. Isso não garante recuperação diante de toda falha
+de infraestrutura. O caminho de texto livre contém ainda uma captura própria de falhas do
+NLP, diferente da consulta pelo menu. A auditoria usa a mesma sessão e também realiza
+commits; portanto, não se deve presumir uma única transação atômica para toda a mensagem.
+Ver as interfaces I03 e I06 no [levantamento de contratos](13-interfaces-e-contratos.md).
 
 ## Decisões de projeto relevantes
 
