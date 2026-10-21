@@ -9,7 +9,7 @@ busca semântica sobre documentos oficiais.
 | Documento | Conteúdo |
 |---|---|
 | [01 — Visão Geral](01-visao-geral.md) | O que o sistema faz, atores, glossário |
-| [02 — Arquitetura](02-arquitetura.md) | Componentes, camadas, fluxo de uma mensagem |
+| [02 — Arquitetura](02-arquitetura.md) | Componentes, inicialização, sequência com devolutiva e implantação |
 | [03 — Instalação e Execução](03-instalacao-e-execucao.md) | Dependências, variáveis de ambiente, como rodar |
 | [04 — Referência da API](04-api-referencia.md) | Endpoints HTTP, payloads, respostas |
 | [05 — Fluxo de Conversa](05-fluxo-conversa.md) | Máquina de estados, menus, comandos |
@@ -20,6 +20,20 @@ busca semântica sobre documentos oficiais.
 | [10 — Problemas Conhecidos](10-problemas-conhecidos.md) | O que continua aberto e por quê |
 | [11 — Integração Contínua](11-ci.md) | GitHub Actions, testes, cobertura, como rodar os checks localmente |
 | [12 — Instrumentação e Medições](12-instrumentacao-e-medicoes.md) | Latência, cobertura e tempo de indexação: o que é medido, como coletar, o que fica de fora |
+
+## Avaliação arquitetural
+
+As fronteiras entre componentes estão descritas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), como preparação para os próximos cenários.
+
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne o resultado do C01 e orienta a leitura. Os arquivos técnicos estão explicados no [índice das evidências](avaliacao/evidencias-c01/README.md).
+
+O escopo dos próximos cenários está na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos seis atributos previstos no projeto de pesquisa.
+
+| Documento | Conteúdo |
+|---|---|
+| [C01 — Registro inicial](avaliacao/C01-modificabilidade-registro-inicial.md) | Cenário de modificabilidade, hipótese e procedimento |
+| [C01 — Relatório de execução](avaliacao/C01-relatorio-execucao.md) | C01-A atendido; C01-B parcial na configuração original e percurso completo com modelo alternativo |
+| [C01 — Análise para o TCC](avaliacao/C01-analise-resultados.md) | Interpretação arquitetural, limitações e fechamento com ressalvas |
 
 ## Início rápido
 

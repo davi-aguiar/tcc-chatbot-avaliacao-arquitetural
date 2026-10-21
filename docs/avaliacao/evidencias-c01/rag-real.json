@@ -1,0 +1,130 @@
+{
+  "inicio": "2026-10-19T21:52:51-0300",
+  "indice_reconstruido": true,
+  "metricas": {
+    "carregamento_documentos_ms": 10.69,
+    "chunking_ms": 0.96,
+    "carregamento_embeddings_ms": 29535.52,
+    "vetorizacao_e_indexacao_ms": 1809.93,
+    "criacao_retriever_ms": 1.29,
+    "total_ms": 31358.45,
+    "n_documentos": 17,
+    "n_chunks": 39
+  },
+  "consulta": "Qual é a finalidade do Serviço Experimental C01?",
+  "documentos_recuperados": [
+    {
+      "posicao": 1,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_experimental_c01.txt"
+      },
+      "conteudo": "SERVIÇO EXPERIMENTAL C01 - DOCUMENTO SINTÉTICO DE TESTE\n\nFinalidade: verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01.\nEste serviço é fictício. Não oferece atendimento real, orientação clínica, agendamento ou contato.\nIdentificador de verificação: C01-DOC-TESTE-2026."
+    },
+    {
+      "posicao": 2,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_cemae.txt"
+      },
+      "conteudo": "Serviço: CEMAE\n\nO que é esse serviço?\nO CEMAE caracteriza-se como uma policlínica que oferece atendimentos médicos especializados, reunindo diversas especialidades em um único serviço, com o objetivo de garantir assistência integral, resolutiva e de qualidade à população. \n\nO que preciso fazer para ter acesso a esse serviço?\n1. O médico solicita a consulta com médico especialista durante a consulta na unidade básica de saúde.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Solicitação médica com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h"
+    },
+    {
+      "posicao": 3,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_programa_asma_grave.txt"
+      },
+      "conteudo": "Serviço: Programa Asma Grave \n\nO que é esse serviço?\nTrata-se de um programa voltado ao acompanhamento de pessoas com diagnóstico de asma grave. O objetivo é garantir o acompanhamento por médico especialista (pneumologista) para controlar os sintomas da doença e reduzir internações. \n\nO que preciso para fazer parte do Programa Asma Grave?\n1. Procure a unidade básica de saúde do seu território e solicite o agendamento de uma consulta médica para avaliação para o Programa Asma Grave.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8"
+    },
+    {
+      "posicao": 4,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      },
+      "conteudo": "Serviço: CAPS AD III\n\nO que é esse serviço?\nO CAPS AD III, consiste em serviço de atenção psicossocial específico para cuidado e atenção integral a pessoas com necessidades específicas decorrente do uso de álcool e outras drogas. Funciona como um dispositivo estratégico da Rede de Atenção Psicossocial (RAPS), baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos e atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários."
+    },
+    {
+      "posicao": 5,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_concessao_bolsas_ostomia_e_adjuvantes.txt"
+      },
+      "conteudo": "Serviço: Concessão de Bolsas de Ostomia e Adjuvantes\n\nO que é esse serviço?\nEste serviço assegura o fornecimento de bolsas de ostomia e produtos adjuvantes a pessoas com ostomias (colostomia, ileostomia, urostomia), garantindo mais conforto, segurança e qualidade de vida. \n\nO que preciso fazer para ter acesso?\n1. Vá até o CEMERF com todos os documentos exigidos.\n2. Realize o cadastro com o serviço social.\n3. Após aprovação, o paciente retira os materiais no próprio serviço, mensalmente.\n\nQuais os documentos necessários para o cadastro?\n- CPF/RG\n- Cartão SUS\n- Comprovante de residência atualizado\n- Relatório médico com indicação e prescrição\n\nOnde fica o CEMERF?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77)  98856-4371 (WhatsApp)\nE-mail: cemerf.pmvc@gmail.com"
+    },
+    {
+      "posicao": 6,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt"
+      },
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso seja identificada uma necessidade de maior complexidade (sofrimento grave), o ambulatório realiza o encaminhamento adequado para o CAPS II ou outro serviço de referência que se fizer necessário.\n \nComo são os atendimentos?"
+    },
+    {
+      "posicao": 7,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      },
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\n \nComo são os atendimentos?"
+    },
+    {
+      "posicao": 8,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      },
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\n \nComo são os atendimentos?\nO cuidado é prestado por uma equipe multiprofissional por meio de um projeto terapêutico singular (PTS), que organiza um plano de acompanhamento individualizado. A assistência integra:\n- Acompanhamento médico-psiquiátrico;\n- Acompanhamento psicológico;"
+    },
+    {
+      "posicao": 9,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_concessao_meios_auxiliares_de_locomoção.txt"
+      },
+      "conteudo": "Serviço: Concessão de Meios Auxiliares de Locomoção - Cadeira de rodas, Cadeira de banho, Bengalas, andadores e muletas \n\nO que é esse serviço?\nEste serviço permite que pessoas tenham acesso à concessão de meios auxiliares de locomoção, que visam garantir mobilidade, funcionalidade e autonomia às pessoas com deficiência física. \n\nO que preciso fazer para ter acesso?\n1. Compareça ao CEMERF com a documentação completa exigida.\n2. Realize o cadastro com o serviço social.\n3. Aguarde a convocação para avaliação clínica e/ou funcional.\n4. Após aprovação, o processo segue para solicitação e fornecimento do item.\n\nQuais os documentos necessários para o cadastro?\n- CPF / RG\n- Cartão SUS\n- Comprovante de residência atualizado\n- Encaminhamento médico com indicação do tipo de dispositivo necessário\n- Relatório médico detalhado com justificativa clínica\n\nOnde fica o CEMERF?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8"
+    },
+    {
+      "posicao": 10,
+      "fonte": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_espirometria.txt"
+      },
+      "conteudo": "Serviço: Espirometria\n\nO que é esse serviço?\nA espirometria é um exame que avalia a capacidade respiratória do paciente, auxiliando no diagnóstico de doenças pulmonares como Asma e DPOC (Doença Pulmonar Obstrutiva Crônica). \n\nO que preciso fazer para realizar o exame Espirometria?\n1. O médico solicita o exame durante a consulta na unidade básica de saúde.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Solicitação médica com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77) 3229-3069\nE-mail: pmvccemae@yahoo.com.br"
+    }
+  ],
+  "documento_c01_recuperado": true,
+  "chave_configurada": true,
+  "geracao_executada": true,
+  "modelo_original": "llama-3.3-70b-versatile",
+  "modelo": "openai/gpt-oss-120b",
+  "modelo_substituido_no_ensaio": true,
+  "percurso_real": [
+    {
+      "entrada": "/menu",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    {
+      "entrada": "4",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "17",
+      "estado": "WAITING_4_17_C01",
+      "saida": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n1 - Consultar a finalidade do serviço de teste\n0 - Voltar ao menu de serviços"
+    },
+    {
+      "entrada": "1",
+      "estado": "WAITING_4_17_C01",
+      "saida": "A finalidade do Serviço Experimental C01 é **verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01**.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_4_SERVICOS",
+      "saida": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+    },
+    {
+      "entrada": "0",
+      "estado": "WAITING_MAIN_MENU",
+      "saida": "🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    }
+  ],
+  "consulta_geracao": "Qual é a finalidade do Serviço Experimental C01?",
+  "resposta_nlp": "A finalidade do Serviço Experimental C01 é **verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01**.",
+  "resposta": "A finalidade do Serviço Experimental C01 é **verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01**.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+  "situacao": "geracao_executada_requer_analise_da_resposta",
+  "fim": "2026-10-19T21:53:28-0300"
+}

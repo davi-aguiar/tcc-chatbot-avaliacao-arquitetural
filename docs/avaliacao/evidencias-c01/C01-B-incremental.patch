@@ -1,0 +1,21 @@
+--- a/api/services/menu_texts.json
++++ b/api/services/menu_texts.json
+@@ -335,8 +335,9 @@
+     }
+   },
+   "WAITING_4_17_C01": {
+-  "text": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n0 - Voltar ao menu de serviços",
++  "text": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n1 - Consultar a finalidade do serviço de teste\n0 - Voltar ao menu de serviços",
+   "options": {
++    "1": { "query": "Qual é a finalidade do Serviço Experimental C01?" },
+     "0": {
+       "next_state": "WAITING_4_SERVICOS"
+     }
+--- /dev/null
++++ b/data/servicos/servico_experimental_c01.txt
+@@ -0,0 +1,5 @@
++SERVIÇO EXPERIMENTAL C01 - DOCUMENTO SINTÉTICO DE TESTE
++
++Finalidade: verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01.
++Este serviço é fictício. Não oferece atendimento real, orientação clínica, agendamento ou contato.
++Identificador de verificação: C01-DOC-TESTE-2026.

@@ -1,0 +1,38 @@
+Comando: python -m pytest tests/ -q
+
+=================================== ERRORS ====================================
+_______________ ERROR collecting tests/test_migracao_id_wpp.py ________________
+ImportError while importing test module 'C:\Users\Contmais 1\OneDrive\Desktop\GERAL\novo\tcc-chatbot-avaliacao-arquitetural\tests\test_migracao_id_wpp.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_migracao_id_wpp.py:29: in <module>
+    migracao = _carregar_migracao()
+               ^^^^^^^^^^^^^^^^^^^^
+tests\test_migracao_id_wpp.py:25: in _carregar_migracao
+    spec.loader.exec_module(modulo)
+api\alembic\versions\d2f3a4b5c6d7_normaliza_id_wpp.py:17: in <module>
+    from alembic import op
+E   ModuleNotFoundError: No module named 'alembic'
+___________________ ERROR collecting tests/test_security.py ___________________
+ImportError while importing test module 'C:\Users\Contmais 1\OneDrive\Desktop\GERAL\novo\tcc-chatbot-avaliacao-arquitetural\tests\test_security.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_security.py:14: in <module>
+    from api.security import (  # noqa: E402
+api\security.py:14: in <module>
+    from twilio.request_validator import RequestValidator
+E   ModuleNotFoundError: No module named 'twilio'
+=========================== short test summary info ===========================
+ERROR tests/test_migracao_id_wpp.py
+ERROR tests/test_security.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!
+2 errors in 1.67s
+
+Exit code: 2
+Duracao: 7.682s

@@ -1,0 +1,49 @@
+{
+  "data": "2026-10-19T21:52:39-0300",
+  "modelos": [
+    {
+      "id": "openai/gpt-oss-120b",
+      "active": true
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "active": true
+    },
+    {
+      "id": "canopylabs/orpheus-arabic-saudi",
+      "active": true
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-20b",
+      "active": true
+    },
+    {
+      "id": "meta-llama/llama-prompt-guard-2-22m",
+      "active": true
+    },
+    {
+      "id": "whisper-large-v3",
+      "active": true
+    },
+    {
+      "id": "canopylabs/orpheus-v1-english",
+      "active": true
+    },
+    {
+      "id": "meta-llama/llama-prompt-guard-2-86m",
+      "active": true
+    },
+    {
+      "id": "whisper-large-v3-turbo",
+      "active": true
+    },
+    {
+      "id": "allam-2-7b",
+      "active": true
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "active": true
+    }
+  ]
+}

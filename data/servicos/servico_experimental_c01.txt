@@ -1,0 +1,5 @@
+SERVIÇO EXPERIMENTAL C01 - DOCUMENTO SINTÉTICO DE TESTE
+
+Finalidade: verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01.
+Este serviço é fictício. Não oferece atendimento real, orientação clínica, agendamento ou contato.
+Identificador de verificação: C01-DOC-TESTE-2026.
