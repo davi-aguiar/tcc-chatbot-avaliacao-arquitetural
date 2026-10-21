@@ -9,7 +9,7 @@ busca semântica sobre documentos oficiais.
 | Documento | Conteúdo |
 |---|---|
 | [01 — Visão Geral](01-visao-geral.md) | O que o sistema faz, atores, glossário |
-| [02 — Arquitetura](02-arquitetura.md) | Componentes, camadas, fluxo de uma mensagem |
+| [02 — Arquitetura](02-arquitetura.md) | Componentes, inicialização, sequência com devolutiva e implantação |
 | [03 — Instalação e Execução](03-instalacao-e-execucao.md) | Dependências, variáveis de ambiente, como rodar |
 | [04 — Referência da API](04-api-referencia.md) | Endpoints HTTP, payloads, respostas |
 | [05 — Fluxo de Conversa](05-fluxo-conversa.md) | Máquina de estados, menus, comandos |
