@@ -1,0 +1,23 @@
+[
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO"
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS"
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF"
+  }
+]

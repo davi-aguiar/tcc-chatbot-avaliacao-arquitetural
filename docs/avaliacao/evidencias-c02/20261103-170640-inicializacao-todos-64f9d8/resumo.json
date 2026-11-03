@@ -1,0 +1,32 @@
+{
+  "preparacao_separada": {
+    "inicio_utc": "2026-11-03T20:06:41.988430+00:00",
+    "pid": 7080,
+    "cache_offline": true,
+    "metricas": {
+      "carregamento_documentos_ms": 7.7,
+      "chunking_ms": 1.25,
+      "carregamento_embeddings_ms": 1520.91,
+      "vetorizacao_e_indexacao_ms": 6232.62,
+      "criacao_retriever_ms": 1.46,
+      "total_ms": 7764.0,
+      "n_documentos": 17,
+      "n_chunks": 39
+    },
+    "documentos_verificacao": 10,
+    "sucesso": true,
+    "fim_utc": "2026-11-03T20:07:02.642034+00:00",
+    "processo_ate_verificacao_ms": 20662.990800105035,
+    "exit_code": 0,
+    "etapa": "preparacao",
+    "processo_pai_ms": 22431.66880006902
+  },
+  "n": 3,
+  "sucessos": 3,
+  "total_setup_ms_sucessos": {
+    "n": 3,
+    "mediana": 7061.15,
+    "minimo": 6947.9,
+    "maximo": 8278.37
+  }
+}

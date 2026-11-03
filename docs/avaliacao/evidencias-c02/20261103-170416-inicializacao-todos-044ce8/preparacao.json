@@ -1,0 +1,12 @@
+{
+  "inicio_utc": "2026-11-03T20:04:17.042429+00:00",
+  "pid": 17784,
+  "cache_offline": true,
+  "sucesso": false,
+  "erro_tipo": "OfflineModeIsEnabled",
+  "fim_utc": "2026-11-03T20:05:08.441709+00:00",
+  "processo_ate_verificacao_ms": 51403.76939997077,
+  "exit_code": 1,
+  "etapa": "preparacao",
+  "processo_pai_ms": 52831.19179995265
+}

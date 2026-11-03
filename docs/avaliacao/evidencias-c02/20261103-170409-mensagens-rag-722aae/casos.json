@@ -1,0 +1,50 @@
+[
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?"
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?"
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?"
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?"
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?"
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?"
+  }
+]

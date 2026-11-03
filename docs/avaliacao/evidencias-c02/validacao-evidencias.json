@@ -1,0 +1,25 @@
+{
+  "hashes_por_lote": {
+    "20261103-170404-mensagens-estatico-9fba4b": {
+      "hashes_conferidos": 67,
+      "commit": "46a87a7f6d6be60bd54c00dc65212bb6ef128109"
+    },
+    "20261103-170409-mensagens-rag-722aae": {
+      "hashes_conferidos": 67,
+      "commit": "46a87a7f6d6be60bd54c00dc65212bb6ef128109"
+    },
+    "20261103-170416-inicializacao-todos-044ce8": {
+      "hashes_conferidos": 67,
+      "commit": "46a87a7f6d6be60bd54c00dc65212bb6ef128109"
+    },
+    "20261103-170640-inicializacao-todos-64f9d8": {
+      "hashes_conferidos": 67,
+      "commit": "46a87a7f6d6be60bd54c00dc65212bb6ef128109"
+    }
+  },
+  "mensagens_estaticas_medidas": 15,
+  "aquecimentos_estaticos": 3,
+  "inicializacoes_medidas_sucesso": 3,
+  "jsons_validos": true,
+  "observacao": "Verificacao de integridade das evidencias, fora dos intervalos de coleta."
+}

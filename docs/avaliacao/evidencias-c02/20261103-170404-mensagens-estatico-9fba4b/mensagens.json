@@ -1,0 +1,632 @@
+[
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.285827+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 14.20870004221797,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 13.67,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 13.67,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.297887+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.411099944263697,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.95,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.95,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.314860+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.823900060728192,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4.34,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 4.34,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.324549+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.929700051434338,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.92,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.92,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.334910+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.104000050574541,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.66,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.66,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-03T20:04:09.334910+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.25380002707243,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.81,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.81,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-03T20:04:09.350540+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.1600000113248825,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.68,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.68,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-03T20:04:09.359223+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 3.96940007340163,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.52,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.52,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-03T20:04:09.370004+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 5.590599961578846,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4.97,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 4.97,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-03T20:04:09.370004+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 5.042399978265166,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4.59,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 4.59,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-03T20:04:09.385634+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.1634999215602875,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.62,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.62,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-03T20:04:09.399949+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.025799920782447,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.48,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.48,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-03T20:04:09.410136+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.306600079871714,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.85,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.85,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-03T20:04:09.411173+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 3.9031999185681343,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.45,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.45,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-03T20:04:09.426802+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.171199980191886,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.7,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.7,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-03T20:04:09.435735+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 3.9223000640049577,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.49,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.49,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-03T20:04:09.443731+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 3.950500045903027,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.5,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.5,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-03T20:04:09.452875+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 7.285600062459707,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.28,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.28,
+    "rag_ms": null,
+    "sucesso": true
+  }
+]

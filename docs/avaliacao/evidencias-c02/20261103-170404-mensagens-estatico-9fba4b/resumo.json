@@ -1,0 +1,70 @@
+{
+  "E1": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 3.85,
+      "minimo": 3.49,
+      "maximo": 4.59
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "E2": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 3.52,
+      "minimo": 3.45,
+      "maximo": 3.66
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "E3": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 3.81,
+      "minimo": 3.48,
+      "maximo": 6.28
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "estatico": {
+    "tentativas": 15,
+    "sucessos": 15,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 15,
+      "mediana": 3.68,
+      "minimo": 3.45,
+      "maximo": 6.28
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  }
+}

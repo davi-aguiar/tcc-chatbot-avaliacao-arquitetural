@@ -1,0 +1,6 @@
+Data local: 03/11/2026
+Corte: 46a87a7 (hash completo nos manifestos ambiente.json)
+Comando: .\.venv-c01\Scripts\python -m pytest -q
+Resultado: 244 passed in 3.06s
+Codigo de saida: 0
+Resumo transcrito da execucao anterior a coleta; nao e captura integral do console.

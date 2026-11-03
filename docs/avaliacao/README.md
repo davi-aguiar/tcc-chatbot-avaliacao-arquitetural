@@ -1,8 +1,12 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 está encerrado; C02 a C06 estão planejados e ainda não executados como cenários próprios.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 está encerrado; C02 está em execução; C03 a C06 estão planejados e ainda não executados como cenários próprios.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+
+## C02 — Desempenho de processamento e inicialização
+
+Coleta iniciada em 03/11/2026 sobre o corte do GitHub `46a87a7`, sem alterações no Python funcional. O [protocolo](C02-protocolo.md) fixa entradas, ordem, aquecimento e critérios; o [relatório](C02-relatorio-execucao.md) distingue resultados locais de pendências de geração real. O [índice de evidências](evidencias-c02/README.md) localiza medições e tentativas preservadas.
 
 ## C01 — Inclusão de serviço e modificabilidade
 

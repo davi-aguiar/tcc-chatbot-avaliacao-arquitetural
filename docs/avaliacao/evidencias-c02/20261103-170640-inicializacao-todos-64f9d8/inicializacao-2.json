@@ -1,0 +1,22 @@
+{
+  "inicio_utc": "2026-11-03T20:07:28.462036+00:00",
+  "pid": 14700,
+  "cache_offline": true,
+  "metricas": {
+    "carregamento_documentos_ms": 10.86,
+    "chunking_ms": 1.25,
+    "carregamento_embeddings_ms": 1369.41,
+    "vetorizacao_e_indexacao_ms": 5679.45,
+    "criacao_retriever_ms": 0.11,
+    "total_ms": 7061.15,
+    "n_documentos": 17,
+    "n_chunks": 39
+  },
+  "documentos_verificacao": 10,
+  "sucesso": true,
+  "fim_utc": "2026-11-03T20:07:49.337383+00:00",
+  "processo_ate_verificacao_ms": 20875.3282999387,
+  "exit_code": 0,
+  "etapa": "inicializacao-2",
+  "processo_pai_ms": 22508.64899996668
+}
