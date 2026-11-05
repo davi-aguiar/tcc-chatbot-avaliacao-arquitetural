@@ -1,0 +1,11 @@
+{
+  "referencia": "20261103-170640-inicializacao-todos-64f9d8",
+  "total": 67,
+  "iguais_em_bytes": 65,
+  "diferem_so_por_crlf": [
+    "docs/avaliacao/c02/casos.json",
+    "docs/avaliacao/c02/executar.py"
+  ],
+  "diferentes": [],
+  "nota": "C02-protocolo.md conferido na versao do commit efb274f, anterior ao adendo de 05/11/2026; os demais no checkout local."
+}
