@@ -1,0 +1,230 @@
+{
+  "E1": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 7.8,
+      "minimo": 7.49,
+      "maximo": 10.94
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "E2": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 7.38,
+      "minimo": 4.96,
+      "maximo": 13.0
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "E3": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 8.41,
+      "minimo": 3.77,
+      "maximo": 10.89
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "L1": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 26011.5,
+      "minimo": 4580.03,
+      "maximo": 27568.7
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 26003.58,
+      "minimo": 4570.64,
+      "maximo": 27561.92
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "L2": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 3823.01,
+      "minimo": 1320.72,
+      "maximo": 25715.63
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 3814.01,
+      "minimo": 1313.43,
+      "maximo": 25706.37
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "L3": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 18961.71,
+      "minimo": 2780.89,
+      "maximo": 24300.2
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 18954.48,
+      "minimo": 2772.6,
+      "maximo": 24291.84
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "M1": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 25067.56,
+      "minimo": 2166.74,
+      "maximo": 26149.8
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 25063.45,
+      "minimo": 2159.71,
+      "maximo": 26143.13
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "M2": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 22547.43,
+      "minimo": 4693.82,
+      "maximo": 23190.26
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 22536.07,
+      "minimo": 4686.59,
+      "maximo": 23184.71
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "M3": {
+    "tentativas": 5,
+    "sucessos": 5,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 5,
+      "mediana": 23798.78,
+      "minimo": 19384.7,
+      "maximo": 24909.3
+    },
+    "rag_ms_sucessos": {
+      "n": 5,
+      "mediana": 23794.53,
+      "minimo": 19376.49,
+      "maximo": 24901.73
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "estatico": {
+    "tentativas": 15,
+    "sucessos": 15,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 15,
+      "mediana": 7.67,
+      "minimo": 3.77,
+      "maximo": 13.0
+    },
+    "rag_ms_sucessos": {
+      "n": 0
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "menu_rag": {
+    "tentativas": 15,
+    "sucessos": 15,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 15,
+      "mediana": 23190.26,
+      "minimo": 2166.74,
+      "maximo": 26149.8
+    },
+    "rag_ms_sucessos": {
+      "n": 15,
+      "mediana": 23184.71,
+      "minimo": 2159.71,
+      "maximo": 26143.13
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  },
+  "texto_livre": {
+    "tentativas": 15,
+    "sucessos": 15,
+    "falhas": 0,
+    "total_ms_sucessos": {
+      "n": 15,
+      "mediana": 21337.48,
+      "minimo": 1320.72,
+      "maximo": 27568.7
+    },
+    "rag_ms_sucessos": {
+      "n": 15,
+      "mediana": 21330.02,
+      "minimo": 1313.43,
+      "maximo": 27561.92
+    },
+    "externo_ms_falhas": {
+      "n": 0
+    }
+  }
+}

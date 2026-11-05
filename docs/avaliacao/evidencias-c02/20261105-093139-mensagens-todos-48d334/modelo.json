@@ -1,0 +1,19 @@
+{
+  "original": "llama-3.3-70b-versatile",
+  "utilizado": "openai/gpt-oss-120b",
+  "configuracao_adaptada": true,
+  "temperatura": 0.1,
+  "max_tokens": 500,
+  "max_retries": 2,
+  "timeout": "None",
+  "setup_fora_da_coleta": {
+    "carregamento_documentos_ms": 5.08,
+    "chunking_ms": 0.81,
+    "carregamento_embeddings_ms": 1461.22,
+    "vetorizacao_e_indexacao_ms": 3418.87,
+    "criacao_retriever_ms": 0.11,
+    "total_ms": 4886.14,
+    "n_documentos": 17,
+    "n_chunks": 39
+  }
+}

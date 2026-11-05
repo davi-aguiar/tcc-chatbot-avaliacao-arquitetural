@@ -1,0 +1,2144 @@
+[
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:04.536461+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.011500000066007,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.55,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.55,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:04.554503+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 4.665600000407721,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4.15,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 4.15,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:04.566652+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.074299999956565,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.67,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.67,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:04.574201+00:00",
+    "resposta": "Exames simples, consultas básicas e ultrassonografias: procure a sua Unidade de Saúde da Família (USF) ou UBS.  \nExames mais complexos, consultas com especialistas ou cirurgias: o agendamento será feito pela Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 1363.1149000002551,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 1361.31,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 304,
+          "duracao_rag_ms": 1353.63
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 1361.31,
+    "rag_ms": 1353.63,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:05.958289+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 1125.2157999997507,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 1124.81,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 309,
+          "duracao_rag_ms": 1111.53
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 1124.81,
+    "rag_ms": 1111.53,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:07.086914+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 13842.40950000003,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 13841.67,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 13838.21
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 13841.67,
+    "rag_ms": 13838.21,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:20.934623+00:00",
+    "resposta": "Exames simples, consultas básicas e ultrassonografias – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias – você será encaminhado para a Central de Regulação (CRPEE).\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 25218.689500000437,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25217.6,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 463,
+          "duracao_rag_ms": 25209.86
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25217.6,
+    "rag_ms": 25209.86,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:32:46.165600+00:00",
+    "resposta": "Os documentos obrigatórios para **qualquer** marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 21946.884699999828,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 21946.11,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 470,
+          "duracao_rag_ms": 21936.9
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 21946.11,
+    "rag_ms": 21936.9,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:08.118857+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 25405.202300000383,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25404.11,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 25396.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25404.11,
+    "rag_ms": 25396.6,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:33.532533+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.99550000031013,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.8,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.8,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:33.548684+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 5.523799999537005,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4.96,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 4.96,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:33.560882+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 4.377699999167817,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3.77,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 3.77,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:33.572058+00:00",
+    "resposta": "Exames simples, consultas básicas e ultrassonografias → procure a sua Unidade de Saúde da Família (USF) ou UBS.  \nExames mais complexos, consultas com especialistas ou cirurgias → você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 25067.986899999596,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25067.56,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 305,
+          "duracao_rag_ms": 25063.45
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25067.56,
+    "rag_ms": 25063.45,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:33:58.643619+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 23000.844999999572,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 23000.4,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 309,
+          "duracao_rag_ms": 22996.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 23000.4,
+    "rag_ms": 22996.6,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:34:21.648642+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 23720.85799999968,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 23720.08,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 23716.42
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 23720.08,
+    "rag_ms": 23716.42,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:34:45.376585+00:00",
+    "resposta": "Você pode agendar da seguinte forma:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua **Unidade de Saúde da Família (USF) ou UBS**.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – será encaminhado para a **Central de Regulação (CRPEE)**.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 26196.53169999947,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 26195.98,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 515,
+          "duracao_rag_ms": 26189.65
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 26195.98,
+    "rag_ms": 26189.65,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:35:11.577817+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 22076.81390000016,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 22075.92,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 466,
+          "duracao_rag_ms": 22071.82
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 22075.92,
+    "rag_ms": 22071.82,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:35:33.663821+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 24301.178300000174,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24300.2,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 24291.84
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 24300.2,
+    "rag_ms": 24291.84,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:35:57.973526+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.518100000401319,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.67,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.67,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:35:57.991027+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 7.896500000242668,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.09,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.09,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:35:58.010308+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 12.90800000060699,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 10.89,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 10.89,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:35:58.033019+00:00",
+    "resposta": "Você pode agendar da seguinte forma:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua **Unidade de Saúde da Família (USF) ou UBS**.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – será encaminhado para a **Central de Regulação (CRPEE)**.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 26150.27630000077,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 26149.8,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 358,
+          "duracao_rag_ms": 26143.13
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 26149.8,
+    "rag_ms": 26143.13,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:36:24.187689+00:00",
+    "resposta": "Os documentos obrigatórios para **qualquer** marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 21931.441099999574,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 21930.42,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 313,
+          "duracao_rag_ms": 21925.43
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 21930.42,
+    "rag_ms": 21925.43,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:36:46.130599+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 24315.93900000007,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24314.18,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 24305.46
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 24314.18,
+    "rag_ms": 24305.46,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:37:10.455085+00:00",
+    "resposta": "Você pode agendar da seguinte forma:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua **Unidade de Saúde da Família (USF) ou UBS**.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – será encaminhado para a **Central de Regulação (CRPEE)**.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 27569.591100000252,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 27568.7,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 515,
+          "duracao_rag_ms": 27561.92
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 27568.7,
+    "rag_ms": 27561.92,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:37:38.033851+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 3824.058199999854,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3823.01,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 466,
+          "duracao_rag_ms": 3814.01
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 3823.01,
+    "rag_ms": 3814.01,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:37:41.868544+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 18962.438399999883,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 18961.71,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 18954.48
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 18961.71,
+    "rag_ms": 18954.48,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:00.840171+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 10.446199999933015,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 9.33,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 9.33,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:00.862073+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.286900000712194,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.38,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.38,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:00.878669+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 9.493200000179058,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 8.41,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 8.41,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:00.895460+00:00",
+    "resposta": "Exames simples, consultas básicas e ultrassonografias → procure a sua Unidade de Saúde da Família (USF) ou UBS.  \nExames mais complexos, consultas com especialistas ou cirurgias → você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 25167.602700000316,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25166.48,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 305,
+          "duracao_rag_ms": 25159.42
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25166.48,
+    "rag_ms": 25159.42,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:26.076788+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido  \n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 22548.543799999607,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 22547.43,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 22536.07
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 22547.43,
+    "rag_ms": 22536.07,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:38:48.636004+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 24910.622200000034,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24909.3,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 24901.73
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 24909.3,
+    "rag_ms": 24901.73,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:39:13.556515+00:00",
+    "resposta": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 26013.19770000009,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 26011.5,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 501,
+          "duracao_rag_ms": 26003.58
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 26011.5,
+    "rag_ms": 26003.58,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:39:39.583054+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 3267.283999999563,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 3266.44,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 466,
+          "duracao_rag_ms": 3257.86
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 3266.44,
+    "rag_ms": 3257.86,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:39:42.863836+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 21338.46529999937,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 21337.48,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 21330.02
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 21337.48,
+    "rag_ms": 21330.02,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:04.212366+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.486500000799424,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.49,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.49,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:04.233532+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 13.951099999758299,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 13.0,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 13.0,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:04.265432+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 9.081700000024284,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.02,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.02,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:04.286602+00:00",
+    "resposta": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 2167.906700000458,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 2166.74,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 332,
+          "duracao_rag_ms": 2159.71
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 2166.74,
+    "rag_ms": 2159.71,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:06.468082+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 23190.710599999875,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 23190.26,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 309,
+          "duracao_rag_ms": 23184.71
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 23190.26,
+    "rag_ms": 23184.71,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:29.663333+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 23799.455899999884,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 23798.78,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 23794.53
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 23798.78,
+    "rag_ms": 23794.53,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:40:53.471883+00:00",
+    "resposta": "Você pode agendar da seguinte forma:\n\n- **Exames simples, consultas básicas e ultrassonografias:** procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias:** o agendamento será feito através da Central de Regulação (CRPEE).\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 25978.680400000485,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25977.67,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 543,
+          "duracao_rag_ms": 25970.54
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25977.67,
+    "rag_ms": 25970.54,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:41:19.462358+00:00",
+    "resposta": "Os documentos obrigatórios para **qualquer** marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 1321.8639999995503,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 1320.72,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 470,
+          "duracao_rag_ms": 1313.43
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 1320.72,
+    "rag_ms": 1313.43,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:41:20.797817+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 2782.026500000029,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 2780.89,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 2772.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 2780.89,
+    "rag_ms": 2772.6,
+    "sucesso": true
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:23.594775+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 11.72610000048735,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 10.94,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 10.94,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:23.622708+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.76220000009198,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.61,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.61,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:23.649293+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 10.640299999977287,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 9.59,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 9.59,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:23.673714+00:00",
+    "resposta": "Você pode agendar da seguinte forma:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua **Unidade de Saúde da Família (USF) ou UBS**.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da **Central de Regulação (CRPEE)**, que receberá o encaminhamento.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 4761.694299999363,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4759.98,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 401,
+          "duracao_rag_ms": 4751.44
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 4759.98,
+    "rag_ms": 4751.44,
+    "sucesso": true
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:28.449548+00:00",
+    "resposta": "- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 4694.911100000354,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4693.82,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 253,
+          "duracao_rag_ms": 4686.59
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 4693.82,
+    "rag_ms": 4686.59,
+    "sucesso": true
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:33.156758+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+    "externo_ms": 19385.68690000011,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 19384.7,
+          "estado_entrada": "WAITING_4_4_CEO",
+          "estado_saida": "WAITING_4_4_CEO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 311,
+          "duracao_rag_ms": 19376.49
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 19384.7,
+    "rag_ms": 19376.49,
+    "sucesso": true
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:52.556245+00:00",
+    "resposta": "Para agendar exames e consultas:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 4581.149600000572,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 4580.03,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 541,
+          "duracao_rag_ms": 4570.64
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 4580.03,
+    "rag_ms": 4570.64,
+    "sucesso": true
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:41:57.154096+00:00",
+    "resposta": "Os documentos obrigatórios para qualquer marcação são:\n\n- Cartão do SUS (CNS) atualizado  \n- RG e CPF  \n- Comprovante de residência  \n- Telefone de contato  \n- Solicitação médica assinada e carimbada  \n- Justificativa clínica ou CID no pedido\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 25716.381000000183,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 25715.63,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 466,
+          "duracao_rag_ms": 25706.37
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 25715.63,
+    "rag_ms": 25706.37,
+    "sucesso": true
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:42:22.879870+00:00",
+    "resposta": "O Centro de Especialidades Odontológicas (CEO) é um serviço de saúde que oferece atendimento odontológico especializado, funcionando como referência para casos mais complexos que não podem ser resolvidos nas unidades de saúde da atenção básica.\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 2836.6503999995984,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 2835.73,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 468,
+          "duracao_rag_ms": 2828.92
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "sem_resposta": false
+      }
+    ],
+    "total_ms": 2835.73,
+    "rag_ms": 2828.92,
+    "sucesso": true
+  }
+]
