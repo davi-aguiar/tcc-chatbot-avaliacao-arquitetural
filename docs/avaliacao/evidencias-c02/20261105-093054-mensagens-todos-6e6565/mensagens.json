@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.002168+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 21.08810000027006,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 20.18,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 20.18,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.033698+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 7.662399999389891,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.59,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.59,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.048243+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 8.287599999675876,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.19,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.19,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.066782+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 430.93450000014855,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 429.32,
+          "duracao_rag_ms": 423.24
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.505515+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 111.33429999972577,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 110.02,
+          "duracao_rag_ms": 104.78
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.625019+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 111.49870000008377,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 110.32,
+          "duracao_rag_ms": 102.57
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.742976+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 106.97479999998905,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 106.13,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 96.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 106.13,
+    "rag_ms": 96.6,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.858585+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 112.97789999935048,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 111.88,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 102.59
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 111.88,
+    "rag_ms": 102.59,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "aquecimento",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:15.979889+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 118.80209999981162,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 118.03,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 110.05
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 118.03,
+    "rag_ms": 110.05,
+    "sucesso": false
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.105773+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 6.9602000003214926,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.19,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.19,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.119837+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 9.205600000314007,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 8.41,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 8.41,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.136927+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 7.658699999410601,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.88,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.88,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.152078+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 109.4186999998783,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 108.49,
+          "duracao_rag_ms": 101.97
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.269364+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 102.82970000025671,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 101.77,
+          "duracao_rag_ms": 96.72
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.378967+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 101.98979999950097,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 100.95,
+          "duracao_rag_ms": 96.79
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.490329+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 105.81749999983003,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 105.04,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 98.09
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 105.04,
+    "rag_ms": 98.09,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.604608+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 98.79969999929017,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 97.88,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 89.4
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 97.88,
+    "rag_ms": 89.4,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 1,
+    "inicio_utc": "2026-11-05T12:31:16.710954+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 141.6570999999749,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 140.76,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 134.21
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 140.76,
+    "rag_ms": 134.21,
+    "sucesso": false
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:16.861584+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.421000000453205,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.4,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.4,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:16.879112+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.977600000434904,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.09,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.09,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:16.897511+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 7.635599999957776,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.77,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.77,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:16.913653+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 95.25060000032681,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 94.04,
+          "duracao_rag_ms": 87.35
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:17.017932+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 89.72289999928762,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 88.3,
+          "duracao_rag_ms": 83.37
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:17.121271+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 113.98720000033791,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 113.02,
+          "duracao_rag_ms": 106.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:17.246445+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 104.25799999939045,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 103.49,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 95.38
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 103.49,
+    "rag_ms": 95.38,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:17.359615+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 162.1433000000252,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 160.91,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 154.08
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 160.91,
+    "rag_ms": 154.08,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 2,
+    "inicio_utc": "2026-11-05T12:31:17.534348+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 128.07770000017626,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 127.16,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 118.07
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 127.16,
+    "rag_ms": 118.07,
+    "sucesso": false
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.672265+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.094900000287453,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.85,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.85,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.691458+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 9.381099999700382,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 8.45,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 8.45,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.710483+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 6.606900000406313,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 5.89,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 5.89,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.727463+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 96.93509999942762,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 95.8,
+          "duracao_rag_ms": 90.35
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.835028+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 95.62970000024507,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 94.81,
+          "duracao_rag_ms": 86.91
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:17.938217+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 97.56849999939732,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 96.87,
+          "duracao_rag_ms": 91.87
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:18.043829+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 102.9711999999563,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 102.15,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 95.8
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 102.15,
+    "rag_ms": 95.8,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:18.157504+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 105.69870000017545,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 104.58,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 96.37
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 104.58,
+    "rag_ms": 96.37,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 3,
+    "inicio_utc": "2026-11-05T12:31:18.272858+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 157.8544999993028,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 157.07,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 150.27
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 157.07,
+    "rag_ms": 150.27,
+    "sucesso": false
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.440616+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 7.1431000005759415,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.3,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.3,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.459230+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 9.726700000101118,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 8.76,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 8.76,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.479844+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 7.535200000347686,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.71,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.71,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.500454+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 130.39889999981824,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 129.46,
+          "duracao_rag_ms": 124.58
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.641152+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 332.71610000065266,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 331.54,
+          "duracao_rag_ms": 326.62
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:18.987091+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 378.65620000047784,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 377.64,
+          "duracao_rag_ms": 371.53
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:19.377596+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 659.6557000002576,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 658.84,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 648.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 658.84,
+    "rag_ms": 648.6,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:20.048165+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 283.3445999995092,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 282.71,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 275.51
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 282.71,
+    "rag_ms": 275.51,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 4,
+    "inicio_utc": "2026-11-05T12:31:20.342152+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 151.32269999958226,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 150.56,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 143.17
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 150.56,
+    "rag_ms": 143.17,
+    "sucesso": false
+  },
+  {
+    "id": "E1",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_AGENDAMENTO",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.503593+00:00",
+    "resposta": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 8.428999999523512,
+    "estado_observado": "WAITING_1_AGENDAMENTO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 7.55,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_1_AGENDAMENTO",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 138
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 7.55,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E2",
+    "percurso": "estatico",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "4",
+    "estado_saida": "WAITING_4_SERVICOS",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.522845+00:00",
+    "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "externo_ms": 10.090000000673172,
+    "estado_observado": "WAITING_4_SERVICOS",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 9.22,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 9.22,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "E3",
+    "percurso": "estatico",
+    "estado": "WAITING_4_SERVICOS",
+    "entrada": "2",
+    "estado_saida": "WAITING_4_2_CEMERF",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.543584+00:00",
+    "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "externo_ms": 7.456600000296021,
+    "estado_observado": "WAITING_4_2_CEMERF",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 6.62,
+          "estado_entrada": "WAITING_4_SERVICOS",
+          "estado_saida": "WAITING_4_2_CEMERF",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 261
+        }
+      }
+    ],
+    "nlp": [],
+    "total_ms": 6.62,
+    "rag_ms": null,
+    "sucesso": true
+  },
+  {
+    "id": "M1",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "1",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.594201+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 193.8732999997228,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000003",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 192.73,
+          "duracao_rag_ms": 188.22
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M2",
+    "percurso": "menu_rag",
+    "estado": "WAITING_1_1_INFO",
+    "entrada": "4",
+    "estado_saida": "WAITING_1_1_INFO",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.801478+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 152.6694000003772,
+    "estado_observado": "WAITING_1_1_INFO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000004",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 151.51,
+          "duracao_rag_ms": 147.12
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "M3",
+    "percurso": "menu_rag",
+    "estado": "WAITING_4_4_CEO",
+    "entrada": "1",
+    "estado_saida": "WAITING_4_4_CEO",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:20.966360+00:00",
+    "resposta": "Desculpe, ocorreu um erro interno.",
+    "externo_ms": 104.42859999966458,
+    "estado_observado": "WAITING_4_4_CEO",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_FAILED",
+        "meta": {
+          "id_wpp": "5500000000005",
+          "erro": "NotFoundError",
+          "duracao_total_ms": 103.14,
+          "duracao_rag_ms": 97.42
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": null,
+    "rag_ms": null,
+    "sucesso": false
+  },
+  {
+    "id": "L1",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Onde posso agendar Exames e Consultas?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:21.085249+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 138.61369999995077,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 137.54,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 124.94
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Onde posso agendar Exames e Consultas?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 137.54,
+    "rag_ms": 124.94,
+    "sucesso": false
+  },
+  {
+    "id": "L2",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "Quais documentos são obrigatórios para qualquer marcação?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:21.236149+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 111.09890000079758,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 110.13,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 102.6
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "Quais documentos são obrigatórios para qualquer marcação?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 110.13,
+    "rag_ms": 102.6,
+    "sucesso": false
+  },
+  {
+    "id": "L3",
+    "percurso": "texto_livre",
+    "estado": "WAITING_MAIN_MENU",
+    "entrada": "O que é o serviço CEO?",
+    "estado_saida": "WAITING_MAIN_MENU",
+    "consulta": "O que é o serviço CEO?",
+    "fase": "medicao",
+    "repeticao": 5,
+    "inicio_utc": "2026-11-05T12:31:21.359583+00:00",
+    "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "externo_ms": 102.01559999950405,
+    "estado_observado": "WAITING_MAIN_MENU",
+    "eventos": [
+      {
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 101.07,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 96.25
+        }
+      }
+    ],
+    "nlp": [
+      {
+        "consulta": "O que é o serviço CEO?",
+        "erro_tipo": "NotFoundError"
+      }
+    ],
+    "total_ms": 101.07,
+    "rag_ms": 96.25,
+    "sucesso": false
+  }
+]

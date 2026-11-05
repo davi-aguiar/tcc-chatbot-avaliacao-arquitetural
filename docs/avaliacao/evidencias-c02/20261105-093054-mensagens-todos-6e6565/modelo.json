@@ -1,0 +1,19 @@
+{
+  "original": "llama-3.3-70b-versatile",
+  "utilizado": "llama-3.3-70b-versatile",
+  "configuracao_adaptada": false,
+  "temperatura": 0.1,
+  "max_tokens": 500,
+  "max_retries": 2,
+  "timeout": "None",
+  "setup_fora_da_coleta": {
+    "carregamento_documentos_ms": 9.62,
+    "chunking_ms": 0.9,
+    "carregamento_embeddings_ms": 1558.28,
+    "vetorizacao_e_indexacao_ms": 3583.17,
+    "criacao_retriever_ms": 0.13,
+    "total_ms": 5152.14,
+    "n_documentos": 17,
+    "n_chunks": 39
+  }
+}
