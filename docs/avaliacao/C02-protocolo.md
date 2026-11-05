@@ -82,7 +82,7 @@ Os lotes anteriores conservam cópia de `protocolo-original.md`, cujo hash corre
 
 O autor decidiu refazer a coleta completa em uma segunda máquina (Windows 11, Intel Core i7-6700, 8 CPUs lógicas), pois a credencial só estava disponível nela e a [árvore de utilidade](arvore-de-utilidade.md#c02--desempenho-processamento-e-inicialização) prevê uma máquina identificada. Os lotes de 03/11/2026 são preservados, sem reclassificação, e não são somados nem comparados diretamente aos novos.
 
-**Mantido:** casos, ordem, aquecimento, cinco rodadas, instrumento e critérios deste protocolo. O Python funcional, os menus e os documentos têm o conteúdo do corte `46a87a7`: conferência contra o manifesto anterior encontrou 64 de 67 arquivos idênticos em bytes; `casos.json`, `executar.py` e este protocolo diferem apenas pelo CRLF do checkout com `core.autocrlf=true` ([conferência](evidencias-c02/maquina2-preparacao/hashes-corte.json)). Este adendo altera o protocolo e por isso o commit dos novos manifestos é posterior a `46a87a7`.
+**Mantido:** casos, ordem, aquecimento, cinco rodadas, instrumento e critérios deste protocolo. O Python funcional, os menus e os documentos têm o conteúdo do corte `46a87a7`: conferência contra o manifesto anterior encontrou 65 de 67 arquivos idênticos em bytes, com este protocolo conferido na versão do commit `efb274f`; `casos.json` e `executar.py` diferem apenas pelo CRLF do checkout com `core.autocrlf=true` ([conferência](evidencias-c02/maquina2-preparacao/hashes-corte.json)). Este adendo altera o protocolo e por isso o commit dos novos manifestos é posterior a `46a87a7`.
 
 **Ambiente adaptado:**
 
