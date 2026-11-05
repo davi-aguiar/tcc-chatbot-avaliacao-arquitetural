@@ -2,6 +2,21 @@
 
 Instrumento: [executar.py](../c02/executar.py). Entradas fixas: [casos.json](../c02/casos.json). Interpretação e limites: [relatório](../C02-relatorio-execucao.md).
 
+## Série principal — 05/11/2026, segunda máquina
+
+| Arquivo ou diretório | Finalidade |
+|---|---|
+| [Preparação](maquina2-preparacao/) | Conferência de hashes e embeddings, versões, testes e listagem de modelos, antes da coleta |
+| [Inicialização](20261105-092629-inicializacao-todos-87297f/) | Preparação e três inicializações em processos distintos |
+| [Mensagens, modelo padrão](20261105-093054-mensagens-todos-6e6565/) | 9 aquecimentos e 45 medidas; todas as gerações falharam com `NotFoundError` |
+| [Mensagens, modelo adaptado](20261105-093139-mensagens-todos-48d334/) | `openai/gpt-oss-120b`; 9 aquecimentos e 45 medidas; resultado principal de RAG |
+| [diagnostico-retries.json](diagnostico-retries.json) | Tentativas HTTP, 429 e limites; definido após a coleta, fora da série e das tabelas |
+| [validacao-evidencias-maquina2.json](validacao-evidencias-maquina2.json) | Integridade dos hashes, contagens e processos distintos dos novos lotes |
+
+## Série anterior — 03/11/2026, primeira máquina
+
+Preservada sem reclassificação; não somar nem comparar diretamente à série principal.
+
 | Arquivo ou diretório | Finalidade |
 |---|---|
 | [verificacao-corte.txt](verificacao-corte.txt) | Resumo da validação dos 244 testes antes da coleta |
@@ -14,6 +29,8 @@ Instrumento: [executar.py](../c02/executar.py). Entradas fixas: [casos.json](../
 | [cache-embeddings.json](cache-embeddings.json) | Revisão, tamanhos e SHA-256 dos arquivos dos pesos locais |
 | [Nova série de inicialização](20261103-170640-inicializacao-todos-64f9d8/) | Mesmo modelo, caminho do snapshot local; configuração de carregamento adaptada |
 
-Cada lote contém `ambiente.json` e `execucao.json`. Lotes de mensagem com coleta têm `mensagens.json` (inclui aquecimento e auditoria), `medicoes.csv` (somente medidas) e `resumo.json`. Os lotes anteriores ao adendo contêm cópia do protocolo original para conferir o hash registrado.
+## Conteúdo dos lotes
+
+Cada lote contém `ambiente.json` e `execucao.json`. Lotes de mensagem com coleta têm `mensagens.json` (inclui aquecimento e auditoria), `medicoes.csv` (somente medidas) e `resumo.json`; com RAG, também `modelo.json`. Os lotes de 03/11/2026 contêm cópia do protocolo então vigente para conferir o hash registrado. Os manifestos desses lotes usam fim de linha LF em `casos.json`, `executar.py` e protocolo; o checkout da segunda máquina usa CRLF, conforme [conferência](maquina2-preparacao/hashes-corte.json). Nos lotes de 05/11/2026, os hashes correspondem ao checkout local com CRLF.
 
 Na inicialização, `preparacao.json` fica separada de `inicializacao-1.json` a `inicializacao-3.json`. Os arquivos `.log` preservam saída e avisos dos subprocessos. A duração externa inclui importações e consulta de verificação; o tempo de montagem está em `metricas.total_ms`. Nenhuma tentativa anterior é sobrescrita pelo executor.

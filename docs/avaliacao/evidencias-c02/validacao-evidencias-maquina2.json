@@ -1,0 +1,79 @@
+{
+  "hashes_por_lote": {
+    "20261105-092629-inicializacao-todos-87297f": {
+      "hashes_conferidos": 67,
+      "commit": "b009a1098480280eee01b0fd269533b63925b569",
+      "chave_groq_presente": true,
+      "git_status_vazio": true
+    },
+    "20261105-093054-mensagens-todos-6e6565": {
+      "hashes_conferidos": 67,
+      "commit": "b009a1098480280eee01b0fd269533b63925b569",
+      "chave_groq_presente": true,
+      "git_status_vazio": false
+    },
+    "20261105-093139-mensagens-todos-48d334": {
+      "hashes_conferidos": 67,
+      "commit": "f257f9c0ba8a662011c4b172b76a41d11fed0cb8",
+      "chave_groq_presente": true,
+      "git_status_vazio": true
+    }
+  },
+  "mensagens": {
+    "padrao": {
+      "aquecimentos": 9,
+      "medidas": 45,
+      "linhas_csv": 45,
+      "sucessos_medidos": 15,
+      "falhas_nlp": 36,
+      "texto_livre_falho_com_message_sent": 18,
+      "menu_falho_com_message_failed": 18
+    },
+    "adaptado": {
+      "aquecimentos": 9,
+      "medidas": 45,
+      "linhas_csv": 45,
+      "sucessos_medidos": 45,
+      "falhas_nlp": 0,
+      "texto_livre_falho_com_message_sent": 0,
+      "menu_falho_com_message_failed": 0
+    }
+  },
+  "inicializacoes_processos_distintos": 4,
+  "inicializacoes": {
+    "preparacao": {
+      "sucesso": true,
+      "total_ms": 21618.48,
+      "ate_verif_ms": 150572,
+      "pai_ms": 155113,
+      "docs": 10
+    },
+    "inicializacao-1": {
+      "sucesso": true,
+      "total_ms": 5468.2,
+      "ate_verif_ms": 30099,
+      "pai_ms": 34274,
+      "docs": 10
+    },
+    "inicializacao-2": {
+      "sucesso": true,
+      "total_ms": 7049.94,
+      "ate_verif_ms": 24677,
+      "pai_ms": 27695,
+      "docs": 10
+    },
+    "inicializacao-3": {
+      "sucesso": true,
+      "total_ms": 4853.73,
+      "ate_verif_ms": 30654,
+      "pai_ms": 37196,
+      "docs": 10
+    }
+  },
+  "diagnostico": {
+    "geracoes": 12,
+    "com_429": 8,
+    "sem_429": 4
+  },
+  "observacao": "Hashes conferidos contra o checkout local (CRLF) em que os lotes foram coletados. Verificacao fora dos intervalos de coleta."
+}

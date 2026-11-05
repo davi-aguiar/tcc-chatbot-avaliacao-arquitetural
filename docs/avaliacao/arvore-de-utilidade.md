@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 a C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md), e a definição abaixo é mantida como plano prévio. C03 a C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
 
 ## Relação com os objetivos
 
@@ -30,7 +30,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | Cenário | Importância | Dificuldade estimada | Justificativa e estado |
 |---|---|---|---|
 | C01 | Alta | Baixa | Extensão recorrente de serviços; encerrado com ressalvas, sem reclassificação retrospectiva |
-| C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; planejado |
+| C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; encerrado com ressalvas, análise descritiva |
 | C03 | Alta | Média | Falha externa pode afetar a continuidade da conversa; planejado |
 | C04 | Média | Média | Separação de camadas precisa permitir testes de RAG, além dos testes de navegação; planejado |
 | C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; planejado |

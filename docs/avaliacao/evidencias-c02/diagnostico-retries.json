@@ -1,0 +1,361 @@
+{
+  "modelo": "openai/gpt-oss-120b",
+  "geracoes": [
+    {
+      "rodada": 1,
+      "caso": "M1",
+      "total_ms": 4674.0,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 200,
+          "duracao_ms": 1126.5,
+          "retry_count": "0",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "4461",
+            "x-ratelimit-reset-tokens": "26.542s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "964"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 1,
+      "caso": "M2",
+      "total_ms": 900.6,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 200,
+          "duracao_ms": 841.5,
+          "retry_count": "0",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "1595",
+            "x-ratelimit-reset-tokens": "48.037s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "963"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 1,
+      "caso": "M3",
+      "total_ms": 12847.5,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 41.5,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "12",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "1788",
+            "x-ratelimit-reset-tokens": "46.59s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "963"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 749.1,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "95",
+            "x-ratelimit-reset-tokens": "59.287s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "962"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 1,
+      "caso": "L1",
+      "total_ms": 25329.4,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 41.8,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "24",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "373",
+            "x-ratelimit-reset-tokens": "57.202s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "962"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 1078.1,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "40",
+            "x-ratelimit-reset-tokens": "59.7s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "961"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 1,
+      "caso": "L2",
+      "total_ms": 22659.3,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 104.7,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "21",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "275",
+            "x-ratelimit-reset-tokens": "57.937s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "961"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 900.3,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "44",
+            "x-ratelimit-reset-tokens": "59.67s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "960"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 1,
+      "caso": "L3",
+      "total_ms": 24061.5,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 41.5,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "23",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "260",
+            "x-ratelimit-reset-tokens": "58.05s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "960"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 779.5,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "93",
+            "x-ratelimit-reset-tokens": "59.302s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "959"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "M1",
+      "total_ms": 25959.1,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 39.7,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "25",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "314",
+            "x-ratelimit-reset-tokens": "57.644s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "959"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 731.3,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "116",
+            "x-ratelimit-reset-tokens": "59.13s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "958"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "M2",
+      "total_ms": 1159.3,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 200,
+          "duracao_ms": 754.9,
+          "retry_count": "0",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "359",
+            "x-ratelimit-reset-tokens": "57.307s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "957"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "M3",
+      "total_ms": 2838.1,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 47.4,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "2",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "3077",
+            "x-ratelimit-reset-tokens": "36.922s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "957"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 707.4,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "43",
+            "x-ratelimit-reset-tokens": "59.677s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "956"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "L1",
+      "total_ms": 25857.7,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 38.5,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "25",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "305",
+            "x-ratelimit-reset-tokens": "57.712s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "956"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 758.6,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "172",
+            "x-ratelimit-reset-tokens": "58.71s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "955"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "L2",
+      "total_ms": 1480.2,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 200,
+          "duracao_ms": 1345.4,
+          "retry_count": "0",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "313",
+            "x-ratelimit-reset-tokens": "57.652s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "954"
+          }
+        }
+      ]
+    },
+    {
+      "rodada": 2,
+      "caso": "L3",
+      "total_ms": 21841.7,
+      "tem_resposta": true,
+      "erro_tipo": null,
+      "tentativas_http": [
+        {
+          "status": 429,
+          "duracao_ms": 40.6,
+          "retry_count": "0",
+          "cabecalhos": {
+            "retry-after": "21",
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "572",
+            "x-ratelimit-reset-tokens": "55.71s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "954"
+          }
+        },
+        {
+          "status": 200,
+          "duracao_ms": 735.8,
+          "retry_count": "1",
+          "cabecalhos": {
+            "x-ratelimit-limit-tokens": "8000",
+            "x-ratelimit-remaining-tokens": "138",
+            "x-ratelimit-reset-tokens": "58.965s",
+            "x-ratelimit-limit-requests": "1000",
+            "x-ratelimit-remaining-requests": "953"
+          }
+        }
+      ]
+    }
+  ]
+}
