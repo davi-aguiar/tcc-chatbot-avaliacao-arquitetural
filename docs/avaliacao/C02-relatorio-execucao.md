@@ -87,6 +87,16 @@ Mediana de montagem: **5.468,20 ms**. A preparação separada levou 21.618,48 ms
 
 Vetorização/indexação superou o carregamento dos embeddings nas três execuções, como na série anterior, em outra máquina. Isso não sustenta a justificativa genérica de que o custo é dominado por carregar o modelo, dentro das condições de cache local e deste corpus pequeno. A montagem representa parcela minoritária do processo: o intervalo até a verificação foi de 24,7 a 30,7 s, incluindo importações, montagem e consulta. O instrumento não separa importações da verificação, então a parcela exata de cada uma não foi medida. Persistir o índice não foi implementado nem comparado, e seu benefício não foi quantificado.
 
+## Avaliação do autor e uso simultâneo
+
+As informações desta seção foram declaradas pelo autor depois da coleta. Não são requisitos validados com usuários, nem resultados medidos pelo C02.
+
+- **Referência de aceitação:** o autor considera aceitável responder em até 30 s, dada a infraestrutura disponível. Todas as 30 consultas medidas com o modelo adaptado ficaram abaixo desse valor (máximo de 27,57 s). A comparação vale para uma pessoa por vez e não converte o C02 em aprovação.
+- **Público esperado:** estimativa de até 100 usuários, sem previsão de fluxo intenso.
+- **Teste anterior com usuários simultâneos:** o autor relata que, na última amostra, com 10 usuários, o assistente parou de responder, o que atribui à infraestrutura. Não há registro desse teste no repositório; data, configuração, logs e causa permanecem **não verificados**.
+
+O limite observado pesa nesse cenário. Com cerca de 2.900 tokens por consulta e 8.000 por minuto, o provedor comporta menos de três consultas por minuto no total. Assim, a referência de 30 s comportaria cerca de uma consulta por janela, ainda que o público total seja pequeno. Além disso, por inspeção do código, a rota assíncrona do webhook executa RAG, banco e envio de forma síncrona ([webhook.py](../../api/routes/webhook.py)). Em um único processo, isso tende a bloquear as demais requisições durante uma consulta, inclusive a navegação estática. Esses efeitos são hipóteses para investigação, não a causa demonstrada do relato acima.
+
 ## Série anterior — 03/11/2026, primeira máquina
 
 Preservada sem reclassificação, em outra máquina (Windows 10, 8 CPUs lógicas, 16 GB), com Python 3.12.6 e ambiente herdado do sistema. **Não é somada nem comparada diretamente à série principal.**

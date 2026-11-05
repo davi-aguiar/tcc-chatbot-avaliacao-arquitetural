@@ -1,5 +1,28 @@
 # Evidências do C02
 
+## Resultado em resumo
+
+Teste de desempenho com **um usuário por vez**, em 05/11/2026. Cada linha soma cinco repetições de três entradas.
+
+| O que foi testado | Funcionou? | Tempo típico (mediana) | Menor e maior tempo |
+|---|---|---|---|
+| Navegar pelo menu | 15 de 15 | 0,008 s (7,67 ms) | 0,004 a 0,013 s |
+| Consultar documento pelo menu | 15 de 15 | 23,2 s | 2,2 a 26,1 s |
+| Perguntar em texto livre | 15 de 15 | 21,3 s | 1,3 a 27,6 s |
+| Montar o índice ao iniciar | 3 de 3 | 5,5 s | 4,9 a 7,0 s |
+| Modelo padrão do código | 0 de 30 | Sem resposta: modelo inexistente no provedor | — |
+
+**Como ler:**
+
+- As consultas usaram `openai/gpt-oss-120b`, porque o modelo padrão não está mais disponível.
+- Tempos acima de 19 s vêm, com alta probabilidade, da espera pelo limite de 8.000 tokens por minuto do provedor. Sem essa espera, as consultas levaram de 1,3 a 4,8 s.
+- Todas as 30 consultas medidas ficaram abaixo de 30 s, limite considerado aceitável pelo autor depois da coleta.
+- **Este teste não mede usuários simultâneos.** O limite observado comporta menos de três consultas por minuto no total.
+
+Dados por repetição: [medicoes.csv](20261105-093139-mensagens-todos-48d334/medicoes.csv). Análise e limitações: [relatório](../C02-relatorio-execucao.md).
+
+## Índice
+
 Instrumento: [executar.py](../c02/executar.py). Entradas fixas: [casos.json](../c02/casos.json). Interpretação e limites: [relatório](../C02-relatorio-execucao.md).
 
 ## Série principal — 05/11/2026, segunda máquina
