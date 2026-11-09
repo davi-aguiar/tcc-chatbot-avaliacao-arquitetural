@@ -1,8 +1,16 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01, C02 e C03 estão encerrados com ressalvas; C04 a C06 estão planejados e ainda não executados como cenários próprios.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 e C06 estão planejados e ainda não executados como cenários próprios.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+
+## C04 — Testabilidade do núcleo RAG sem rede
+
+**Estado: encerrado com ressalvas em 09/11/2026; critério atendido no recorte.** Os 16 casos exercitaram ingestão, chunking, FAISS, montagem, prompt/parser e NLP reais com embeddings e gerador locais substitutos. Zero tentativas externas, nenhuma credencial, caches de modelos vazios antes/depois e zero Python funcional alterado. Os 244 testes existentes e as 13 verificações do instrumento passaram separadamente.
+
+A cobertura de linhas foi 105/110 (95,45%) em `app/` e 21/520 (4,04%) em `api/`; o lote se concentra no núcleo RAG e no NLPService, sem somar a suíte de navegação. O isolamento exige ajustar `ingestion.__file__` e preencher `CACHED_LLM` no teste, evidenciando acoplamento a detalhes internos. Não houve avaliação de embeddings semânticos ou respostas de modelo real.
+
+O [relatório](C04-relatorio-execucao.md) apresenta resultados e limites; o [protocolo](C04-protocolo.md) fixa os 16 casos, substituições e critérios; o [índice de evidências](evidencias-c04/README.md) localiza corpus, prompts, cobertura e conferência posterior.
 
 ## C03 — Disponibilidade após falha e sob concorrência
 

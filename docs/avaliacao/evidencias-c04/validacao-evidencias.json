@@ -1,0 +1,74 @@
+{
+  "conferencia_utc": "2026-11-09T19:20:53.511477+00:00",
+  "lotes": [
+    {
+      "lote": "20261109-161456-offline-af50da",
+      "checks": {
+        "hashes_fontes_conferem": true,
+        "copias_conferem": true,
+        "matriz_completa_em_ordem": true,
+        "pytest_completo_aprovado": true,
+        "credenciais_ausentes": true,
+        "dotenv_neutralizado": true,
+        "zero_tentativas_externas": true,
+        "caches_sem_arquivos": true,
+        "ingestao_conteudo_e_origem": true,
+        "chunking_real": true,
+        "faiss_discrimina_documentos": true,
+        "montagem_real": true,
+        "prompt_e_resposta": true,
+        "ausencia_e_resposta_vazia": true,
+        "excecoes_identicas": true,
+        "entradas_locais_e_personalizacao": true,
+        "cobertura_recalculada_por_pacote": true,
+        "resumos_coerentes": true
+      },
+      "valido": true,
+      "arquivos_fontes_conferidos": 78,
+      "casos": 16,
+      "cobertura": {
+        "app": {
+          "num_statements": 110,
+          "covered_lines": 105,
+          "missing_lines": 5,
+          "num_branches": 18,
+          "covered_branches": 15,
+          "percentual_linhas": 95.45,
+          "percentual_ramos": 83.33
+        },
+        "api": {
+          "num_statements": 520,
+          "covered_lines": 21,
+          "missing_lines": 499,
+          "num_branches": 114,
+          "covered_branches": 9,
+          "percentual_linhas": 4.04,
+          "percentual_ramos": 7.89
+        }
+      },
+      "artefatos_sha256": {
+        "ambiente.json": "aee7c2b7603fa184086b10b7d6197830ac37ccab78fb20f514ef648f6dd88f8d",
+        "C04-protocolo.md": "07c8367bc1d74f61618292ab06af68004fc8f4c43481efe6de7fbf43de55f53e",
+        "casos-executados.json": "efba36ff1801491fafb297cffd51182d8e0622b3ea1ce75d7698d8a4bf810bd7",
+        "casos.json": "4b5d397cbfc52037b03b2fdaeaf7c6ba952ac01252601b61fafc68d3c52831ac",
+        "cobertura-por-pacote.json": "19cff85f9ee7fbb17ec249f50c1a32878ff31a8b8f1374e2948abb5887f45f31",
+        "cobertura.json": "4485d6d3fcd951160a1c33805b2ff996ee93075ff70981286e4275be30a481af",
+        "cobertura.txt": "22577e1dde27fc7548a42a881d5a22914931546df5a4f1883513e1ab292a0ecf",
+        "execucao.json": "cc2be20b5870f1bb21caaeabb24e77187c637143e4793885116d9b62af61ca49",
+        "executar.py": "ba18ab4fec85b4ee9c3bbb62144373409ea0d393a54b65a8ecf5a5153b3f65c5",
+        "isolamento.json": "6ed5f8db7704096f30963464c68639d932216984f08f2651e52329ff1ca9b977",
+        "projeto-sintetico/data/servicos/aurora.txt": "8ceff88394fbc7e2654f096b0ea82bd818b35b64655ca5203d707b531773e05c",
+        "projeto-sintetico/data/servicos/horizonte.txt": "6ef69e85e6dd8682f73563801328c5b4409b72686c6a7f85c4fc009646d3c1c0",
+        "projeto-sintetico/data/servicos/ignorar.md": "e3637b1cd5555aba16a22644fdcc533b1467c4e66ba4fdad98e71b959abf1018",
+        "pytest.txt": "4ed7f6acf5826557d67998981f1414f06053f2a6fe57897aa6d102198e18ab08",
+        "resumo.json": "c48a700393b095a115a1843314c9b3d344f1f110a91a11d11ea6cce3860e3bab",
+        "test_cenario.py": "d8d675af8ae5cdc59338dfa392a722ea178f27a5118088f68cb119192d5f19d1",
+        "test_instrumento.py": "9609b5eba24aada7feeaf6afa7a30c8a8361939b6ade065d2a343f923c816b41"
+      }
+    }
+  ],
+  "funcional_preservado": true,
+  "links_ausentes": [],
+  "metodo": "Leitura independente de registros, contagens, cobertura, hashes e diff; sem repetir coleta.",
+  "valido": true
+}

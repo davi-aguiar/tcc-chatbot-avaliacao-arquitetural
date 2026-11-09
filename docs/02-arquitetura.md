@@ -6,6 +6,8 @@ Complemento: [interfaces e contratos atuais](13-interfaces-e-contratos.md), com 
 
 Revisão em 08/11/2026 sobre o commit `65e28a05f6d0274a14d187e2bd6e5790b4504979`. O conteúdo funcional de `api/`, `app/`, `data/` e `tests/` permanece igual ao corte `666b601` usado no C03, conferido por `git diff`. Esta revisão atualiza a documentação, sem alterar a aplicação ou os registros brutos dos experimentos. A versão anterior dos diagramas foi inspecionada em 20/10/2026, sobre `731e856`.
 
+Adendo em 09/11/2026: resultados de C04 sobre `77348fb`, com a mesma referência funcional preservada; somente instrumentos e documentação de avaliação foram acrescentados.
+
 O objetivo é documentar a arquitetura implementada: componentes, responsabilidades, camadas, dependências e decisões identificáveis no código. A inspeção dos módulos foi confrontada com as descrições técnicas existentes e com os resultados de [C01](avaliacao/C01-analise-resultados.md), [C02](avaliacao/C02-relatorio-execucao.md), [C03-A](avaliacao/C03-relatorio-execucao.md) e [C03-B](avaliacao/C03-B-relatorio-execucao.md). Resultados de execução aparecem identificados com o respectivo recorte; não se apresentam propostas de manutenção como capacidades já implementadas.
 
 Na visão de componentes, setas indicam uso ou acesso; na sequência, chamadas e retornos; na implantação, comunicação entre processos e serviços. Os grupos `api/` e `app/` são pacotes do mesmo backend. A denominação **monólito com organização em camadas lógicas** é uma interpretação dessa estrutura, não uma separação em serviços implantáveis nem uma arquitetura de camadas estritamente isoladas.
@@ -233,7 +235,7 @@ As camadas abaixo descrevem responsabilidades. As pastas não impõem uma regra 
 
 O fluxo predominante é **rotas → ChatService/menus → NLPService → RAG**, com acessos laterais ao banco e à auditoria. ChatService reúne lógica de conversação e operações de persistência; não existe uma camada de repositórios separando essas responsabilidades. A organização `core/adapters` do RAG não demonstra, por si só, arquitetura hexagonal ou inversão completa das dependências: o núcleo importa componentes concretos.
 
-O retriever é fornecido ao NLPService, enquanto o cliente gerador é obtido por função interna e variável global no pipeline. O ChatService recebe o NLP por construtor e evita sua importação em tempo de execução usando `TYPE_CHECKING`. São pontos de substituição diferentes; a avaliação sistemática de testabilidade continua no escopo de C04. O Gradio acessa o núcleo por outro caminho, sem atravessar as camadas de conversação e persistência do backend.
+O retriever é fornecido ao NLPService, enquanto o cliente gerador é obtido por função interna e variável global no pipeline. O ChatService recebe o NLP por construtor e evita sua importação em tempo de execução usando `TYPE_CHECKING`. São pontos de substituição diferentes. [C04](avaliacao/C04-relatorio-execucao.md) exercitou o núcleo e o NLP reais offline preenchendo temporariamente `CACHED_LLM`, substituindo o construtor externo de embeddings e ajustando a raiz de ingestão por `__file__`; o isolamento depende desses detalhes internos. O Gradio acessa o núcleo por outro caminho, sem atravessar as camadas de conversação e persistência do backend.
 
 ## Camadas do `api/`
 
@@ -324,8 +326,9 @@ O quadro registra escolhas materializadas na implementação e seus efeitos. Nã
 | [C02](avaliacao/C02-relatorio-execucao.md) | Custo sequencial e montagem do índice; na série principal, vetorização/indexação superou carga dos embeddings nas três inicializações medidas | Cache/ambiente identificados; não comprova que carregar embeddings sempre domina nem quantifica ganho com índice persistido |
 | [C03-A](avaliacao/C03-relatorio-execucao.md) | Dois tratamentos de falha: menu devolve erro interno com `MESSAGE_FAILED`; texto livre devolve opção inválida com `MESSAGE_SENT` | Injeção imediata e sequencial; não mede concorrência nem falha de boot |
 | [C03-B](avaliacao/C03-B-relatorio-execucao.md) | Em um worker, inferência/retry/envio bloquearam outras requisições; menu de outro usuário levou 193,832 s na rajada real de dez | Modelo adaptado, SQLite e saída WhatsApp interceptada; processo não encerrou e a causa exata do incidente anterior não foi demonstrada |
+| [C04](avaliacao/C04-relatorio-execucao.md) | Ingestão, chunking, FAISS, montagem, prompt/parser e NLP reais exercitados em 16/16 casos sem rede, credenciais ou pesos | Embeddings/gerador locais; ajuste de `__file__` e estado global no teste; não avalia qualidade de um modelo real nem implementa injeção pública |
 
-Esses achados atualizam a descrição do sistema existente. Persistência do índice, memória de conversa, processamento em fila e política uniforme de erros são possibilidades de manutenção, não componentes implementados. A topologia de desenvolvimento não comprova a configuração de produção. Qualidade das respostas, confidencialidade e isolamento completo de testes ainda dependem dos cenários próprios C04–C06.
+Esses achados atualizam a descrição do sistema existente. Persistência do índice, memória de conversa, processamento em fila e política uniforme de erros são possibilidades de manutenção, não componentes implementados. A topologia de desenvolvimento não comprova a configuração de produção. C04 demonstrou isolamento no recorte de teste definido; qualidade das respostas e confidencialidade ainda dependem dos cenários próprios C05–C06.
 
 ## Rastreabilidade do objetivo de documentação
 
@@ -334,6 +337,6 @@ Esses achados atualizam a descrição do sistema existente. Persistência do ín
 | Visão de componentes | Diagrama de componentes, tabela de responsabilidades/fontes e caminho independente do Gradio |
 | Camadas | Camadas lógicas, dependências efetivas, composição e acoplamentos entre conversação, persistência e RAG |
 | Decisões de projeto | D01–D12, com código correspondente e consequências delimitadas |
-| Base no código e na documentação técnica | Corte identificado, inspeção dos módulos, contratos I01–I06, diagramas de execução/implantação e confronto com C01–C03 |
+| Base no código e na documentação técnica | Corte identificado, inspeção dos módulos, contratos I01–I06, diagramas de execução/implantação e confronto com C01–C04 |
 
 O objetivo de descrever a arquitetura atual tem essas entregas documentadas e rastreáveis. Isso não representa aprovação da arquitetura, validação por stakeholders ou avaliação completa dos atributos de qualidade.

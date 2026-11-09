@@ -9,7 +9,7 @@ busca semântica sobre documentos oficiais.
 | Documento | Conteúdo |
 |---|---|
 | [01 — Visão Geral](01-visao-geral.md) | O que o sistema faz, atores, glossário |
-| [02 — Arquitetura](02-arquitetura.md) | Componentes e fontes, camadas/dependências, decisões D01–D12, inicialização, sequência e implantação; revisão após C03 |
+| [02 — Arquitetura](02-arquitetura.md) | Componentes e fontes, camadas/dependências, decisões D01–D12, inicialização, sequência e implantação; adendo após C04 |
 | [03 — Instalação e Execução](03-instalacao-e-execucao.md) | Dependências, variáveis de ambiente, como rodar |
 | [04 — Referência da API](04-api-referencia.md) | Endpoints HTTP, payloads, respostas |
 | [05 — Fluxo de Conversa](05-fluxo-conversa.md) | Máquina de estados, menus, comandos |
@@ -23,9 +23,9 @@ busca semântica sobre documentos oficiais.
 
 ## Avaliação arquitetural
 
-O objetivo de documentar a arquitetura atual está organizado em [02 — Arquitetura](02-arquitetura.md), com responsabilidades, dependências e decisões rastreáveis ao código. As fronteiras estão detalhadas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), revisado após C01–C03 e usado como referência para C04–C06. A documentação distingue implementação, resultados observados e propostas de manutenção.
+O objetivo de documentar a arquitetura atual está organizado em [02 — Arquitetura](02-arquitetura.md), com responsabilidades, dependências e decisões rastreáveis ao código. As fronteiras estão detalhadas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), atualizado após C01–C04 e usado como referência para C05–C06. A documentação distingue implementação, resultados observados e propostas de manutenção.
 
-Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01, C02 e C03 e orienta a leitura. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md) e [C03-B](avaliacao/evidencias-c03-b/README.md).
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01 a C04 e orienta a leitura. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md), [C03-B](avaliacao/evidencias-c03-b/README.md) e [C04](avaliacao/evidencias-c04/README.md).
 
 O escopo dos próximos cenários está na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos seis atributos previstos no projeto de pesquisa.
 
@@ -40,6 +40,8 @@ O escopo dos próximos cenários está na [árvore de utilidade refinada](avalia
 | [C03-A — Relatório de execução](avaliacao/C03-relatorio-execucao.md) | Continuidade em 12/12 casos sequenciais, com ressalvas de resposta, auditoria e persistência |
 | [C03-B — Protocolo](avaliacao/C03-B-protocolo.md) | Concorrência HTTP, esperas controladas e série com provedor real |
 | [C03-B — Relatório de execução](avaliacao/C03-B-relatorio-execucao.md) | Bloqueio de outras conversas, menu em 194 s e timeout de cliente; sem queda do processo no ensaio |
+| [C04 — Protocolo](avaliacao/C04-protocolo.md) | 16 casos do núcleo RAG com rede bloqueada, caches vazios e substitutos nas fronteiras |
+| [C04 — Relatório de execução](avaliacao/C04-relatorio-execucao.md) | 16/16 aprovados sem Python funcional alterado; cobertura, ajustes de isolamento e limitações |
 
 ## Início rápido
 
