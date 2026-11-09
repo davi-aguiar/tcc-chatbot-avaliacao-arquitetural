@@ -1,0 +1,28 @@
+{
+  "repeticoes": 2,
+  "falhas": [
+    {"id": "timeout", "classe": "APITimeoutError"},
+    {"id": "conexao", "classe": "APIConnectionError"},
+    {"id": "modelo_indisponivel", "classe": "NotFoundError"}
+  ],
+  "percursos": [
+    {
+      "id": "menu_rag",
+      "estado": "WAITING_1_1_INFO",
+      "entrada": "1",
+      "consulta": "Onde posso agendar Exames e Consultas?"
+    },
+    {
+      "id": "texto_livre",
+      "estado": "WAITING_MAIN_MENU",
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "consulta": "Onde posso agendar Exames e Consultas?"
+    }
+  ],
+  "retomada": [
+    {"entrada": "/menu", "estado": "WAITING_MAIN_MENU", "texto": "contem_menu"},
+    {"entrada": "4", "estado": "WAITING_4_SERVICOS", "texto": "menu_exato"},
+    {"entrada": "2", "estado": "WAITING_4_2_CEMERF", "texto": "menu_exato"},
+    {"entrada": "0", "estado": "WAITING_4_SERVICOS", "texto": "menu_exato"}
+  ]
+}

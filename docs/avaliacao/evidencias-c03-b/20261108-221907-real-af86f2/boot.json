@@ -1,0 +1,14 @@
+{
+  "montagem_aplicacao_s": 55.20083350001369,
+  "modo": "real",
+  "metricas_indexacao": {
+    "carregamento_documentos_ms": 4.06,
+    "chunking_ms": 0.72,
+    "carregamento_embeddings_ms": 51531.5,
+    "vetorizacao_e_indexacao_ms": 1942.27,
+    "criacao_retriever_ms": 0.07,
+    "total_ms": 53478.64,
+    "n_documentos": 17,
+    "n_chunks": 39
+  }
+}

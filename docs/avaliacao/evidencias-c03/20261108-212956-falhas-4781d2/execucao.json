@@ -1,0 +1,11 @@
+{
+  "inicio_utc": "2026-11-09T00:30:00.652905+00:00",
+  "comando": [
+    "docs/avaliacao/c03/executar.py"
+  ],
+  "diretorio": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c03\\20261108-212956-falhas-4781d2",
+  "pid": 8520,
+  "coleta_valida": true,
+  "julgamento_continuidade": "atendido",
+  "fim_utc": "2026-11-09T00:30:05.387282+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "modo": "real",
+  "atraso_s": 0.5,
+  "modelo": "openai/gpt-oss-120b",
+  "embeddings_snapshot": "C:\\Users\\davia\\.cache\\huggingface\\hub\\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\snapshots\\e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+}

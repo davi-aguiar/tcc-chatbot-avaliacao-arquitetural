@@ -1,0 +1,11 @@
+{
+  "inicio_utc": "2026-11-09T01:18:12.123582+00:00",
+  "modo": "controlado",
+  "rajadas_previstas": 21,
+  "servidor_pid": 14092,
+  "rajadas_executadas": 21,
+  "coleta_completa": true,
+  "encerramento_forcado": false,
+  "servidor_exit_code": 0,
+  "fim_utc": "2026-11-09T01:18:57.042481+00:00"
+}

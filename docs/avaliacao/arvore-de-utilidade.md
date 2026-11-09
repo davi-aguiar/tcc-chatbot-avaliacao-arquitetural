@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md), e a definição abaixo é mantida como plano prévio. C03 a C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C04 a C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
 
 ## Relação com os objetivos
 
@@ -31,7 +31,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 |---|---|---|---|
 | C01 | Alta | Baixa | Extensão recorrente de serviços; encerrado com ressalvas, sem reclassificação retrospectiva |
 | C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; encerrado com ressalvas, análise descritiva |
-| C03 | Alta | Média | Falha externa pode afetar a continuidade da conversa; planejado |
+| C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
 | C04 | Média | Média | Separação de camadas precisa permitir testes de RAG, além dos testes de navegação; planejado |
 | C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; planejado |
 | C06 | Alta | Média | Fluxo externo e persistência podem expor dados além do necessário; planejado |
@@ -82,6 +82,10 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 **Critério:** atendido no escopo se todos os casos terminarem com resposta controlada, sem encerrar o processo, e a navegação posterior funcionar. Falhas de estado ou retorno implicam resultado parcial ou não atendido, conforme abrangência. Registrar diferenças entre os dois caminhos, mesmo quando ambos permitem recuperação.
 
 **Limites:** erro injetado imediatamente não mede espera por timeout real. Não estima disponibilidade percentual, SLA, recuperação de processo ou comportamento quando o RAG impede a inicialização. O 404 observado no C01 motiva este cenário, mas não substitui sua execução.
+
+**Resultado C03-A em 08/11/2026:** critério operacional de continuidade atendido, com ressalvas. Os 12 casos tiveram retorno controlado e estado preservado; 48/48 mensagens de retomada funcionaram sem NLP/SDK adicional, com zero tentativas de rede. O texto livre atribui a falha à entrada e registra `MESSAGE_SENT`; o menu devolve erro interno com `MESSAGE_FAILED`, mas sem registrar a resposta em `messages`. Protocolo, interpretação e limites no [relatório C03-A](C03-relatorio-execucao.md). Esse resultado não mede espera real ou disponibilidade percentual.
+
+**Ampliação solicitada pelo autor e resultado C03-B em 08/11/2026:** o [protocolo complementar](C03-B-protocolo.md), fixado antes das rajadas, acrescentou concorrência HTTP em um worker, com usuários distintos e sondas durante a espera. Foram 21 rajadas controladas e duas com provedor real. Na rajada real de dez usuários, o menu levou 193,832 s, a saúde levou 139,729 s e um cliente excedeu 180 s. Inferências serializadas e oito 429 seguidos de retries; processo vivo e retorno dos menus após drenagem. O [relatório C03-B](C03-B-relatorio-execucao.md) demonstra bloqueio/timeout, sem reproduzir encerramento do processo nem estabelecer capacidade de produção. Os resultados e as evidências de C03-A foram preservados.
 
 ## C04 — Testabilidade: RAG sem dependências externas em execução
 

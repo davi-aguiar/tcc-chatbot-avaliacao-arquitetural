@@ -1,0 +1,371 @@
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030010000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030010000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030010001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030010001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030010002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030010002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030020000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030020000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030020001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030020001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030020002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030020002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030020003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030020003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030004
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030030006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030030006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040004
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040007
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040009
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040008
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030040011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030040011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030050000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030050000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030050001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030050001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030050002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030050002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030060000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030060000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030060001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030060001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030060002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030060002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030060003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030060003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030070006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030070006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080009
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080007
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080008
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080006
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080005
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030080011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030080011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030090000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030090000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030090001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030090001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030090002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030090002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030100000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030100000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030100002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030100002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030100001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030100001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030100003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030100003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110004
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030110006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030110006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120007
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120004
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120009
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120008
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030120011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030120011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030130000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030130000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030130001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030130001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030130002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030130002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030140000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030140000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030140001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030140001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030140002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030140002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030140003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030140003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030150006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030150006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160005
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160007
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160008
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160006
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160009
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030160011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030160011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030170000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030170000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030170001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030170001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030170002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030170002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180000
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180006
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180004
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180008
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180005
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180003
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180009
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180007
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030180011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030180011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030190000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030190000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030190001
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030190001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030190002
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030190002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200007
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200009
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200008
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200006
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200005
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO:groq._base_client:Retrying request to /openai/v1/chat/completions in 0.500000 seconds
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030200011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030200011
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210000
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210000
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210001
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210001
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210007
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210007
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210010
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210010
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210009
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210009
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210008
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210008
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210002
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210002
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210004
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210004
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210003
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210003
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210006
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210006
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210005
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210005
+INFO:AppLogger:[INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500030210011
+INFO:AppLogger:[INFO] MESSAGE_SENT: Resposta enviada para 5500030210011

@@ -1,0 +1,216 @@
+{
+  "id": "B01-evolution-rag_real-1",
+  "rota": "evolution",
+  "perfil": "rag_real",
+  "usuarios": 1,
+  "inicio_t": 192347.4424733,
+  "fim_t": 192349.2716036,
+  "usuarios_carga": [
+    "5500030010000"
+  ],
+  "requisicoes": [
+    {
+      "rid": "B01-evolution-rag_real-1-carga-00",
+      "path": "/evolution_webhook",
+      "despacho_t": 192347.4494786,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192349.1937877,
+      "duracao_s": 1.7443091000022832
+    }
+  ],
+  "sondas_durante": [
+    {
+      "rid": "B01-evolution-rag_real-1-saude-durante",
+      "path": "/__c03/health",
+      "despacho_t": 192347.6413181,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "pid": 13176,
+        "t": 192349.1943109
+      },
+      "fim_t": 192349.1950265,
+      "duracao_s": 1.5537083999952301
+    },
+    {
+      "rid": "B01-evolution-rag_real-1-menu-durante",
+      "path": "/evolution_webhook",
+      "despacho_t": 192347.6416701,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192349.2251368,
+      "duracao_s": 1.5834666999871843
+    }
+  ],
+  "saude_apos": {
+    "rid": "B01-evolution-rag_real-1-saude-apos",
+    "path": "/__c03/health",
+    "despacho_t": 192349.2331853,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "pid": 13176,
+      "t": 192349.234558
+    },
+    "fim_t": 192349.236579,
+    "duracao_s": 0.0033936999971047044
+  },
+  "menu_apos": {
+    "rid": "B01-evolution-rag_real-1-menu-apos",
+    "path": "/evolution_webhook",
+    "despacho_t": 192349.2366066,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "status": "success"
+    },
+    "fim_t": 192349.2630994,
+    "duracao_s": 0.02649280001060106
+  },
+  "snapshot": {
+    "usuarios": [
+      {
+        "id_wpp": "5500030010000",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030010001",
+        "estado": "WAITING_MAIN_MENU"
+      },
+      {
+        "id_wpp": "5500030010002",
+        "estado": "WAITING_MAIN_MENU"
+      }
+    ],
+    "mensagens": [
+      {
+        "chat_id": 1,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 2,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 2,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      },
+      {
+        "chat_id": 3,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 3,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "auditoria": [
+      {
+        "usuario": 1,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 1,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 1706.75,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 344,
+          "duracao_rag_ms": 1681.9
+        }
+      },
+      {
+        "usuario": 2,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 2,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 18.53,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      },
+      {
+        "usuario": 3,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 3,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 16.93,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      }
+    ]
+  },
+  "processo_vivo_apos": true,
+  "drenagem_completa": true,
+  "resumo": {
+    "mediana_s": 1.7443091000022832,
+    "min_s": 1.7443091000022832,
+    "max_s": 1.7443091000022832,
+    "amplitude_despacho_s": 0.0,
+    "http_200": 1,
+    "erros_cliente": {},
+    "inferencias_max_simultaneas": 1,
+    "inferencias_observadas": 1,
+    "status_provedor": {
+      "200": 1
+    },
+    "auditoria": {
+      "MESSAGE_RECEIVED": 3,
+      "MESSAGE_SENT": 3
+    },
+    "lag_loop_max_s": 1.694744500000961,
+    "saude_durante_s": 1.5537083999952301,
+    "menu_durante_s": 1.5834666999871843,
+    "saude_enviada_durante_espera": true,
+    "saude_executada_apos_espera": true,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {
+      "B01-evolution-rag_real-1-carga-00": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B01-evolution-rag_real-1-menu-durante": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "B01-evolution-rag_real-1-menu-apos": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+}

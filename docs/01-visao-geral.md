@@ -31,9 +31,11 @@ Reduzir a demanda por telefone/presencial para dúvidas repetitivas:
 | Cidadão | Envia mensagens pelo WhatsApp |
 | Gateway WhatsApp | Evolution API (self-hosted) **ou** Twilio WhatsApp — ambos suportados |
 | Backend | FastAPI: estado da conversa, menus, persistência, auditoria |
-| LLM | Groq — `llama-3.3-70b-versatile` |
+| LLM | Inferência externa via Groq; padrão no código: `llama-3.3-70b-versatile`. C02/C03-B usaram modelo alternativo identificado em seus relatórios |
 | Vetores | FAISS em memória, embeddings HuggingFace `paraphrase-multilingual-MiniLM-L12-v2` |
-| Banco | PostgreSQL via SQLAlchemy + Alembic |
+| Banco | Banco relacional definido por `DATABASE_URL`, acessado por SQLAlchemy e versionado por Alembic; instalação documentada com PostgreSQL e ensaios locais com SQLite |
+
+A implementação combina `api/` e `app/` no mesmo backend; o Gradio é uma entrada separada para o núcleo RAG. A [documentação de arquitetura](02-arquitetura.md) detalha componentes, camadas lógicas, dependências e decisões. Os resultados de concorrência de [C03-B](avaliacao/C03-B-relatorio-execucao.md) mostram bloqueio em um worker; esta visão funcional não implica garantia de disponibilidade ou de capacidade simultânea.
 
 ## Glossário
 

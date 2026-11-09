@@ -1,0 +1,70 @@
+{
+  "conferencia_utc": "2026-11-09T01:27:06.129483+00:00",
+  "lotes": [
+    {
+      "lote": "20261108-221810-controlado-22d87e",
+      "modo": "controlado",
+      "checks": {
+        "hashes_fontes_conferem": true,
+        "copias_conferem": true,
+        "rajadas_completas": true,
+        "requisicoes_finalizadas_no_servidor": true,
+        "saude_menu_e_drenagem": true,
+        "todas_cargas_observadas": true,
+        "estados_conferem": true,
+        "menus_sondas_tem_texto_esperado": true,
+        "persistencia_e_auditoria_conferem": true,
+        "encerramento_voluntario": true,
+        "sem_saida_externa_controlada": true
+      },
+      "valido": true,
+      "rajadas": 21,
+      "mensagens_carga": 104,
+      "http_200_carga": 95,
+      "erros_cliente": {
+        "ReadTimeout": 9
+      },
+      "respostas_provedor": {
+        "200": 57,
+        "429": 11
+      },
+      "erros_nlp": {},
+      "saude_lancada_em_espera": 13,
+      "saude_so_executada_apos_espera": 13
+    },
+    {
+      "lote": "20261108-221907-real-af86f2",
+      "modo": "real",
+      "checks": {
+        "hashes_fontes_conferem": true,
+        "copias_conferem": true,
+        "rajadas_completas": true,
+        "requisicoes_finalizadas_no_servidor": true,
+        "saude_menu_e_drenagem": true,
+        "todas_cargas_observadas": true,
+        "estados_conferem": true,
+        "menus_sondas_tem_texto_esperado": true,
+        "persistencia_e_auditoria_conferem": true,
+        "encerramento_voluntario": true,
+        "sem_saida_externa_controlada": true
+      },
+      "valido": true,
+      "rajadas": 2,
+      "mensagens_carga": 11,
+      "http_200_carga": 10,
+      "erros_cliente": {
+        "ReadTimeout": 1
+      },
+      "respostas_provedor": {
+        "200": 11,
+        "429": 8
+      },
+      "erros_nlp": {},
+      "saude_lancada_em_espera": 2,
+      "saude_so_executada_apos_espera": 2
+    }
+  ],
+  "fontes_c03_a_preservadas": true,
+  "aplicacao_preservada": true,
+  "valido": true
+}

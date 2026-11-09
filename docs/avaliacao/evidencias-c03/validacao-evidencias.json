@@ -1,0 +1,28 @@
+{
+  "verificacao_utc": "2026-11-09T00:32:46.826616+00:00",
+  "lote": "20261108-212956-falhas-4781d2",
+  "metodo": "Conferencia independente por leitura de JSON, SHA-256, logs, links locais e git diff; sem repetir a coleta.",
+  "arquivos_com_hash": 68,
+  "mensagens_observadas": 60,
+  "eventos_auditoria": 120,
+  "mensagens_persistidas": 108,
+  "checks": {
+    "hashes_atuais_conferem": true,
+    "copias_conferem": true,
+    "matriz_completa": true,
+    "criterios_12_casos": true,
+    "excecoes_preservadas": true,
+    "retomada_48_mensagens_sem_nlp": true,
+    "zero_rede": true,
+    "sem_excecao_ao_chamador": true,
+    "auditoria_diferente_por_percurso": true,
+    "persistencia_na_falha": true,
+    "resumo_e_status_conferem": true,
+    "funcional_preservado": true,
+    "corte_funcional_igual_c02": true,
+    "logs_12_capturas": true,
+    "links_locais_existem": true
+  },
+  "links_ausentes": [],
+  "valido": true
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "B01-evolution-rag_real-1",
+    "mediana_s": 1.7443091000022832,
+    "min_s": 1.7443091000022832,
+    "max_s": 1.7443091000022832,
+    "amplitude_despacho_s": 0.0,
+    "http_200": 1,
+    "erros_cliente": {},
+    "inferencias_max_simultaneas": 1,
+    "inferencias_observadas": 1,
+    "status_provedor": {
+      "200": 1
+    },
+    "auditoria": {
+      "MESSAGE_RECEIVED": 3,
+      "MESSAGE_SENT": 3
+    },
+    "lag_loop_max_s": 1.694744500000961,
+    "saude_durante_s": 1.5537083999952301,
+    "menu_durante_s": 1.5834666999871843,
+    "saude_enviada_durante_espera": true,
+    "saude_executada_apos_espera": true,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {
+      "B01-evolution-rag_real-1-carga-00": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B01-evolution-rag_real-1-menu-durante": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "B01-evolution-rag_real-1-menu-apos": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  },
+  {
+    "id": "B02-evolution-rag_real-10",
+    "mediana_s": 88.03456410000217,
+    "min_s": 1.000235600018641,
+    "max_s": 180.03879829999642,
+    "amplitude_despacho_s": 0.001983599999221042,
+    "http_200": 9,
+    "erros_cliente": {
+      "ReadTimeout": 1
+    },
+    "inferencias_max_simultaneas": 1,
+    "inferencias_observadas": 10,
+    "status_provedor": {
+      "200": 10,
+      "429": 8
+    },
+    "auditoria": {
+      "MESSAGE_RECEIVED": 12,
+      "MESSAGE_SENT": 12
+    },
+    "lag_loop_max_s": 81.51621150000254,
+    "saude_durante_s": 139.72897309999098,
+    "menu_durante_s": 193.8317187000066,
+    "saude_enviada_durante_espera": true,
+    "saude_executada_apos_espera": true,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {
+      "B02-evolution-rag_real-10-carga-00": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-01": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-04": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-07": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-02": "Para exames simples, consultas básicas e ultrassonografias, procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento será feito por encaminhamento à Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-08": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-05": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-09": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-03": "Exames simples, consultas básicas e ultrassonografias – procure a sua Unidade de Saúde (USF ou UBS).  \nExames mais complexos, consultas com especialistas ou cirurgias – você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-06": "Para agendar exames e consultas:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-menu-durante": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "B02-evolution-rag_real-10-menu-apos": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+]
