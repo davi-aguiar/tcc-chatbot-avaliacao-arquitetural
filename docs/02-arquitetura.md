@@ -1,10 +1,14 @@
 # 02 — Arquitetura
 
-Complemento: [interfaces e contratos atuais](13-interfaces-e-contratos.md), com entradas, saídas, efeitos colaterais, falhas e lacunas identificadas por inspeção antes dos próximos cenários.
+Complemento: [interfaces e contratos atuais](13-interfaces-e-contratos.md), com entradas, saídas, efeitos colaterais, falhas e evidências de execução. As limitações abertas estão em [problemas conhecidos](10-problemas-conhecidos.md).
 
 ## Escopo e convenções
 
-Diagramas revisados por inspeção do código em 20/10/2026, tomando como referência o commit `731e856`. Descrevem a implementação, sem antecipar resultados dos experimentos. Na visão de componentes, setas indicam uso ou acesso; na sequência, indicam chamadas e retornos; na implantação, comunicação entre processos e serviços.
+Revisão em 08/11/2026 sobre o commit `65e28a05f6d0274a14d187e2bd6e5790b4504979`. O conteúdo funcional de `api/`, `app/`, `data/` e `tests/` permanece igual ao corte `666b601` usado no C03, conferido por `git diff`. Esta revisão atualiza a documentação, sem alterar a aplicação ou os registros brutos dos experimentos. A versão anterior dos diagramas foi inspecionada em 20/10/2026, sobre `731e856`.
+
+O objetivo é documentar a arquitetura implementada: componentes, responsabilidades, camadas, dependências e decisões identificáveis no código. A inspeção dos módulos foi confrontada com as descrições técnicas existentes e com os resultados de [C01](avaliacao/C01-analise-resultados.md), [C02](avaliacao/C02-relatorio-execucao.md), [C03-A](avaliacao/C03-relatorio-execucao.md) e [C03-B](avaliacao/C03-B-relatorio-execucao.md). Resultados de execução aparecem identificados com o respectivo recorte; não se apresentam propostas de manutenção como capacidades já implementadas.
+
+Na visão de componentes, setas indicam uso ou acesso; na sequência, chamadas e retornos; na implantação, comunicação entre processos e serviços. Os grupos `api/` e `app/` são pacotes do mesmo backend. A denominação **monólito com organização em camadas lógicas** é uma interpretação dessa estrutura, não uma separação em serviços implantáveis nem uma arquitetura de camadas estritamente isoladas.
 
 ## Visão de componentes
 
@@ -33,6 +37,7 @@ flowchart TD
     DB[("Banco do chatbot: DATABASE_URL")]
     GROQ["Groq: inferência externa"]
     GW -->|chama webhook| ROUTES
+    ROUTES -->|sendText/sendMedia na Evolution| GW
     HTTP -->|POST /messages/receive| ROUTES
     ROUTES -->|valida acesso| AUTH
     ROUTES -->|process_message| CS
@@ -56,6 +61,18 @@ flowchart TD
 ```
 
 O limite externo reúne dois pacotes no mesmo processo, sem separação em microsserviços. As respostas das chamadas ficam implícitas nesta visão; a devolutiva ao cidadão aparece na sequência. O índice vetorial é distinto do banco relacional. O cache guarda o cliente de inferência, não pesos do modelo nem respostas anteriores. A resolução de mídia obtém URLs, sem servir os arquivos de imagem.
+
+### Componentes e fontes de implementação
+
+| Componente | Responsabilidade e fronteira | Fontes principais |
+|---|---|---|
+| Adaptadores de entrada/saída | Extrair mensagens, autenticar a entrada e adaptar a resposta para JSON, TwiML ou envio Evolution | [REST](../api/routes/routes.py), [Evolution](../api/routes/webhook.py), [Twilio](../api/routes/twilio_webhook.py), [segurança](../api/security.py) |
+| Conversação | Identificar usuário, conduzir onboarding/comandos, decidir entre navegação e consulta e coordenar persistência | [ChatService](../api/services/chat_service.py) |
+| Interpretador/configuração de menu | Ler estados/opções do JSON, atualizar estado ou encaminhar `query` ao NLP | [menu_handlers](../api/services/menu_handlers.py), [menu_texts.json](../api/services/menu_texts.json) |
+| Ponte de linguagem natural | Receber pergunta, chamar o RAG, reconhecer ausência de contexto e personalizar a resposta localmente | [NLPService](../api/services/nlp_service.py) |
+| Montagem e pipeline RAG | Carregar/dividir documentos, criar índice/retriever e compor recuperação, prompt e geração | [setup_system](../app/main.py), [run_rag](../app/core/rag_pipeline.py), [adaptadores RAG](../app/adapters/) |
+| Configuração e mídia | Consultar parâmetros ativos e resolver URL de imagem por prioridade de fontes | [ConfigService](../api/services/config_service.py), [FlowMediaService](../api/services/flow_media_service.py) |
+| Persistência e auditoria | Manter usuário, estado, mensagens, configuração, mídia e eventos no banco relacional; emitir logs | [modelos](../api/models/models.py), [sessão](../api/db/database.py), [DbLogger](../api/utils/logger.py), [migrações](../api/alembic/versions/) |
 
 **Caminho separado do Gradio:** `frontend/gradio_app.py` chama `setup_system()` e `generate_response()` diretamente em seu processo, chegando a `run_rag`. Não usa a rota REST, o ChatService ou a persistência de conversas do backend. Testes também podem chamar serviços diretamente, conforme seu escopo.
 
@@ -200,13 +217,29 @@ app.state.nlp_service = NLPService(retriever=pln_resources["servicos"])
 ```
 
 O índice é construído **uma vez, na subida do processo**, e fica em memória
-(`app.state`). Não há persistência do índice em disco.
+(alcançável pelo retriever de `app.state.nlp_service`). Esse é o comportamento da entrada `api.main`; uma chamada explícita adicional a `setup_system()` monta novos recursos. Não há persistência do índice em disco.
+
+## Camadas lógicas e dependências efetivas
+
+As camadas abaixo descrevem responsabilidades. As pastas não impõem uma regra automática de dependência ou encapsulamento.
+
+| Camada/responsabilidade | Implementação | Dependências efetivas |
+|---|---|---|
+| Entrada e adaptação do canal | Rotas, segurança, dependências de autenticação e schemas | Chamam ChatService e obtêm sessão/NLP; Evolution também realiza envio HTTP externo |
+| Aplicação e conversação | ChatService, interpretador de menus e serviços de configuração/mídia | Acessam modelos e sessão SQLAlchemy diretamente; o interpretador pode chamar o NLP |
+| Recuperação e geração | NLPService, `app/core/` e `app/adapters/` | NLPService depende do pipeline; o pipeline usa retriever, prompts e cliente externo. `core/` também importa bibliotecas e adaptadores concretos |
+| Persistência e observabilidade | `api/models`, `api/db`, DbLogger e Alembic | SQLAlchemy e banco configurado; DbLogger usa a sessão da conversa e faz commits/rollbacks |
+| Composição/inicialização | `api.main` e `app.main` | Conectam os recursos concretos, carregam modelos/documentos e publicam o NLP no estado da aplicação |
+
+O fluxo predominante é **rotas → ChatService/menus → NLPService → RAG**, com acessos laterais ao banco e à auditoria. ChatService reúne lógica de conversação e operações de persistência; não existe uma camada de repositórios separando essas responsabilidades. A organização `core/adapters` do RAG não demonstra, por si só, arquitetura hexagonal ou inversão completa das dependências: o núcleo importa componentes concretos.
+
+O retriever é fornecido ao NLPService, enquanto o cliente gerador é obtido por função interna e variável global no pipeline. O ChatService recebe o NLP por construtor e evita sua importação em tempo de execução usando `TYPE_CHECKING`. São pontos de substituição diferentes; a avaliação sistemática de testabilidade continua no escopo de C04. O Gradio acessa o núcleo por outro caminho, sem atravessar as camadas de conversação e persistência do backend.
 
 ## Camadas do `api/`
 
 ```
 security.py   Autenticação das rotas de entrada. Sem import de app/ nem services.
-routes/       Adaptadores HTTP (Evolution, Twilio, REST). Sem regra de negócio.
+routes/       Adaptadores HTTP: validação/extração do canal e entrega da resposta.
 services/     Regra de negócio:
                 chat_service.py     máquina de estados + orquestração
                 menu_handlers.py    navegação do menu dinâmico (JSON)
@@ -225,7 +258,7 @@ alembic/      Migrações
 
 ```
 core/ingestion.py    DirectoryLoader sobre data/servicos/*.txt
-core/intencao.py     e_saudacao() — sem imports, sem LLM
+core/intencao.py     e_saudacao() — biblioteca padrão, sem LLM
 core/rag_pipeline.py get_llm (cache global), run_rag
 core/conversation.py generate_response — usada apenas pelo Gradio
 adapters/splitter.py RecursiveCharacterTextSplitter (1000/200)
@@ -236,9 +269,7 @@ adapters/respostas.py RESPOSTA_SEM_CONTEXTO, sem_contexto() — sem imports
 main.py              setup_system() → {"servicos": retriever}
 ```
 
-Os dois módulos "sem imports" (`intencao.py`, `respostas.py`) são deliberados: são a
-lógica que o `api/` precisa consultar, e mantê-los livres de LangChain é o que permite
-testá-los — e testar quem os usa — sem baixar o modelo de embeddings no CI.
+Os módulos `intencao.py` e `respostas.py` não importam dependências externas. O primeiro reconhece saudações localmente; o segundo mantém a convenção de ausência de contexto usada pelo prompt e pelo NLP. Essa separação e a importação do NLP apenas para tipagem no ChatService permitem exercitar parte da lógica sem carregar o stack RAG. O [CI](../.github/workflows/ci.yml) não instala as dependências completas de `app/` e mede cobertura de `api/`; seus testes não demonstram cobertura do núcleo RAG real.
 
 ## Ciclo de vida de uma mensagem
 
@@ -252,7 +283,8 @@ testá-los — e testar quem os usa — sem baixar o modelo de embeddings no CI.
    3. grava log em `audit_logs` (`MESSAGE_RECEIVED`);
    4. persiste a mensagem do usuário;
    5. decide a resposta pela máquina de estados (ver [doc 05](05-fluxo-conversa.md));
-   6. persiste a resposta do bot e faz `commit`.
+   6. persiste a resposta do bot e faz `commit`;
+   7. registra `MESSAGE_SENT`, estado e durações, antes da entrega pelo canal.
 5. A rota converte `ChatResponse` no formato do gateway:
    - Evolution: chama `send_image` ou `send_text` via HTTP;
    - Twilio: devolve TwiML XML com `<Body>` e opcional `<Media>`;
@@ -265,14 +297,43 @@ NLP, diferente da consulta pelo menu. A auditoria usa a mesma sessão e também 
 commits; portanto, não se deve presumir uma única transação atômica para toda a mensagem.
 Ver as interfaces I03 e I06 no [levantamento de contratos](13-interfaces-e-contratos.md).
 
-## Decisões de projeto relevantes
+## Decisões de projeto identificadas no código
 
-- **Índice em memória, reconstruído a cada boot.** O startup carrega o modelo de
-  embeddings (com download se ausente) e vetoriza a base. A distribuição desse custo
-  deve ser verificada no C02.
-- **LLM em cache global** (`CACHED_LLM` em `rag_pipeline.py`): evita recriar o cliente
-  Groq a cada requisição.
-- **Menu como dado, não como código**: `menu_texts.json` descreve estados, textos,
-  próximos estados e queries de RAG. Adicionar um menu não exige mudar Python.
-- **Resolução de imagem em cascata**: `flow_media` (BD) → `system_configs` (BD) →
-  variável de ambiente → fallback no JSON.
+O quadro registra escolhas materializadas na implementação e seus efeitos. Não é um conjunto de ADRs históricos nem prova de que alternativas foram comparadas pelo autor original. As consequências são identificadas por inspeção ou pelos ensaios citados. Motivações só são atribuídas quando estão registradas nos comentários/documentos; por exemplo, o adaptador de embeddings justifica o modelo multilíngue pela base em português.
+
+| ID | Escolha implementada | Rastreabilidade | Consequência, limite ou evidência |
+|---|---|---|---|
+| D01 | API e RAG no mesmo processo, conectados durante a importação | [api.main](../api/main.py), [app.main](../app/main.py) | As chamadas são diretas; falha na montagem do RAG impede concluir a importação da aplicação. Não há inicialização alternativa só com menus |
+| D02 | Conversação híbrida, com estado/opções em JSON e consultas documentais | [ChatService](../api/services/chat_service.py), [interpretador](../api/services/menu_handlers.py), [JSON](../api/services/menu_texts.json) | Extensões compatíveis podem ficar em JSON/TXT, como C01 demonstrou. Novos tipos de operação podem exigir Python; o JSON é carregado na importação |
+| D03 | Documentos locais e índice FAISS em memória, reconstruído na montagem | [ingestão](../app/core/ingestion.py), [setup](../app/main.py), [vector store](../app/adapters/vector_store.py) | Evita reutilizar um índice persistido desatualizado, mas exige reconstrução e recursos por processo. C02 mediu custo de montagem; benefício de persistir índice não foi comparado |
+| D04 | Embeddings locais e inferência externa | [embeddings](../app/adapters/embeddings.py), [pipeline](../app/core/rag_pipeline.py) | Modelo de embeddings padrão multilíngue e configurável por `EMBEDDINGS_MODEL`; o prompt documental inclui pergunta e contexto para inferência externa. C06 ainda avaliará o payload efetivo |
+| D05 | Cliente ChatGroq global reutilizado, modelo fixo e parâmetros definidos no código | [get_llm](../app/core/rag_pipeline.py) | O cache reaproveita o cliente, não respostas. O padrão segue `llama-3.3-70b-versatile`; sua chamada falhou nos ensaios. O alternativo usado em C02/C03-B não foi incorporado à aplicação |
+| D06 | Geração por pergunta/contexto, sem histórico de turnos na cadeia | [run_rag](../app/core/rag_pipeline.py), [generate_response](../app/core/conversation.py), [NLPService](../api/services/nlp_service.py) | Histórico persistido e estado do menu não equivalem a memória do LLM. O nome é usado na personalização local; o parâmetro `historico` do caminho Gradio não é utilizado |
+| D07 | Sessão de banco compartilhada entre conversa, serviços auxiliares e auditoria | [get_db](../api/db/database.py), [ChatService](../api/services/chat_service.py), [DbLogger](../api/utils/logger.py), [FlowMediaService](../api/services/flow_media_service.py) | Há commits/rollbacks fora do fluxo principal; não existe garantia de transação única. C03-A observou erro de menu devolvido sem o par de mensagens salvo |
+| D08 | Processamento de NLP, banco e envio Evolution síncrono em rotas `async` | [REST](../api/routes/routes.py), [Evolution](../api/routes/webhook.py), [ChatService](../api/services/chat_service.py), [pipeline](../app/core/rag_pipeline.py) | C03-B reproduziu bloqueio de outras conversas em um worker. Não há broker/consumidor de mensagens implementado; RabbitMQ é hipótese posterior |
+| D09 | Autenticação no adaptador e normalização da identidade no serviço de conversa | [segurança](../api/security.py), [dependência REST](../api/dependencies/dependencies.py), [ChatService](../api/services/chat_service.py) | Segredo compartilhado em REST/Evolution e assinatura em Twilio; ausência de segredo nega acesso. Normalização reduz o identificador ao número. Isso não representa auditoria completa de segurança |
+| D10 | Resolução de mídia por prioridade de fontes | [menu_handlers](../api/services/menu_handlers.py), [ConfigService](../api/services/config_service.py), [FlowMediaService](../api/services/flow_media_service.py) | `flow_media` → `system_configs` → ambiente → JSON. São URLs; o backend não hospeda as imagens. A consulta à mídia compartilha a sessão da conversa |
+| D11 | Ausência de contexto reconhecida por convenção textual | [prompt](../app/adapters/prompts.py), [sem_contexto](../app/adapters/respostas.py), [NLPService](../api/services/nlp_service.py) | A instrução ao modelo e o reconhecimento da frase não garantem fidelidade. Texto livre também converte exceção em `None`; C03-A mostrou erro tratado como opção inválida |
+| D12 | Splitter de 1.000 caracteres/200 de sobreposição e recuperação `k=10` | [splitter](../app/adapters/splitter.py), [retriever](../app/adapters/vector_store.py) | São parâmetros atuais, sem demonstração de configuração ótima. O volume de contexto integra a carga de tokens; C02/C03-B observaram limitação de quota com a base usada |
+
+## Comportamento observado e limites da descrição
+
+| Fonte de evidência | O que acrescenta à inspeção | Limite |
+|---|---|---|
+| [C01](avaliacao/C01-analise-resultados.md) | Inclusão de um serviço compatível por JSON/TXT, sem Python funcional | Um serviço sintético; geração completa condicionada a modelo alternativo |
+| [C02](avaliacao/C02-relatorio-execucao.md) | Custo sequencial e montagem do índice; na série principal, vetorização/indexação superou carga dos embeddings nas três inicializações medidas | Cache/ambiente identificados; não comprova que carregar embeddings sempre domina nem quantifica ganho com índice persistido |
+| [C03-A](avaliacao/C03-relatorio-execucao.md) | Dois tratamentos de falha: menu devolve erro interno com `MESSAGE_FAILED`; texto livre devolve opção inválida com `MESSAGE_SENT` | Injeção imediata e sequencial; não mede concorrência nem falha de boot |
+| [C03-B](avaliacao/C03-B-relatorio-execucao.md) | Em um worker, inferência/retry/envio bloquearam outras requisições; menu de outro usuário levou 193,832 s na rajada real de dez | Modelo adaptado, SQLite e saída WhatsApp interceptada; processo não encerrou e a causa exata do incidente anterior não foi demonstrada |
+
+Esses achados atualizam a descrição do sistema existente. Persistência do índice, memória de conversa, processamento em fila e política uniforme de erros são possibilidades de manutenção, não componentes implementados. A topologia de desenvolvimento não comprova a configuração de produção. Qualidade das respostas, confidencialidade e isolamento completo de testes ainda dependem dos cenários próprios C04–C06.
+
+## Rastreabilidade do objetivo de documentação
+
+| Parte do objetivo específico | Entrega desta documentação |
+|---|---|
+| Visão de componentes | Diagrama de componentes, tabela de responsabilidades/fontes e caminho independente do Gradio |
+| Camadas | Camadas lógicas, dependências efetivas, composição e acoplamentos entre conversação, persistência e RAG |
+| Decisões de projeto | D01–D12, com código correspondente e consequências delimitadas |
+| Base no código e na documentação técnica | Corte identificado, inspeção dos módulos, contratos I01–I06, diagramas de execução/implantação e confronto com C01–C03 |
+
+O objetivo de descrever a arquitetura atual tem essas entregas documentadas e rastreáveis. Isso não representa aprovação da arquitetura, validação por stakeholders ou avaliação completa dos atributos de qualidade.

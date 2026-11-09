@@ -1,6 +1,6 @@
 # 13 — Interfaces e contratos atuais
 
-Levantamento por inspeção em 19/10/2026, sobre o código do commit `9990aed912706a0d8f75e7c6a9ddebca19e30a4d`. Complementa a [visão arquitetural](02-arquitetura.md) e antecede os próximos cenários da [árvore de utilidade](avaliacao/arvore-de-utilidade.md). Nenhum contrato novo foi implementado nesta etapa.
+Levantamento inicial em 19/10/2026, sobre `9990aed912706a0d8f75e7c6a9ddebca19e30a4d`, revisado em 08/11/2026 sobre `65e28a05f6d0274a14d187e2bd6e5790b4504979`. O conteúdo funcional permanece igual ao corte C03 (`666b601`). Complementa a [visão arquitetural](02-arquitetura.md), distinguindo inspeção, evidências concluídas de C01–C03 e lacunas dos próximos cenários da [árvore de utilidade](avaliacao/arvore-de-utilidade.md). Nenhum contrato novo foi implementado nesta revisão.
 
 “Interface” designa aqui a fronteira de interação entre componentes. Assinaturas, modelos de dados, significado dos resultados, efeitos colaterais e tratamento de erros compõem o levantamento. Distingue-se o que o código declara, o comportamento identificado na leitura e o que ainda precisa de execução controlada. Ausência de classe abstrata ou `Protocol` não significa ausência de interface.
 
@@ -32,7 +32,7 @@ flowchart LR
 | Falhas | Há captura geral em `process_message`, tentativa de rollback e resposta de erro interno; isso não constitui garantia de recuperação diante de qualquer falha de infraestrutura |
 | Entrega | A resposta do serviço é consumida pelo adaptador; não confirma entrega ao aparelho. Evolution envia por HTTP; Twilio recebe TwiML como resposta |
 
-**Lacunas:** não há prazo máximo declarado para a operação completa; a função é `async`, mas inclui chamadas síncronas ao banco e ao RAG. O efeito disso sobre concorrência não foi medido. Falhas de envio pertencem a outra fronteira, posterior à persistência da resposta. C02 mede o trecho da aplicação, não entrega por WhatsApp.
+**Lacunas e evidência:** não há prazo máximo declarado para a operação completa; a função é `async`, mas inclui chamadas síncronas ao banco e ao RAG. [C03-B](avaliacao/C03-B-relatorio-execucao.md) mediu concorrência HTTP e reproduziu bloqueio em um worker, inclusive na saída síncrona Evolution: o menu de outro usuário levou 193,832 s na rajada real de dez. Não houve encerramento do processo no ensaio. Falhas de envio pertencem a uma etapa posterior à persistência da resposta; `send_text`/`send_image` retornam booleano e usam timeout HTTP de 15 s, não um prazo total da conversa. C02 mede processamento local; nenhum desses cenários comprovou entrega ao aparelho.
 
 ## I02 — Configuração e interpretador de menus
 
@@ -68,7 +68,7 @@ flowchart LR
 | Texto livre | `_perguntar_ao_rag` captura a exceção, registra log e devolve `None`; o fluxo subsequente pode tratar a situação como ausência de resposta |
 | Opção de menu com `query` | `handle_dynamic_menu` não captura a exceção; ela pode alcançar o tratamento geral de `process_message` |
 
-**Lacunas:** não há resultado estruturado que distinga ausência documental, falha de recuperação e falha de provedor. Os erros externos não estão normalizados em um contrato próprio. O serviço recebido pelo ChatService é substituível por um objeto com `process`, como no C01, mas a anotação aponta para a classe concreta. C03 verificará as consequências da diferença de tratamento; C04 verificará os pontos de substituição necessários ao teste do núcleo RAG.
+**Lacunas e evidência:** não há resultado estruturado que distinga ausência documental, falha de recuperação e falha de provedor. Os erros externos não estão normalizados em um contrato próprio. O serviço recebido pelo ChatService é substituível por um objeto com `process`, como no C01, mas a anotação aponta para a classe concreta. [C03-A](avaliacao/C03-relatorio-execucao.md) confirmou a assimetria nos 12 casos: texto livre devolve opção inválida e registra `MESSAGE_SENT`; query de menu devolve erro interno e registra `MESSAGE_FAILED`. Ambos retomaram navegação após a falha imediata. C04 ainda verificará isolamento sistemático do núcleo RAG.
 
 ## I04 — Pipeline, retriever e cliente de geração
 
@@ -85,6 +85,8 @@ flowchart LR
 
 **Lacunas:** o construtor do cliente no código da aplicação não explicita timeout ou número de tentativas; valores efetivos dependem das bibliotecas e devem ser identificados na execução. Não há contrato próprio para erros do provedor. O gerador é obtido internamente e guardado em variável global, enquanto o retriever é parâmetro. Essa assimetria interessa ao C04. O prompt instrui ancoragem documental, mas a instrução não comprova fidelidade; C05 verificará uma amostra. C06 verificará o payload efetivo, em vez de inferi-lo apenas da assinatura.
 
+**Configuração e evidência:** o padrão no código continua `llama-3.3-70b-versatile`. C02 registrou `NotFoundError` ao usá-lo; C03-B verificou sua ausência na listagem da conta em 08/11/2026 e executou a série real com `openai/gpt-oss-120b`, em configuração adaptada. O timeout de 35 s e os dois retries explícitos do instrumento C03-B não foram incorporados ao código funcional. Oito 429 seguidos de retries foram observados na rajada real de dez usuários, sem erro final de geração.
+
 ## I05 — Inicialização e disponibilização dos recursos
 
 **Fontes:** [setup_system](../app/main.py), [api/main.py](../api/main.py), [ingestão](../app/core/ingestion.py) e [embeddings](../app/adapters/embeddings.py).
@@ -98,7 +100,7 @@ flowchart LR
 | Métricas | Atualiza `METRICAS_INDEXACAO` e emite log com tempos por etapa |
 | Falhas | Diretório ausente provoca `FileNotFoundError`; outras etapas podem lançar erros de biblioteca. Não há fallback de inicialização nesse fluxo |
 
-**Lacunas:** formato do dicionário e chave de acesso não possuem esquema próprio; não existe caminho alternativo explícito que publique somente os menus quando a montagem do RAG falha. Portanto, preservar menus após falha de geração em processo iniciado (C03) é uma questão diferente de disponibilizar a aplicação após falha no boot. C02 mede a montagem, sem presumir garantia de inicialização.
+**Lacunas e evidência:** formato do dicionário e chave de acesso não possuem esquema próprio; não existe caminho alternativo explícito que publique somente os menus quando a montagem do RAG falha. Preservar menus após falha de geração em processo iniciado (C03-A) é diferente de disponibilizar a aplicação após falha no boot ou durante espera concorrente (C03-B). C02 mediu montagem: na série principal com cache identificado, vetorização/indexação superou carregamento dos embeddings nas três inicializações medidas. Isso não estabelece a distribuição universal do custo nem quantifica benefício de persistir o índice.
 
 ## I06 — Persistência e auditoria
 
@@ -112,22 +114,22 @@ flowchart LR
 | Efeito transacional | O logger também chama `commit()` e, em falha, `rollback()` na sessão recebida; não usa transação independente |
 | Conteúdo | Logs de sucesso incluem identificador; caminhos de erro podem incluir texto da pergunta e mensagem de exceção. Metadados de duração não representam todo o conteúdo dos logs |
 
-**Lacunas:** a propriedade das transações é compartilhada entre serviço de conversa e auditoria. Não se pode assumir atomicidade de toda a interação apenas porque existe um commit ao final de `process_message`. As consequências exigem avaliação própria antes de qualquer garantia de consistência. Para C06, verificar console, mensagem do evento e metadados, inclusive em falhas; o teste que evita texto no `meta` não garante ausência nos demais campos.
+**Lacunas e evidência:** a propriedade das transações é compartilhada entre serviço de conversa e auditoria. Não se pode assumir atomicidade de toda a interação apenas porque existe um commit ao final de `process_message`. C03-A observou que a query de menu com falha preservou `MESSAGE_RECEIVED`/`MESSAGE_FAILED`, mas não o par de mensagens em `messages`, embora uma resposta tenha sido devolvida. Isso não é uma avaliação completa de consistência transacional. Para C06, verificar console, mensagem do evento e metadados, inclusive em falhas; o teste que evita texto no `meta` não garante ausência nos demais campos.
 
 ## Questões para a avaliação
 
-| Questão identificada por inspeção | Cenário que poderá produzir evidência |
+| Questão identificada por inspeção | Evidência disponível ou avaliação pendente |
 |---|---|
-| Operações síncronas e espera externa no processamento | C02: duração observada no recorte sequencial, sem extrapolar para concorrência |
-| Exceções tratadas de modo diferente nos consumidores do NLP | C03: resposta e navegação após falhas injetadas |
+| Operações síncronas e espera externa no processamento | C02: duração sequencial; C03-B: bloqueio sob concorrência HTTP em um worker, com retomada após drenagem |
+| Exceções tratadas de modo diferente nos consumidores do NLP | C03-A: diferença confirmada em resposta, auditoria e persistência, com retomada após falhas imediatas |
 | Retriever fornecido externamente e gerador obtido por cliente global | C04: esforço e limites de isolamento nos testes |
 | Ausência de contexto representada por convenção textual | C05: fidelidade e abstenção na amostra |
 | Dados do usuário e conteúdo de erro podem alcançar logs ou payload | C06: rastreamento e captura controlada |
 | Falha de montagem impede chegar à disponibilização dos recursos | Registrar como limitação do recorte de C03; não confundir com falha durante geração |
-| Auditoria altera a transação compartilhada | Registrar dependência e risco a investigar; os cenários atuais não comprovam atomicidade |
+| Auditoria altera a transação compartilhada | C03-A observou histórico sem a resposta de erro de menu; os cenários não comprovam atomicidade |
 
-Essas questões são achados de inspeção e hipóteses de impacto, não resultados antecipados dos cenários. Não há necessidade de criar classes abstratas para todas as fronteiras antes de avaliar. Uma futura recomendação pode envolver documentação, testes de contrato, política uniforme de falhas ou pontos explícitos de substituição, conforme as evidências.
+O quadro separa resultados já observados de hipóteses que ainda exigem avaliação. As evidências têm os limites definidos em seus relatórios. Não há necessidade de criar classes abstratas para todas as fronteiras antes de avaliar; mudanças futuras devem ser justificadas pelas lacunas e pelos resultados, não apresentadas como contratos existentes.
 
 ## Condição para prosseguir
 
-O levantamento inicial das interfaces está documentado. Antes da coleta de C02 a C06, conferir as fronteiras envolvidas no protocolo, fixar a versão de corte e distinguir comportamento atual de requisito desejado. Se alguma mudança funcional for escolhida, registrá-la como manutenção e atualizar a referência antes de medir; não misturar resultados de versões diferentes. C01 permanece como registro da versão já avaliada.
+O levantamento foi atualizado após C01–C03. Antes das coletas C04–C06, conferir as fronteiras envolvidas no protocolo, fixar a versão de corte e distinguir comportamento atual de requisito desejado. Se alguma mudança funcional for escolhida, registrá-la como manutenção e atualizar a referência antes de medir; não misturar resultados de versões diferentes. As evidências anteriores permanecem como registros das versões e configurações já avaliadas.
