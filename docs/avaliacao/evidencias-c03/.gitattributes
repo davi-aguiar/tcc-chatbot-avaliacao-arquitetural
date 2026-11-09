@@ -1,0 +1,2 @@
+# Preserve raw execution logs, including their original CR/CRLF bytes.
+*.log -text

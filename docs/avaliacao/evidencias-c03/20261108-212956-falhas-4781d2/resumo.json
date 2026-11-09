@@ -1,0 +1,54 @@
+{
+  "casos_previstos": 12,
+  "casos_executados": 12,
+  "coleta_valida": true,
+  "tentativas_rede": [],
+  "julgamento_continuidade": "atendido",
+  "casos_atendidos": 12,
+  "por_percurso": {
+    "menu_rag": {
+      "casos": 6,
+      "retorno_controlado": 6,
+      "estado_preservado": 6,
+      "continuidade_estatica": 6,
+      "respostas_distintas": [
+        "Desculpe, ocorreu um erro interno."
+      ],
+      "eventos_na_falha": [
+        "MESSAGE_FAILED",
+        "MESSAGE_RECEIVED"
+      ],
+      "mensagens_persistidas_na_falha": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retomadas_atendidas": 24
+    },
+    "texto_livre": {
+      "casos": 6,
+      "retorno_controlado": 6,
+      "estado_preservado": 6,
+      "continuidade_estatica": 6,
+      "respostas_distintas": [
+        "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      ],
+      "eventos_na_falha": [
+        "MESSAGE_RECEIVED",
+        "MESSAGE_SENT"
+      ],
+      "mensagens_persistidas_na_falha": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "retomadas_atendidas": 24
+    }
+  }
+}

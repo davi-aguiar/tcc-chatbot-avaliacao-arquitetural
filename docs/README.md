@@ -25,7 +25,7 @@ busca semântica sobre documentos oficiais.
 
 As fronteiras entre componentes estão descritas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), como preparação para os próximos cenários.
 
-Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne o resultado do C01 e orienta a leitura. Os arquivos técnicos estão explicados no [índice das evidências](avaliacao/evidencias-c01/README.md).
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01, C02 e C03 e orienta a leitura. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md) e [C03](avaliacao/evidencias-c03/README.md).
 
 O escopo dos próximos cenários está na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos seis atributos previstos no projeto de pesquisa.
 
@@ -34,6 +34,12 @@ O escopo dos próximos cenários está na [árvore de utilidade refinada](avalia
 | [C01 — Registro inicial](avaliacao/C01-modificabilidade-registro-inicial.md) | Cenário de modificabilidade, hipótese e procedimento |
 | [C01 — Relatório de execução](avaliacao/C01-relatorio-execucao.md) | C01-A atendido; C01-B parcial na configuração original e percurso completo com modelo alternativo |
 | [C01 — Análise para o TCC](avaliacao/C01-analise-resultados.md) | Interpretação arquitetural, limitações e fechamento com ressalvas |
+| [C02 — Protocolo](avaliacao/C02-protocolo.md) | Entradas, medições de processamento/inicialização e critérios descritivos |
+| [C02 — Relatório de execução](avaliacao/C02-relatorio-execucao.md) | Resultados de desempenho, limite de uso do provedor e limitações |
+| [C03-A — Protocolo](avaliacao/C03-protocolo.md) | Falhas imediatas controladas no SDK, dois percursos e retomada estática |
+| [C03-A — Relatório de execução](avaliacao/C03-relatorio-execucao.md) | Continuidade em 12/12 casos sequenciais, com ressalvas de resposta, auditoria e persistência |
+| [C03-B — Protocolo](avaliacao/C03-B-protocolo.md) | Concorrência HTTP, esperas controladas e série com provedor real |
+| [C03-B — Relatório de execução](avaliacao/C03-B-relatorio-execucao.md) | Bloqueio de outras conversas, menu em 194 s e timeout de cliente; sem queda do processo no ensaio |
 
 ## Início rápido
 

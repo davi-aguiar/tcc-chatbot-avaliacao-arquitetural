@@ -1,0 +1,1004 @@
+{"evento": "http_inicio", "t": 192236.5769016, "rid": "preparacao", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.5792482, "rid": "preparacao"}
+{"evento": "http_inicio", "t": 192236.5808786, "rid": "B01-rest-estatico-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192236.6022379, "rid": "B01-rest-estatico-1-prepare"}
+{"evento": "http_inicio", "t": 192236.6046663, "rid": "B01-rest-estatico-1-carga-00", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.6260355, "rid": "B01-rest-estatico-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.6264631, "rid": "B01-rest-estatico-1-saude-durante"}
+{"evento": "http_inicio", "t": 192236.6271731, "rid": "B01-rest-estatico-1-menu-durante", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192236.6841015, "rid": "B01-rest-estatico-1-menu-durante"}
+{"evento": "http_fim", "t": 192236.6841709, "rid": "B01-rest-estatico-1-carga-00"}
+{"evento": "http_inicio", "t": 192236.6939483, "rid": "B01-rest-estatico-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.6943058, "rid": "B01-rest-estatico-1-saude-apos"}
+{"evento": "http_inicio", "t": 192236.6953873, "rid": "B01-rest-estatico-1-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192236.7188063, "rid": "B01-rest-estatico-1-menu-apos"}
+{"evento": "http_inicio", "t": 192236.7198174, "rid": "B01-rest-estatico-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192236.7249103, "rid": "B01-rest-estatico-1-snapshot"}
+{"evento": "http_inicio", "t": 192236.7369119, "rid": "B02-rest-estatico-2-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192236.7460325, "rid": "B02-rest-estatico-2-prepare"}
+{"evento": "http_inicio", "t": 192236.7478833, "rid": "B02-rest-estatico-2-carga-00", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.7486368, "rid": "B02-rest-estatico-2-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.7494513, "rid": "B02-rest-estatico-2-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.7497985, "rid": "B02-rest-estatico-2-saude-durante"}
+{"evento": "http_inicio", "t": 192236.7501329, "rid": "B02-rest-estatico-2-menu-durante", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192236.8012834, "rid": "B02-rest-estatico-2-carga-00"}
+{"evento": "http_fim", "t": 192236.8251816, "rid": "B02-rest-estatico-2-carga-01"}
+{"evento": "http_fim", "t": 192236.825614, "rid": "B02-rest-estatico-2-menu-durante"}
+{"evento": "http_inicio", "t": 192236.8368186, "rid": "B02-rest-estatico-2-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.8372279, "rid": "B02-rest-estatico-2-saude-apos"}
+{"evento": "http_inicio", "t": 192236.8384907, "rid": "B02-rest-estatico-2-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192236.863153, "rid": "B02-rest-estatico-2-menu-apos"}
+{"evento": "http_inicio", "t": 192236.8640592, "rid": "B02-rest-estatico-2-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192236.8674213, "rid": "B02-rest-estatico-2-snapshot"}
+{"evento": "http_inicio", "t": 192236.88047, "rid": "B03-rest-estatico-5-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192236.8918397, "rid": "B03-rest-estatico-5-prepare"}
+{"evento": "http_inicio", "t": 192236.8949504, "rid": "B03-rest-estatico-5-carga-00", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.8954872, "rid": "B03-rest-estatico-5-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.8961237, "rid": "B03-rest-estatico-5-carga-04", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.8969441, "rid": "B03-rest-estatico-5-carga-02", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.9226683, "rid": "B03-rest-estatico-5-menu-durante", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192236.9243117, "rid": "B03-rest-estatico-5-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192236.9248008, "rid": "B03-rest-estatico-5-saude-durante"}
+{"evento": "http_fim", "t": 192236.9252238, "rid": "B03-rest-estatico-5-carga-00"}
+{"evento": "http_inicio", "t": 192236.9493728, "rid": "B03-rest-estatico-5-carga-03", "path": "/messages/receive"}
+{"evento": "loop_atrasado", "t": 192236.9989555, "rid": "preparacao", "lag_s": 0.054785499979043376, "inicio_espera": 192236.9241654}
+{"evento": "http_fim", "t": 192237.0000889, "rid": "B03-rest-estatico-5-carga-01"}
+{"evento": "http_fim", "t": 192237.0001642, "rid": "B03-rest-estatico-5-carga-04"}
+{"evento": "http_fim", "t": 192237.0002067, "rid": "B03-rest-estatico-5-carga-02"}
+{"evento": "http_fim", "t": 192237.0490964, "rid": "B03-rest-estatico-5-carga-03"}
+{"evento": "http_fim", "t": 192237.0494227, "rid": "B03-rest-estatico-5-menu-durante"}
+{"evento": "http_inicio", "t": 192237.0623022, "rid": "B03-rest-estatico-5-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192237.0626701, "rid": "B03-rest-estatico-5-saude-apos"}
+{"evento": "http_inicio", "t": 192237.0638216, "rid": "B03-rest-estatico-5-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192237.0887882, "rid": "B03-rest-estatico-5-menu-apos"}
+{"evento": "http_inicio", "t": 192237.0899502, "rid": "B03-rest-estatico-5-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192237.0936513, "rid": "B03-rest-estatico-5-snapshot"}
+{"evento": "http_inicio", "t": 192237.1114262, "rid": "B04-rest-estatico-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192237.1241624, "rid": "B04-rest-estatico-10-prepare"}
+{"evento": "http_inicio", "t": 192237.1281507, "rid": "B04-rest-estatico-10-carga-00", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1287069, "rid": "B04-rest-estatico-10-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1294437, "rid": "B04-rest-estatico-10-carga-04", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1300185, "rid": "B04-rest-estatico-10-carga-07", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1790298, "rid": "B04-rest-estatico-10-carga-03", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1796238, "rid": "B04-rest-estatico-10-carga-05", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1799446, "rid": "B04-rest-estatico-10-carga-06", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192237.1809597, "rid": "B04-rest-estatico-10-carga-01"}
+{"evento": "http_inicio", "t": 192237.1814202, "rid": "B04-rest-estatico-10-carga-02", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.1820636, "rid": "B04-rest-estatico-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192237.1823823, "rid": "B04-rest-estatico-10-saude-durante"}
+{"evento": "http_fim", "t": 192237.1827294, "rid": "B04-rest-estatico-10-carga-00"}
+{"evento": "http_inicio", "t": 192237.2084657, "rid": "B04-rest-estatico-10-menu-durante", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.209379, "rid": "B04-rest-estatico-10-carga-09", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192237.235066, "rid": "B04-rest-estatico-10-carga-08", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192237.237041, "rid": "B04-rest-estatico-10-carga-04"}
+{"evento": "http_fim", "t": 192237.3136611, "rid": "B04-rest-estatico-10-carga-07"}
+{"evento": "loop_atrasado", "t": 192237.338818, "rid": "preparacao", "lag_s": 0.08287240002071485, "inicio_espera": 192237.2359409}
+{"evento": "http_fim", "t": 192237.3393887, "rid": "B04-rest-estatico-10-carga-06"}
+{"evento": "http_fim", "t": 192237.3394479, "rid": "B04-rest-estatico-10-carga-05"}
+{"evento": "http_fim", "t": 192237.3395556, "rid": "B04-rest-estatico-10-carga-03"}
+{"evento": "http_fim", "t": 192237.3899222, "rid": "B04-rest-estatico-10-carga-02"}
+{"evento": "http_fim", "t": 192237.4166375, "rid": "B04-rest-estatico-10-menu-durante"}
+{"evento": "http_fim", "t": 192237.4167683, "rid": "B04-rest-estatico-10-carga-09"}
+{"evento": "http_fim", "t": 192237.4169076, "rid": "B04-rest-estatico-10-carga-08"}
+{"evento": "http_inicio", "t": 192237.4302745, "rid": "B04-rest-estatico-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192237.4305985, "rid": "B04-rest-estatico-10-saude-apos"}
+{"evento": "http_inicio", "t": 192237.4318928, "rid": "B04-rest-estatico-10-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192237.4570036, "rid": "B04-rest-estatico-10-menu-apos"}
+{"evento": "http_inicio", "t": 192237.4581174, "rid": "B04-rest-estatico-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192237.4614618, "rid": "B04-rest-estatico-10-snapshot"}
+{"evento": "http_inicio", "t": 192237.4781586, "rid": "B05-rest-rag_lento-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192237.4868891, "rid": "B05-rest-rag_lento-1-prepare"}
+{"evento": "http_inicio", "t": 192237.5021794, "rid": "B05-rest-rag_lento-1-carga-00", "path": "/messages/receive"}
+{"evento": "nlp_inicio", "t": 192237.5131906, "rid": "B05-rest-rag_lento-1-carga-00"}
+{"evento": "provedor_inicio", "t": 192237.5833763, "rid": "B05-rest-rag_lento-1-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192238.084215, "rid": "B05-rest-rag_lento-1-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192238.084305, "rid": "B05-rest-rag_lento-1-carga-00"}
+{"evento": "nlp_fim", "t": 192238.0961581, "rid": "B05-rest-rag_lento-1-carga-00"}
+{"evento": "http_inicio", "t": 192238.11693, "rid": "B05-rest-rag_lento-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192238.1174003, "rid": "B05-rest-rag_lento-1-saude-durante"}
+{"evento": "http_inicio", "t": 192238.1174932, "rid": "B05-rest-rag_lento-1-menu-durante", "path": "/messages/receive"}
+{"evento": "loop_atrasado", "t": 192238.1177251, "rid": "preparacao", "lag_s": 0.5953103999968152, "inicio_espera": 192237.5024131}
+{"evento": "http_fim", "t": 192238.1180887, "rid": "B05-rest-rag_lento-1-carga-00"}
+{"evento": "http_fim", "t": 192238.1445879, "rid": "B05-rest-rag_lento-1-menu-durante"}
+{"evento": "http_inicio", "t": 192238.1577853, "rid": "B05-rest-rag_lento-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192238.1581143, "rid": "B05-rest-rag_lento-1-saude-apos"}
+{"evento": "http_inicio", "t": 192238.1594155, "rid": "B05-rest-rag_lento-1-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192238.184265, "rid": "B05-rest-rag_lento-1-menu-apos"}
+{"evento": "http_inicio", "t": 192238.1854822, "rid": "B05-rest-rag_lento-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192238.1882841, "rid": "B05-rest-rag_lento-1-snapshot"}
+{"evento": "http_inicio", "t": 192238.2036944, "rid": "B06-rest-rag_lento-2-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192238.2129136, "rid": "B06-rest-rag_lento-2-prepare"}
+{"evento": "http_inicio", "t": 192238.2296651, "rid": "B06-rest-rag_lento-2-carga-00", "path": "/messages/receive"}
+{"evento": "nlp_inicio", "t": 192238.2413551, "rid": "B06-rest-rag_lento-2-carga-00"}
+{"evento": "provedor_inicio", "t": 192238.2440226, "rid": "B06-rest-rag_lento-2-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192238.744728, "rid": "B06-rest-rag_lento-2-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192238.7448004, "rid": "B06-rest-rag_lento-2-carga-00"}
+{"evento": "nlp_fim", "t": 192238.7460989, "rid": "B06-rest-rag_lento-2-carga-00"}
+{"evento": "http_inicio", "t": 192238.7651755, "rid": "B06-rest-rag_lento-2-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192238.7654779, "rid": "B06-rest-rag_lento-2-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192238.7658002, "rid": "B06-rest-rag_lento-2-saude-durante"}
+{"evento": "http_inicio", "t": 192238.7658787, "rid": "B06-rest-rag_lento-2-menu-durante", "path": "/messages/receive"}
+{"evento": "loop_atrasado", "t": 192238.7660517, "rid": "preparacao", "lag_s": 0.5162514000153169, "inicio_espera": 192238.2297985}
+{"evento": "http_fim", "t": 192238.7664384, "rid": "B06-rest-rag_lento-2-carga-00"}
+{"evento": "nlp_inicio", "t": 192238.7775587, "rid": "B06-rest-rag_lento-2-carga-01"}
+{"evento": "provedor_inicio", "t": 192238.7796471, "rid": "B06-rest-rag_lento-2-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192239.2801537, "rid": "B06-rest-rag_lento-2-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192239.280226, "rid": "B06-rest-rag_lento-2-carga-01"}
+{"evento": "nlp_fim", "t": 192239.2814556, "rid": "B06-rest-rag_lento-2-carga-01"}
+{"evento": "loop_atrasado", "t": 192239.2995564, "rid": "preparacao", "lag_s": 0.5134753999777604, "inicio_espera": 192238.7660776}
+{"evento": "http_fim", "t": 192239.3238057, "rid": "B06-rest-rag_lento-2-carga-01"}
+{"evento": "http_fim", "t": 192239.3240512, "rid": "B06-rest-rag_lento-2-menu-durante"}
+{"evento": "http_inicio", "t": 192239.3377202, "rid": "B06-rest-rag_lento-2-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192239.3382692, "rid": "B06-rest-rag_lento-2-saude-apos"}
+{"evento": "http_inicio", "t": 192239.3396768, "rid": "B06-rest-rag_lento-2-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192239.3657193, "rid": "B06-rest-rag_lento-2-menu-apos"}
+{"evento": "http_inicio", "t": 192239.3668871, "rid": "B06-rest-rag_lento-2-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192239.36962, "rid": "B06-rest-rag_lento-2-snapshot"}
+{"evento": "http_inicio", "t": 192239.3869795, "rid": "B07-rest-rag_lento-5-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192239.397317, "rid": "B07-rest-rag_lento-5-prepare"}
+{"evento": "http_inicio", "t": 192239.4131881, "rid": "B07-rest-rag_lento-5-carga-00", "path": "/messages/receive"}
+{"evento": "nlp_inicio", "t": 192239.4249679, "rid": "B07-rest-rag_lento-5-carga-00"}
+{"evento": "provedor_inicio", "t": 192239.429053, "rid": "B07-rest-rag_lento-5-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192239.9299254, "rid": "B07-rest-rag_lento-5-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192239.9299793, "rid": "B07-rest-rag_lento-5-carga-00"}
+{"evento": "nlp_fim", "t": 192239.9308186, "rid": "B07-rest-rag_lento-5-carga-00"}
+{"evento": "http_inicio", "t": 192239.9510953, "rid": "B07-rest-rag_lento-5-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192239.951443, "rid": "B07-rest-rag_lento-5-carga-04", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192239.9516847, "rid": "B07-rest-rag_lento-5-carga-02", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192239.9519188, "rid": "B07-rest-rag_lento-5-carga-03", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192239.9522209, "rid": "B07-rest-rag_lento-5-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192239.9526981, "rid": "B07-rest-rag_lento-5-saude-durante"}
+{"evento": "http_inicio", "t": 192239.9528124, "rid": "B07-rest-rag_lento-5-menu-durante", "path": "/messages/receive"}
+{"evento": "loop_atrasado", "t": 192239.954363, "rid": "preparacao", "lag_s": 0.5210362999828066, "inicio_espera": 192239.4133228}
+{"evento": "http_fim", "t": 192239.9547339, "rid": "B07-rest-rag_lento-5-carga-00"}
+{"evento": "nlp_inicio", "t": 192239.9658908, "rid": "B07-rest-rag_lento-5-carga-04"}
+{"evento": "provedor_inicio", "t": 192239.9682347, "rid": "B07-rest-rag_lento-5-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192240.4686314, "rid": "B07-rest-rag_lento-5-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192240.4686855, "rid": "B07-rest-rag_lento-5-carga-04"}
+{"evento": "nlp_fim", "t": 192240.4698512, "rid": "B07-rest-rag_lento-5-carga-04"}
+{"evento": "nlp_inicio", "t": 192240.5041906, "rid": "B07-rest-rag_lento-5-carga-01"}
+{"evento": "provedor_inicio", "t": 192240.5062919, "rid": "B07-rest-rag_lento-5-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192241.0067533, "rid": "B07-rest-rag_lento-5-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192241.0068595, "rid": "B07-rest-rag_lento-5-carga-01"}
+{"evento": "nlp_fim", "t": 192241.0076143, "rid": "B07-rest-rag_lento-5-carga-01"}
+{"evento": "nlp_inicio", "t": 192241.0354964, "rid": "B07-rest-rag_lento-5-carga-03"}
+{"evento": "provedor_inicio", "t": 192241.0384717, "rid": "B07-rest-rag_lento-5-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192241.5388586, "rid": "B07-rest-rag_lento-5-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192241.5389173, "rid": "B07-rest-rag_lento-5-carga-03"}
+{"evento": "nlp_fim", "t": 192241.5398062, "rid": "B07-rest-rag_lento-5-carga-03"}
+{"evento": "nlp_inicio", "t": 192241.5932526, "rid": "B07-rest-rag_lento-5-carga-02"}
+{"evento": "provedor_inicio", "t": 192241.595687, "rid": "B07-rest-rag_lento-5-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192242.0961912, "rid": "B07-rest-rag_lento-5-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192242.0962465, "rid": "B07-rest-rag_lento-5-carga-02"}
+{"evento": "nlp_fim", "t": 192242.0970481, "rid": "B07-rest-rag_lento-5-carga-02"}
+{"evento": "loop_atrasado", "t": 192242.1154567, "rid": "preparacao", "lag_s": 2.141044300009962, "inicio_espera": 192239.9544083}
+{"evento": "http_fim", "t": 192242.1156801, "rid": "B07-rest-rag_lento-5-carga-03"}
+{"evento": "http_fim", "t": 192242.1158534, "rid": "B07-rest-rag_lento-5-carga-04"}
+{"evento": "http_fim", "t": 192242.116123, "rid": "B07-rest-rag_lento-5-carga-02"}
+{"evento": "http_fim", "t": 192242.116174, "rid": "B07-rest-rag_lento-5-menu-durante"}
+{"evento": "http_fim", "t": 192242.1162467, "rid": "B07-rest-rag_lento-5-carga-01"}
+{"evento": "http_inicio", "t": 192242.1292727, "rid": "B07-rest-rag_lento-5-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192242.129601, "rid": "B07-rest-rag_lento-5-saude-apos"}
+{"evento": "http_inicio", "t": 192242.1308969, "rid": "B07-rest-rag_lento-5-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192242.1566109, "rid": "B07-rest-rag_lento-5-menu-apos"}
+{"evento": "http_inicio", "t": 192242.157768, "rid": "B07-rest-rag_lento-5-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192242.1605892, "rid": "B07-rest-rag_lento-5-snapshot"}
+{"evento": "http_inicio", "t": 192242.1776921, "rid": "B08-rest-rag_lento-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192242.1891944, "rid": "B08-rest-rag_lento-10-prepare"}
+{"evento": "http_inicio", "t": 192242.2062435, "rid": "B08-rest-rag_lento-10-carga-00", "path": "/messages/receive"}
+{"evento": "nlp_inicio", "t": 192242.2195678, "rid": "B08-rest-rag_lento-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192242.2220101, "rid": "B08-rest-rag_lento-10-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192242.7228352, "rid": "B08-rest-rag_lento-10-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192242.7229117, "rid": "B08-rest-rag_lento-10-carga-00"}
+{"evento": "nlp_fim", "t": 192242.7241402, "rid": "B08-rest-rag_lento-10-carga-00"}
+{"evento": "http_inicio", "t": 192242.7442769, "rid": "B08-rest-rag_lento-10-carga-01", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7447161, "rid": "B08-rest-rag_lento-10-carga-04", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7449126, "rid": "B08-rest-rag_lento-10-carga-07", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7450756, "rid": "B08-rest-rag_lento-10-menu-durante", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7452041, "rid": "B08-rest-rag_lento-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192242.7454356, "rid": "B08-rest-rag_lento-10-saude-durante"}
+{"evento": "http_inicio", "t": 192242.7454998, "rid": "B08-rest-rag_lento-10-carga-08", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7458831, "rid": "B08-rest-rag_lento-10-carga-09", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7460723, "rid": "B08-rest-rag_lento-10-carga-02", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7462384, "rid": "B08-rest-rag_lento-10-carga-03", "path": "/messages/receive"}
+{"evento": "http_inicio", "t": 192242.7463881, "rid": "B08-rest-rag_lento-10-carga-06", "path": "/messages/receive"}
+{"evento": "loop_atrasado", "t": 192242.7465592, "rid": "preparacao", "lag_s": 0.5201092000247445, "inicio_espera": 192242.2064485}
+{"evento": "http_fim", "t": 192242.7469398, "rid": "B08-rest-rag_lento-10-carga-00"}
+{"evento": "http_inicio", "t": 192242.7484118, "rid": "B08-rest-rag_lento-10-carga-05", "path": "/messages/receive"}
+{"evento": "nlp_inicio", "t": 192242.7606402, "rid": "B08-rest-rag_lento-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192242.7629465, "rid": "B08-rest-rag_lento-10-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192243.2631773, "rid": "B08-rest-rag_lento-10-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192243.2632201, "rid": "B08-rest-rag_lento-10-carga-04"}
+{"evento": "nlp_fim", "t": 192243.2640504, "rid": "B08-rest-rag_lento-10-carga-04"}
+{"evento": "nlp_inicio", "t": 192243.2880007, "rid": "B08-rest-rag_lento-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192243.2900765, "rid": "B08-rest-rag_lento-10-carga-09", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192243.7908233, "rid": "B08-rest-rag_lento-10-carga-09", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192243.7908899, "rid": "B08-rest-rag_lento-10-carga-09"}
+{"evento": "nlp_fim", "t": 192243.7921685, "rid": "B08-rest-rag_lento-10-carga-09"}
+{"evento": "nlp_inicio", "t": 192243.8191819, "rid": "B08-rest-rag_lento-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192243.8213425, "rid": "B08-rest-rag_lento-10-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192244.321885, "rid": "B08-rest-rag_lento-10-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192244.321936, "rid": "B08-rest-rag_lento-10-carga-02"}
+{"evento": "nlp_fim", "t": 192244.322721, "rid": "B08-rest-rag_lento-10-carga-02"}
+{"evento": "nlp_inicio", "t": 192244.3506637, "rid": "B08-rest-rag_lento-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192244.3539405, "rid": "B08-rest-rag_lento-10-carga-07", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192244.8544054, "rid": "B08-rest-rag_lento-10-carga-07", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192244.854466, "rid": "B08-rest-rag_lento-10-carga-07"}
+{"evento": "nlp_fim", "t": 192244.8553658, "rid": "B08-rest-rag_lento-10-carga-07"}
+{"evento": "nlp_inicio", "t": 192244.8842945, "rid": "B08-rest-rag_lento-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192244.8868185, "rid": "B08-rest-rag_lento-10-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192245.3876284, "rid": "B08-rest-rag_lento-10-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192245.3876988, "rid": "B08-rest-rag_lento-10-carga-01"}
+{"evento": "nlp_fim", "t": 192245.3888544, "rid": "B08-rest-rag_lento-10-carga-01"}
+{"evento": "nlp_inicio", "t": 192245.4174995, "rid": "B08-rest-rag_lento-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192245.4201261, "rid": "B08-rest-rag_lento-10-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192245.9204081, "rid": "B08-rest-rag_lento-10-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192245.9204701, "rid": "B08-rest-rag_lento-10-carga-03"}
+{"evento": "nlp_fim", "t": 192245.9215944, "rid": "B08-rest-rag_lento-10-carga-03"}
+{"evento": "nlp_inicio", "t": 192245.9510039, "rid": "B08-rest-rag_lento-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192245.9538688, "rid": "B08-rest-rag_lento-10-carga-08", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192246.4542961, "rid": "B08-rest-rag_lento-10-carga-08", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192246.4543682, "rid": "B08-rest-rag_lento-10-carga-08"}
+{"evento": "nlp_fim", "t": 192246.4555593, "rid": "B08-rest-rag_lento-10-carga-08"}
+{"evento": "loop_atrasado", "t": 192246.4979273, "rid": "preparacao", "lag_s": 3.7313455000007525, "inicio_espera": 192242.7465774}
+{"evento": "nlp_inicio", "t": 192246.5093637, "rid": "B08-rest-rag_lento-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192246.5127374, "rid": "B08-rest-rag_lento-10-carga-06", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192247.0134873, "rid": "B08-rest-rag_lento-10-carga-06", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192247.0135383, "rid": "B08-rest-rag_lento-10-carga-06"}
+{"evento": "nlp_fim", "t": 192247.0145401, "rid": "B08-rest-rag_lento-10-carga-06"}
+{"evento": "nlp_inicio", "t": 192247.0423314, "rid": "B08-rest-rag_lento-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192247.0447533, "rid": "B08-rest-rag_lento-10-carga-05", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192247.5452983, "rid": "B08-rest-rag_lento-10-carga-05", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192247.5453433, "rid": "B08-rest-rag_lento-10-carga-05"}
+{"evento": "nlp_fim", "t": 192247.5465927, "rid": "B08-rest-rag_lento-10-carga-05"}
+{"evento": "http_fim", "t": 192247.5617914, "rid": "B08-rest-rag_lento-10-carga-04"}
+{"evento": "http_fim", "t": 192247.5620898, "rid": "B08-rest-rag_lento-10-carga-09"}
+{"evento": "http_fim", "t": 192247.5622175, "rid": "B08-rest-rag_lento-10-carga-02"}
+{"evento": "http_fim", "t": 192247.5622716, "rid": "B08-rest-rag_lento-10-carga-01"}
+{"evento": "http_fim", "t": 192247.5623439, "rid": "B08-rest-rag_lento-10-carga-07"}
+{"evento": "http_fim", "t": 192247.5627, "rid": "B08-rest-rag_lento-10-carga-03"}
+{"evento": "http_fim", "t": 192247.5628947, "rid": "B08-rest-rag_lento-10-carga-08"}
+{"evento": "http_fim", "t": 192247.5630058, "rid": "B08-rest-rag_lento-10-menu-durante"}
+{"evento": "loop_atrasado", "t": 192247.5630434, "rid": "preparacao", "lag_s": 1.0448961999977473, "inicio_espera": 192246.4981452}
+{"evento": "http_fim", "t": 192247.5632223, "rid": "B08-rest-rag_lento-10-carga-06"}
+{"evento": "http_fim", "t": 192247.5632788, "rid": "B08-rest-rag_lento-10-carga-05"}
+{"evento": "http_inicio", "t": 192247.5781875, "rid": "B08-rest-rag_lento-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192247.5787408, "rid": "B08-rest-rag_lento-10-saude-apos"}
+{"evento": "http_inicio", "t": 192247.5802379, "rid": "B08-rest-rag_lento-10-menu-apos", "path": "/messages/receive"}
+{"evento": "http_fim", "t": 192247.6064909, "rid": "B08-rest-rag_lento-10-menu-apos"}
+{"evento": "http_inicio", "t": 192247.6078152, "rid": "B08-rest-rag_lento-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192247.6117934, "rid": "B08-rest-rag_lento-10-snapshot"}
+{"evento": "http_inicio", "t": 192247.6354202, "rid": "B09-evolution-estatico-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192247.6448213, "rid": "B09-evolution-estatico-1-prepare"}
+{"evento": "http_inicio", "t": 192247.6481036, "rid": "B09-evolution-estatico-1-carga-00", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192247.650053, "rid": "B09-evolution-estatico-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192247.6505199, "rid": "B09-evolution-estatico-1-saude-durante"}
+{"evento": "http_inicio", "t": 192247.6506334, "rid": "B09-evolution-estatico-1-menu-durante", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192247.6759505, "rid": "B09-evolution-estatico-1-carga-00"}
+{"evento": "envio_fim", "t": 192247.6760039, "rid": "B09-evolution-estatico-1-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030090000"}
+{"evento": "envio_inicio", "t": 192247.6993631, "rid": "B09-evolution-estatico-1-menu-durante"}
+{"evento": "envio_fim", "t": 192247.6994078, "rid": "B09-evolution-estatico-1-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030090001"}
+{"evento": "http_fim", "t": 192247.6998735, "rid": "B09-evolution-estatico-1-carga-00"}
+{"evento": "http_fim", "t": 192247.700143, "rid": "B09-evolution-estatico-1-menu-durante"}
+{"evento": "http_inicio", "t": 192247.7154151, "rid": "B09-evolution-estatico-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192247.7157874, "rid": "B09-evolution-estatico-1-saude-apos"}
+{"evento": "http_inicio", "t": 192247.7172383, "rid": "B09-evolution-estatico-1-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192247.8044393, "rid": "B09-evolution-estatico-1-menu-apos"}
+{"evento": "envio_fim", "t": 192247.8044896, "rid": "B09-evolution-estatico-1-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030090002"}
+{"evento": "loop_atrasado", "t": 192247.8051145, "rid": "preparacao", "lag_s": 0.06731309999711811, "inicio_espera": 192247.7177981}
+{"evento": "http_fim", "t": 192247.8054991, "rid": "B09-evolution-estatico-1-menu-apos"}
+{"evento": "http_inicio", "t": 192247.8066135, "rid": "B09-evolution-estatico-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192247.8093501, "rid": "B09-evolution-estatico-1-snapshot"}
+{"evento": "http_inicio", "t": 192247.8285901, "rid": "B10-evolution-estatico-2-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192247.8383258, "rid": "B10-evolution-estatico-2-prepare"}
+{"evento": "http_inicio", "t": 192247.8425159, "rid": "B10-evolution-estatico-2-carga-00", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192247.8666518, "rid": "B10-evolution-estatico-2-carga-00"}
+{"evento": "envio_fim", "t": 192247.8666944, "rid": "B10-evolution-estatico-2-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030100000"}
+{"evento": "http_inicio", "t": 192247.8675208, "rid": "B10-evolution-estatico-2-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192247.867909, "rid": "B10-evolution-estatico-2-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192247.8683361, "rid": "B10-evolution-estatico-2-saude-durante"}
+{"evento": "http_inicio", "t": 192247.8685406, "rid": "B10-evolution-estatico-2-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_fim", "t": 192247.8690151, "rid": "B10-evolution-estatico-2-carga-00"}
+{"evento": "envio_inicio", "t": 192247.9445643, "rid": "B10-evolution-estatico-2-menu-durante"}
+{"evento": "envio_fim", "t": 192247.9446106, "rid": "B10-evolution-estatico-2-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030100002"}
+{"evento": "envio_inicio", "t": 192247.9676868, "rid": "B10-evolution-estatico-2-carga-01"}
+{"evento": "envio_fim", "t": 192247.967733, "rid": "B10-evolution-estatico-2-carga-01", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030100001"}
+{"evento": "loop_atrasado", "t": 192247.9685426, "rid": "preparacao", "lag_s": 0.07974989999318495, "inicio_espera": 192247.8687866}
+{"evento": "http_fim", "t": 192247.9690329, "rid": "B10-evolution-estatico-2-menu-durante"}
+{"evento": "http_fim", "t": 192247.9691222, "rid": "B10-evolution-estatico-2-carga-01"}
+{"evento": "http_inicio", "t": 192247.984712, "rid": "B10-evolution-estatico-2-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192247.9852453, "rid": "B10-evolution-estatico-2-saude-apos"}
+{"evento": "http_inicio", "t": 192247.9873482, "rid": "B10-evolution-estatico-2-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.0106401, "rid": "B10-evolution-estatico-2-menu-apos"}
+{"evento": "envio_fim", "t": 192248.010682, "rid": "B10-evolution-estatico-2-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030100003"}
+{"evento": "http_fim", "t": 192248.0113144, "rid": "B10-evolution-estatico-2-menu-apos"}
+{"evento": "http_inicio", "t": 192248.012988, "rid": "B10-evolution-estatico-2-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192248.0158883, "rid": "B10-evolution-estatico-2-snapshot"}
+{"evento": "http_inicio", "t": 192248.034944, "rid": "B11-evolution-estatico-5-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192248.0476324, "rid": "B11-evolution-estatico-5-prepare"}
+{"evento": "http_inicio", "t": 192248.0508454, "rid": "B11-evolution-estatico-5-carga-00", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.0754976, "rid": "B11-evolution-estatico-5-carga-00"}
+{"evento": "envio_fim", "t": 192248.0755587, "rid": "B11-evolution-estatico-5-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030110000"}
+{"evento": "http_inicio", "t": 192248.0760362, "rid": "B11-evolution-estatico-5-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.0770884, "rid": "B11-evolution-estatico-5-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.0778525, "rid": "B11-evolution-estatico-5-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.078191, "rid": "B11-evolution-estatico-5-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.0783732, "rid": "B11-evolution-estatico-5-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192248.0786518, "rid": "B11-evolution-estatico-5-saude-durante"}
+{"evento": "http_inicio", "t": 192248.078728, "rid": "B11-evolution-estatico-5-carga-03", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.1004289, "rid": "B11-evolution-estatico-5-carga-01"}
+{"evento": "envio_fim", "t": 192248.1004699, "rid": "B11-evolution-estatico-5-carga-01", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030110001"}
+{"evento": "http_fim", "t": 192248.1008436, "rid": "B11-evolution-estatico-5-carga-00"}
+{"evento": "envio_inicio", "t": 192248.1240853, "rid": "B11-evolution-estatico-5-carga-04"}
+{"evento": "envio_fim", "t": 192248.1241408, "rid": "B11-evolution-estatico-5-carga-04", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030110004"}
+{"evento": "envio_inicio", "t": 192248.1481277, "rid": "B11-evolution-estatico-5-menu-durante"}
+{"evento": "envio_fim", "t": 192248.1481736, "rid": "B11-evolution-estatico-5-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030110005"}
+{"evento": "envio_inicio", "t": 192248.1735278, "rid": "B11-evolution-estatico-5-carga-03"}
+{"evento": "envio_fim", "t": 192248.1735741, "rid": "B11-evolution-estatico-5-carga-03", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030110003"}
+{"evento": "loop_atrasado", "t": 192248.1739537, "rid": "preparacao", "lag_s": 0.07509600000455975, "inicio_espera": 192248.0788552}
+{"evento": "envio_inicio", "t": 192248.1969292, "rid": "B11-evolution-estatico-5-carga-02"}
+{"evento": "envio_fim", "t": 192248.1969716, "rid": "B11-evolution-estatico-5-carga-02", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030110002"}
+{"evento": "http_fim", "t": 192248.1976232, "rid": "B11-evolution-estatico-5-carga-01"}
+{"evento": "http_fim", "t": 192248.1980468, "rid": "B11-evolution-estatico-5-carga-04"}
+{"evento": "http_fim", "t": 192248.198178, "rid": "B11-evolution-estatico-5-menu-durante"}
+{"evento": "http_fim", "t": 192248.1983048, "rid": "B11-evolution-estatico-5-carga-03"}
+{"evento": "http_fim", "t": 192248.1983503, "rid": "B11-evolution-estatico-5-carga-02"}
+{"evento": "http_inicio", "t": 192248.2168212, "rid": "B11-evolution-estatico-5-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192248.2172519, "rid": "B11-evolution-estatico-5-saude-apos"}
+{"evento": "http_inicio", "t": 192248.2186362, "rid": "B11-evolution-estatico-5-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.2425426, "rid": "B11-evolution-estatico-5-menu-apos"}
+{"evento": "envio_fim", "t": 192248.2426003, "rid": "B11-evolution-estatico-5-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030110006"}
+{"evento": "http_fim", "t": 192248.2434783, "rid": "B11-evolution-estatico-5-menu-apos"}
+{"evento": "http_inicio", "t": 192248.2446544, "rid": "B11-evolution-estatico-5-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192248.2478087, "rid": "B11-evolution-estatico-5-snapshot"}
+{"evento": "http_inicio", "t": 192248.2658924, "rid": "B12-evolution-estatico-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192248.2778141, "rid": "B12-evolution-estatico-10-prepare"}
+{"evento": "http_inicio", "t": 192248.283094, "rid": "B12-evolution-estatico-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.283867, "rid": "B12-evolution-estatico-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.308877, "rid": "B12-evolution-estatico-10-carga-00"}
+{"evento": "envio_fim", "t": 192248.3089184, "rid": "B12-evolution-estatico-10-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120000"}
+{"evento": "http_inicio", "t": 192248.3109959, "rid": "B12-evolution-estatico-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3112848, "rid": "B12-evolution-estatico-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3115428, "rid": "B12-evolution-estatico-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3119325, "rid": "B12-evolution-estatico-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.3364612, "rid": "B12-evolution-estatico-10-carga-01"}
+{"evento": "envio_fim", "t": 192248.3365045, "rid": "B12-evolution-estatico-10-carga-01", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120001"}
+{"evento": "http_inicio", "t": 192248.33699, "rid": "B12-evolution-estatico-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3373942, "rid": "B12-evolution-estatico-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3376051, "rid": "B12-evolution-estatico-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192248.3377457, "rid": "B12-evolution-estatico-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192248.3380206, "rid": "B12-evolution-estatico-10-saude-durante"}
+{"evento": "http_inicio", "t": 192248.3381005, "rid": "B12-evolution-estatico-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_fim", "t": 192248.3392036, "rid": "B12-evolution-estatico-10-carga-00"}
+{"evento": "http_inicio", "t": 192248.3395565, "rid": "B12-evolution-estatico-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.3646153, "rid": "B12-evolution-estatico-10-carga-07"}
+{"evento": "envio_fim", "t": 192248.3646697, "rid": "B12-evolution-estatico-10-carga-07", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120007"}
+{"evento": "envio_inicio", "t": 192248.3878636, "rid": "B12-evolution-estatico-10-carga-04"}
+{"evento": "envio_fim", "t": 192248.3879136, "rid": "B12-evolution-estatico-10-carga-04", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120004"}
+{"evento": "envio_inicio", "t": 192248.414038, "rid": "B12-evolution-estatico-10-carga-05"}
+{"evento": "envio_fim", "t": 192248.414087, "rid": "B12-evolution-estatico-10-carga-05", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120005"}
+{"evento": "http_fim", "t": 192248.414515, "rid": "B12-evolution-estatico-10-carga-01"}
+{"evento": "envio_inicio", "t": 192248.4369368, "rid": "B12-evolution-estatico-10-carga-02"}
+{"evento": "envio_fim", "t": 192248.4369998, "rid": "B12-evolution-estatico-10-carga-02", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120002"}
+{"evento": "envio_inicio", "t": 192248.4617295, "rid": "B12-evolution-estatico-10-carga-09"}
+{"evento": "envio_fim", "t": 192248.4617862, "rid": "B12-evolution-estatico-10-carga-09", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120009"}
+{"evento": "envio_inicio", "t": 192248.4863625, "rid": "B12-evolution-estatico-10-carga-03"}
+{"evento": "envio_fim", "t": 192248.4864121, "rid": "B12-evolution-estatico-10-carga-03", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120003"}
+{"evento": "envio_inicio", "t": 192248.5099636, "rid": "B12-evolution-estatico-10-carga-08"}
+{"evento": "envio_fim", "t": 192248.5100088, "rid": "B12-evolution-estatico-10-carga-08", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120008"}
+{"evento": "envio_inicio", "t": 192248.5338052, "rid": "B12-evolution-estatico-10-carga-06"}
+{"evento": "envio_fim", "t": 192248.5338647, "rid": "B12-evolution-estatico-10-carga-06", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030120006"}
+{"evento": "envio_inicio", "t": 192248.5573407, "rid": "B12-evolution-estatico-10-menu-durante"}
+{"evento": "envio_fim", "t": 192248.5573842, "rid": "B12-evolution-estatico-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030120010"}
+{"evento": "loop_atrasado", "t": 192248.5582803, "rid": "preparacao", "lag_s": 0.1997913999843877, "inicio_espera": 192248.3384845}
+{"evento": "http_fim", "t": 192248.5588955, "rid": "B12-evolution-estatico-10-carga-07"}
+{"evento": "http_fim", "t": 192248.5589558, "rid": "B12-evolution-estatico-10-carga-04"}
+{"evento": "http_fim", "t": 192248.5590296, "rid": "B12-evolution-estatico-10-carga-08"}
+{"evento": "http_fim", "t": 192248.5590752, "rid": "B12-evolution-estatico-10-carga-02"}
+{"evento": "http_fim", "t": 192248.5591177, "rid": "B12-evolution-estatico-10-carga-03"}
+{"evento": "http_fim", "t": 192248.5591727, "rid": "B12-evolution-estatico-10-carga-09"}
+{"evento": "http_fim", "t": 192248.5592676, "rid": "B12-evolution-estatico-10-carga-05"}
+{"evento": "http_fim", "t": 192248.5593341, "rid": "B12-evolution-estatico-10-carga-06"}
+{"evento": "http_fim", "t": 192248.5594291, "rid": "B12-evolution-estatico-10-menu-durante"}
+{"evento": "http_inicio", "t": 192248.5749281, "rid": "B12-evolution-estatico-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192248.5753173, "rid": "B12-evolution-estatico-10-saude-apos"}
+{"evento": "http_inicio", "t": 192248.5765862, "rid": "B12-evolution-estatico-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192248.6024908, "rid": "B12-evolution-estatico-10-menu-apos"}
+{"evento": "envio_fim", "t": 192248.6025551, "rid": "B12-evolution-estatico-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030120011"}
+{"evento": "http_fim", "t": 192248.6035608, "rid": "B12-evolution-estatico-10-menu-apos"}
+{"evento": "http_inicio", "t": 192248.6049336, "rid": "B12-evolution-estatico-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192248.6085589, "rid": "B12-evolution-estatico-10-snapshot"}
+{"evento": "http_inicio", "t": 192248.6291813, "rid": "B13-evolution-rag_lento-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192248.6379473, "rid": "B13-evolution-rag_lento-1-prepare"}
+{"evento": "http_inicio", "t": 192248.6557658, "rid": "B13-evolution-rag_lento-1-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192248.6690528, "rid": "B13-evolution-rag_lento-1-carga-00"}
+{"evento": "provedor_inicio", "t": 192248.6730993, "rid": "B13-evolution-rag_lento-1-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192249.1736449, "rid": "B13-evolution-rag_lento-1-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192249.1737006, "rid": "B13-evolution-rag_lento-1-carga-00"}
+{"evento": "nlp_fim", "t": 192249.1746312, "rid": "B13-evolution-rag_lento-1-carga-00"}
+{"evento": "envio_inicio", "t": 192249.1914159, "rid": "B13-evolution-rag_lento-1-carga-00"}
+{"evento": "envio_fim", "t": 192249.1914759, "rid": "B13-evolution-rag_lento-1-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030130000"}
+{"evento": "http_inicio", "t": 192249.1926033, "rid": "B13-evolution-rag_lento-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192249.1931339, "rid": "B13-evolution-rag_lento-1-saude-durante"}
+{"evento": "http_inicio", "t": 192249.1932592, "rid": "B13-evolution-rag_lento-1-menu-durante", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192249.1935367, "rid": "preparacao", "lag_s": 0.5174039000016637, "inicio_espera": 192248.6561298}
+{"evento": "http_fim", "t": 192249.1940683, "rid": "B13-evolution-rag_lento-1-carga-00"}
+{"evento": "envio_inicio", "t": 192249.2199983, "rid": "B13-evolution-rag_lento-1-menu-durante"}
+{"evento": "envio_fim", "t": 192249.2200597, "rid": "B13-evolution-rag_lento-1-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030130001"}
+{"evento": "http_fim", "t": 192249.2208965, "rid": "B13-evolution-rag_lento-1-menu-durante"}
+{"evento": "http_inicio", "t": 192249.2396852, "rid": "B13-evolution-rag_lento-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192249.2400491, "rid": "B13-evolution-rag_lento-1-saude-apos"}
+{"evento": "http_inicio", "t": 192249.2414438, "rid": "B13-evolution-rag_lento-1-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192249.2659049, "rid": "B13-evolution-rag_lento-1-menu-apos"}
+{"evento": "envio_fim", "t": 192249.2659603, "rid": "B13-evolution-rag_lento-1-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030130002"}
+{"evento": "http_fim", "t": 192249.266629, "rid": "B13-evolution-rag_lento-1-menu-apos"}
+{"evento": "http_inicio", "t": 192249.2677424, "rid": "B13-evolution-rag_lento-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192249.2706849, "rid": "B13-evolution-rag_lento-1-snapshot"}
+{"evento": "http_inicio", "t": 192249.2905557, "rid": "B14-evolution-rag_lento-2-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192249.2997238, "rid": "B14-evolution-rag_lento-2-prepare"}
+{"evento": "http_inicio", "t": 192249.3198894, "rid": "B14-evolution-rag_lento-2-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192249.3330139, "rid": "B14-evolution-rag_lento-2-carga-00"}
+{"evento": "provedor_inicio", "t": 192249.3357234, "rid": "B14-evolution-rag_lento-2-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192249.836585, "rid": "B14-evolution-rag_lento-2-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192249.8366258, "rid": "B14-evolution-rag_lento-2-carga-00"}
+{"evento": "nlp_fim", "t": 192249.837336, "rid": "B14-evolution-rag_lento-2-carga-00"}
+{"evento": "envio_inicio", "t": 192249.8546839, "rid": "B14-evolution-rag_lento-2-carga-00"}
+{"evento": "envio_fim", "t": 192249.8547437, "rid": "B14-evolution-rag_lento-2-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030140000"}
+{"evento": "http_inicio", "t": 192249.8559065, "rid": "B14-evolution-rag_lento-2-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192249.8562794, "rid": "B14-evolution-rag_lento-2-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192249.8566298, "rid": "B14-evolution-rag_lento-2-saude-durante"}
+{"evento": "http_inicio", "t": 192249.8567142, "rid": "B14-evolution-rag_lento-2-menu-durante", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192249.8568651, "rid": "preparacao", "lag_s": 0.5166527999867685, "inicio_espera": 192249.3202106}
+{"evento": "http_fim", "t": 192249.8570543, "rid": "B14-evolution-rag_lento-2-carga-00"}
+{"evento": "nlp_inicio", "t": 192249.8686081, "rid": "B14-evolution-rag_lento-2-carga-01"}
+{"evento": "provedor_inicio", "t": 192249.8713555, "rid": "B14-evolution-rag_lento-2-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192250.372082, "rid": "B14-evolution-rag_lento-2-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192250.3721333, "rid": "B14-evolution-rag_lento-2-carga-01"}
+{"evento": "nlp_fim", "t": 192250.3731055, "rid": "B14-evolution-rag_lento-2-carga-01"}
+{"evento": "envio_inicio", "t": 192250.3883463, "rid": "B14-evolution-rag_lento-2-carga-01"}
+{"evento": "envio_fim", "t": 192250.3884054, "rid": "B14-evolution-rag_lento-2-carga-01", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030140001"}
+{"evento": "envio_inicio", "t": 192250.4168664, "rid": "B14-evolution-rag_lento-2-menu-durante"}
+{"evento": "envio_fim", "t": 192250.4169122, "rid": "B14-evolution-rag_lento-2-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030140002"}
+{"evento": "loop_atrasado", "t": 192250.417392, "rid": "preparacao", "lag_s": 0.5405019000067841, "inicio_espera": 192249.8568849}
+{"evento": "http_fim", "t": 192250.4177499, "rid": "B14-evolution-rag_lento-2-carga-01"}
+{"evento": "http_fim", "t": 192250.4179193, "rid": "B14-evolution-rag_lento-2-menu-durante"}
+{"evento": "http_inicio", "t": 192250.4344471, "rid": "B14-evolution-rag_lento-2-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192250.4348051, "rid": "B14-evolution-rag_lento-2-saude-apos"}
+{"evento": "http_inicio", "t": 192250.4365552, "rid": "B14-evolution-rag_lento-2-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192250.4618331, "rid": "B14-evolution-rag_lento-2-menu-apos"}
+{"evento": "envio_fim", "t": 192250.4618782, "rid": "B14-evolution-rag_lento-2-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030140003"}
+{"evento": "http_fim", "t": 192250.4624679, "rid": "B14-evolution-rag_lento-2-menu-apos"}
+{"evento": "http_inicio", "t": 192250.4636688, "rid": "B14-evolution-rag_lento-2-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192250.466371, "rid": "B14-evolution-rag_lento-2-snapshot"}
+{"evento": "http_inicio", "t": 192250.4879483, "rid": "B15-evolution-rag_lento-5-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192250.4985453, "rid": "B15-evolution-rag_lento-5-prepare"}
+{"evento": "http_inicio", "t": 192250.5270921, "rid": "B15-evolution-rag_lento-5-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192250.5426791, "rid": "B15-evolution-rag_lento-5-carga-00"}
+{"evento": "provedor_inicio", "t": 192250.5449553, "rid": "B15-evolution-rag_lento-5-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192251.0454784, "rid": "B15-evolution-rag_lento-5-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192251.045522, "rid": "B15-evolution-rag_lento-5-carga-00"}
+{"evento": "nlp_fim", "t": 192251.0462516, "rid": "B15-evolution-rag_lento-5-carga-00"}
+{"evento": "envio_inicio", "t": 192251.062609, "rid": "B15-evolution-rag_lento-5-carga-00"}
+{"evento": "envio_fim", "t": 192251.0626561, "rid": "B15-evolution-rag_lento-5-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030150000"}
+{"evento": "http_inicio", "t": 192251.06413, "rid": "B15-evolution-rag_lento-5-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192251.0646138, "rid": "B15-evolution-rag_lento-5-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192251.064971, "rid": "B15-evolution-rag_lento-5-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192251.0651548, "rid": "B15-evolution-rag_lento-5-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192251.0654967, "rid": "B15-evolution-rag_lento-5-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192251.0657894, "rid": "B15-evolution-rag_lento-5-saude-durante"}
+{"evento": "http_inicio", "t": 192251.0658693, "rid": "B15-evolution-rag_lento-5-menu-durante", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192251.0659945, "rid": "preparacao", "lag_s": 0.5289314000005834, "inicio_espera": 192250.5170616}
+{"evento": "http_fim", "t": 192251.0662473, "rid": "B15-evolution-rag_lento-5-carga-00"}
+{"evento": "nlp_inicio", "t": 192251.0777438, "rid": "B15-evolution-rag_lento-5-carga-01"}
+{"evento": "provedor_inicio", "t": 192251.0801182, "rid": "B15-evolution-rag_lento-5-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192251.5811019, "rid": "B15-evolution-rag_lento-5-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192251.5811791, "rid": "B15-evolution-rag_lento-5-carga-01"}
+{"evento": "nlp_fim", "t": 192251.582718, "rid": "B15-evolution-rag_lento-5-carga-01"}
+{"evento": "envio_inicio", "t": 192251.6008488, "rid": "B15-evolution-rag_lento-5-carga-01"}
+{"evento": "envio_fim", "t": 192251.6008932, "rid": "B15-evolution-rag_lento-5-carga-01", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030150001"}
+{"evento": "nlp_inicio", "t": 192251.6139081, "rid": "B15-evolution-rag_lento-5-carga-02"}
+{"evento": "provedor_inicio", "t": 192251.6160066, "rid": "B15-evolution-rag_lento-5-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192252.1166169, "rid": "B15-evolution-rag_lento-5-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192252.1166996, "rid": "B15-evolution-rag_lento-5-carga-02"}
+{"evento": "nlp_fim", "t": 192252.1186752, "rid": "B15-evolution-rag_lento-5-carga-02"}
+{"evento": "envio_inicio", "t": 192252.1358017, "rid": "B15-evolution-rag_lento-5-carga-02"}
+{"evento": "envio_fim", "t": 192252.1358445, "rid": "B15-evolution-rag_lento-5-carga-02", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030150002"}
+{"evento": "envio_inicio", "t": 192252.1593101, "rid": "B15-evolution-rag_lento-5-menu-durante"}
+{"evento": "envio_fim", "t": 192252.1593567, "rid": "B15-evolution-rag_lento-5-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030150005"}
+{"evento": "nlp_inicio", "t": 192252.1708378, "rid": "B15-evolution-rag_lento-5-carga-04"}
+{"evento": "provedor_inicio", "t": 192252.1738557, "rid": "B15-evolution-rag_lento-5-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192252.6744696, "rid": "B15-evolution-rag_lento-5-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192252.6745102, "rid": "B15-evolution-rag_lento-5-carga-04"}
+{"evento": "nlp_fim", "t": 192252.6752925, "rid": "B15-evolution-rag_lento-5-carga-04"}
+{"evento": "envio_inicio", "t": 192252.6940321, "rid": "B15-evolution-rag_lento-5-carga-04"}
+{"evento": "envio_fim", "t": 192252.6940771, "rid": "B15-evolution-rag_lento-5-carga-04", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030150004"}
+{"evento": "nlp_inicio", "t": 192252.7053838, "rid": "B15-evolution-rag_lento-5-carga-03"}
+{"evento": "provedor_inicio", "t": 192252.7074856, "rid": "B15-evolution-rag_lento-5-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192253.2080783, "rid": "B15-evolution-rag_lento-5-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192253.208193, "rid": "B15-evolution-rag_lento-5-carga-03"}
+{"evento": "nlp_fim", "t": 192253.2090047, "rid": "B15-evolution-rag_lento-5-carga-03"}
+{"evento": "envio_inicio", "t": 192253.2258756, "rid": "B15-evolution-rag_lento-5-carga-03"}
+{"evento": "envio_fim", "t": 192253.2259197, "rid": "B15-evolution-rag_lento-5-carga-03", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030150003"}
+{"evento": "loop_atrasado", "t": 192253.2265623, "rid": "preparacao", "lag_s": 2.140545499995351, "inicio_espera": 192251.0660125}
+{"evento": "http_fim", "t": 192253.2269899, "rid": "B15-evolution-rag_lento-5-carga-01"}
+{"evento": "http_fim", "t": 192253.2273246, "rid": "B15-evolution-rag_lento-5-carga-03"}
+{"evento": "http_fim", "t": 192253.2273723, "rid": "B15-evolution-rag_lento-5-carga-02"}
+{"evento": "http_fim", "t": 192253.2273995, "rid": "B15-evolution-rag_lento-5-carga-04"}
+{"evento": "http_fim", "t": 192253.2274244, "rid": "B15-evolution-rag_lento-5-menu-durante"}
+{"evento": "http_inicio", "t": 192253.2444282, "rid": "B15-evolution-rag_lento-5-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192253.2447697, "rid": "B15-evolution-rag_lento-5-saude-apos"}
+{"evento": "http_inicio", "t": 192253.2460604, "rid": "B15-evolution-rag_lento-5-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192253.2696597, "rid": "B15-evolution-rag_lento-5-menu-apos"}
+{"evento": "envio_fim", "t": 192253.2697093, "rid": "B15-evolution-rag_lento-5-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030150006"}
+{"evento": "http_fim", "t": 192253.2703361, "rid": "B15-evolution-rag_lento-5-menu-apos"}
+{"evento": "http_inicio", "t": 192253.2714386, "rid": "B15-evolution-rag_lento-5-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192253.2741496, "rid": "B15-evolution-rag_lento-5-snapshot"}
+{"evento": "http_inicio", "t": 192253.2966712, "rid": "B16-evolution-rag_lento-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192253.3081358, "rid": "B16-evolution-rag_lento-10-prepare"}
+{"evento": "http_inicio", "t": 192253.3304981, "rid": "B16-evolution-rag_lento-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192253.3437611, "rid": "B16-evolution-rag_lento-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192253.3459677, "rid": "B16-evolution-rag_lento-10-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192253.8466657, "rid": "B16-evolution-rag_lento-10-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192253.8467524, "rid": "B16-evolution-rag_lento-10-carga-00"}
+{"evento": "nlp_fim", "t": 192253.8485139, "rid": "B16-evolution-rag_lento-10-carga-00"}
+{"evento": "envio_inicio", "t": 192253.8656866, "rid": "B16-evolution-rag_lento-10-carga-00"}
+{"evento": "envio_fim", "t": 192253.8657343, "rid": "B16-evolution-rag_lento-10-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160000"}
+{"evento": "http_inicio", "t": 192253.8675097, "rid": "B16-evolution-rag_lento-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8677892, "rid": "B16-evolution-rag_lento-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.867962, "rid": "B16-evolution-rag_lento-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8681123, "rid": "B16-evolution-rag_lento-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8683123, "rid": "B16-evolution-rag_lento-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8690398, "rid": "B16-evolution-rag_lento-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8692446, "rid": "B16-evolution-rag_lento-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8693693, "rid": "B16-evolution-rag_lento-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192253.8696525, "rid": "B16-evolution-rag_lento-10-saude-durante"}
+{"evento": "http_inicio", "t": 192253.8697261, "rid": "B16-evolution-rag_lento-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192253.8698813, "rid": "B16-evolution-rag_lento-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192253.8700391, "rid": "preparacao", "lag_s": 0.5192864999885205, "inicio_espera": 192253.3307508}
+{"evento": "http_fim", "t": 192253.8705355, "rid": "B16-evolution-rag_lento-10-carga-00"}
+{"evento": "http_inicio", "t": 192253.8708291, "rid": "B16-evolution-rag_lento-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192253.8823151, "rid": "B16-evolution-rag_lento-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192253.884838, "rid": "B16-evolution-rag_lento-10-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192254.3855668, "rid": "B16-evolution-rag_lento-10-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192254.3856573, "rid": "B16-evolution-rag_lento-10-carga-01"}
+{"evento": "nlp_fim", "t": 192254.3872864, "rid": "B16-evolution-rag_lento-10-carga-01"}
+{"evento": "envio_inicio", "t": 192254.4051921, "rid": "B16-evolution-rag_lento-10-carga-01"}
+{"evento": "envio_fim", "t": 192254.4052385, "rid": "B16-evolution-rag_lento-10-carga-01", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160001"}
+{"evento": "nlp_inicio", "t": 192254.4498458, "rid": "B16-evolution-rag_lento-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192254.4617604, "rid": "B16-evolution-rag_lento-10-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192254.9622084, "rid": "B16-evolution-rag_lento-10-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192254.9622703, "rid": "B16-evolution-rag_lento-10-carga-02"}
+{"evento": "nlp_fim", "t": 192254.9630202, "rid": "B16-evolution-rag_lento-10-carga-02"}
+{"evento": "envio_inicio", "t": 192254.9801672, "rid": "B16-evolution-rag_lento-10-carga-02"}
+{"evento": "envio_fim", "t": 192254.9802104, "rid": "B16-evolution-rag_lento-10-carga-02", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160002"}
+{"evento": "nlp_inicio", "t": 192254.9910388, "rid": "B16-evolution-rag_lento-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192254.9932355, "rid": "B16-evolution-rag_lento-10-carga-05", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192255.4941285, "rid": "B16-evolution-rag_lento-10-carga-05", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192255.4941811, "rid": "B16-evolution-rag_lento-10-carga-05"}
+{"evento": "nlp_fim", "t": 192255.4950724, "rid": "B16-evolution-rag_lento-10-carga-05"}
+{"evento": "envio_inicio", "t": 192255.5119891, "rid": "B16-evolution-rag_lento-10-carga-05"}
+{"evento": "envio_fim", "t": 192255.5120316, "rid": "B16-evolution-rag_lento-10-carga-05", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160005"}
+{"evento": "nlp_inicio", "t": 192255.5237203, "rid": "B16-evolution-rag_lento-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192255.526777, "rid": "B16-evolution-rag_lento-10-carga-07", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192256.0273349, "rid": "B16-evolution-rag_lento-10-carga-07", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192256.0273796, "rid": "B16-evolution-rag_lento-10-carga-07"}
+{"evento": "nlp_fim", "t": 192256.0281413, "rid": "B16-evolution-rag_lento-10-carga-07"}
+{"evento": "envio_inicio", "t": 192256.0435703, "rid": "B16-evolution-rag_lento-10-carga-07"}
+{"evento": "envio_fim", "t": 192256.0437133, "rid": "B16-evolution-rag_lento-10-carga-07", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160007"}
+{"evento": "envio_inicio", "t": 192256.0686584, "rid": "B16-evolution-rag_lento-10-menu-durante"}
+{"evento": "envio_fim", "t": 192256.0687399, "rid": "B16-evolution-rag_lento-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030160010"}
+{"evento": "nlp_inicio", "t": 192256.0802995, "rid": "B16-evolution-rag_lento-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192256.0824362, "rid": "B16-evolution-rag_lento-10-carga-08", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192256.5829929, "rid": "B16-evolution-rag_lento-10-carga-08", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192256.5830961, "rid": "B16-evolution-rag_lento-10-carga-08"}
+{"evento": "nlp_fim", "t": 192256.584798, "rid": "B16-evolution-rag_lento-10-carga-08"}
+{"evento": "envio_inicio", "t": 192256.6029141, "rid": "B16-evolution-rag_lento-10-carga-08"}
+{"evento": "envio_fim", "t": 192256.60296, "rid": "B16-evolution-rag_lento-10-carga-08", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160008"}
+{"evento": "nlp_inicio", "t": 192256.615338, "rid": "B16-evolution-rag_lento-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192256.6173988, "rid": "B16-evolution-rag_lento-10-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192257.1180868, "rid": "B16-evolution-rag_lento-10-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192257.1181563, "rid": "B16-evolution-rag_lento-10-carga-03"}
+{"evento": "nlp_fim", "t": 192257.1192086, "rid": "B16-evolution-rag_lento-10-carga-03"}
+{"evento": "envio_inicio", "t": 192257.1361943, "rid": "B16-evolution-rag_lento-10-carga-03"}
+{"evento": "envio_fim", "t": 192257.1362372, "rid": "B16-evolution-rag_lento-10-carga-03", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160003"}
+{"evento": "nlp_inicio", "t": 192257.1479978, "rid": "B16-evolution-rag_lento-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192257.1500522, "rid": "B16-evolution-rag_lento-10-carga-06", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192257.6502869, "rid": "B16-evolution-rag_lento-10-carga-06", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192257.650331, "rid": "B16-evolution-rag_lento-10-carga-06"}
+{"evento": "nlp_fim", "t": 192257.6510675, "rid": "B16-evolution-rag_lento-10-carga-06"}
+{"evento": "envio_inicio", "t": 192257.6693493, "rid": "B16-evolution-rag_lento-10-carga-06"}
+{"evento": "envio_fim", "t": 192257.6694086, "rid": "B16-evolution-rag_lento-10-carga-06", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160006"}
+{"evento": "nlp_inicio", "t": 192257.6804744, "rid": "B16-evolution-rag_lento-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192257.6825679, "rid": "B16-evolution-rag_lento-10-carga-09", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192258.1833884, "rid": "B16-evolution-rag_lento-10-carga-09", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192258.1834715, "rid": "B16-evolution-rag_lento-10-carga-09"}
+{"evento": "nlp_fim", "t": 192258.1845795, "rid": "B16-evolution-rag_lento-10-carga-09"}
+{"evento": "envio_inicio", "t": 192258.2133559, "rid": "B16-evolution-rag_lento-10-carga-09"}
+{"evento": "envio_fim", "t": 192258.2134018, "rid": "B16-evolution-rag_lento-10-carga-09", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160009"}
+{"evento": "loop_atrasado", "t": 192258.2144072, "rid": "preparacao", "lag_s": 4.32434290000354, "inicio_espera": 192253.8700611}
+{"evento": "nlp_inicio", "t": 192258.2276945, "rid": "B16-evolution-rag_lento-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192258.229836, "rid": "B16-evolution-rag_lento-10-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192258.730747, "rid": "B16-evolution-rag_lento-10-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192258.730837, "rid": "B16-evolution-rag_lento-10-carga-04"}
+{"evento": "nlp_fim", "t": 192258.7322338, "rid": "B16-evolution-rag_lento-10-carga-04"}
+{"evento": "envio_inicio", "t": 192258.7500632, "rid": "B16-evolution-rag_lento-10-carga-04"}
+{"evento": "envio_fim", "t": 192258.7501062, "rid": "B16-evolution-rag_lento-10-carga-04", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030160004"}
+{"evento": "http_fim", "t": 192258.7506314, "rid": "B16-evolution-rag_lento-10-carga-02"}
+{"evento": "http_fim", "t": 192258.7507068, "rid": "B16-evolution-rag_lento-10-carga-05"}
+{"evento": "http_fim", "t": 192258.7507538, "rid": "B16-evolution-rag_lento-10-carga-07"}
+{"evento": "http_fim", "t": 192258.7507975, "rid": "B16-evolution-rag_lento-10-carga-08"}
+{"evento": "http_fim", "t": 192258.7508399, "rid": "B16-evolution-rag_lento-10-menu-durante"}
+{"evento": "http_fim", "t": 192258.7509051, "rid": "B16-evolution-rag_lento-10-carga-03"}
+{"evento": "http_fim", "t": 192258.7509443, "rid": "B16-evolution-rag_lento-10-carga-09"}
+{"evento": "http_fim", "t": 192258.7509784, "rid": "B16-evolution-rag_lento-10-carga-06"}
+{"evento": "http_fim", "t": 192258.7510378, "rid": "B16-evolution-rag_lento-10-carga-01"}
+{"evento": "loop_atrasado", "t": 192258.751137, "rid": "preparacao", "lag_s": 0.516437400005525, "inicio_espera": 192258.2146975}
+{"evento": "http_fim", "t": 192258.7513842, "rid": "B16-evolution-rag_lento-10-carga-04"}
+{"evento": "http_inicio", "t": 192258.7689459, "rid": "B16-evolution-rag_lento-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192258.7695809, "rid": "B16-evolution-rag_lento-10-saude-apos"}
+{"evento": "http_inicio", "t": 192258.7722218, "rid": "B16-evolution-rag_lento-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192258.7954037, "rid": "B16-evolution-rag_lento-10-menu-apos"}
+{"evento": "envio_fim", "t": 192258.7954467, "rid": "B16-evolution-rag_lento-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030160011"}
+{"evento": "http_fim", "t": 192258.7961171, "rid": "B16-evolution-rag_lento-10-menu-apos"}
+{"evento": "http_inicio", "t": 192258.797258, "rid": "B16-evolution-rag_lento-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192258.8007007, "rid": "B16-evolution-rag_lento-10-snapshot"}
+{"evento": "http_inicio", "t": 192258.8251762, "rid": "B17-evolution-envio_lento-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192258.8336952, "rid": "B17-evolution-envio_lento-1-prepare"}
+{"evento": "http_inicio", "t": 192258.8548644, "rid": "B17-evolution-envio_lento-1-carga-00", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192258.8832655, "rid": "B17-evolution-envio_lento-1-carga-00"}
+{"evento": "envio_fim", "t": 192259.3836093, "rid": "B17-evolution-envio_lento-1-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030170000"}
+{"evento": "http_inicio", "t": 192259.3853018, "rid": "B17-evolution-envio_lento-1-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192259.3856985, "rid": "B17-evolution-envio_lento-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192259.3860333, "rid": "B17-evolution-envio_lento-1-saude-durante"}
+{"evento": "loop_atrasado", "t": 192259.3860782, "rid": "preparacao", "lag_s": 0.5109421999845654, "inicio_espera": 192258.8551343}
+{"evento": "http_fim", "t": 192259.3862609, "rid": "B17-evolution-envio_lento-1-carga-00"}
+{"evento": "envio_inicio", "t": 192259.4159407, "rid": "B17-evolution-envio_lento-1-menu-durante"}
+{"evento": "envio_fim", "t": 192259.9161488, "rid": "B17-evolution-envio_lento-1-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030170001"}
+{"evento": "loop_atrasado", "t": 192259.9167864, "rid": "preparacao", "lag_s": 0.5106894000095781, "inicio_espera": 192259.3860924}
+{"evento": "http_fim", "t": 192259.917029, "rid": "B17-evolution-envio_lento-1-menu-durante"}
+{"evento": "http_inicio", "t": 192259.9362238, "rid": "B17-evolution-envio_lento-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192259.9365848, "rid": "B17-evolution-envio_lento-1-saude-apos"}
+{"evento": "http_inicio", "t": 192259.9384177, "rid": "B17-evolution-envio_lento-1-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192259.9691253, "rid": "B17-evolution-envio_lento-1-menu-apos"}
+{"evento": "envio_fim", "t": 192260.4697014, "rid": "B17-evolution-envio_lento-1-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030170002"}
+{"evento": "loop_atrasado", "t": 192260.4704061, "rid": "preparacao", "lag_s": 0.5116417000140063, "inicio_espera": 192259.9387597}
+{"evento": "http_fim", "t": 192260.4708428, "rid": "B17-evolution-envio_lento-1-menu-apos"}
+{"evento": "http_inicio", "t": 192260.4724255, "rid": "B17-evolution-envio_lento-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192260.4766552, "rid": "B17-evolution-envio_lento-1-snapshot"}
+{"evento": "http_inicio", "t": 192260.4976869, "rid": "B18-evolution-envio_lento-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192260.5259198, "rid": "B18-evolution-envio_lento-10-prepare"}
+{"evento": "http_inicio", "t": 192260.5484902, "rid": "B18-evolution-envio_lento-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192260.5768618, "rid": "B18-evolution-envio_lento-10-carga-00"}
+{"evento": "envio_fim", "t": 192261.077215, "rid": "B18-evolution-envio_lento-10-carga-00", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180000"}
+{"evento": "http_inicio", "t": 192261.0788389, "rid": "B18-evolution-envio_lento-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0792249, "rid": "B18-evolution-envio_lento-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0793839, "rid": "B18-evolution-envio_lento-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0795169, "rid": "B18-evolution-envio_lento-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0796391, "rid": "B18-evolution-envio_lento-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0799212, "rid": "B18-evolution-envio_lento-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192261.0801596, "rid": "B18-evolution-envio_lento-10-saude-durante"}
+{"evento": "http_inicio", "t": 192261.0802291, "rid": "B18-evolution-envio_lento-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0803838, "rid": "B18-evolution-envio_lento-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0805214, "rid": "B18-evolution-envio_lento-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192261.0806588, "rid": "preparacao", "lag_s": 0.511862399977399, "inicio_espera": 192260.5487949}
+{"evento": "http_fim", "t": 192261.0811505, "rid": "B18-evolution-envio_lento-10-carga-00"}
+{"evento": "http_inicio", "t": 192261.0813298, "rid": "B18-evolution-envio_lento-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192261.0816666, "rid": "B18-evolution-envio_lento-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192261.1065074, "rid": "B18-evolution-envio_lento-10-carga-06"}
+{"evento": "envio_fim", "t": 192261.6071213, "rid": "B18-evolution-envio_lento-10-carga-06", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180006"}
+{"evento": "envio_inicio", "t": 192261.6339123, "rid": "B18-evolution-envio_lento-10-carga-02"}
+{"evento": "envio_fim", "t": 192262.1343655, "rid": "B18-evolution-envio_lento-10-carga-02", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180002"}
+{"evento": "envio_inicio", "t": 192262.1632255, "rid": "B18-evolution-envio_lento-10-carga-04"}
+{"evento": "envio_fim", "t": 192262.6634943, "rid": "B18-evolution-envio_lento-10-carga-04", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180004"}
+{"evento": "envio_inicio", "t": 192262.6934044, "rid": "B18-evolution-envio_lento-10-carga-01"}
+{"evento": "envio_fim", "t": 192263.194072, "rid": "B18-evolution-envio_lento-10-carga-01", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180001"}
+{"evento": "envio_inicio", "t": 192263.2253937, "rid": "B18-evolution-envio_lento-10-carga-08"}
+{"evento": "envio_fim", "t": 192263.7257517, "rid": "B18-evolution-envio_lento-10-carga-08", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180008"}
+{"evento": "envio_inicio", "t": 192263.7497421, "rid": "B18-evolution-envio_lento-10-carga-05"}
+{"evento": "envio_fim", "t": 192264.2503009, "rid": "B18-evolution-envio_lento-10-carga-05", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180005"}
+{"evento": "envio_inicio", "t": 192264.2806692, "rid": "B18-evolution-envio_lento-10-carga-03"}
+{"evento": "envio_fim", "t": 192264.7811594, "rid": "B18-evolution-envio_lento-10-carga-03", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180003"}
+{"evento": "envio_inicio", "t": 192264.8108312, "rid": "B18-evolution-envio_lento-10-carga-09"}
+{"evento": "envio_fim", "t": 192265.311314, "rid": "B18-evolution-envio_lento-10-carga-09", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180009"}
+{"evento": "envio_inicio", "t": 192265.3400686, "rid": "B18-evolution-envio_lento-10-menu-durante"}
+{"evento": "envio_fim", "t": 192265.8403493, "rid": "B18-evolution-envio_lento-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030180010"}
+{"evento": "envio_inicio", "t": 192265.8697725, "rid": "B18-evolution-envio_lento-10-carga-07"}
+{"evento": "envio_fim", "t": 192266.3699687, "rid": "B18-evolution-envio_lento-10-carga-07", "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:", "numero": "5500030180007"}
+{"evento": "loop_atrasado", "t": 192266.3711581, "rid": "preparacao", "lag_s": 5.270478699986125, "inicio_espera": 192261.0806752}
+{"evento": "http_fim", "t": 192266.371996, "rid": "B18-evolution-envio_lento-10-carga-02"}
+{"evento": "http_fim", "t": 192266.3720561, "rid": "B18-evolution-envio_lento-10-carga-06"}
+{"evento": "http_fim", "t": 192266.3720943, "rid": "B18-evolution-envio_lento-10-carga-04"}
+{"evento": "http_fim", "t": 192266.372467, "rid": "B18-evolution-envio_lento-10-carga-01"}
+{"evento": "http_fim", "t": 192266.3725549, "rid": "B18-evolution-envio_lento-10-carga-03"}
+{"evento": "http_fim", "t": 192266.3725897, "rid": "B18-evolution-envio_lento-10-carga-09"}
+{"evento": "http_fim", "t": 192266.3726194, "rid": "B18-evolution-envio_lento-10-carga-08"}
+{"evento": "http_fim", "t": 192266.3726682, "rid": "B18-evolution-envio_lento-10-menu-durante"}
+{"evento": "http_fim", "t": 192266.3726965, "rid": "B18-evolution-envio_lento-10-carga-07"}
+{"evento": "http_fim", "t": 192266.3727212, "rid": "B18-evolution-envio_lento-10-carga-05"}
+{"evento": "http_inicio", "t": 192266.3902977, "rid": "B18-evolution-envio_lento-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192266.3906499, "rid": "B18-evolution-envio_lento-10-saude-apos"}
+{"evento": "http_inicio", "t": 192266.3921005, "rid": "B18-evolution-envio_lento-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192266.4167941, "rid": "B18-evolution-envio_lento-10-menu-apos"}
+{"evento": "envio_fim", "t": 192266.9171678, "rid": "B18-evolution-envio_lento-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030180011"}
+{"evento": "loop_atrasado", "t": 192266.9178192, "rid": "preparacao", "lag_s": 0.5071285000198986, "inicio_espera": 192266.3906882}
+{"evento": "http_fim", "t": 192266.9182544, "rid": "B18-evolution-envio_lento-10-menu-apos"}
+{"evento": "http_inicio", "t": 192266.9194386, "rid": "B18-evolution-envio_lento-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192266.9232559, "rid": "B18-evolution-envio_lento-10-snapshot"}
+{"evento": "http_inicio", "t": 192266.9464245, "rid": "B19-evolution-limite_429-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192266.959388, "rid": "B19-evolution-limite_429-1-prepare"}
+{"evento": "http_inicio", "t": 192266.9800162, "rid": "B19-evolution-limite_429-1-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192266.993372, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "provedor_inicio", "t": 192266.9955141, "rid": "B19-evolution-limite_429-1-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192266.9955972, "rid": "B19-evolution-limite_429-1-carga-00", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192266.9956108, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "provedor_inicio", "t": 192267.4964912, "rid": "B19-evolution-limite_429-1-carga-00", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192267.4966068, "rid": "B19-evolution-limite_429-1-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192267.4966206, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "nlp_fim", "t": 192267.4973183, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "envio_inicio", "t": 192267.5126483, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "envio_fim", "t": 192267.5127125, "rid": "B19-evolution-limite_429-1-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030190000"}
+{"evento": "http_inicio", "t": 192267.5134653, "rid": "B19-evolution-limite_429-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192267.5137923, "rid": "B19-evolution-limite_429-1-saude-durante"}
+{"evento": "http_inicio", "t": 192267.513873, "rid": "B19-evolution-limite_429-1-menu-durante", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192267.514049, "rid": "preparacao", "lag_s": 0.513759200014174, "inicio_espera": 192266.9802883}
+{"evento": "http_fim", "t": 192267.5144418, "rid": "B19-evolution-limite_429-1-carga-00"}
+{"evento": "envio_inicio", "t": 192267.5378792, "rid": "B19-evolution-limite_429-1-menu-durante"}
+{"evento": "envio_fim", "t": 192267.5379421, "rid": "B19-evolution-limite_429-1-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030190001"}
+{"evento": "http_fim", "t": 192267.5389248, "rid": "B19-evolution-limite_429-1-menu-durante"}
+{"evento": "http_inicio", "t": 192267.5584785, "rid": "B19-evolution-limite_429-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192267.5588279, "rid": "B19-evolution-limite_429-1-saude-apos"}
+{"evento": "http_inicio", "t": 192267.5600386, "rid": "B19-evolution-limite_429-1-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192267.5841068, "rid": "B19-evolution-limite_429-1-menu-apos"}
+{"evento": "envio_fim", "t": 192267.5841648, "rid": "B19-evolution-limite_429-1-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030190002"}
+{"evento": "http_fim", "t": 192267.5848981, "rid": "B19-evolution-limite_429-1-menu-apos"}
+{"evento": "http_inicio", "t": 192267.5860811, "rid": "B19-evolution-limite_429-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192267.5885147, "rid": "B19-evolution-limite_429-1-snapshot"}
+{"evento": "http_inicio", "t": 192267.6128798, "rid": "B20-evolution-limite_429-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192267.625236, "rid": "B20-evolution-limite_429-10-prepare"}
+{"evento": "http_inicio", "t": 192267.6505786, "rid": "B20-evolution-limite_429-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192267.6667862, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192267.6691361, "rid": "B20-evolution-limite_429-10-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192267.6692311, "rid": "B20-evolution-limite_429-10-carga-00", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192267.6692457, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192268.1703666, "rid": "B20-evolution-limite_429-10-carga-00", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192268.170569, "rid": "B20-evolution-limite_429-10-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192268.1706048, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "nlp_fim", "t": 192268.1721816, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "envio_inicio", "t": 192268.1902019, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "envio_fim", "t": 192268.1902443, "rid": "B20-evolution-limite_429-10-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200000"}
+{"evento": "http_inicio", "t": 192268.1921988, "rid": "B20-evolution-limite_429-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.1927992, "rid": "B20-evolution-limite_429-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.1930075, "rid": "B20-evolution-limite_429-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.1931494, "rid": "B20-evolution-limite_429-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.193426, "rid": "B20-evolution-limite_429-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192268.1937129, "rid": "B20-evolution-limite_429-10-saude-durante"}
+{"evento": "http_inicio", "t": 192268.1937904, "rid": "B20-evolution-limite_429-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.1939574, "rid": "B20-evolution-limite_429-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192268.1941116, "rid": "preparacao", "lag_s": 0.5232012000237591, "inicio_espera": 192267.6509088}
+{"evento": "http_fim", "t": 192268.1948184, "rid": "B20-evolution-limite_429-10-carga-00"}
+{"evento": "http_inicio", "t": 192268.1949919, "rid": "B20-evolution-limite_429-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.195768, "rid": "B20-evolution-limite_429-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192268.1962637, "rid": "B20-evolution-limite_429-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192268.2071532, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192268.2100018, "rid": "B20-evolution-limite_429-10-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192268.2101034, "rid": "B20-evolution-limite_429-10-carga-01", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192268.2101179, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192268.7120451, "rid": "B20-evolution-limite_429-10-carga-01", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192268.7121854, "rid": "B20-evolution-limite_429-10-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192268.7122133, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "nlp_fim", "t": 192268.7133127, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "envio_inicio", "t": 192268.7305636, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "envio_fim", "t": 192268.7306068, "rid": "B20-evolution-limite_429-10-carga-01", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200001"}
+{"evento": "nlp_inicio", "t": 192268.7430225, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192268.7451281, "rid": "B20-evolution-limite_429-10-carga-07", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192268.7451963, "rid": "B20-evolution-limite_429-10-carga-07", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192268.7452085, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192269.2471469, "rid": "B20-evolution-limite_429-10-carga-07", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192269.2472413, "rid": "B20-evolution-limite_429-10-carga-07", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192269.2472552, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "nlp_fim", "t": 192269.2480285, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "envio_inicio", "t": 192269.2611289, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "envio_fim", "t": 192269.2611731, "rid": "B20-evolution-limite_429-10-carga-07", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200007"}
+{"evento": "nlp_inicio", "t": 192269.2714731, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192269.2735841, "rid": "B20-evolution-limite_429-10-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192269.2736544, "rid": "B20-evolution-limite_429-10-carga-04", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192269.2736663, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192269.7747939, "rid": "B20-evolution-limite_429-10-carga-04", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192269.7748834, "rid": "B20-evolution-limite_429-10-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192269.774896, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "nlp_fim", "t": 192269.775565, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "envio_inicio", "t": 192269.7960223, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "envio_fim", "t": 192269.7960653, "rid": "B20-evolution-limite_429-10-carga-04", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200004"}
+{"evento": "envio_inicio", "t": 192269.8209978, "rid": "B20-evolution-limite_429-10-menu-durante"}
+{"evento": "envio_fim", "t": 192269.8210413, "rid": "B20-evolution-limite_429-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030200010"}
+{"evento": "http_inicio", "t": 192269.8215211, "rid": "B20-evolution-limite_429-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192269.8329718, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192269.8351247, "rid": "B20-evolution-limite_429-10-carga-09", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192269.8352272, "rid": "B20-evolution-limite_429-10-carga-09", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192269.8352425, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192270.3360227, "rid": "B20-evolution-limite_429-10-carga-09", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192270.3361255, "rid": "B20-evolution-limite_429-10-carga-09", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192270.3361438, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "nlp_fim", "t": 192270.3371134, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "envio_inicio", "t": 192270.3552505, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "envio_fim", "t": 192270.3553023, "rid": "B20-evolution-limite_429-10-carga-09", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200009"}
+{"evento": "nlp_inicio", "t": 192270.3663753, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192270.3686753, "rid": "B20-evolution-limite_429-10-carga-08", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192270.3687975, "rid": "B20-evolution-limite_429-10-carga-08", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192270.3688191, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192270.8700889, "rid": "B20-evolution-limite_429-10-carga-08", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192270.8701782, "rid": "B20-evolution-limite_429-10-carga-08", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192270.8701965, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "nlp_fim", "t": 192270.8710136, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "envio_inicio", "t": 192270.8889167, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "envio_fim", "t": 192270.8889997, "rid": "B20-evolution-limite_429-10-carga-08", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200008"}
+{"evento": "nlp_inicio", "t": 192270.9001604, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192270.9025572, "rid": "B20-evolution-limite_429-10-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192270.9026752, "rid": "B20-evolution-limite_429-10-carga-02", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192270.9026924, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192271.4040144, "rid": "B20-evolution-limite_429-10-carga-02", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192271.4041268, "rid": "B20-evolution-limite_429-10-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192271.4041446, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "nlp_fim", "t": 192271.4049442, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "envio_inicio", "t": 192271.4220658, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "envio_fim", "t": 192271.4221099, "rid": "B20-evolution-limite_429-10-carga-02", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200002"}
+{"evento": "loop_atrasado", "t": 192271.4232308, "rid": "preparacao", "lag_s": 3.2090862999798264, "inicio_espera": 192268.1941406}
+{"evento": "nlp_inicio", "t": 192271.4354804, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192271.4383799, "rid": "B20-evolution-limite_429-10-carga-06", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192271.4385139, "rid": "B20-evolution-limite_429-10-carga-06", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192271.4385372, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192271.9398107, "rid": "B20-evolution-limite_429-10-carga-06", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192271.9399683, "rid": "B20-evolution-limite_429-10-carga-06", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192271.9399967, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "nlp_fim", "t": 192271.9413815, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "envio_inicio", "t": 192271.9567468, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "envio_fim", "t": 192271.9567927, "rid": "B20-evolution-limite_429-10-carga-06", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200006"}
+{"evento": "nlp_inicio", "t": 192271.9682243, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192271.971175, "rid": "B20-evolution-limite_429-10-carga-05", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192271.9712532, "rid": "B20-evolution-limite_429-10-carga-05", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192271.9712709, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192272.47291, "rid": "B20-evolution-limite_429-10-carga-05", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192272.4730734, "rid": "B20-evolution-limite_429-10-carga-05", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192272.4731041, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "nlp_fim", "t": 192272.4741757, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "envio_inicio", "t": 192272.491986, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "envio_fim", "t": 192272.4920293, "rid": "B20-evolution-limite_429-10-carga-05", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200005"}
+{"evento": "http_fim", "t": 192272.4924262, "rid": "B20-evolution-limite_429-10-carga-01"}
+{"evento": "http_fim", "t": 192272.4924822, "rid": "B20-evolution-limite_429-10-carga-04"}
+{"evento": "http_fim", "t": 192272.4925119, "rid": "B20-evolution-limite_429-10-menu-durante"}
+{"evento": "http_fim", "t": 192272.4925383, "rid": "B20-evolution-limite_429-10-carga-07"}
+{"evento": "nlp_inicio", "t": 192272.5040794, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192272.5063045, "rid": "B20-evolution-limite_429-10-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192272.5063812, "rid": "B20-evolution-limite_429-10-carga-03", "status": 429, "cabecalhos": {"retry-after": "0.5"}}
+{"evento": "provedor_fim", "t": 192272.5063935, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192273.0083184, "rid": "B20-evolution-limite_429-10-carga-03", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192273.008459, "rid": "B20-evolution-limite_429-10-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192273.0084725, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "nlp_fim", "t": 192273.0092041, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "envio_inicio", "t": 192273.026256, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "envio_fim", "t": 192273.0263139, "rid": "B20-evolution-limite_429-10-carga-03", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030200003"}
+{"evento": "loop_atrasado", "t": 192273.0267025, "rid": "preparacao", "lag_s": 1.5833959000196773, "inicio_espera": 192271.4233037}
+{"evento": "http_fim", "t": 192273.0267969, "rid": "B20-evolution-limite_429-10-carga-09"}
+{"evento": "http_fim", "t": 192273.0268383, "rid": "B20-evolution-limite_429-10-carga-08"}
+{"evento": "http_fim", "t": 192273.0268727, "rid": "B20-evolution-limite_429-10-carga-02"}
+{"evento": "http_fim", "t": 192273.0270363, "rid": "B20-evolution-limite_429-10-carga-06"}
+{"evento": "http_fim", "t": 192273.0273915, "rid": "B20-evolution-limite_429-10-carga-03"}
+{"evento": "http_fim", "t": 192273.0274515, "rid": "B20-evolution-limite_429-10-carga-05"}
+{"evento": "http_inicio", "t": 192273.0463365, "rid": "B20-evolution-limite_429-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192273.0466788, "rid": "B20-evolution-limite_429-10-saude-apos"}
+{"evento": "http_inicio", "t": 192273.0479748, "rid": "B20-evolution-limite_429-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192273.0710059, "rid": "B20-evolution-limite_429-10-menu-apos"}
+{"evento": "envio_fim", "t": 192273.0710957, "rid": "B20-evolution-limite_429-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030200011"}
+{"evento": "http_fim", "t": 192273.0717132, "rid": "B20-evolution-limite_429-10-menu-apos"}
+{"evento": "http_inicio", "t": 192273.0728772, "rid": "B20-evolution-limite_429-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192273.0761634, "rid": "B20-evolution-limite_429-10-snapshot"}
+{"evento": "http_inicio", "t": 192273.100143, "rid": "B21-evolution-timeout_cliente-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192273.1117501, "rid": "B21-evolution-timeout_cliente-10-prepare"}
+{"evento": "http_inicio", "t": 192273.1389549, "rid": "B21-evolution-timeout_cliente-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192273.155809, "rid": "B21-evolution-timeout_cliente-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192273.158087, "rid": "B21-evolution-timeout_cliente-10-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192273.6588631, "rid": "B21-evolution-timeout_cliente-10-carga-00", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192273.6589392, "rid": "B21-evolution-timeout_cliente-10-carga-00"}
+{"evento": "nlp_fim", "t": 192273.6598028, "rid": "B21-evolution-timeout_cliente-10-carga-00"}
+{"evento": "envio_inicio", "t": 192273.6778579, "rid": "B21-evolution-timeout_cliente-10-carga-00"}
+{"evento": "envio_fim", "t": 192273.6779349, "rid": "B21-evolution-timeout_cliente-10-carga-00", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210000"}
+{"evento": "loop_atrasado", "t": 192273.6784172, "rid": "preparacao", "lag_s": 0.5232947999797761, "inicio_espera": 192273.1351185}
+{"evento": "http_inicio", "t": 192273.6798793, "rid": "B21-evolution-timeout_cliente-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6801614, "rid": "B21-evolution-timeout_cliente-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6803809, "rid": "B21-evolution-timeout_cliente-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6807021, "rid": "B21-evolution-timeout_cliente-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6810052, "rid": "B21-evolution-timeout_cliente-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192273.6812504, "rid": "B21-evolution-timeout_cliente-10-saude-durante"}
+{"evento": "http_inicio", "t": 192273.6813199, "rid": "B21-evolution-timeout_cliente-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6814696, "rid": "B21-evolution-timeout_cliente-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6816061, "rid": "B21-evolution-timeout_cliente-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6817392, "rid": "B21-evolution-timeout_cliente-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6818553, "rid": "B21-evolution-timeout_cliente-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192273.6819688, "rid": "B21-evolution-timeout_cliente-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "http_fim", "t": 192273.6824403, "rid": "B21-evolution-timeout_cliente-10-carga-00"}
+{"evento": "nlp_inicio", "t": 192273.6950761, "rid": "B21-evolution-timeout_cliente-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192273.6971433, "rid": "B21-evolution-timeout_cliente-10-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192274.1981001, "rid": "B21-evolution-timeout_cliente-10-carga-01", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192274.1981953, "rid": "B21-evolution-timeout_cliente-10-carga-01"}
+{"evento": "nlp_fim", "t": 192274.1998157, "rid": "B21-evolution-timeout_cliente-10-carga-01"}
+{"evento": "envio_inicio", "t": 192274.2178888, "rid": "B21-evolution-timeout_cliente-10-carga-01"}
+{"evento": "envio_fim", "t": 192274.2179497, "rid": "B21-evolution-timeout_cliente-10-carga-01", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210001"}
+{"evento": "nlp_inicio", "t": 192274.2286097, "rid": "B21-evolution-timeout_cliente-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192274.2307452, "rid": "B21-evolution-timeout_cliente-10-carga-07", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192274.7314654, "rid": "B21-evolution-timeout_cliente-10-carga-07", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192274.7315607, "rid": "B21-evolution-timeout_cliente-10-carga-07"}
+{"evento": "nlp_fim", "t": 192274.7326794, "rid": "B21-evolution-timeout_cliente-10-carga-07"}
+{"evento": "envio_inicio", "t": 192274.7468623, "rid": "B21-evolution-timeout_cliente-10-carga-07"}
+{"evento": "envio_fim", "t": 192274.7469114, "rid": "B21-evolution-timeout_cliente-10-carga-07", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210007"}
+{"evento": "envio_inicio", "t": 192274.7713774, "rid": "B21-evolution-timeout_cliente-10-menu-durante"}
+{"evento": "envio_fim", "t": 192274.7714172, "rid": "B21-evolution-timeout_cliente-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030210010"}
+{"evento": "nlp_inicio", "t": 192274.7823505, "rid": "B21-evolution-timeout_cliente-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192274.7845049, "rid": "B21-evolution-timeout_cliente-10-carga-09", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192275.2850007, "rid": "B21-evolution-timeout_cliente-10-carga-09", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192275.2850632, "rid": "B21-evolution-timeout_cliente-10-carga-09"}
+{"evento": "nlp_fim", "t": 192275.2863363, "rid": "B21-evolution-timeout_cliente-10-carga-09"}
+{"evento": "envio_inicio", "t": 192275.3033118, "rid": "B21-evolution-timeout_cliente-10-carga-09"}
+{"evento": "envio_fim", "t": 192275.3033582, "rid": "B21-evolution-timeout_cliente-10-carga-09", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210009"}
+{"evento": "nlp_inicio", "t": 192275.3155651, "rid": "B21-evolution-timeout_cliente-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192275.3176764, "rid": "B21-evolution-timeout_cliente-10-carga-08", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192275.8181339, "rid": "B21-evolution-timeout_cliente-10-carga-08", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192275.8181778, "rid": "B21-evolution-timeout_cliente-10-carga-08"}
+{"evento": "nlp_fim", "t": 192275.8192291, "rid": "B21-evolution-timeout_cliente-10-carga-08"}
+{"evento": "envio_inicio", "t": 192275.8390051, "rid": "B21-evolution-timeout_cliente-10-carga-08"}
+{"evento": "envio_fim", "t": 192275.8390646, "rid": "B21-evolution-timeout_cliente-10-carga-08", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210008"}
+{"evento": "nlp_inicio", "t": 192275.8497791, "rid": "B21-evolution-timeout_cliente-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192275.8518586, "rid": "B21-evolution-timeout_cliente-10-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192276.3527017, "rid": "B21-evolution-timeout_cliente-10-carga-02", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192276.3527577, "rid": "B21-evolution-timeout_cliente-10-carga-02"}
+{"evento": "nlp_fim", "t": 192276.3535677, "rid": "B21-evolution-timeout_cliente-10-carga-02"}
+{"evento": "envio_inicio", "t": 192276.3706139, "rid": "B21-evolution-timeout_cliente-10-carga-02"}
+{"evento": "envio_fim", "t": 192276.3706555, "rid": "B21-evolution-timeout_cliente-10-carga-02", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210002"}
+{"evento": "nlp_inicio", "t": 192276.3811985, "rid": "B21-evolution-timeout_cliente-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192276.3837285, "rid": "B21-evolution-timeout_cliente-10-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192276.8843856, "rid": "B21-evolution-timeout_cliente-10-carga-04", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192276.8844622, "rid": "B21-evolution-timeout_cliente-10-carga-04"}
+{"evento": "nlp_fim", "t": 192276.8861184, "rid": "B21-evolution-timeout_cliente-10-carga-04"}
+{"evento": "envio_inicio", "t": 192276.9068913, "rid": "B21-evolution-timeout_cliente-10-carga-04"}
+{"evento": "envio_fim", "t": 192276.906936, "rid": "B21-evolution-timeout_cliente-10-carga-04", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210004"}
+{"evento": "nlp_inicio", "t": 192276.9181833, "rid": "B21-evolution-timeout_cliente-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192276.9204031, "rid": "B21-evolution-timeout_cliente-10-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192277.4209288, "rid": "B21-evolution-timeout_cliente-10-carga-03", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192277.4209715, "rid": "B21-evolution-timeout_cliente-10-carga-03"}
+{"evento": "nlp_fim", "t": 192277.4217218, "rid": "B21-evolution-timeout_cliente-10-carga-03"}
+{"evento": "envio_inicio", "t": 192277.4347162, "rid": "B21-evolution-timeout_cliente-10-carga-03"}
+{"evento": "envio_fim", "t": 192277.4347582, "rid": "B21-evolution-timeout_cliente-10-carga-03", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210003"}
+{"evento": "nlp_inicio", "t": 192277.445711, "rid": "B21-evolution-timeout_cliente-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192277.4477982, "rid": "B21-evolution-timeout_cliente-10-carga-06", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192277.9486373, "rid": "B21-evolution-timeout_cliente-10-carga-06", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192277.9486844, "rid": "B21-evolution-timeout_cliente-10-carga-06"}
+{"evento": "nlp_fim", "t": 192277.9495191, "rid": "B21-evolution-timeout_cliente-10-carga-06"}
+{"evento": "envio_inicio", "t": 192277.9682718, "rid": "B21-evolution-timeout_cliente-10-carga-06"}
+{"evento": "envio_fim", "t": 192277.9683156, "rid": "B21-evolution-timeout_cliente-10-carga-06", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210006"}
+{"evento": "nlp_inicio", "t": 192277.9810682, "rid": "B21-evolution-timeout_cliente-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192277.9833389, "rid": "B21-evolution-timeout_cliente-10-carga-05", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192278.4840909, "rid": "B21-evolution-timeout_cliente-10-carga-05", "status": 200, "cabecalhos": {}}
+{"evento": "provedor_fim", "t": 192278.4841501, "rid": "B21-evolution-timeout_cliente-10-carga-05"}
+{"evento": "nlp_fim", "t": 192278.4852338, "rid": "B21-evolution-timeout_cliente-10-carga-05"}
+{"evento": "envio_inicio", "t": 192278.5034909, "rid": "B21-evolution-timeout_cliente-10-carga-05"}
+{"evento": "envio_fim", "t": 192278.5035542, "rid": "B21-evolution-timeout_cliente-10-carga-05", "texto": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030210005"}
+{"evento": "loop_atrasado", "t": 192278.5051231, "rid": "preparacao", "lag_s": 4.806665199972922, "inicio_espera": 192273.6784546}
+{"evento": "http_fim", "t": 192278.5053493, "rid": "B21-evolution-timeout_cliente-10-carga-01"}
+{"evento": "http_fim", "t": 192278.5054012, "rid": "B21-evolution-timeout_cliente-10-carga-07"}
+{"evento": "http_fim", "t": 192278.5054334, "rid": "B21-evolution-timeout_cliente-10-menu-durante"}
+{"evento": "http_fim", "t": 192278.5054581, "rid": "B21-evolution-timeout_cliente-10-carga-09"}
+{"evento": "http_fim", "t": 192278.5056025, "rid": "B21-evolution-timeout_cliente-10-carga-08"}
+{"evento": "http_fim", "t": 192278.505645, "rid": "B21-evolution-timeout_cliente-10-carga-02"}
+{"evento": "http_fim", "t": 192278.505671, "rid": "B21-evolution-timeout_cliente-10-carga-04"}
+{"evento": "http_fim", "t": 192278.5056932, "rid": "B21-evolution-timeout_cliente-10-carga-03"}
+{"evento": "http_fim", "t": 192278.5057122, "rid": "B21-evolution-timeout_cliente-10-carga-06"}
+{"evento": "http_fim", "t": 192278.5057898, "rid": "B21-evolution-timeout_cliente-10-carga-05"}
+{"evento": "http_inicio", "t": 192278.5615847, "rid": "B21-evolution-timeout_cliente-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192278.5619574, "rid": "B21-evolution-timeout_cliente-10-saude-apos"}
+{"evento": "http_inicio", "t": 192278.5632719, "rid": "B21-evolution-timeout_cliente-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192278.592014, "rid": "B21-evolution-timeout_cliente-10-menu-apos"}
+{"evento": "envio_fim", "t": 192278.5920568, "rid": "B21-evolution-timeout_cliente-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030210011"}
+{"evento": "http_fim", "t": 192278.592637, "rid": "B21-evolution-timeout_cliente-10-menu-apos"}
+{"evento": "http_inicio", "t": 192278.5936058, "rid": "B21-evolution-timeout_cliente-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192278.5969832, "rid": "B21-evolution-timeout_cliente-10-snapshot"}
+{"evento": "http_inicio", "t": 192278.6187436, "rid": "encerramento", "path": "/__c03/stop"}
+{"evento": "http_fim", "t": 192278.6194421, "rid": "encerramento"}

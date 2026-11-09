@@ -1,0 +1,31 @@
+C03 — verificação antes da coleta, 08/11/2026 (America/Sao_Paulo)
+Branch: experimento/c03-disponibilidade
+Corte: 666b60175f8e16c6678ae3da3aca975ae2a4fa5e
+Ambiente: .venv, Python 3.12.10
+
+Comando: .\.venv\Scripts\python.exe -m pytest -q
+Resultado: 244 passed in 2.22s
+
+Comando: .\.venv\Scripts\python.exe -m pytest -q docs/avaliacao/c03/test_executor.py
+Resultado: 6 passed in 9.42s
+
+Comando: .\.venv\Scripts\python.exe -m pytest -q docs/avaliacao/c02/test_executor.py
+Resultado: 4 passed in 1.23s
+
+Comando: .\.venv\Scripts\python.exe -m ruff check --select E9,F63,F7,F82 .
+Resultado: All checks passed!
+
+Comando: .\.venv\Scripts\python.exe -m compileall -q api app frontend tests docs/avaliacao/c03
+Resultado: código de saída 0, sem erros de compilação.
+
+Comando: git diff --quiet 46a87a7 HEAD -- api app data tests
+Resultado: código de saída 0; conteúdo funcional e testes iguais ao corte C02.
+
+Nota de preparação: a primeira verificação do instrumento apresentou cinco falhas
+porque o bloqueio de sockets impedia o socketpair local usado ao criar o loop
+asyncio no Windows. O instrumento foi ajustado para criar/fechar o loop fora do
+bloqueio, mantendo cliente, NLP e todas as mensagens dentro dele. O protocolo
+foi atualizado antes da coleta. Nenhum Python funcional da aplicação foi editado.
+Os resultados acima são os da verificação após esse ajuste.
+
+Este arquivo resume saídas dos comandos executados; não contém medições C03.

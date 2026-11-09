@@ -1,0 +1,714 @@
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APITimeoutError: Request timed out.
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: Request timed out.
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APITimeoutError: Request timed out.
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APIConnectionError: C03: conexao indisponivel (sintetica)
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: C03: conexao indisponivel (sintetica)
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APIConnectionError: C03: conexao indisponivel (sintetica)
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.NotFoundError: C03: modelo indisponivel (sintetico)
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: C03: modelo indisponivel (sintetico)
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.NotFoundError: C03: modelo indisponivel (sintetico)
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APITimeoutError: Request timed out.
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: Request timed out.
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APITimeoutError: Request timed out.
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APIConnectionError: C03: conexao indisponivel (sintetica)
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: C03: conexao indisponivel (sintetica)
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.APIConnectionError: C03: conexao indisponivel (sintetica)
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR Falha ao processar mensagem de 5500000000303
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 101, in process_message
+    response = self._responder(user, clean_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 221, in _responder
+    return self._dentro_do_menu(user, clean_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 284, in _dentro_do_menu
+    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\menu_handlers.py", line 59, in handle_dynamic_menu
+    rag_answer = nlp_service.process(query, user_name=user.name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.NotFoundError: C03: modelo indisponivel (sintetico)
+ERROR [ERROR] MESSAGE_FAILED: Falha ao processar mensagem: C03: modelo indisponivel (sintetico)
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+ERROR NLPService falhou para: 'Onde posso agendar Exames e Consultas?'
+Traceback (most recent call last):
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 314, in _perguntar_ao_rag
+    return self.nlp.process(texto, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\chat_service.py", line 55, in process
+    return self._nlp.process(text, user_name=user_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 99, in process
+    answer = self.real.process(text, user_name=user_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\api\services\nlp_service.py", line 24, in process
+    rag_response = run_rag(retriever=self.retriever, question=text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\app\core\rag_pipeline.py", line 65, in run_rag
+    return build_rag_chain(retriever).invoke(question)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3460, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 529, in invoke
+    self.generate_prompt(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1920, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1727, in generate
+    self._generate_with_cache(
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2065, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davia\OneDrive\Área de Trabalho\TCC\tcc-chatbot-avaliacao-arquitetural\docs\avaliacao\c03\executar.py", line 191, in fail_sdk
+    raise error
+groq.NotFoundError: C03: modelo indisponivel (sintetico)
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303
+INFO [INFO] MESSAGE_RECEIVED: Mensagem recebida de 5500000000303
+INFO [INFO] MESSAGE_SENT: Resposta enviada para 5500000000303

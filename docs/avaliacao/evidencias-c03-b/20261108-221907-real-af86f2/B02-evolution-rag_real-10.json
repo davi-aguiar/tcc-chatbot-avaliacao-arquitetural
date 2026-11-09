@@ -1,0 +1,639 @@
+{
+  "id": "B02-evolution-rag_real-10",
+  "rota": "evolution",
+  "perfil": "rag_real",
+  "usuarios": 10,
+  "inicio_t": 192349.2984481,
+  "fim_t": 192543.2675911,
+  "usuarios_carga": [
+    "5500030020000",
+    "5500030020001",
+    "5500030020002",
+    "5500030020003",
+    "5500030020004",
+    "5500030020005",
+    "5500030020006",
+    "5500030020007",
+    "5500030020008",
+    "5500030020009"
+  ],
+  "requisicoes": [
+    {
+      "rid": "B02-evolution-rag_real-10-carga-00",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3095067,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192350.3097423,
+      "duracao_s": 1.000235600018641
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-01",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3100901,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192395.6047165,
+      "duracao_s": 46.2946263999911
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-02",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.310358,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192423.7933771,
+      "duracao_s": 74.48301910000737
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-03",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3105511,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192516.5981264,
+      "duracao_s": 167.28757529999712
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-04",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.310724,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192395.6047862,
+      "duracao_s": 46.29406220000237
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-05",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3108776,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192489.1054408,
+      "duracao_s": 139.79456320000463
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-06",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3110331,
+      "erro_cliente": "ReadTimeout",
+      "status": null,
+      "fim_t": 192529.3498314,
+      "duracao_s": 180.03879829999642
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-07",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3111954,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192423.792601,
+      "duracao_s": 74.4814056000032
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-08",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3113459,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192450.897455,
+      "duracao_s": 101.58610909999697
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-carga-09",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3114903,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192489.1059874,
+      "duracao_s": 139.79449709999608
+    }
+  ],
+  "sondas_durante": [
+    {
+      "rid": "B02-evolution-rag_real-10-saude-durante",
+      "path": "/__c03/health",
+      "despacho_t": 192349.3767388,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "pid": 13176,
+        "t": 192478.0938092
+      },
+      "fim_t": 192489.1057119,
+      "duracao_s": 139.72897309999098
+    },
+    {
+      "rid": "B02-evolution-rag_real-10-menu-durante",
+      "path": "/evolution_webhook",
+      "despacho_t": 192349.3771474,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192543.2088661,
+      "duracao_s": 193.8317187000066
+    }
+  ],
+  "saude_apos": {
+    "rid": "B02-evolution-rag_real-10-saude-apos",
+    "path": "/__c03/health",
+    "despacho_t": 192543.2213819,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "pid": 13176,
+      "t": 192543.2227203
+    },
+    "fim_t": 192543.223778,
+    "duracao_s": 0.002396100026089698
+  },
+  "menu_apos": {
+    "rid": "B02-evolution-rag_real-10-menu-apos",
+    "path": "/evolution_webhook",
+    "despacho_t": 192543.2237852,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "status": "success"
+    },
+    "fim_t": 192543.2574337,
+    "duracao_s": 0.03364849998615682
+  },
+  "snapshot": {
+    "usuarios": [
+      {
+        "id_wpp": "5500030020000",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020001",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020002",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020003",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020004",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020005",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020006",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020007",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020008",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020009",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030020010",
+        "estado": "WAITING_MAIN_MENU"
+      },
+      {
+        "id_wpp": "5500030020011",
+        "estado": "WAITING_MAIN_MENU"
+      }
+    ],
+    "mensagens": [
+      {
+        "chat_id": 4,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 4,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 5,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 5,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 8,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 8,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 11,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 11,
+        "sender": "bot",
+        "text": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 6,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 6,
+        "sender": "bot",
+        "text": "Para exames simples, consultas básicas e ultrassonografias, procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento será feito por encaminhamento à Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 12,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 12,
+        "sender": "bot",
+        "text": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 9,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 9,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 13,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 13,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 7,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 7,
+        "sender": "bot",
+        "text": "Exames simples, consultas básicas e ultrassonografias – procure a sua Unidade de Saúde (USF ou UBS).  \nExames mais complexos, consultas com especialistas ou cirurgias – você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 10,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 10,
+        "sender": "bot",
+        "text": "Para agendar exames e consultas:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 14,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 14,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      },
+      {
+        "chat_id": 15,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 15,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "auditoria": [
+      {
+        "usuario": 4,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 4,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 987.62,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 326,
+          "duracao_rag_ms": 965.26
+        }
+      },
+      {
+        "usuario": 5,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 5,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 21196.41,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 322,
+          "duracao_rag_ms": 21176.79
+        }
+      },
+      {
+        "usuario": 8,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 8,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24078.01,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 326,
+          "duracao_rag_ms": 24057.31
+        }
+      },
+      {
+        "usuario": 11,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 11,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 941.28,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 339,
+          "duracao_rag_ms": 923.86
+        }
+      },
+      {
+        "usuario": 6,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 6,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 27224.39,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 331,
+          "duracao_rag_ms": 27203.08
+        }
+      },
+      {
+        "usuario": 12,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 12,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 27091.89,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 339,
+          "duracao_rag_ms": 27071.96
+        }
+      },
+      {
+        "usuario": 9,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 9,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 27188.87,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 322,
+          "duracao_rag_ms": 27166.46
+        }
+      },
+      {
+        "usuario": 13,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 13,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 10996.62,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 327,
+          "duracao_rag_ms": 10979.88
+        }
+      },
+      {
+        "usuario": 7,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 7,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 27482.43,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 294,
+          "duracao_rag_ms": 27464.58
+        }
+      },
+      {
+        "usuario": 10,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 10,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 26568.34,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 384,
+          "duracao_rag_ms": 26549.56
+        }
+      },
+      {
+        "usuario": 14,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 14,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24.02,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      },
+      {
+        "usuario": 15,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 15,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 20.68,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      }
+    ]
+  },
+  "processo_vivo_apos": true,
+  "drenagem_completa": true,
+  "resumo": {
+    "mediana_s": 88.03456410000217,
+    "min_s": 1.000235600018641,
+    "max_s": 180.03879829999642,
+    "amplitude_despacho_s": 0.001983599999221042,
+    "http_200": 9,
+    "erros_cliente": {
+      "ReadTimeout": 1
+    },
+    "inferencias_max_simultaneas": 1,
+    "inferencias_observadas": 10,
+    "status_provedor": {
+      "200": 10,
+      "429": 8
+    },
+    "auditoria": {
+      "MESSAGE_RECEIVED": 12,
+      "MESSAGE_SENT": 12
+    },
+    "lag_loop_max_s": 81.51621150000254,
+    "saude_durante_s": 139.72897309999098,
+    "menu_durante_s": 193.8317187000066,
+    "saude_enviada_durante_espera": true,
+    "saude_executada_apos_espera": true,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {
+      "B02-evolution-rag_real-10-carga-00": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-01": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-04": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-07": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-02": "Para exames simples, consultas básicas e ultrassonografias, procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento será feito por encaminhamento à Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-08": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-05": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-09": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-03": "Exames simples, consultas básicas e ultrassonografias – procure a sua Unidade de Saúde (USF ou UBS).  \nExames mais complexos, consultas com especialistas ou cirurgias – você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-carga-06": "Para agendar exames e consultas:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+      "B02-evolution-rag_real-10-menu-durante": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "B02-evolution-rag_real-10-menu-apos": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+}

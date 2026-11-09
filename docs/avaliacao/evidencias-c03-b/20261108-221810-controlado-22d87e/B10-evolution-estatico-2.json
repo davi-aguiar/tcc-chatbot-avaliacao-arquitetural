@@ -1,0 +1,259 @@
+{
+  "id": "B10-evolution-estatico-2",
+  "rota": "evolution",
+  "perfil": "estatico",
+  "usuarios": 2,
+  "inicio_t": 192247.8393575,
+  "fim_t": 192248.0166171,
+  "usuarios_carga": [
+    "5500030100000",
+    "5500030100001"
+  ],
+  "requisicoes": [
+    {
+      "rid": "B10-evolution-estatico-2-carga-00",
+      "path": "/evolution_webhook",
+      "despacho_t": 192247.8394344,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192247.8678923,
+      "duracao_s": 0.028457900014473125
+    },
+    {
+      "rid": "B10-evolution-estatico-2-carga-01",
+      "path": "/evolution_webhook",
+      "despacho_t": 192247.8400104,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192247.9696353,
+      "duracao_s": 0.12962490000063553
+    }
+  ],
+  "sondas_durante": [
+    {
+      "rid": "B10-evolution-estatico-2-saude-durante",
+      "path": "/__c03/health",
+      "despacho_t": 192247.8404633,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "pid": 17200,
+        "t": 192247.868054
+      },
+      "fim_t": 192247.8692627,
+      "duracao_s": 0.02879939999547787
+    },
+    {
+      "rid": "B10-evolution-estatico-2-menu-durante",
+      "path": "/evolution_webhook",
+      "despacho_t": 192247.8412077,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "status": "success"
+      },
+      "fim_t": 192247.9694606,
+      "duracao_s": 0.12825290000182576
+    }
+  ],
+  "saude_apos": {
+    "rid": "B10-evolution-estatico-2-saude-apos",
+    "path": "/__c03/health",
+    "despacho_t": 192247.9834562,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "pid": 17200,
+      "t": 192247.984977
+    },
+    "fim_t": 192247.9859828,
+    "duracao_s": 0.002526600001147017
+  },
+  "menu_apos": {
+    "rid": "B10-evolution-estatico-2-menu-apos",
+    "path": "/evolution_webhook",
+    "despacho_t": 192247.9859889,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "status": "success"
+    },
+    "fim_t": 192248.0120501,
+    "duracao_s": 0.02606119998381473
+  },
+  "snapshot": {
+    "usuarios": [
+      {
+        "id_wpp": "5500030100000",
+        "estado": "WAITING_4_SERVICOS"
+      },
+      {
+        "id_wpp": "5500030100001",
+        "estado": "WAITING_4_SERVICOS"
+      },
+      {
+        "id_wpp": "5500030100002",
+        "estado": "WAITING_MAIN_MENU"
+      },
+      {
+        "id_wpp": "5500030100003",
+        "estado": "WAITING_MAIN_MENU"
+      }
+    ],
+    "mensagens": [
+      {
+        "chat_id": 56,
+        "sender": "user",
+        "text": "4"
+      },
+      {
+        "chat_id": 56,
+        "sender": "bot",
+        "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+      },
+      {
+        "chat_id": 58,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 58,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      },
+      {
+        "chat_id": 57,
+        "sender": "user",
+        "text": "4"
+      },
+      {
+        "chat_id": 57,
+        "sender": "bot",
+        "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+      },
+      {
+        "chat_id": 59,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 59,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "auditoria": [
+      {
+        "usuario": 56,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 56,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 17.05,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      },
+      {
+        "usuario": 58,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 58,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 15.87,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      },
+      {
+        "usuario": 57,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 57,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 16.21,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      },
+      {
+        "usuario": 59,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 59,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 15.76,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      }
+    ]
+  },
+  "processo_vivo_apos": true,
+  "drenagem_completa": true,
+  "resumo": {
+    "mediana_s": 0.07904140000755433,
+    "min_s": 0.028457900014473125,
+    "max_s": 0.12962490000063553,
+    "amplitude_despacho_s": 0.0005759999912697822,
+    "http_200": 2,
+    "erros_cliente": {},
+    "inferencias_max_simultaneas": 0,
+    "inferencias_observadas": 0,
+    "status_provedor": {},
+    "auditoria": {
+      "MESSAGE_RECEIVED": 4,
+      "MESSAGE_SENT": 4
+    },
+    "lag_loop_max_s": 0.07974989999318495,
+    "saude_durante_s": 0.02879939999547787,
+    "menu_durante_s": 0.12825290000182576,
+    "saude_enviada_durante_espera": false,
+    "saude_executada_apos_espera": false,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {
+      "B10-evolution-estatico-2-carga-00": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+      "B10-evolution-estatico-2-menu-durante": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "B10-evolution-estatico-2-carga-01": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+      "B10-evolution-estatico-2-menu-apos": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+    },
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+}

@@ -1,8 +1,20 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 e C02 estão encerrados com ressalvas; C03 a C06 estão planejados e ainda não executados como cenários próprios.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01, C02 e C03 estão encerrados com ressalvas; C04 a C06 estão planejados e ainda não executados como cenários próprios.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+
+## C03 — Disponibilidade após falha e sob concorrência
+
+**Estado: coletas C03-A e C03-B concluídas com ressalvas em 08/11/2026. Há bloqueio sob concorrência; não há aprovação geral de disponibilidade.**
+
+**C03-A — Falhas imediatas sequenciais:** os 12 casos (três tipos × dois percursos × duas repetições) tiveram retorno controlado e estado preservado; as 48 interações de retomada funcionaram sem NLP/SDK adicional. Essa coleta não fez geração real nem mediu mensagens simultâneas.
+
+Pelo menu, o usuário recebe erro interno e a auditoria registra `MESSAGE_FAILED`; em texto livre, recebe opção inválida e a auditoria registra `MESSAGE_SENT`. Continuidade operacional não significa comunicação adequada da falha nem disponibilidade durante espera real por timeout.
+
+**C03-B — Concorrência:** 21 rajadas controladas (104 mensagens de carga) e duas rajadas reais (11 consultas) em servidor HTTP isolado, com um worker. Com dez usuários e provedor real, o menu de outro usuário levou **193,832 s**, a saúde levou **139,729 s** e um cliente excedeu 180 s. As inferências foram serializadas; oito HTTP 429 foram absorvidos por retries. O processo permaneceu vivo e os menus voltaram após drenagem. Isso reproduz bloqueio/timeout, sem determinar a causa exata do incidente anterior relatado pelo autor.
+
+Nenhum Python funcional foi alterado. Os relatórios de [C03-A](C03-relatorio-execucao.md) e [C03-B](C03-B-relatorio-execucao.md) apresentam resultados e limites; os protocolos de [C03-A](C03-protocolo.md) e [C03-B](C03-B-protocolo.md) fixam os recortes; os índices de evidências de [C03-A](evidencias-c03/README.md) e [C03-B](evidencias-c03-b/README.md) localizam registros e instrumentos.
 
 ## C02 — Desempenho de processamento e inicialização
 

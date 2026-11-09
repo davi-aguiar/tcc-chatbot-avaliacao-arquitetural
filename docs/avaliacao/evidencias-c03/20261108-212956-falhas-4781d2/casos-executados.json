@@ -1,0 +1,3044 @@
+[
+  {
+    "id": "R1-timeout-menu_rag",
+    "repeticao": 1,
+    "tipo_falha": "timeout",
+    "erro_esperado": "APITimeoutError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APITimeoutError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: Request timed out.",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "APITimeoutError",
+            "duracao_total_ms": 68.96,
+            "duracao_rag_ms": 48.05
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.94,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.08,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.97,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.24,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APITimeoutError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R1-timeout-texto_livre",
+    "repeticao": 1,
+    "tipo_falha": "timeout",
+    "erro_esperado": "APITimeoutError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APITimeoutError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 14.6,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 2.72
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.93,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.2,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.93,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.84,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APITimeoutError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R1-conexao-menu_rag",
+    "repeticao": 1,
+    "tipo_falha": "conexao",
+    "erro_esperado": "APIConnectionError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APIConnectionError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: C03: conexao indisponivel (sintetica)",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "APIConnectionError",
+            "duracao_total_ms": 10.65,
+            "duracao_rag_ms": 2.53
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.45,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.79,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 2.86,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 6.84,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APIConnectionError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R1-conexao-texto_livre",
+    "repeticao": 1,
+    "tipo_falha": "conexao",
+    "erro_esperado": "APIConnectionError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APIConnectionError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 14.46,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 3.11
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.9,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.65,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.66,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.94,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APIConnectionError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R1-modelo_indisponivel-menu_rag",
+    "repeticao": 1,
+    "tipo_falha": "modelo_indisponivel",
+    "erro_esperado": "NotFoundError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "NotFoundError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: C03: modelo indisponivel (sintetico)",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "NotFoundError",
+            "duracao_total_ms": 13.33,
+            "duracao_rag_ms": 3.62
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.47,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.39,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.3,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.41,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "NotFoundError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R1-modelo_indisponivel-texto_livre",
+    "repeticao": 1,
+    "tipo_falha": "modelo_indisponivel",
+    "erro_esperado": "NotFoundError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "NotFoundError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 17.21,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 3.18
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 8.67,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.06,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 6.22,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.12,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "NotFoundError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-timeout-menu_rag",
+    "repeticao": 2,
+    "tipo_falha": "timeout",
+    "erro_esperado": "APITimeoutError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APITimeoutError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: Request timed out.",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "APITimeoutError",
+            "duracao_total_ms": 13.32,
+            "duracao_rag_ms": 2.35
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 9.13,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.73,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.11,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.2,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APITimeoutError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-timeout-texto_livre",
+    "repeticao": 2,
+    "tipo_falha": "timeout",
+    "erro_esperado": "APITimeoutError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APITimeoutError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 11.9,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 2.43
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.71,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.85,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.16,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 3.2,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APITimeoutError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-conexao-menu_rag",
+    "repeticao": 2,
+    "tipo_falha": "conexao",
+    "erro_esperado": "APIConnectionError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APIConnectionError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: C03: conexao indisponivel (sintetica)",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "APIConnectionError",
+            "duracao_total_ms": 10.65,
+            "duracao_rag_ms": 2.43
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.27,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 6.93,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.98,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.44,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APIConnectionError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-conexao-texto_livre",
+    "repeticao": 2,
+    "tipo_falha": "conexao",
+    "erro_esperado": "APIConnectionError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "APIConnectionError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 16.21,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 3.81
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.08,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.56,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.79,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.14,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "APIConnectionError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-modelo_indisponivel-menu_rag",
+    "repeticao": 2,
+    "tipo_falha": "modelo_indisponivel",
+    "erro_esperado": "NotFoundError",
+    "percurso": "menu_rag",
+    "estado_inicial": "WAITING_1_1_INFO",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "1",
+      "estado_antes": "WAITING_1_1_INFO",
+      "excecao_propagada": null,
+      "resposta": "Desculpe, ocorreu um erro interno.",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_1_1_INFO",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "NotFoundError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_FAILED",
+          "nivel": "ERROR",
+          "mensagem": "Falha ao processar mensagem: C03: modelo indisponivel (sintetico)",
+          "meta": {
+            "id_wpp": "5500000000303",
+            "erro": "NotFoundError",
+            "duracao_total_ms": 10.8,
+            "duracao_rag_ms": 2.5
+          }
+        }
+      ],
+      "mensagens_persistidas": []
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_1_1_INFO",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.01,
+              "estado_entrada": "WAITING_1_1_INFO",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.81,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 4.84,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.35,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "NotFoundError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  },
+  {
+    "id": "R2-modelo_indisponivel-texto_livre",
+    "repeticao": 2,
+    "tipo_falha": "modelo_indisponivel",
+    "erro_esperado": "NotFoundError",
+    "percurso": "texto_livre",
+    "estado_inicial": "WAITING_MAIN_MENU",
+    "consulta": "Onde posso agendar Exames e Consultas?",
+    "id_wpp": "5500000000303",
+    "falha": {
+      "entrada": "Onde posso agendar Exames e Consultas?",
+      "estado_antes": "WAITING_MAIN_MENU",
+      "excecao_propagada": null,
+      "resposta": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null,
+      "retorno_controlado": true,
+      "estado_depois": "WAITING_MAIN_MENU",
+      "nome_depois": "Teste C03",
+      "id_wpp_depois": "5500000000303",
+      "nlp": [
+        {
+          "consulta": "Onde posso agendar Exames e Consultas?",
+          "erro_tipo": "NotFoundError",
+          "mesma_excecao_injetada": true
+        }
+      ],
+      "eventos": [
+        {
+          "tipo": "MESSAGE_RECEIVED",
+          "nivel": "INFO",
+          "mensagem": "Mensagem recebida de 5500000000303",
+          "meta": {}
+        },
+        {
+          "tipo": "MESSAGE_SENT",
+          "nivel": "INFO",
+          "mensagem": "Resposta enviada para 5500000000303",
+          "meta": {
+            "duracao_total_ms": 19.44,
+            "estado_entrada": "WAITING_MAIN_MENU",
+            "estado_saida": "WAITING_MAIN_MENU",
+            "chamou_rag": true,
+            "chamadas_rag": 1,
+            "tem_imagem": false,
+            "tamanho_resposta": 275,
+            "duracao_rag_ms": 5.96
+          }
+        }
+      ],
+      "mensagens_persistidas": [
+        {
+          "remetente": "user",
+          "texto": "Onde posso agendar Exames e Consultas?"
+        },
+        {
+          "remetente": "bot",
+          "texto": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+        }
+      ]
+    },
+    "retomada": [
+      {
+        "entrada": "/menu",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_MAIN_MENU",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 6.02,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_MAIN_MENU",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 253
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "/menu"
+          },
+          {
+            "remetente": "bot",
+            "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "4",
+        "estado_antes": "WAITING_MAIN_MENU",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 6.97,
+              "estado_entrada": "WAITING_MAIN_MENU",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "4"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "2",
+        "estado_antes": "WAITING_4_SERVICOS",
+        "excecao_propagada": null,
+        "resposta": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_2_CEMERF",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 7.14,
+              "estado_entrada": "WAITING_4_SERVICOS",
+              "estado_saida": "WAITING_4_2_CEMERF",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 261
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "2"
+          },
+          {
+            "remetente": "bot",
+            "texto": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      },
+      {
+        "entrada": "0",
+        "estado_antes": "WAITING_4_2_CEMERF",
+        "excecao_propagada": null,
+        "resposta": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null,
+        "retorno_controlado": true,
+        "estado_depois": "WAITING_4_SERVICOS",
+        "nome_depois": "Teste C03",
+        "id_wpp_depois": "5500000000303",
+        "nlp": [],
+        "eventos": [
+          {
+            "tipo": "MESSAGE_RECEIVED",
+            "nivel": "INFO",
+            "mensagem": "Mensagem recebida de 5500000000303",
+            "meta": {}
+          },
+          {
+            "tipo": "MESSAGE_SENT",
+            "nivel": "INFO",
+            "mensagem": "Resposta enviada para 5500000000303",
+            "meta": {
+              "duracao_total_ms": 5.86,
+              "estado_entrada": "WAITING_4_2_CEMERF",
+              "estado_saida": "WAITING_4_SERVICOS",
+              "chamou_rag": false,
+              "chamadas_rag": 0,
+              "tem_imagem": false,
+              "tamanho_resposta": 462
+            }
+          }
+        ],
+        "mensagens_persistidas": [
+          {
+            "remetente": "user",
+            "texto": "0"
+          },
+          {
+            "remetente": "bot",
+            "texto": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+          }
+        ],
+        "atendida": true
+      }
+    ],
+    "sdk": [
+      {
+        "erro_tipo": "NotFoundError",
+        "consulta_no_prompt": true,
+        "contexto_no_prompt": true
+      }
+    ],
+    "recuperacoes": [
+      "Onde posso agendar Exames e Consultas?"
+    ],
+    "criterios": {
+      "injecao_valida": true,
+      "retorno_controlado": true,
+      "estado_preservado": true,
+      "continuidade_estatica": true,
+      "atendido": true
+    }
+  }
+]

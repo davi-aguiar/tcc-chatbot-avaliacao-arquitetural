@@ -1,0 +1,262 @@
+{
+  "id": "B06-rest-rag_lento-2",
+  "rota": "rest",
+  "perfil": "rag_lento",
+  "usuarios": 2,
+  "inicio_t": 192238.2135079,
+  "fim_t": 192239.3705363,
+  "usuarios_carga": [
+    "5500030060000",
+    "5500030060001"
+  ],
+  "requisicoes": [
+    {
+      "rid": "B06-rest-rag_lento-2-carga-00",
+      "path": "/messages/receive",
+      "despacho_t": 192238.2277115,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "response": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+        "image_url": null
+      },
+      "fim_t": 192238.7653817,
+      "duracao_s": 0.537670200021239
+    },
+    {
+      "rid": "B06-rest-rag_lento-2-carga-01",
+      "path": "/messages/receive",
+      "despacho_t": 192238.2281588,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "response": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*",
+        "image_url": null
+      },
+      "fim_t": 192239.3000755,
+      "duracao_s": 1.0719167000206653
+    }
+  ],
+  "sondas_durante": [
+    {
+      "rid": "B06-rest-rag_lento-2-saude-durante",
+      "path": "/__c03/health",
+      "despacho_t": 192238.2562828,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "pid": 17200,
+        "t": 192238.7655955
+      },
+      "fim_t": 192238.7665283,
+      "duracao_s": 0.5102455000160262
+    },
+    {
+      "rid": "B06-rest-rag_lento-2-menu-durante",
+      "path": "/messages/receive",
+      "despacho_t": 192238.2567203,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "response": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null
+      },
+      "fim_t": 192239.3244003,
+      "duracao_s": 1.0676800000073854
+    }
+  ],
+  "saude_apos": {
+    "rid": "B06-rest-rag_lento-2-saude-apos",
+    "path": "/__c03/health",
+    "despacho_t": 192239.3365825,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "pid": 17200,
+      "t": 192239.3379559
+    },
+    "fim_t": 192239.3388772,
+    "duracao_s": 0.0022947000106796622
+  },
+  "menu_apos": {
+    "rid": "B06-rest-rag_lento-2-menu-apos",
+    "path": "/messages/receive",
+    "despacho_t": 192239.3388797,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "response": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null
+    },
+    "fim_t": 192239.366156,
+    "duracao_s": 0.02727630001027137
+  },
+  "snapshot": {
+    "usuarios": [
+      {
+        "id_wpp": "5500030060000",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030060001",
+        "estado": "WAITING_1_1_INFO"
+      },
+      {
+        "id_wpp": "5500030060002",
+        "estado": "WAITING_MAIN_MENU"
+      },
+      {
+        "id_wpp": "5500030060003",
+        "estado": "WAITING_MAIN_MENU"
+      }
+    ],
+    "mensagens": [
+      {
+        "chat_id": 30,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 30,
+        "sender": "bot",
+        "text": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 31,
+        "sender": "user",
+        "text": "1"
+      },
+      {
+        "chat_id": 31,
+        "sender": "bot",
+        "text": "C03B: resposta sintetica de continuidade.\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*"
+      },
+      {
+        "chat_id": 32,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 32,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      },
+      {
+        "chat_id": 33,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 33,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "auditoria": [
+      {
+        "usuario": 30,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 30,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 526.31,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 108,
+          "duracao_rag_ms": 504.81
+        }
+      },
+      {
+        "usuario": 31,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 31,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 524.67,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_1_1_INFO",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 108,
+          "duracao_rag_ms": 503.95
+        }
+      },
+      {
+        "usuario": 32,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 32,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 16.13,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      },
+      {
+        "usuario": 33,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 33,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 18.14,
+          "estado_entrada": "WAITING_1_1_INFO",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      }
+    ]
+  },
+  "processo_vivo_apos": true,
+  "drenagem_completa": true,
+  "resumo": {
+    "mediana_s": 0.8047934500209522,
+    "min_s": 0.537670200021239,
+    "max_s": 1.0719167000206653,
+    "amplitude_despacho_s": 0.000447300000814721,
+    "http_200": 2,
+    "erros_cliente": {},
+    "inferencias_max_simultaneas": 1,
+    "inferencias_observadas": 2,
+    "status_provedor": {
+      "200": 2
+    },
+    "auditoria": {
+      "MESSAGE_RECEIVED": 4,
+      "MESSAGE_SENT": 4
+    },
+    "lag_loop_max_s": 0.5162514000153169,
+    "saude_durante_s": 0.5102455000160262,
+    "menu_durante_s": 1.0676800000073854,
+    "saude_enviada_durante_espera": true,
+    "saude_executada_apos_espera": true,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {},
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+}

@@ -1,0 +1,23 @@
+C03-B — preparação em 08/11/2026, antes da coleta real.
+Ambiente .venv; aplicação funcional preservada no corte 666b601.
+
+Comando: .\.venv\Scripts\python.exe -m pytest -q docs/avaliacao/c03b/test_concorrencia.py
+Resultado: 2 passed in 8.34s
+Inclui servidor HTTP real em subprocesso isolado, atraso controlado,
+retry 429/200 no SDK, timeout do cliente e retorno posterior sem queda.
+Esses dados de teste não integram as rajadas da coleta.
+
+Comando: .\.venv\Scripts\python.exe -m pytest -q
+Resultado: 244 passed in 1.95s
+
+Comando: .\.venv\Scripts\python.exe -m ruff check --select E9,F63,F7,F82 .
+Resultado: All checks passed!
+
+Comando: .\.venv\Scripts\python.exe -m compileall -q docs/avaliacao/c03b
+Resultado: código de saída 0.
+
+Comando: git diff --quiet HEAD -- api app data tests
+Resultado: código de saída 0; nenhuma mudança funcional.
+
+Comando: git diff --check
+Resultado: código de saída 0.

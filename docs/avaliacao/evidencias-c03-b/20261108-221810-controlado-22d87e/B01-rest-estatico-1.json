@@ -1,0 +1,212 @@
+{
+  "id": "B01-rest-estatico-1",
+  "rota": "rest",
+  "perfil": "estatico",
+  "usuarios": 1,
+  "inicio_t": 192236.6030709,
+  "fim_t": 192236.7256683,
+  "usuarios_carga": [
+    "5500030010000"
+  ],
+  "requisicoes": [
+    {
+      "rid": "B01-rest-estatico-1-carga-00",
+      "path": "/messages/receive",
+      "despacho_t": 192236.6031218,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "response": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+        "image_url": null
+      },
+      "fim_t": 192236.6843173,
+      "duracao_s": 0.08119550000992604
+    }
+  ],
+  "sondas_durante": [
+    {
+      "rid": "B01-rest-estatico-1-saude-durante",
+      "path": "/__c03/health",
+      "despacho_t": 192236.6034897,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "pid": 17200,
+        "t": 192236.6262507
+      },
+      "fim_t": 192236.6274567,
+      "duracao_s": 0.023966999986441806
+    },
+    {
+      "rid": "B01-rest-estatico-1-menu-durante",
+      "path": "/messages/receive",
+      "despacho_t": 192236.6037384,
+      "erro_cliente": null,
+      "status": 200,
+      "resposta": {
+        "response": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+        "image_url": null
+      },
+      "fim_t": 192236.6843901,
+      "duracao_s": 0.08065170000190847
+    }
+  ],
+  "saude_apos": {
+    "rid": "B01-rest-estatico-1-saude-apos",
+    "path": "/__c03/health",
+    "despacho_t": 192236.6930354,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "pid": 17200,
+      "t": 192236.6940914
+    },
+    "fim_t": 192236.6947307,
+    "duracao_s": 0.0016952999867498875
+  },
+  "menu_apos": {
+    "rid": "B01-rest-estatico-1-menu-apos",
+    "path": "/messages/receive",
+    "despacho_t": 192236.6947336,
+    "erro_cliente": null,
+    "status": 200,
+    "resposta": {
+      "response": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+      "image_url": null
+    },
+    "fim_t": 192236.7190926,
+    "duracao_s": 0.0243590000027325
+  },
+  "snapshot": {
+    "usuarios": [
+      {
+        "id_wpp": "5500030010000",
+        "estado": "WAITING_4_SERVICOS"
+      },
+      {
+        "id_wpp": "5500030010001",
+        "estado": "WAITING_MAIN_MENU"
+      },
+      {
+        "id_wpp": "5500030010002",
+        "estado": "WAITING_MAIN_MENU"
+      }
+    ],
+    "mensagens": [
+      {
+        "chat_id": 1,
+        "sender": "user",
+        "text": "4"
+      },
+      {
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:"
+      },
+      {
+        "chat_id": 2,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 2,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      },
+      {
+        "chat_id": 3,
+        "sender": "user",
+        "text": "/menu"
+      },
+      {
+        "chat_id": 3,
+        "sender": "bot",
+        "text": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "auditoria": [
+      {
+        "usuario": 1,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 1,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 24.2,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_4_SERVICOS",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 462
+        }
+      },
+      {
+        "usuario": 2,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 2,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 16.32,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      },
+      {
+        "usuario": 3,
+        "tipo": "MESSAGE_RECEIVED",
+        "meta": {}
+      },
+      {
+        "usuario": 3,
+        "tipo": "MESSAGE_SENT",
+        "meta": {
+          "duracao_total_ms": 15.78,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": false,
+          "chamadas_rag": 0,
+          "tem_imagem": false,
+          "tamanho_resposta": 253
+        }
+      }
+    ]
+  },
+  "processo_vivo_apos": true,
+  "drenagem_completa": true,
+  "resumo": {
+    "mediana_s": 0.08119550000992604,
+    "min_s": 0.08119550000992604,
+    "max_s": 0.08119550000992604,
+    "amplitude_despacho_s": 0.0,
+    "http_200": 1,
+    "erros_cliente": {},
+    "inferencias_max_simultaneas": 0,
+    "inferencias_observadas": 0,
+    "status_provedor": {},
+    "auditoria": {
+      "MESSAGE_RECEIVED": 3,
+      "MESSAGE_SENT": 3
+    },
+    "lag_loop_max_s": 0,
+    "saude_durante_s": 0.023966999986441806,
+    "menu_durante_s": 0.08065170000190847,
+    "saude_enviada_durante_espera": false,
+    "saude_executada_apos_espera": false,
+    "processo_vivo_apos": true,
+    "drenagem_completa": true,
+    "estado_usuarios_esperado": true,
+    "respostas_saida": {},
+    "saude_apos_ok": true,
+    "menu_apos_ok": true
+  }
+}

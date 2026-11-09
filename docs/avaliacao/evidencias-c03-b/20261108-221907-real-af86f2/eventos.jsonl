@@ -1,0 +1,165 @@
+{"evento": "http_inicio", "t": 192347.4152548, "rid": "preparacao", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192347.4184534, "rid": "preparacao"}
+{"evento": "http_inicio", "t": 192347.4203944, "rid": "B01-evolution-rag_real-1-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192347.4415557, "rid": "B01-evolution-rag_real-1-prepare"}
+{"evento": "http_inicio", "t": 192347.4507139, "rid": "B01-evolution-rag_real-1-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192347.4962501, "rid": "B01-evolution-rag_real-1-carga-00"}
+{"evento": "provedor_inicio", "t": 192347.6199092, "rid": "B01-evolution-rag_real-1-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192349.1616161, "rid": "B01-evolution-rag_real-1-carga-00", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "4156", "x-ratelimit-reset-tokens": "28.83s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "999"}}
+{"evento": "provedor_fim", "t": 192349.1616702, "rid": "B01-evolution-rag_real-1-carga-00"}
+{"evento": "nlp_fim", "t": 192349.1780857, "rid": "B01-evolution-rag_real-1-carga-00"}
+{"evento": "envio_inicio", "t": 192349.1927713, "rid": "B01-evolution-rag_real-1-carga-00"}
+{"evento": "envio_fim", "t": 192349.1928223, "rid": "B01-evolution-rag_real-1-carga-00", "texto": "Você pode agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030010000"}
+{"evento": "loop_atrasado", "t": 192349.1936529, "rid": "preparacao", "lag_s": 1.694744500000961, "inicio_espera": 192347.4789053}
+{"evento": "http_inicio", "t": 192349.1941671, "rid": "B01-evolution-rag_real-1-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192349.1944879, "rid": "B01-evolution-rag_real-1-saude-durante"}
+{"evento": "http_fim", "t": 192349.1946585, "rid": "B01-evolution-rag_real-1-carga-00"}
+{"evento": "http_inicio", "t": 192349.1947247, "rid": "B01-evolution-rag_real-1-menu-durante", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192349.2237882, "rid": "B01-evolution-rag_real-1-menu-durante"}
+{"evento": "envio_fim", "t": 192349.2238616, "rid": "B01-evolution-rag_real-1-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030010001"}
+{"evento": "http_fim", "t": 192349.2248732, "rid": "B01-evolution-rag_real-1-menu-durante"}
+{"evento": "http_inicio", "t": 192349.2342848, "rid": "B01-evolution-rag_real-1-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192349.2348668, "rid": "B01-evolution-rag_real-1-saude-apos"}
+{"evento": "http_inicio", "t": 192349.2382964, "rid": "B01-evolution-rag_real-1-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192349.2621371, "rid": "B01-evolution-rag_real-1-menu-apos"}
+{"evento": "envio_fim", "t": 192349.2621797, "rid": "B01-evolution-rag_real-1-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030010002"}
+{"evento": "http_fim", "t": 192349.2627784, "rid": "B01-evolution-rag_real-1-menu-apos"}
+{"evento": "http_inicio", "t": 192349.263752, "rid": "B01-evolution-rag_real-1-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192349.2706753, "rid": "B01-evolution-rag_real-1-snapshot"}
+{"evento": "http_inicio", "t": 192349.2842323, "rid": "B02-evolution-rag_real-10-prepare", "path": "/__c03/prepare"}
+{"evento": "http_fim", "t": 192349.2978534, "rid": "B02-evolution-rag_real-10-prepare"}
+{"evento": "http_inicio", "t": 192349.31267, "rid": "B02-evolution-rag_real-10-carga-00", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192349.3254643, "rid": "B02-evolution-rag_real-10-carga-00"}
+{"evento": "provedor_inicio", "t": 192349.3485974, "rid": "B02-evolution-rag_real-10-carga-00", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192350.2891666, "rid": "B02-evolution-rag_real-10-carga-00", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "826", "x-ratelimit-reset-tokens": "53.805s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "998"}}
+{"evento": "provedor_fim", "t": 192350.2892378, "rid": "B02-evolution-rag_real-10-carga-00"}
+{"evento": "nlp_fim", "t": 192350.2906759, "rid": "B02-evolution-rag_real-10-carga-00"}
+{"evento": "envio_inicio", "t": 192350.3086053, "rid": "B02-evolution-rag_real-10-carga-00"}
+{"evento": "envio_fim", "t": 192350.3086586, "rid": "B02-evolution-rag_real-10-carga-00", "texto": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020000"}
+{"evento": "http_inicio", "t": 192350.3099102, "rid": "B02-evolution-rag_real-10-carga-01", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192350.3103213, "rid": "B02-evolution-rag_real-10-carga-04", "path": "/evolution_webhook"}
+{"evento": "loop_atrasado", "t": 192350.3105014, "rid": "preparacao", "lag_s": 0.9775886999745853, "inicio_espera": 192349.3129104}
+{"evento": "http_fim", "t": 192350.3110146, "rid": "B02-evolution-rag_real-10-carga-00"}
+{"evento": "http_inicio", "t": 192350.3116635, "rid": "B02-evolution-rag_real-10-carga-07", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192350.3124403, "rid": "B02-evolution-rag_real-10-carga-02", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192350.3248563, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192350.3466284, "rid": "B02-evolution-rag_real-10-carga-01", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192350.395994, "rid": "B02-evolution-rag_real-10-carga-01", "status": 429, "cabecalhos": {"retry-after": "20", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "1280", "x-ratelimit-reset-tokens": "50.4s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "998"}}
+{"evento": "provedor_fim", "t": 192350.3960706, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "provedor_inicio", "t": 192370.3977633, "rid": "B02-evolution-rag_real-10-carga-01", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192371.499239, "rid": "B02-evolution-rag_real-10-carga-01", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "117", "x-ratelimit-reset-tokens": "59.122s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "997"}}
+{"evento": "provedor_fim", "t": 192371.4993304, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "nlp_fim", "t": 192371.5015927, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "envio_inicio", "t": 192371.5167875, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "envio_fim", "t": 192371.5168428, "rid": "B02-evolution-rag_real-10-carga-01", "texto": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020001"}
+{"evento": "nlp_inicio", "t": 192371.5275118, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192371.5512043, "rid": "B02-evolution-rag_real-10-carga-04", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192371.5987987, "rid": "B02-evolution-rag_real-10-carga-04", "status": 429, "cabecalhos": {"retry-after": "23", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "517", "x-ratelimit-reset-tokens": "56.122s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "997"}}
+{"evento": "provedor_fim", "t": 192371.5988596, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "provedor_inicio", "t": 192394.600309, "rid": "B02-evolution-rag_real-10-carga-04", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192395.5824262, "rid": "B02-evolution-rag_real-10-carga-04", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "78", "x-ratelimit-reset-tokens": "59.415s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "996"}}
+{"evento": "provedor_fim", "t": 192395.5825209, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "nlp_fim", "t": 192395.5847471, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "envio_inicio", "t": 192395.6027205, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "envio_fim", "t": 192395.6027643, "rid": "B02-evolution-rag_real-10-carga-04", "texto": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020004"}
+{"evento": "http_inicio", "t": 192395.6032552, "rid": "B02-evolution-rag_real-10-carga-08", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192395.6047511, "rid": "B02-evolution-rag_real-10-carga-05", "path": "/evolution_webhook"}
+{"evento": "http_inicio", "t": 192395.6073386, "rid": "B02-evolution-rag_real-10-carga-09", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192395.6180719, "rid": "B02-evolution-rag_real-10-carga-07"}
+{"evento": "provedor_inicio", "t": 192395.6416877, "rid": "B02-evolution-rag_real-10-carga-07", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192396.5378835, "rid": "B02-evolution-rag_real-10-carga-07", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "15", "x-ratelimit-reset-tokens": "59.887s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "995"}}
+{"evento": "provedor_fim", "t": 192396.5379348, "rid": "B02-evolution-rag_real-10-carga-07"}
+{"evento": "nlp_fim", "t": 192396.5418979, "rid": "B02-evolution-rag_real-10-carga-07"}
+{"evento": "envio_inicio", "t": 192396.557497, "rid": "B02-evolution-rag_real-10-carga-07"}
+{"evento": "envio_fim", "t": 192396.5575795, "rid": "B02-evolution-rag_real-10-carga-07", "texto": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020007"}
+{"evento": "loop_atrasado", "t": 192396.5580155, "rid": "preparacao", "lag_s": 46.22749050001264, "inicio_espera": 192350.3105223}
+{"evento": "nlp_inicio", "t": 192396.5687656, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192396.5875336, "rid": "B02-evolution-rag_real-10-carga-02", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192396.6419491, "rid": "B02-evolution-rag_real-10-carga-02", "status": 429, "cabecalhos": {"retry-after": "26", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "123", "x-ratelimit-reset-tokens": "59.077s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "995"}}
+{"evento": "provedor_fim", "t": 192396.6420316, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "provedor_inicio", "t": 192422.6440627, "rid": "B02-evolution-rag_real-10-carga-02", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192423.7694166, "rid": "B02-evolution-rag_real-10-carga-02", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "15", "x-ratelimit-reset-tokens": "59.887s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "994"}}
+{"evento": "provedor_fim", "t": 192423.7695144, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "nlp_fim", "t": 192423.7717826, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "envio_inicio", "t": 192423.7912925, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "envio_fim", "t": 192423.7913421, "rid": "B02-evolution-rag_real-10-carga-02", "texto": "Para exames simples, consultas básicas e ultrassonografias, procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento será feito por encaminhamento à Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020002"}
+{"evento": "http_inicio", "t": 192423.7918595, "rid": "B02-evolution-rag_real-10-carga-03", "path": "/evolution_webhook"}
+{"evento": "http_fim", "t": 192423.7929357, "rid": "B02-evolution-rag_real-10-carga-01"}
+{"evento": "http_fim", "t": 192423.7930008, "rid": "B02-evolution-rag_real-10-carga-04"}
+{"evento": "nlp_inicio", "t": 192423.8029507, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192423.8233506, "rid": "B02-evolution-rag_real-10-carga-08", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192423.8691357, "rid": "B02-evolution-rag_real-10-carga-08", "status": 429, "cabecalhos": {"retry-after": "26", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "153", "x-ratelimit-reset-tokens": "58.852s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "994"}}
+{"evento": "provedor_fim", "t": 192423.8692041, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "provedor_inicio", "t": 192449.8704749, "rid": "B02-evolution-rag_real-10-carga-08", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192450.8736529, "rid": "B02-evolution-rag_real-10-carga-08", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "38", "x-ratelimit-reset-tokens": "59.715s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "993"}}
+{"evento": "provedor_fim", "t": 192450.8737145, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "nlp_fim", "t": 192450.8748714, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "envio_inicio", "t": 192450.8944207, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "envio_fim", "t": 192450.8944766, "rid": "B02-evolution-rag_real-10-carga-08", "texto": "Para agendar:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou UBS.  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020008"}
+{"evento": "http_inicio", "t": 192450.8957521, "rid": "B02-evolution-rag_real-10-carga-06", "path": "/evolution_webhook"}
+{"evento": "nlp_inicio", "t": 192450.9087273, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192450.9317835, "rid": "B02-evolution-rag_real-10-carga-05", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192450.9729427, "rid": "B02-evolution-rag_real-10-carga-05", "status": 429, "cabecalhos": {"retry-after": "26", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "227", "x-ratelimit-reset-tokens": "58.297s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "993"}}
+{"evento": "provedor_fim", "t": 192450.9730903, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "provedor_inicio", "t": 192476.9750595, "rid": "B02-evolution-rag_real-10-carga-05", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192478.0739803, "rid": "B02-evolution-rag_real-10-carga-05", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "179", "x-ratelimit-reset-tokens": "58.657s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "992"}}
+{"evento": "provedor_fim", "t": 192478.0740398, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "nlp_fim", "t": 192478.0751546, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "envio_inicio", "t": 192478.0931629, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "envio_fim", "t": 192478.0932471, "rid": "B02-evolution-rag_real-10-carga-05", "texto": "Exames simples, consultas básicas e ultrassonografias podem ser agendados diretamente na sua Unidade de Saúde da Família (USF) ou UBS.  \n\nExames mais complexos, consultas com especialistas ou cirurgias são encaminhados para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020005"}
+{"evento": "http_inicio", "t": 192478.0936684, "rid": "B02-evolution-rag_real-10-saude-durante", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192478.0939835, "rid": "B02-evolution-rag_real-10-saude-durante"}
+{"evento": "loop_atrasado", "t": 192478.0942604, "rid": "preparacao", "lag_s": 81.51621150000254, "inicio_espera": 192396.5580469}
+{"evento": "nlp_inicio", "t": 192478.104584, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192478.1283196, "rid": "B02-evolution-rag_real-10-carga-09", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192478.1718231, "rid": "B02-evolution-rag_real-10-carga-09", "status": 429, "cabecalhos": {"retry-after": "10", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "2313", "x-ratelimit-reset-tokens": "42.652s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "992"}}
+{"evento": "provedor_fim", "t": 192478.1718887, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "provedor_inicio", "t": 192488.1733529, "rid": "B02-evolution-rag_real-10-carga-09", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192489.0825448, "rid": "B02-evolution-rag_real-10-carga-09", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "68", "x-ratelimit-reset-tokens": "59.49s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "991"}}
+{"evento": "provedor_fim", "t": 192489.0826384, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "nlp_fim", "t": 192489.0843955, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "envio_inicio", "t": 192489.0977006, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "envio_fim", "t": 192489.097766, "rid": "B02-evolution-rag_real-10-carga-09", "texto": "Exames simples, consultas básicas e ultrassonografias devem ser agendados diretamente na sua Unidade de Saúde (USF ou UBS).  \n\nPara exames mais complexos, consultas com especialistas ou cirurgias, o agendamento é feito por meio da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020009"}
+{"evento": "http_fim", "t": 192489.0985349, "rid": "B02-evolution-rag_real-10-carga-07"}
+{"evento": "http_inicio", "t": 192489.1048712, "rid": "B02-evolution-rag_real-10-menu-durante", "path": "/evolution_webhook"}
+{"evento": "http_fim", "t": 192489.1056018, "rid": "B02-evolution-rag_real-10-carga-02"}
+{"evento": "nlp_inicio", "t": 192489.1164951, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192489.1389566, "rid": "B02-evolution-rag_real-10-carga-03", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192489.18376, "rid": "B02-evolution-rag_real-10-carga-03", "status": 429, "cabecalhos": {"retry-after": "26", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "259", "x-ratelimit-reset-tokens": "58.057s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "991"}}
+{"evento": "provedor_fim", "t": 192489.1838529, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "provedor_inicio", "t": 192515.1854501, "rid": "B02-evolution-rag_real-10-carga-03", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192516.5779176, "rid": "B02-evolution-rag_real-10-carga-03", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "157", "x-ratelimit-reset-tokens": "58.822s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "990"}}
+{"evento": "provedor_fim", "t": 192516.5780397, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "nlp_fim", "t": 192516.5809874, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "envio_inicio", "t": 192516.5960614, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "envio_fim", "t": 192516.5961089, "rid": "B02-evolution-rag_real-10-carga-03", "texto": "Exames simples, consultas básicas e ultrassonografias – procure a sua Unidade de Saúde (USF ou UBS).  \nExames mais complexos, consultas com especialistas ou cirurgias – você será encaminhado para a Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020003"}
+{"evento": "http_fim", "t": 192516.5977838, "rid": "B02-evolution-rag_real-10-carga-08"}
+{"evento": "loop_atrasado", "t": 192516.5981544, "rid": "preparacao", "lag_s": 38.48386289999005, "inicio_espera": 192478.0942854}
+{"evento": "nlp_inicio", "t": 192516.6098278, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192516.6302903, "rid": "B02-evolution-rag_real-10-carga-06", "tentativa": 1}
+{"evento": "provedor_resposta", "t": 192516.673917, "rid": "B02-evolution-rag_real-10-carga-06", "status": 429, "cabecalhos": {"retry-after": "25", "x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "326", "x-ratelimit-reset-tokens": "57.555s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "990"}}
+{"evento": "provedor_fim", "t": 192516.6740126, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "provedor_inicio", "t": 192541.676063, "rid": "B02-evolution-rag_real-10-carga-06", "tentativa": 2}
+{"evento": "provedor_resposta", "t": 192543.1575647, "rid": "B02-evolution-rag_real-10-carga-06", "status": 200, "cabecalhos": {"x-ratelimit-limit-tokens": "8000", "x-ratelimit-remaining-tokens": "123", "x-ratelimit-reset-tokens": "59.077s", "x-ratelimit-limit-requests": "1000", "x-ratelimit-remaining-requests": "989"}}
+{"evento": "provedor_fim", "t": 192543.1576372, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "nlp_fim", "t": 192543.1593314, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "envio_inicio", "t": 192543.1743309, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "envio_fim", "t": 192543.1743889, "rid": "B02-evolution-rag_real-10-carga-06", "texto": "Para agendar exames e consultas:\n\n- **Exames simples, consultas básicas e ultrassonografias** – procure a sua Unidade de Saúde da Família (USF) ou Unidade Básica de Saúde (UBS).  \n- **Exames mais complexos, consultas com especialistas ou cirurgias** – o agendamento será feito através da Central de Regulação (CRPEE).\n\n*(Escolha outra opção do menu ou digite 0 para voltar ao início)*", "numero": "5500030020006"}
+{"evento": "http_fim", "t": 192543.1752992, "rid": "B02-evolution-rag_real-10-carga-05"}
+{"evento": "http_fim", "t": 192543.1757659, "rid": "B02-evolution-rag_real-10-carga-09"}
+{"evento": "envio_inicio", "t": 192543.2072383, "rid": "B02-evolution-rag_real-10-menu-durante"}
+{"evento": "envio_fim", "t": 192543.2072901, "rid": "B02-evolution-rag_real-10-menu-durante", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030020010"}
+{"evento": "http_fim", "t": 192543.2084533, "rid": "B02-evolution-rag_real-10-carga-03"}
+{"evento": "loop_atrasado", "t": 192543.2086895, "rid": "preparacao", "lag_s": 26.59044230000698, "inicio_espera": 192516.5982434}
+{"evento": "http_fim", "t": 192543.2089846, "rid": "B02-evolution-rag_real-10-carga-06"}
+{"evento": "http_fim", "t": 192543.2091191, "rid": "B02-evolution-rag_real-10-menu-durante"}
+{"evento": "http_inicio", "t": 192543.2225464, "rid": "B02-evolution-rag_real-10-saude-apos", "path": "/__c03/health"}
+{"evento": "http_fim", "t": 192543.2229742, "rid": "B02-evolution-rag_real-10-saude-apos"}
+{"evento": "http_inicio", "t": 192543.2247665, "rid": "B02-evolution-rag_real-10-menu-apos", "path": "/evolution_webhook"}
+{"evento": "envio_inicio", "t": 192543.2558233, "rid": "B02-evolution-rag_real-10-menu-apos"}
+{"evento": "envio_fim", "t": 192543.2559006, "rid": "B02-evolution-rag_real-10-menu-apos", "texto": "Voltando ao menu principal...\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:", "numero": "5500030020011"}
+{"evento": "http_fim", "t": 192543.2570619, "rid": "B02-evolution-rag_real-10-menu-apos"}
+{"evento": "http_inicio", "t": 192543.2585978, "rid": "B02-evolution-rag_real-10-snapshot", "path": "/__c03/snapshot"}
+{"evento": "http_fim", "t": 192543.2665352, "rid": "B02-evolution-rag_real-10-snapshot"}
+{"evento": "http_inicio", "t": 192543.2857815, "rid": "encerramento", "path": "/__c03/stop"}
+{"evento": "http_fim", "t": 192543.2867224, "rid": "encerramento"}

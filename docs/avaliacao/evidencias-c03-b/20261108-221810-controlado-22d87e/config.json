@@ -1,0 +1,5 @@
+{
+  "modo": "controlado",
+  "atraso_s": 0.5,
+  "modelo": "llama-3.3-70b-versatile"
+}
