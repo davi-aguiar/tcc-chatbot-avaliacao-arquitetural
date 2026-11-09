@@ -1,0 +1,18 @@
+{
+  "inicio_utc": "2026-11-09T19:14:56.668627+00:00",
+  "comando": [
+    "docs/avaliacao/c04/executar.py"
+  ],
+  "pid_pai": 18924,
+  "fim_utc": "2026-11-09T19:15:03.659930+00:00",
+  "casos_previstos": 16,
+  "casos_executados": 16,
+  "casos_aprovados": 16,
+  "matriz_completa": true,
+  "isolamento_valido": true,
+  "hashes_preservados": true,
+  "cobertura_produzida": true,
+  "coleta_valida": true,
+  "julgamento": "atendido",
+  "pytest_exit_code": 0
+}

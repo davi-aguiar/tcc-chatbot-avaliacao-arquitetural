@@ -131,6 +131,12 @@ Resumo do que o número significa: cobertura de `api/`, com `api/alembic/` omiti
 não entra no CI porque suas dependências não são instaladas lá — para incluir o núcleo
 RAG é preciso rodar localmente com o stack completo.
 
+O [C04](avaliacao/C04-relatorio-execucao.md) produziu uma medição local separada com
+dependências já instaladas, embeddings/gerador substitutos e componentes internos reais,
+sem rede, credenciais ou pesos: 105/110 linhas em `app/` e 21/520 em `api/`.
+Os ramos também são registrados separadamente. Esses números pertencem aos 16 casos
+do cenário e não são somados à cobertura da suíte de navegação ou do CI.
+
 ---
 
 ## 3. Tempo de indexação na subida

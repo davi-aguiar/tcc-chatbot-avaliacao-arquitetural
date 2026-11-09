@@ -1,0 +1,530 @@
+[
+  {
+    "id": "I01",
+    "observacoes": {
+      "documentos": [
+        {
+          "texto": "C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 09. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 10. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 11. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 12. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 13. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 14. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 15. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 16. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 17. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 18. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 19. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 20. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 21. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 22. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 23. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 24. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 25. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 26. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 27. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 28. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 29. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 30. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 31. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 32. Este documento é fictício e serve somente à avaliação de testabilidade.\n",
+          "metadata": {
+            "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+          }
+        },
+        {
+          "texto": "C04-HORIZONTE-2026 — Serviço Horizonte, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 09. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 10. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 11. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 12. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 13. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 14. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 15. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 16. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 17. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 18. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 19. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 20. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 21. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 22. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 23. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 24. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 25. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 26. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 27. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 28. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 29. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 30. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 31. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 32. Este documento é fictício e serve somente à avaliação de testabilidade.\n",
+          "metadata": {
+            "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+          }
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "I02",
+    "observacoes": {
+      "erro_tipo": "FileNotFoundError",
+      "mensagem": "Pasta 'servicos' não encontrada em: C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\temporarios\\test_I02_diretorio_ausente0\\ausente\\data\\servicos"
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "D01",
+    "observacoes": {
+      "documentos": 2,
+      "chunks": 10,
+      "tamanhos": [
+        934,
+        934,
+        934,
+        934,
+        466,
+        982,
+        982,
+        982,
+        982,
+        490
+      ],
+      "sobreposicoes": [
+        115,
+        115,
+        115,
+        115,
+        121,
+        121,
+        121,
+        121
+      ],
+      "metadados": [
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+        },
+        {
+          "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "R01",
+    "observacoes": {
+      "indice_tipo": "FAISS",
+      "vetores": 10,
+      "chunks": 10,
+      "resultados": [
+        {
+          "texto": "C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.",
+          "metadata": {
+            "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\aurora.txt"
+          }
+        }
+      ],
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Qual é o horário do serviço Aurora?"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "R02",
+    "observacoes": {
+      "indice_tipo": "FAISS",
+      "vetores": 10,
+      "chunks": 10,
+      "resultados": [
+        {
+          "texto": "C04-HORIZONTE-2026 — Serviço Horizonte, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\n\nC04-HORIZONTE-2026 — Serviço Horizonte, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.",
+          "metadata": {
+            "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\evidencias-c04\\20261109-161456-offline-af50da\\projeto-sintetico\\data\\servicos\\horizonte.txt"
+          }
+        }
+      ],
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Qual é o horário do serviço Horizonte?"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "B01",
+    "observacoes": {
+      "chaves": [
+        "servicos"
+      ],
+      "metricas": {
+        "carregamento_documentos_ms": 2.2,
+        "chunking_ms": 0.6,
+        "carregamento_embeddings_ms": 0.03,
+        "vetorizacao_e_indexacao_ms": 1.37,
+        "criacao_retriever_ms": 0.08,
+        "total_ms": 4.34,
+        "n_documentos": 2,
+        "n_chunks": 10
+      },
+      "construtores": [
+        {
+          "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        }
+      ],
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Informações do serviço Horizonte"
+        }
+      ],
+      "documentos_retornados": 10
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "B02",
+    "observacoes": {
+      "construtores": [
+        {
+          "model_name": "c04-modelo-sintetico-sem-pesos"
+        }
+      ],
+      "objeto_local": true
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "P01",
+    "observacoes": {
+      "pergunta": "Qual é o horário do serviço Aurora?",
+      "prompts": [
+        "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='f0fe114a-9eac-44b2-8ca9-52243b869c73', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\docs\\\\avaliacao\\\\evidencias-c04\\\\20261109-161456-offline-af50da\\\\projeto-sintetico\\\\data\\\\servicos\\\\aurora.txt'}, page_content='C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.')]\n\nPERGUNTA:\nQual é o horário do serviço Aurora?\n\nRESPOSTA (Seja direto e útil):\n"
+      ],
+      "resposta": "Resposta fixa para Aurora, somente para teste.",
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Qual é o horário do serviço Aurora?"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "P02",
+    "observacoes": {
+      "prompts": [
+        "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[]\n\nPERGUNTA:\nQual é o horário do serviço Aurora?\n\nRESPOSTA (Seja direto e útil):\n"
+      ],
+      "saida_gerador": "Desculpe, não encontrei essa informação específica nos meus documentos.",
+      "resposta_nlp": null,
+      "filtro": {
+        "source": "c04-origem-inexistente"
+      },
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Qual é o horário do serviço Aurora?"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "P03",
+    "observacoes": {
+      "prompts": [
+        "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='debf275c-7491-487e-ad01-7cee679056da', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\docs\\\\avaliacao\\\\evidencias-c04\\\\20261109-161456-offline-af50da\\\\projeto-sintetico\\\\data\\\\servicos\\\\aurora.txt'}, page_content='C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.')]\n\nPERGUNTA:\nDetalhes do serviço Aurora\n\nRESPOSTA (Seja direto e útil):\n"
+      ],
+      "saida_gerador": "  \n  ",
+      "resposta_nlp": null
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "E01",
+    "observacoes": {
+      "prompts": [
+        "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='c6beecb4-9e15-492f-9426-2c8e421945c6', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\docs\\\\avaliacao\\\\evidencias-c04\\\\20261109-161456-offline-af50da\\\\projeto-sintetico\\\\data\\\\servicos\\\\aurora.txt'}, page_content='C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.')]\n\nPERGUNTA:\nDetalhes do serviço Aurora\n\nRESPOSTA (Seja direto e útil):\n"
+      ],
+      "erro_tipo": "RuntimeError",
+      "mesma_excecao": true
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "E02",
+    "observacoes": {
+      "erro_tipo": "RuntimeError",
+      "mesma_excecao": true,
+      "prompts": [],
+      "embeddings": [
+        {
+          "tipo": "documentos",
+          "quantidade": 10
+        },
+        {
+          "tipo": "consulta",
+          "texto": "Detalhes do serviço Aurora"
+        }
+      ]
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "L01",
+    "observacoes": {
+      "erro_tipo": "ValueError",
+      "mensagem": "A chave da API Groq não foi encontrada. Defina a variável de ambiente GROQ_API_KEY.",
+      "cache_vazio": true
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "L02",
+    "observacoes": {
+      "respostas": [
+        null,
+        null,
+        "Digite uma pergunta válida."
+      ],
+      "prompts": [],
+      "chamadas_embeddings_adicionais": 0
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "N01",
+    "observacoes": {
+      "prompts": [
+        "\nSiga exatamente o exemplo abaixo para gerar uma saudação.\n\nExemplo:\nSolicitação: Gere uma saudação.\nResposta: Olá! Sou o assistente virtual da Secretaria Municipal de Saúde de Vitória da Conquista. Como posso te ajudar?\n\n"
+      ],
+      "resposta": "Oi, Ana C04! 😊\nComo posso te ajudar?",
+      "chamadas_embeddings_adicionais": 0
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  },
+  {
+    "id": "N02",
+    "observacoes": {
+      "prompts": [
+        "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='45eedb7f-05e6-447f-acdb-a2336d7745ff', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\docs\\\\avaliacao\\\\evidencias-c04\\\\20261109-161456-offline-af50da\\\\projeto-sintetico\\\\data\\\\servicos\\\\aurora.txt'}, page_content='C04-AURORA-2026 — Serviço Aurora, seção 01. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 02. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 03. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 04. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 05. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 06. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 07. Este documento é fictício e serve somente à avaliação de testabilidade.\\n\\nC04-AURORA-2026 — Serviço Aurora, seção 08. Este documento é fictício e serve somente à avaliação de testabilidade.')]\n\nPERGUNTA:\nDetalhes do serviço Aurora\n\nRESPOSTA (Seja direto e útil):\n"
+      ],
+      "resposta": "Oi, Ana C04! 😊 Desculpe a demora. Resposta sintética sobre Aurora."
+    },
+    "pytest": [
+      {
+        "fase": "setup",
+        "resultado": "passed"
+      },
+      {
+        "fase": "call",
+        "resultado": "passed"
+      },
+      {
+        "fase": "teardown",
+        "resultado": "passed"
+      }
+    ]
+  }
+]

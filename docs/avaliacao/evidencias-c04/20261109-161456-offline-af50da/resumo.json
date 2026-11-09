@@ -1,0 +1,12 @@
+{
+  "casos_previstos": 16,
+  "casos_executados": 16,
+  "casos_aprovados": 16,
+  "matriz_completa": true,
+  "isolamento_valido": true,
+  "hashes_preservados": true,
+  "cobertura_produzida": true,
+  "coleta_valida": true,
+  "julgamento": "atendido",
+  "pytest_exit_code": 0
+}

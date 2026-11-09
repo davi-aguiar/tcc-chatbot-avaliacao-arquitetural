@@ -1,0 +1,5 @@
+# Preserva os bytes das evidencias C04, incluindo os finais de linha coletados.
+/docs/avaliacao/evidencias-c04/** -text whitespace=cr-at-eol
+# Fontes e protocolo C04 foram medidos com LF; manter os hashes apos checkout.
+/docs/avaliacao/c04/** text eol=lf
+/docs/avaliacao/C04-protocolo.md text eol=lf

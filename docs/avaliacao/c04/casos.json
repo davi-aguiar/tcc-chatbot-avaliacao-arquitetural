@@ -1,0 +1,27 @@
+{
+  "versao": 1,
+  "casos": [
+    {"id": "I01", "componente": "ingestao", "descricao": "TXT reais, UTF-8, metadados e filtro de extensao"},
+    {"id": "I02", "componente": "ingestao", "descricao": "diretorio ausente"},
+    {"id": "D01", "componente": "chunking", "descricao": "tamanho, origem e sobreposicao"},
+    {"id": "R01", "componente": "recuperacao", "descricao": "busca Aurora com FAISS"},
+    {"id": "R02", "componente": "recuperacao", "descricao": "busca Horizonte com FAISS"},
+    {"id": "B01", "componente": "montagem", "descricao": "setup_system real com embeddings locais"},
+    {"id": "B02", "componente": "embeddings", "descricao": "configuracao explicita encaminhada ao construtor"},
+    {"id": "P01", "componente": "prompt_parser_nlp", "descricao": "resposta com contexto recuperado"},
+    {"id": "P02", "componente": "prompt_parser_nlp", "descricao": "contexto vazio e frase de ausencia"},
+    {"id": "P03", "componente": "adaptacao", "descricao": "resposta vazia"},
+    {"id": "E01", "componente": "geracao_erro", "descricao": "mesma excecao do gerador propagada"},
+    {"id": "E02", "componente": "recuperacao_erro", "descricao": "mesma excecao de embed_query propagada sem geracao"},
+    {"id": "L01", "componente": "fabrica_llm", "descricao": "ausencia de chave e cache exige credencial"},
+    {"id": "L02", "componente": "entrada_vazia", "descricao": "retorno local sem busca ou geracao"},
+    {"id": "N01", "componente": "saudacao", "descricao": "prompt de saudacao e personalizacao institucional"},
+    {"id": "N02", "componente": "personalizacao", "descricao": "saudacao generica preserva restante da resposta"}
+  ],
+  "corpus": {
+    "servicos": ["Aurora", "Horizonte"],
+    "paragrafos_por_documento": 32,
+    "marcador": "C04-{servico}-2026",
+    "paragrafo": "{marcador} — Serviço {servico}, seção {numero:02d}. Este documento é fictício e serve somente à avaliação de testabilidade."
+  }
+}

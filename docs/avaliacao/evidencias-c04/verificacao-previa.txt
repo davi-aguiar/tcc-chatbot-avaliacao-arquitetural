@@ -1,0 +1,21 @@
+C04 — verificações anteriores à coleta arquitetural, 09/11/2026
+Registro resumido das saídas dos comandos executados na raiz do repositório.
+Essas verificações não integram os 16 casos do lote arquitetural.
+
+Comando: .venv\Scripts\python.exe -m pytest -q docs/avaliacao/c04/test_instrumento.py
+Resultado: 13 passed in 10.11s
+Código de saída: 0
+Inclui ciclo completo em subprocesso, em diretório temporário do pytest;
+essa execução verifica o instrumento e não é somada à coleta arquitetural.
+
+Comando: .venv\Scripts\python.exe -m pytest -q
+Resultado: 244 passed in 2.76s
+Código de saída: 0
+
+Comando: .venv\Scripts\python.exe -m ruff check --select E9,F63,F7,F82 docs/avaliacao/c04
+Resultado: All checks passed!
+Código de saída: 0
+
+Comando: .venv\Scripts\python.exe -m compileall -q docs/avaliacao/c04
+Resultado: concluído sem mensagens de erro
+Código de saída: 0

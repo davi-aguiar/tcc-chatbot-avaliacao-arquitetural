@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C04 a C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 e C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
 
 ## Relação com os objetivos
 
@@ -32,7 +32,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | C01 | Alta | Baixa | Extensão recorrente de serviços; encerrado com ressalvas, sem reclassificação retrospectiva |
 | C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; encerrado com ressalvas, análise descritiva |
 | C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
-| C04 | Média | Média | Separação de camadas precisa permitir testes de RAG, além dos testes de navegação; planejado |
+| C04 | Média | Média | Encerrado com ressalvas: 16/16 casos do núcleo RAG sem rede/credenciais/pesos; isolamento depende de ajustes em estado global e diretório |
 | C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; planejado |
 | C06 | Alta | Média | Fluxo externo e persistência podem expor dados além do necessário; planejado |
 
@@ -103,6 +103,8 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 **Critério:** atendido se os casos definidos puderem executar sem credencial, download de pesos ou rede, preservando os componentes internos sob avaliação e sem alterar Python funcional. Se só a navegação ou um NLP totalmente substituto puder ser testado, o cenário é parcial. Se for necessária refatoração funcional, registrar a limitação da versão avaliada e propor a mudança separadamente.
 
 **Evidências previstas:** matriz componente/teste/substituto, comandos, bloqueio de rede e cobertura separada de `app/` e `api/`. Cobertura descreve linhas exercitadas, não qualidade de resposta. O [CI atual](../../.github/workflows/ci.yml) cobre `api/` e não instala o stack de RAG; seus testes aprovados não comprovam este cenário.
+
+**Resultado em 09/11/2026:** [C04 concluído](C04-relatorio-execucao.md), critério atendido no recorte com 16/16 casos, zero tentativas externas, sem credenciais, caches inicialmente vazios e sem arquivos ao fim. Ingestão, chunking, índice/recuperação FAISS, montagem, prompts, parser e NLP reais; embeddings e gerador substituídos nas fronteiras. O teste ajusta `ingestion.__file__` e `CACHED_LLM`, sem alterar Python funcional, mas depende desses detalhes internos. Cobertura de linhas: `app/` 105/110 (95,45%) e `api/` 21/520 (4,04%), separada da suíte existente. Sem julgamento da qualidade semântica ou de respostas de modelo real. [Protocolo](C04-protocolo.md) e [evidências](evidencias-c04/README.md) preservados.
 
 ## C05 — Confiabilidade: fidelidade ao contexto documental
 

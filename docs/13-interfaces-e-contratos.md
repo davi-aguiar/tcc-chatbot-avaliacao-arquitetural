@@ -1,6 +1,6 @@
 # 13 — Interfaces e contratos atuais
 
-Levantamento inicial em 19/10/2026, sobre `9990aed912706a0d8f75e7c6a9ddebca19e30a4d`, revisado em 08/11/2026 sobre `65e28a05f6d0274a14d187e2bd6e5790b4504979`. O conteúdo funcional permanece igual ao corte C03 (`666b601`). Complementa a [visão arquitetural](02-arquitetura.md), distinguindo inspeção, evidências concluídas de C01–C03 e lacunas dos próximos cenários da [árvore de utilidade](avaliacao/arvore-de-utilidade.md). Nenhum contrato novo foi implementado nesta revisão.
+Levantamento inicial em 19/10/2026, sobre `9990aed912706a0d8f75e7c6a9ddebca19e30a4d`, revisado em 08/11/2026 sobre `65e28a05f6d0274a14d187e2bd6e5790b4504979` e atualizado após C04 em 09/11/2026 sobre a referência `77348fb`. O conteúdo funcional permanece igual ao corte C03 (`666b601`). Complementa a [visão arquitetural](02-arquitetura.md), distinguindo inspeção, evidências concluídas de C01–C04 e lacunas dos próximos cenários da [árvore de utilidade](avaliacao/arvore-de-utilidade.md). Nenhum contrato novo foi implementado nesta revisão.
 
 “Interface” designa aqui a fronteira de interação entre componentes. Assinaturas, modelos de dados, significado dos resultados, efeitos colaterais e tratamento de erros compõem o levantamento. Distingue-se o que o código declara, o comportamento identificado na leitura e o que ainda precisa de execução controlada. Ausência de classe abstrata ou `Protocol` não significa ausência de interface.
 
@@ -68,7 +68,7 @@ flowchart LR
 | Texto livre | `_perguntar_ao_rag` captura a exceção, registra log e devolve `None`; o fluxo subsequente pode tratar a situação como ausência de resposta |
 | Opção de menu com `query` | `handle_dynamic_menu` não captura a exceção; ela pode alcançar o tratamento geral de `process_message` |
 
-**Lacunas e evidência:** não há resultado estruturado que distinga ausência documental, falha de recuperação e falha de provedor. Os erros externos não estão normalizados em um contrato próprio. O serviço recebido pelo ChatService é substituível por um objeto com `process`, como no C01, mas a anotação aponta para a classe concreta. [C03-A](avaliacao/C03-relatorio-execucao.md) confirmou a assimetria nos 12 casos: texto livre devolve opção inválida e registra `MESSAGE_SENT`; query de menu devolve erro interno e registra `MESSAGE_FAILED`. Ambos retomaram navegação após a falha imediata. C04 ainda verificará isolamento sistemático do núcleo RAG.
+**Lacunas e evidência:** não há resultado estruturado que distinga ausência documental, falha de recuperação e falha de provedor. Os erros externos não estão normalizados em um contrato próprio. O serviço recebido pelo ChatService é substituível por um objeto com `process`, como no C01, mas a anotação aponta para a classe concreta. [C03-A](avaliacao/C03-relatorio-execucao.md) confirmou a assimetria nos 12 casos: texto livre devolve opção inválida e registra `MESSAGE_SENT`; query de menu devolve erro interno e registra `MESSAGE_FAILED`. Ambos retomaram navegação após a falha imediata. [C04](avaliacao/C04-relatorio-execucao.md) exercitou o NLP real offline: ausência/resposta vazia viraram None e erros de geração/recuperação propagaram o mesmo objeto, com gerador e embeddings substitutos.
 
 ## I04 — Pipeline, retriever e cliente de geração
 
@@ -83,7 +83,7 @@ flowchart LR
 | Ausência documental | Prompt solicita uma frase determinada; `sem_contexto` reconhece um núcleo textual na resposta. Trata-se de convenção textual dependente da geração |
 | Entrada especial | Pergunta vazia retorna aviso local; saudação reconhecida usa outro prompt e também chama o modelo |
 
-**Lacunas:** o construtor do cliente no código da aplicação não explicita timeout ou número de tentativas; valores efetivos dependem das bibliotecas e devem ser identificados na execução. Não há contrato próprio para erros do provedor. O gerador é obtido internamente e guardado em variável global, enquanto o retriever é parâmetro. Essa assimetria interessa ao C04. O prompt instrui ancoragem documental, mas a instrução não comprova fidelidade; C05 verificará uma amostra. C06 verificará o payload efetivo, em vez de inferi-lo apenas da assinatura.
+**Lacunas:** o construtor do cliente no código da aplicação não explicita timeout ou número de tentativas; valores efetivos dependem das bibliotecas e devem ser identificados na execução. Não há contrato próprio para erros do provedor. O gerador é obtido internamente e guardado em variável global, enquanto o retriever é parâmetro. C04 testou composição e parser reais sem chave preenchendo temporariamente `CACHED_LLM` com Runnable local; a fábrica original sem chave/cache continuou lançando ValueError. O isolamento depende desse detalhe interno, sem interface pública de injeção adicionada. O prompt instrui ancoragem documental, mas a instrução não comprova fidelidade; C05 verificará uma amostra. C06 verificará o payload efetivo, em vez de inferi-lo apenas da assinatura.
 
 **Configuração e evidência:** o padrão no código continua `llama-3.3-70b-versatile`. C02 registrou `NotFoundError` ao usá-lo; C03-B verificou sua ausência na listagem da conta em 08/11/2026 e executou a série real com `openai/gpt-oss-120b`, em configuração adaptada. O timeout de 35 s e os dois retries explícitos do instrumento C03-B não foram incorporados ao código funcional. Oito 429 seguidos de retries foram observados na rajada real de dez usuários, sem erro final de geração.
 
@@ -101,6 +101,8 @@ flowchart LR
 | Falhas | Diretório ausente provoca `FileNotFoundError`; outras etapas podem lançar erros de biblioteca. Não há fallback de inicialização nesse fluxo |
 
 **Lacunas e evidência:** formato do dicionário e chave de acesso não possuem esquema próprio; não existe caminho alternativo explícito que publique somente os menus quando a montagem do RAG falha. Preservar menus após falha de geração em processo iniciado (C03-A) é diferente de disponibilizar a aplicação após falha no boot ou durante espera concorrente (C03-B). C02 mediu montagem: na série principal com cache identificado, vetorização/indexação superou carregamento dos embeddings nas três inicializações medidas. Isso não estabelece a distribuição universal do custo nem quantifica benefício de persistir o índice.
+
+C04 executou `setup_system()` com loader, splitter e FAISS reais, dois documentos sintéticos e dez chunks, substituindo apenas o construtor externo de embeddings. A ingestão exigiu ajustar `ingestion.__file__` no processo, pois seu diretório é derivado do módulo. O retorno `servicos` e as métricas foram conferidos sem pesos/rede; isso não demonstra boot da API ou funcionamento dos embeddings treinados.
 
 ## I06 — Persistência e auditoria
 
@@ -122,7 +124,7 @@ flowchart LR
 |---|---|
 | Operações síncronas e espera externa no processamento | C02: duração sequencial; C03-B: bloqueio sob concorrência HTTP em um worker, com retomada após drenagem |
 | Exceções tratadas de modo diferente nos consumidores do NLP | C03-A: diferença confirmada em resposta, auditoria e persistência, com retomada após falhas imediatas |
-| Retriever fornecido externamente e gerador obtido por cliente global | C04: esforço e limites de isolamento nos testes |
+| Retriever fornecido externamente e gerador obtido por cliente global | C04: 16/16 casos offline; exige atribuição temporária a `CACHED_LLM`, ajuste do diretório por `__file__` e substituição do construtor externo de embeddings |
 | Ausência de contexto representada por convenção textual | C05: fidelidade e abstenção na amostra |
 | Dados do usuário e conteúdo de erro podem alcançar logs ou payload | C06: rastreamento e captura controlada |
 | Falha de montagem impede chegar à disponibilização dos recursos | Registrar como limitação do recorte de C03; não confundir com falha durante geração |
@@ -132,4 +134,4 @@ O quadro separa resultados já observados de hipóteses que ainda exigem avalia�
 
 ## Condição para prosseguir
 
-O levantamento foi atualizado após C01–C03. Antes das coletas C04–C06, conferir as fronteiras envolvidas no protocolo, fixar a versão de corte e distinguir comportamento atual de requisito desejado. Se alguma mudança funcional for escolhida, registrá-la como manutenção e atualizar a referência antes de medir; não misturar resultados de versões diferentes. As evidências anteriores permanecem como registros das versões e configurações já avaliadas.
+O levantamento foi atualizado após C01–C04. Antes das coletas C05–C06, conferir as fronteiras envolvidas no protocolo, fixar a versão de corte e distinguir comportamento atual de requisito desejado. Se alguma mudança funcional for escolhida, registrá-la como manutenção e atualizar a referência antes de medir; não misturar resultados de versões diferentes. As evidências anteriores permanecem como registros das versões e configurações já avaliadas.
