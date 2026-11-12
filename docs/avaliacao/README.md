@@ -1,8 +1,14 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 e C06 estão planejados e ainda não executados como cenários próprios.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 está em preparação, sem respostas reais coletadas, e C06 permanece planejado.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+
+## C05 — Fidelidade ao contexto documental
+
+**Estado: preparação iniciada em 12/11/2026; geração e julgamento pendentes.** O [protocolo](C05-protocolo.md) fixa seis perguntas, duas rodadas, fatos esperados e critérios separados de recuperação, geração, abstenção e completude. A preparação local com embeddings semânticos e FAISS reais recuperou as fontes esperadas das seis perguntas e os 15 trechos de referência dos quatro casos respondíveis/distinção. Isso não comprova fidelidade de respostas.
+
+A preparação confirmou que uma seção ambígua do documento do Ambulatório, que pergunta pelo CAPS II e fornece outro endereço, aparece no contexto de P03/P06. A revisão deve distinguir essa inconsistência documental de geração sem apoio. As [evidências de preparação](evidencias-c05/README.md) preservam contexto, fontes e inventário. Nenhuma chave Groq estava configurada; as 12 respostas reais ainda não foram coletadas. As 14 verificações do instrumento passaram separadamente, incluindo SDK com transporte sintético.
 
 ## C04 — Testabilidade do núcleo RAG sem rede
 

@@ -1,0 +1,9 @@
+Data local: 12/11/2026
+Comando: .\.venv-c01\Scripts\python.exe -m pytest -q docs/avaliacao/c05/test_instrumento.py
+Resultado: 14 passed in 3.27s
+Código de saída: 0
+Transcrição do resultado exibido pelo terminal, sem captura integral do console.
+Escopo: validação da matriz e dos trechos, ordem das duas rodadas, bloqueio de rede,
+captura fiel do prompt, chamada única, adaptação de ausência, erros sem mensagem
+sensível persistida, fonte sem fato, integridade e SDK com HTTP sintético.
+Esses testes não avaliam fidelidade de respostas reais.

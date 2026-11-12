@@ -1,0 +1,14 @@
+# Sem versoes fixadas, ao contrario de api/requirements.txt: este conjunto
+# arrasta torch e passa de 2 GB, e fixar versao sem antes resolver a instalacao
+# de verdade seria chute. Para fixar: instale num venv limpo, rode `pip freeze`
+# e traga de volta as versoes destes pacotes.
+langchain
+langchain-community
+langchain-core
+langchain_groq
+faiss-cpu
+python-dotenv
+gradio
+transformers
+sentence-transformers
+huggingface-hub

@@ -1,0 +1,78 @@
+{
+  "cenario": "C05",
+  "versao": 1,
+  "data_definicao": "2026-11-12",
+  "repeticoes": 2,
+  "ordem": "P01 a P06 na primeira rodada; P01 a P06 na segunda rodada",
+  "casos": [
+    {
+      "id": "P01",
+      "tipo": "respondivel",
+      "pergunta": "Quais passos devo seguir para conseguir realizar o exame de espirometria pelo serviço municipal?",
+      "fontes_esperadas": ["servico_espirometria.txt"],
+      "fatos_esperados": [
+        {"id": "F01", "fato": "O médico solicita o exame durante consulta na unidade básica de saúde.", "fonte": "servico_espirometria.txt", "trecho": "O médico solicita o exame durante a consulta na unidade básica de saúde."},
+        {"id": "F02", "fato": "Entregar a solicitação na unidade básica para agendamento.", "fonte": "servico_espirometria.txt", "trecho": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."},
+        {"id": "F03", "fato": "Aguardar o contato da equipe da unidade básica.", "fonte": "servico_espirometria.txt", "trecho": "Aguarde o contato da equipe da unidade básica de saúde."},
+        {"id": "F04", "fato": "Comparecer ao CEMAE no dia e horário agendados.", "fonte": "servico_espirometria.txt", "trecho": "Após agendamento, compareça ao CEMAE no dia e horário agendados."}
+      ],
+      "nao_inferir": ["Agendamento direto por link ou WhatsApp", "Prazo para agendamento", "Preparo clínico não descrito"]
+    },
+    {
+      "id": "P02",
+      "tipo": "respondivel",
+      "pergunta": "Quais documentos são necessários para participar do Programa Asma Grave?",
+      "fontes_esperadas": ["servico_programa_asma_grave.txt"],
+      "fatos_esperados": [
+        {"id": "F01", "fato": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação.", "fonte": "servico_programa_asma_grave.txt", "trecho": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"},
+        {"id": "F02", "fato": "CPF / RG.", "fonte": "servico_programa_asma_grave.txt", "trecho": "CPF / RG"},
+        {"id": "F03", "fato": "Cartão SUS.", "fonte": "servico_programa_asma_grave.txt", "trecho": "Cartão SUS"},
+        {"id": "F04", "fato": "Comprovante de residência atualizado.", "fonte": "servico_programa_asma_grave.txt", "trecho": "Comprovante de residência atualizado"}
+      ],
+      "nao_inferir": ["Documentos de outros serviços sem sustentação aplicável ao Programa Asma Grave", "Prescrição ou tratamento clínico"]
+    },
+    {
+      "id": "P03",
+      "tipo": "respondivel",
+      "pergunta": "Qual é o endereço do CAPS II e quais são seus dias e horários de funcionamento, incluindo a exceção semanal?",
+      "fontes_esperadas": ["servico_caps_ii_centro_atencao_psicossocial.txt"],
+      "fatos_esperados": [
+        {"id": "F01", "fato": "Avenida Régis Pacheco, 770, Centro.", "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt", "trecho": "Avenida Régis Pacheco, 770, Centro"},
+        {"id": "F02", "fato": "Segunda a sexta-feira.", "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt", "trecho": "Segunda a sexta-feira"},
+        {"id": "F03", "fato": "Das 08:00 às 18:00, exceto quinta-feira à tarde por reunião interna da equipe.", "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt", "trecho": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"}
+      ],
+      "nao_inferir": ["Atribuir ao CAPS II o endereço Rua T, 417 do CAPS AD III", "Atribuir ao CAPS II abertura às 07:00 ou acolhimento intensivo 24h do CAPS AD III"]
+    },
+    {
+      "id": "P04",
+      "tipo": "ausente",
+      "pergunta": "Quantas horas de jejum são exigidas para fazer a espirometria no serviço municipal?",
+      "fontes_esperadas": ["servico_espirometria.txt"],
+      "fatos_esperados": [],
+      "lacuna": "O corpus não informa exigência nem duração de jejum para espirometria.",
+      "nao_inferir": ["Número de horas de jejum", "Que o exame dispensa jejum", "Orientações clínicas de preparo por conhecimento geral"]
+    },
+    {
+      "id": "P05",
+      "tipo": "ausente",
+      "pergunta": "Qual é o prazo máximo, em dias, entre entregar a solicitação na UBS e realizar o eletrocardiograma?",
+      "fontes_esperadas": ["servico_eletrocardiograma.txt"],
+      "fatos_esperados": [],
+      "lacuna": "O corpus descreve solicitação e agendamento, mas não fixa prazo máximo em dias para eletrocardiograma.",
+      "nao_inferir": ["Prazo numérico", "Garantia de atendimento imediato", "Previsão de fila sem sustentação documental"]
+    },
+    {
+      "id": "P06",
+      "tipo": "distincao",
+      "pergunta": "CAPS II e CAPS AD III atendem o mesmo público e ficam no mesmo endereço? Diferencie o público e o endereço de cada um.",
+      "fontes_esperadas": ["servico_caps_ii_centro_atencao_psicossocial.txt", "servico_caps_ad_iii.txt"],
+      "fatos_esperados": [
+        {"id": "F01", "fato": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.", "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt", "trecho": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"},
+        {"id": "F02", "fato": "CAPS II: Avenida Régis Pacheco, 770, Centro.", "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt", "trecho": "Avenida Régis Pacheco, 770, Centro"},
+        {"id": "F03", "fato": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.", "fonte": "servico_caps_ad_iii.txt", "trecho": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"},
+        {"id": "F04", "fato": "CAPS AD III: Rua T, 417, Bairro Felícia.", "fonte": "servico_caps_ad_iii.txt", "trecho": "Rua T, 417, Bairro Felícia"}
+      ],
+      "nao_inferir": ["Troca de endereços ou de público entre os serviços", "Exclusões e critérios de elegibilidade adicionais não descritos"]
+    }
+  ]
+}

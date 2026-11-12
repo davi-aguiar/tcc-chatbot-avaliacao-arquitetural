@@ -1,0 +1,13 @@
+{
+  "inicio_utc": "2026-11-12T13:07:37.880923+00:00",
+  "modo": "preparar",
+  "credencial_presente": false,
+  "respostas_previstas": 12,
+  "respostas_obtidas": 0,
+  "julgamento": "nao_avaliado",
+  "coleta_completa": false,
+  "erro_tipo": null,
+  "preparacao_completa": true,
+  "fontes_inalteradas": true,
+  "fim_utc": "2026-11-12T13:08:28.329678+00:00"
+}

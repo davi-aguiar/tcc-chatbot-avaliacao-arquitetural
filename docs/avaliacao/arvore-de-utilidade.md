@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 e C06 são planejamento prospectivo, sem resultados atribuídos nesta etapa.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 iniciou preparação em 12/11/2026, com [protocolo próprio](C05-protocolo.md), sem respostas reais ou julgamento de fidelidade; C06 permanece prospectivo.
 
 ## Relação com os objetivos
 
@@ -33,7 +33,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; encerrado com ressalvas, análise descritiva |
 | C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
 | C04 | Média | Média | Encerrado com ressalvas: 16/16 casos do núcleo RAG sem rede/credenciais/pesos; isolamento depende de ajustes em estado global e diretório |
-| C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; planejado |
+| C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; em preparação, sem respostas reais coletadas |
 | C06 | Alta | Média | Fluxo externo e persistência podem expor dados além do necessário; planejado |
 
 ## C01 — Modificabilidade: inclusão de serviço
@@ -107,6 +107,8 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 **Resultado em 09/11/2026:** [C04 concluído](C04-relatorio-execucao.md), critério atendido no recorte com 16/16 casos, zero tentativas externas, sem credenciais, caches inicialmente vazios e sem arquivos ao fim. Ingestão, chunking, índice/recuperação FAISS, montagem, prompts, parser e NLP reais; embeddings e gerador substituídos nas fronteiras. O teste ajusta `ingestion.__file__` e `CACHED_LLM`, sem alterar Python funcional, mas depende desses detalhes internos. Cobertura de linhas: `app/` 105/110 (95,45%) e `api/` 21/520 (4,04%), separada da suíte existente. Sem julgamento da qualidade semântica ou de respostas de modelo real. [Protocolo](C04-protocolo.md) e [evidências](evidencias-c04/README.md) preservados.
 
 ## C05 — Confiabilidade: fidelidade ao contexto documental
+
+**Atualização de 12/11/2026:** [protocolo e matriz fixados](C05-protocolo.md); [preparação local preservada](evidencias-c05/README.md). Recuperação verificada nas seis perguntas; geração real e revisão pelo autor pendentes. O plano original abaixo permanece como referência prospectiva.
 
 | Elemento do cenário | Definição |
 |---|---|

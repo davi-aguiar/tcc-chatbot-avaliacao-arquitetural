@@ -1,0 +1,346 @@
+{
+  "FLOW_IMAGE_URLS": {
+    "CALENDARIO": "https://vfnrmghzyxkpdcvlonjt.supabase.co/storage/v1/object/public/flow_image.vacinacao/vacinacao.jpeg"
+  },
+  
+  "WAITING_MAIN_MENU": {
+    "text": "🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "options": {
+      "1": { "next_state": "WAITING_1_AGENDAMENTO" },
+      "2": { "next_state": "WAITING_2_MATERIAIS" },
+      "3": { "next_state": "WAITING_3_PROCEDIMENTOS" },
+      "4": { "next_state": "WAITING_4_SERVICOS" },
+      "5": { "next_state": "WAITING_5_EMERGENCIAS" },
+      "6": { "next_state": "WAITING_6_OUTROS" }
+    }
+  },
+
+  "WAITING_1_AGENDAMENTO": {
+    "text": "📅 *1- MENU AGENDAMENTO*\n\n1️⃣ - Informações sobre Agendamentos\n2️⃣ - Consultas\n3️⃣ - Exames\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "options": {
+      "1": { "next_state": "WAITING_1_1_INFO" },
+      "2": { "next_state": "WAITING_1_2_CONSULTAS" },
+      "3": { "next_state": "WAITING_1_3_EXAMES" },
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+
+  "WAITING_1_1_INFO": {
+    "text": "ℹ️ *1.1 INFORMAÇÕES SOBRE AGENDAMENTOS*\n\n1️⃣ - Onde posso agendar Exames e Consultas?\n2️⃣ - O que eu posso agendar na Unidade de Saúde da Família (USF) ou UBS?\n3️⃣ - O que eu posso agendar na Central de Regulação CRPEE?\n4️⃣ - Quais documentos são obrigatórios para qualquer marcação?\n5️⃣ - Quais documentos são exigidos em procedimentos específicos?\n6️⃣ - Pacientes oncológicos têm prioridade na marcação?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Onde posso agendar Exames e Consultas?" },
+      "2": { "query": "O que eu posso agendar na Unidade de Saúde da Família (USF) ou UBS?" },
+      "3": { "query": "O que eu posso agendar na Central de Regulação CRPEE?" },
+      "4": { "query": "Quais documentos são obrigatórios para qualquer marcação?" },
+      "5": { "query": "Quais documentos são exigidos em procedimentos específicos?" },
+      "6": { "query": "Pacientes oncológicos têm prioridade na marcação?" },
+      "0": { "next_state": "WAITING_1_AGENDAMENTO" }
+    }
+  },
+
+  "WAITING_1_2_CONSULTAS": {
+    "text": "🩺 *1.2 CONSULTAS*\n\n1️⃣ - Médico clínico geral\n2️⃣ - Enfermagem\n3️⃣ - Odontológica\n4️⃣ - Fisioterapia\n5️⃣ - Psicologia\n6️⃣ - Nutricionista\n7️⃣ - Profissional de Educação Física\n8️⃣ - Farmacêutico\n9️⃣ - Visita Domiciliar\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Consulta com Médico clínico geral" },
+      "2": { "query": "Consulta com Enfermagem" },
+      "3": { "query": "Consulta Odontológica" },
+      "4": { "query": "Consulta com Fisioterapia" },
+      "5": { "query": "Consulta com Psicologia" },
+      "6": { "query": "Consulta com Nutricionista" },
+      "7": { "query": "Consulta com Profissional de Educação Física" },
+      "8": { "query": "Consulta com Farmacêutico" },
+      "9": { "query": "Visita Domiciliar" },
+      "0": { "next_state": "WAITING_1_AGENDAMENTO" }
+    }
+  },
+
+  "WAITING_1_3_EXAMES": {
+    "text": "🔬 *1.3 EXAMES*\n\n1️⃣ - Laboratório\n2️⃣ - Imagem\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Exames de Laboratório" },
+      "2": { "query": "Exames de Imagem" },
+      "0": { "next_state": "WAITING_1_AGENDAMENTO" }
+    }
+  },
+
+  "WAITING_2_MATERIAIS": {
+    "text": "💊 *2- ACESSO AOS MEDICAMENTOS E MATERIAIS*\n\n1️⃣ - Farmácias das Unidades Básicas de Saúde\n2️⃣ - Farmácias da Família\n3️⃣ - Farmácia Popular\n4️⃣ - Fitas e Lancetas\n5️⃣ - Fraldas\n6️⃣ - Aparelhos Auditivos\n7️⃣ - Meios Auxiliares de Locomoção\n8️⃣ - Próteses e Órteses\n9️⃣ - Bolsas de Ostomia e Adjuvantes\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Farmácias das Unidades Básicas de Saúde" },
+      "2": { "query": "Farmácias da Família" },
+      "3": { "query": "Farmácia Popular" },
+      "4": { "query": "Acesso a Fitas e Lancetas" },
+      "5": { "query": "Acesso a Fraldas" },
+      "6": { "next_state": "WAITING_2_6_AUDITIVOS" },
+      "7": { "next_state": "WAITING_2_7_LOCOMOCAO" },
+      "8": { "next_state": "WAITING_2_8_PROTESES" },
+      "9": { "next_state": "WAITING_2_9_OSTOMIA" },
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+
+  "WAITING_2_6_AUDITIVOS": {
+    "text": "🦻 *2.6 APARELHOS AUDITIVOS*\n\n1️⃣ - O que é este serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários para o cadastro?\n4️⃣ - Onde fica o CEMERF?\n5️⃣ - Quais dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Aparelhos Auditivos?" },
+      "2": { "query": "O que preciso fazer para ter acesso a Aparelhos Auditivos?" },
+      "3": { "query": "Quais documentos necessários para o cadastro de Aparelhos Auditivos?" },
+      "4": { "query": "Onde fica o CEMERF?" },
+      "5": { "query": "Quais dias e horários de funcionamento para Aparelhos Auditivos?" },
+      "6": { "query": "Quais os contatos do CEMERF?" },
+      "0": { "next_state": "WAITING_2_MATERIAIS" }
+    }
+  },
+
+  "WAITING_2_7_LOCOMOCAO": {
+    "text": "🦽 *2.7 MEIOS AUXILIARES DE LOCOMOÇÃO*\n\n1️⃣ - O que é este serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários para o cadastro?\n4️⃣ - Onde fica o CEMERF?\n5️⃣ - Quais dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Meios Auxiliares de Locomoção?" },
+      "2": { "query": "O que preciso fazer para ter acesso a Meios Auxiliares de Locomoção?" },
+      "3": { "query": "Quais documentos necessários para o cadastro de Meios Auxiliares de Locomoção?" },
+      "4": { "query": "Onde fica o CEMERF?" },
+      "5": { "query": "Quais dias e horários de funcionamento para Meios Auxiliares de Locomoção?" },
+      "6": { "query": "Quais os contatos do CEMERF?" },
+      "0": { "next_state": "WAITING_2_MATERIAIS" }
+    }
+  },
+
+  "WAITING_2_8_PROTESES": {
+    "text": "🦾 *2.8 PRÓTESES E ÓRTESES*\n\n1️⃣ - O que é este serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários para o cadastro?\n4️⃣ - Onde fica o CEMERF?\n5️⃣ - Quais dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Próteses e Órteses?" },
+      "2": { "query": "O que preciso fazer para ter acesso a Próteses e Órteses?" },
+      "3": { "query": "Quais documentos necessários para o cadastro de Próteses e Órteses?" },
+      "4": { "query": "Onde fica o CEMERF?" },
+      "5": { "query": "Quais dias e horários de funcionamento para Próteses e Órteses?" },
+      "6": { "query": "Quais os contatos do CEMERF?" },
+      "0": { "next_state": "WAITING_2_MATERIAIS" }
+    }
+  },
+
+  "WAITING_2_9_OSTOMIA": {
+    "text": "🎒 *2.9 BOLSAS DE OSTOMIA E ADJUVANTES*\n\n1️⃣ - O que é este serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários para o cadastro?\n4️⃣ - Onde fica o CEMERF?\n5️⃣ - Quais dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Bolsas de Ostomia e Adjuvantes?" },
+      "2": { "query": "O que preciso fazer para ter acesso a Bolsas de Ostomia e Adjuvantes?" },
+      "3": { "query": "Quais documentos necessários para o cadastro de Bolsas de Ostomia e Adjuvantes?" },
+      "4": { "query": "Onde fica o CEMERF?" },
+      "5": { "query": "Quais dias e horários de funcionamento para Bolsas de Ostomia e Adjuvantes?" },
+      "6": { "query": "Quais os contatos do CEMERF?" },
+      "0": { "next_state": "WAITING_2_MATERIAIS" }
+    }
+  },
+
+  "WAITING_3_PROCEDIMENTOS": {
+    "text": "💉 *3- PROCEDIMENTOS E VACINAS*\n\n1️⃣ - Calendário Vacinal do Idoso\n2️⃣ - Curativos\n3️⃣ - Aferição de Pressão Arterial/Glicemia\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Calendário Vacinal do Idoso", "image_key": "CALENDARIO" },
+      "2": { "query": "Informações sobre Curativos" },
+      "3": { "query": "Aferição de Pressão Arterial/Glicemia" },
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+
+  "WAITING_4_SERVICOS": {
+    "text": "🏥 *4- SERVIÇOS*\n\n1️⃣ - Facilita Saúde\n2️⃣ - CEMERF\n3️⃣ - CEMAE\n4️⃣ - CEO\n5️⃣ - CAPS II\n6️⃣ - CAPS AS III\n7️⃣ - Ambulatório de Saúde Mental\n8️⃣ - Secretaria Municipal de Saúde\n9️⃣ - Oxigenoterapia\n🔟 - Eletrocardiograma\n1️⃣1️⃣ - Espirometria\n1️⃣2️⃣ - Programa Asma Grave\n1️⃣3️⃣ - CRAS/CREAS\n1️⃣4️⃣ - Conselho do Idoso\n1️⃣5️⃣ - Serviço de Convivência ao Idoso\n1️⃣6️⃣ - Delegacias\n17 - Serviço Experimental C01 (TESTE)\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "Serviço Facilita Saúde" },
+      "2": { "next_state": "WAITING_4_2_CEMERF" },
+      "3": { "next_state": "WAITING_4_3_CEMAE" },
+      "4": { "next_state": "WAITING_4_4_CEO" },
+      "5": { "next_state": "WAITING_4_5_CAPS2" },
+      "6": { "next_state": "WAITING_4_6_CAPS_AS_III" },
+      "7": { "next_state": "WAITING_4_7_AMB_MENTAL" },
+      "8": { "next_state": "WAITING_4_8_SEC_SAUDE" },
+      "9": { "next_state": "WAITING_4_9_OXIGENOTERAPIA" },
+      "10": { "next_state": "WAITING_4_10_ELETROCARDIOGRAMA" },
+      "11": { "next_state": "WAITING_4_11_ESPIROMETRIA" },
+      "12": { "next_state": "WAITING_4_12_ASMA_GRAVE" },
+      "13": { "query": "Serviços do CRAS/CREAS" },
+      "14": { "query": "Conselho do Idoso" },
+      "15": { "query": "Serviço de Convivência ao Idoso" },
+      "16": { "query": "Delegacias" },
+      "17": { "next_state": "WAITING_4_17_C01" },
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+
+  "WAITING_4_2_CEMERF": {
+    "text": "⚙️ *4.2 CEMERF*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço CEMERF?" },
+      "2": { "query": "O que preciso fazer para ter acesso ao CEMERF?" },
+      "3": { "query": "Quais documentos necessários para o CEMERF?" },
+      "4": { "query": "Onde fica o CEMERF?" },
+      "5": { "query": "Quais os dias e horários de funcionamento do CEMERF?" },
+      "6": { "query": "Quais os contatos do CEMERF?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_3_CEMAE": {
+    "text": "⚙️ *4.3 CEMAE*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço CEMAE?" },
+      "2": { "query": "O que preciso fazer para ter acesso ao CEMAE?" },
+      "3": { "query": "Quais documentos necessários para o CEMAE?" },
+      "4": { "query": "Onde fica o CEMAE?" },
+      "5": { "query": "Quais os dias e horários de funcionamento do CEMAE?" },
+      "6": { "query": "Quais os contatos do CEMAE?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_4_CEO": {
+    "text": "⚙️ *4.4 CEO*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço CEO?" },
+      "2": { "query": "O que preciso fazer para ter acesso ao CEO?" },
+      "3": { "query": "Quais documentos necessários para o CEO?" },
+      "4": { "query": "Onde fica o CEO?" },
+      "5": { "query": "Quais os dias e horários de funcionamento do CEO?" },
+      "6": { "query": "Quais os contatos do CEO?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_5_CAPS2": {
+    "text": "🧠 *4.5 CAPS II*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - Como posso acessar esse serviço?\n3️⃣ - Como funciona o acolhimento?\n4️⃣ - Como são os atendimentos?\n5️⃣ - Quais documentos necessários?\n6️⃣ - Onde fica?\n7️⃣ - Quais os dias e horários de funcionamento?\n8️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço CAPS II?" },
+      "2": { "query": "Como posso acessar o serviço CAPS II?" },
+      "3": { "query": "Como funciona o acolhimento no CAPS II?" },
+      "4": { "query": "Como são os atendimentos no CAPS II?" },
+      "5": { "query": "Quais os documentos necessários para o CAPS II?" },
+      "6": { "query": "Onde fica o CAPS II?" },
+      "7": { "query": "Quais os dias e horários de funcionamento do CAPS II?" },
+      "8": { "query": "Quais os contatos do CAPS II?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_6_CAPS_AS_III": {
+    "text": "🧠 *4.6 CAPS AD III*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - Como posso acessar esse serviço?\n3️⃣ - Como funciona o acolhimento?\n4️⃣ - Como são os atendimentos?\n5️⃣ - Quais documentos necessários?\n6️⃣ - Onde fica?\n7️⃣ - Quais os dias e horários de funcionamento?\n8️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço CAPS AD III?" },
+      "2": { "query": "Como posso acessar o serviço CAPS AD III?" },
+      "3": { "query": "Como funciona o acolhimento no CAPS AD III?" },
+      "4": { "query": "Como são os atendimentos no CAPS AD III?" },
+      "5": { "query": "Quais os documentos necessários para o CAPS AD III?" },
+      "6": { "query": "Onde fica o CAPS AD III?" },
+      "7": { "query": "Quais os dias e horários de funcionamento do CAPS AD III?" },
+      "8": { "query": "Quais os contatos do CAPS AD III?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_7_AMB_MENTAL": {
+    "text": "🧠 *4.7 AMBULATÓRIO DE SAÚDE MENTAL*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - Como posso acessar esse serviço?\n3️⃣ - Como funciona o acolhimento?\n4️⃣ - Como são os atendimentos?\n5️⃣ - Quais documentos necessários?\n6️⃣ - Onde fica?\n7️⃣ - Quais os dias e horários de funcionamento?\n8️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o Ambulatório de Saúde Mental?" },
+      "2": { "query": "Como posso acessar o Ambulatório de Saúde Mental?" },
+      "3": { "query": "Como funciona o acolhimento no Ambulatório de Saúde Mental?" },
+      "4": { "query": "Como são os atendimentos no Ambulatório de Saúde Mental?" },
+      "5": { "query": "Quais os documentos necessários para o Ambulatório de Saúde Mental?" },
+      "6": { "query": "Onde fica o Ambulatório de Saúde Mental?" },
+      "7": { "query": "Quais os dias e horários de funcionamento do Ambulatório de Saúde Mental?" },
+      "8": { "query": "Quais os contatos do Ambulatório de Saúde Mental?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_8_SEC_SAUDE": {
+    "text": "🏢 *4.8 SECRETARIA MUNICIPAL DE SAÚDE*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para ter acesso?\n3️⃣ - Quais os documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é a Secretaria Municipal de Saúde?" },
+      "2": { "query": "O que preciso fazer para ter acesso à Secretaria Municipal de Saúde?" },
+      "3": { "query": "Quais os documentos necessários para a Secretaria Municipal de Saúde?" },
+      "4": { "query": "Onde fica a Secretaria Municipal de Saúde?" },
+      "5": { "query": "Quais os dias e horários de funcionamento da Secretaria Municipal de Saúde?" },
+      "6": { "query": "Quais os contatos da Secretaria Municipal de Saúde?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_9_OXIGENOTERAPIA": {
+    "text": "🫁 *4.9 OXIGENOTERAPIA*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para solicitar esse serviço?\n3️⃣ - Quais os documentos necessários para o cadastro?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Oxigenoterapia?" },
+      "2": { "query": "O que preciso fazer para solicitar o serviço de Oxigenoterapia?" },
+      "3": { "query": "Quais os documentos necessários para o cadastro na Oxigenoterapia?" },
+      "4": { "query": "Onde fica o serviço de Oxigenoterapia?" },
+      "5": { "query": "Quais os dias e horários de funcionamento da Oxigenoterapia?" },
+      "6": { "query": "Quais os contatos da Oxigenoterapia?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_10_ELETROCARDIOGRAMA": {
+    "text": "🫀 *4.10 ELETROCARDIOGRAMA*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para realizar o exame?\n3️⃣ - Quais os documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Eletrocardiograma?" },
+      "2": { "query": "O que preciso fazer para realizar o exame de Eletrocardiograma?" },
+      "3": { "query": "Quais os documentos necessários para Eletrocardiograma?" },
+      "4": { "query": "Onde fica o serviço de Eletrocardiograma?" },
+      "5": { "query": "Quais os dias e horários de funcionamento do Eletrocardiograma?" },
+      "6": { "query": "Quais os contatos para Eletrocardiograma?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_11_ESPIROMETRIA": {
+    "text": "🌬️ *4.11 ESPIROMETRIA*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para realizar o exame?\n3️⃣ - Quais os documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o serviço de Espirometria?" },
+      "2": { "query": "O que preciso fazer para realizar o exame de Espirometria?" },
+      "3": { "query": "Quais os documentos necessários para Espirometria?" },
+      "4": { "query": "Onde fica o serviço de Espirometria?" },
+      "5": { "query": "Quais os dias e horários de funcionamento da Espirometria?" },
+      "6": { "query": "Quais os contatos para Espirometria?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_4_12_ASMA_GRAVE": {
+    "text": "🫁 *4.12 PROGRAMA ASMA GRAVE*\n\n1️⃣ - O que é esse serviço?\n2️⃣ - O que preciso fazer para fazer parte do programa?\n3️⃣ - Quais os documentos necessários?\n4️⃣ - Onde fica?\n5️⃣ - Quais os dias e horários de funcionamento?\n6️⃣ - Quais os contatos?\n0️⃣ - Voltar ao menu anterior\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que é o Programa Asma Grave?" },
+      "2": { "query": "O que preciso fazer para fazer parte do Programa Asma Grave?" },
+      "3": { "query": "Quais os documentos necessários para o Programa Asma Grave?" },
+      "4": { "query": "Onde fica o Programa Asma Grave?" },
+      "5": { "query": "Quais os dias e horários de funcionamento do Programa Asma Grave?" },
+      "6": { "query": "Quais os contatos do Programa Asma Grave?" },
+      "0": { "next_state": "WAITING_4_SERVICOS" }
+    }
+  },
+
+  "WAITING_5_EMERGENCIAS": {
+    "text": "🚨 *5- EMERGÊNCIAS*\n\n1️⃣ - Picadas de insetos\n2️⃣ - AVC\n3️⃣ - Engasgo\n4️⃣ - Quedas\n5️⃣ - Sangramento Intenso\n6️⃣ - Surtos\n7️⃣ - Violência\n0️⃣ - Voltar ao menu principal\n\nDigite a opção:",
+    "options": {
+      "1": { "query": "O que fazer em caso de picadas de insetos?" },
+      "2": { "query": "O que fazer em caso de AVC?" },
+      "3": { "query": "O que fazer em caso de engasgo?" },
+      "4": { "query": "O que fazer em caso de quedas?" },
+      "5": { "query": "O que fazer em caso de sangramento intenso?" },
+      "6": { "query": "O que fazer em caso de surtos?" },
+      "7": { "query": "O que fazer em caso de violência?" },
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+
+  "WAITING_6_OUTROS": {
+    "text": "ℹ️ *6- OUTROS*\n\nDigite a sua dúvida diretamente no chat para que eu possa tentar ajudar.\n\n0️⃣ - Voltar ao menu principal",
+    "options": {
+      "0": { "next_state": "WAITING_MAIN_MENU" }
+    }
+  },
+  "WAITING_4_17_C01": {
+  "text": "SERVIÇO EXPERIMENTAL C01 - TESTE\nServiço fictício para avaliação arquitetural. Não oferece atendimento real.\n\n1 - Consultar a finalidade do serviço de teste\n0 - Voltar ao menu de serviços",
+  "options": {
+    "1": { "query": "Qual é a finalidade do Serviço Experimental C01?" },
+    "0": {
+      "next_state": "WAITING_4_SERVICOS"
+    }
+  }
+}
+}
