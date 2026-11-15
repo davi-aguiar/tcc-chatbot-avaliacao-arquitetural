@@ -95,11 +95,21 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Risco observado de resposta incompleta por truncamento em P06-R1 de C05, mesmo com contexto suficiente e conteudo apresentado com apoio documental. A resposta atingiu 500 tokens de saida, com 406 de raciocinio informados pelo provedor na configuracao adaptada. Fidelidade e completude permanecem criterios distintos; nao houve comparacao de outros limites.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M11",
+      "commit_versao_apresentada": "688180537113ac04c2808a64560b45287314098a",
+      "matriz_sha256_versao_apresentada": "ffac5435455e958e6fa7f64fc05883b608c010d0eae59b8dd3571cb60ceb7b54",
+      "data_registro_utc": "2026-11-15T23:09:12.033684+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "tá pode regitrar m1",
+      "interpretacao_referencia": "A referencia m1 foi interpretada como M11 pelo contexto imediato da revisao e da contagem dos achados. M01 ja estava confirmado. Essa interpretacao foi comunicada ao autor antes do registro.",
+      "interpretacao_confirmada": "Risco observado de confiabilidade da base pela existencia de enderecos conflitantes atribuidos ao CAPS II nos documentos recuperados em C05. As respostas seguiram a fonte especifica na amostra, sem eliminar a inconsistencia documental ou garantir resolucao de outros conflitos.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M11",
     "M12",
     "M13",
     "M14"
