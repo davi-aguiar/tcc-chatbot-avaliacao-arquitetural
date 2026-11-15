@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 foi encerrado com revisão assistida do autor em 14/11/2026: [fidelidade atendida apenas na amostra e completude parcial](C05-relatorio-execucao.md). C06 passa à preparação.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 foi encerrado com revisão assistida do autor em 14/11/2026: [fidelidade atendida apenas na amostra e completude parcial](C05-relatorio-execucao.md). C06 tem coleta concluída e revisão interpretativa pendente.
 
 ## Relação com os objetivos
 
@@ -34,7 +34,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
 | C04 | Média | Média | Encerrado com ressalvas: 16/16 casos do núcleo RAG sem rede/credenciais/pesos; isolamento depende de ajustes em estado global e diretório |
 | C05 | Alta | Alta | Encerrado com ressalvas: 12 respostas revisadas pelo autor; fidelidade atendida na amostra, quatro abstenções e uma resposta truncada com completude parcial |
-| C06 | Alta | Média | Preparado: protocolo/matriz de 14 observações e instrumento local verificados; coleta e julgamento pendentes |
+| C06 | Alta | Média | 14 observações válidas; proposta parcialmente atendido por falha de logs em D04/D06; revisão interpretativa pendente |
 
 ## C01 — Modificabilidade: inclusão de serviço
 
@@ -127,7 +127,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 
 ## C06 — Segurança/confidencialidade: fluxo e minimização de dados
 
-**Atualização de 14/11/2026:** [protocolo e matriz definidos](C06-protocolo.md) após o fechamento de C05; [preparação local concluída](evidencias-c06/README.md), com 13 verificações do instrumento e 244 testes existentes aprovados. Coleta oficial não executada, zero observações da amostra e nenhum resultado de confidencialidade atribuído. O plano original abaixo permanece como referência prospectiva.
+**Atualização de 14/11/2026:** [coleta concluída](C06-relatorio-execucao.md) conforme [protocolo prévio](C06-protocolo.md): 14 observações válidas, 12 pedidos locais, dois controles e zero tentativas externas. Minimização automática atendida nos pedidos; texto livre integral exposto em quatro logs de falha D04/D06. A [análise preliminar](evidencias-c06/analise-preliminar.json) propõe parcialmente atendido no recorte, pendente de revisão do autor. Foram aprovadas 381 verificações estruturais e quatro testes de conferência. A [preparação histórica](evidencias-c06/README.md) permanece separada; o plano original abaixo é mantido.
 
 | Elemento do cenário | Definição |
 |---|---|

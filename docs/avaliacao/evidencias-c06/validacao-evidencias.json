@@ -1,0 +1,2605 @@
+{
+  "cenario": "C06",
+  "lote": "20261114-231108-coletar-7b9bcf",
+  "data_utc": "2026-11-15T02:16:01.917161+00:00",
+  "natureza": "conferencia_posterior_estrutural_sem_julgamento_humano",
+  "verificador_sha256": "60bf5caab8d5bae333cc51a964e6f3fa0cdda68347d33a115b935400058423e1",
+  "total": 381,
+  "aprovadas": 381,
+  "valido": true,
+  "verificacoes": [
+    {
+      "verificacao": "manifesto: 68 fontes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "manifesto: corte e ambiente limpo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/env.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/env.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/725740865e73_audit_config_tables.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/725740865e73_audit_config_tables.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/7f566e777933_user_name.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/7f566e777933_user_name.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/a8f3b1c2d4e5_flow_media_table.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/a8f3b1c2d4e5_flow_media_table.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/b9c4d6e7f8a1_create_flow_media_after_merge.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/b9c4d6e7f8a1_create_flow_media_after_merge.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/c017765344ef_initial_migration.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/c017765344ef_initial_migration.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/c7d8e9fa0b1c_update_calendario_media_url.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/c7d8e9fa0b1c_update_calendario_media_url.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/d2f3a4b5c6d7_normaliza_id_wpp.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/d2f3a4b5c6d7_normaliza_id_wpp.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/alembic/versions/f36d189f393f_merge_heads.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/alembic/versions/f36d189f393f_merge_heads.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/db/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/db/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/db/database.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/db/database.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/dependencies/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/dependencies/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/dependencies/dependencies.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/dependencies/dependencies.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/main.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/main.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/models/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/models/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/models/models.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/models/models.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/requirements.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/requirements.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/routes/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/routes/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/routes/routes.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/routes/routes.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/routes/twilio_webhook.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/routes/twilio_webhook.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/routes/webhook.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/routes/webhook.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/schemas/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/schemas/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/schemas/responses.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/schemas/responses.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/schemas/schemas.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/schemas/schemas.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/security.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/security.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/chat_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/chat_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/config_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/config_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/flow_media_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/flow_media_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/menu_handlers.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/menu_handlers.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/menu_texts.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/menu_texts.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/services/nlp_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/services/nlp_service.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/utils/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/utils/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:api/utils/logger.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:api/utils/logger.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/__init__.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/adapters/embeddings.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/adapters/embeddings.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/adapters/prompts.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/adapters/prompts.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/adapters/respostas.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/adapters/respostas.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/adapters/splitter.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/adapters/splitter.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/adapters/vector_store.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/adapters/vector_store.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/core/conversation.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/core/conversation.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/core/ingestion.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/core/ingestion.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/core/intencao.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/core/intencao.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/core/rag_pipeline.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/core/rag_pipeline.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/main.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/main.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:app/requirements.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:app/requirements.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/secretaria_municipal_de_saude.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/secretaria_municipal_de_saude.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_caps_ad_iii.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_caps_ad_iii.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_caps_ii_centro_atencao_psicossocial.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_caps_ii_centro_atencao_psicossocial.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_cemae.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_cemae.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_cemerf.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_cemerf.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_ceo.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_ceo.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_concessao_aparelhos_auditivos.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_concessao_aparelhos_auditivos.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_concessao_bolsas_ostomia_e_adjuvantes.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_concessao_bolsas_ostomia_e_adjuvantes.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_concessao_meios_auxiliares_de_locomoção.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_concessao_meios_auxiliares_de_locomoção.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_concessao_orteses_e_proteses.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_concessao_orteses_e_proteses.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_eletrocardiograma.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_eletrocardiograma.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_espirometria.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_espirometria.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_experimental_c01.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_experimental_c01.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_marcacoes.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_marcacoes.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_programa_asma_grave.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_programa_asma_grave.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:data/servicos/servico_programa_oxigenoterapia_domiciliar_prolongada.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:data/servicos/servico_programa_oxigenoterapia_domiciliar_prolongada.txt",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:docs/avaliacao/c06/casos.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:docs/avaliacao/c06/casos.json",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:docs/avaliacao/c06/executar.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:docs/avaliacao/c06/executar.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:docs/avaliacao/c06/test_instrumento.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:docs/avaliacao/c06/test_instrumento.py",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:copia:docs/avaliacao/C06-protocolo.md",
+      "aprovada": true
+    },
+    {
+      "verificacao": "sha256:atual:docs/avaliacao/C06-protocolo.md",
+      "aprovada": true
+    },
+    {
+      "verificacao": "matriz: sete perfis, duas rodadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "amostra: arquivos exatos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "execucao: completa sem erro",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:query de menu",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:query de menu",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R1:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:query de menu",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D01-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:query de menu",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D02-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D03-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D04-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:personalizacao posterior",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D05-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:entrada NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:retorno NLP",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:HTTP local serializado",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:corpo integral reconstruido",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D06-R2:localizacoes recalculadas",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:identidade e fixture",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:ordem e intervalo",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:validade e isolamento",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:diagnostico de segredo bruto",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:sem marcador de omissao",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:contagens de fronteiras",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:recuperacoes",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:banco inicial",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:identidade e vinculo persistidos",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:mensagens e rollback",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:eventos de auditoria",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:logs disponiveis",
+      "aprovada": true
+    },
+    {
+      "verificacao": "D07-R2:localizacoes recalculadas",
+      "aprovada": true
+    }
+  ],
+  "resumo": {
+    "observacoes": 14,
+    "fontes": 68,
+    "http": 12,
+    "status_http": {
+      "200": 6,
+      "400": 6
+    },
+    "logs": 46,
+    "auditorias": 28,
+    "mensagens_depois": 52,
+    "emissoes_com_relato": 4,
+    "observacoes_com_relato_em_logs": [
+      "D04-R1",
+      "D06-R1",
+      "D04-R2",
+      "D06-R2"
+    ],
+    "por_observacao": [
+      {
+        "id": "D01-R1",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D02-R1",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 2,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_FAILED"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].metadata_info.id_wpp"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D03-R1",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D04-R1",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[3].mensagem",
+              "$[3].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "relato": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ]
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 1
+      },
+      {
+        "id": "D05-R1",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "nome_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [
+              "$.messages[2].text"
+            ],
+            "nome_declarado": [
+              "$.messages[2].text"
+            ],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D06-R1",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "nome_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[3].mensagem",
+              "$[3].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_declarado": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "relato": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ]
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [
+              "$.messages[2].text"
+            ],
+            "nome_declarado": [
+              "$.messages[2].text"
+            ],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 1
+      },
+      {
+        "id": "D07-R1",
+        "http": 0,
+        "status": null,
+        "logs": 2,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[1].mensagem",
+              "$[1].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.users[0].state",
+              "$.messages[2].text",
+              "$.messages[3].text",
+              "$.audit_logs[1].metadata_info.estado_saida"
+            ],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D01-R2",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D02-R2",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 2,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_FAILED"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].metadata_info.id_wpp"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D03-R2",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D04-R2",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[3].mensagem",
+              "$[3].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "relato": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ]
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 1
+      },
+      {
+        "id": "D05-R2",
+        "http": 1,
+        "status": 200,
+        "logs": 3,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "nome_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name",
+              "$.messages[3].text"
+            ],
+            "id_declarado": [
+              "$.messages[2].text"
+            ],
+            "nome_declarado": [
+              "$.messages[2].text"
+            ],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 0
+      },
+      {
+        "id": "D06-R2",
+        "http": 1,
+        "status": 400,
+        "logs": 4,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "nome_declarado": [
+              "$[0].messages[0].content"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [
+              "$[0].messages[0].content"
+            ],
+            "consulta": [
+              "$[0].messages[0].content"
+            ],
+            "relato": [
+              "$[0].messages[0].content"
+            ]
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[3].mensagem",
+              "$[3].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "nome_declarado": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ],
+            "relato": [
+              "$[2].mensagem",
+              "$[2].formatado"
+            ]
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [
+              "$.messages[2].text"
+            ],
+            "nome_declarado": [
+              "$.messages[2].text"
+            ],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.messages[2].text"
+            ],
+            "relato": [
+              "$.messages[2].text"
+            ]
+          }
+        },
+        "emissoes_com_relato": 1
+      },
+      {
+        "id": "D07-R2",
+        "http": 0,
+        "status": null,
+        "logs": 2,
+        "mensagens_depois": 4,
+        "eventos": [
+          "MESSAGE_RECEIVED",
+          "MESSAGE_SENT"
+        ],
+        "localizacoes": {
+          "payload": {
+            "id_cadastrado": [],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "logs": {
+            "id_cadastrado": [
+              "$[0].mensagem",
+              "$[0].formatado",
+              "$[1].mensagem",
+              "$[1].formatado"
+            ],
+            "nome_cadastrado": [],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [],
+            "historico_bot": [],
+            "contexto": [],
+            "consulta": [],
+            "relato": []
+          },
+          "persistencia": {
+            "id_cadastrado": [
+              "$.users[0].id_wpp",
+              "$.audit_logs[0].message",
+              "$.audit_logs[1].message"
+            ],
+            "nome_cadastrado": [
+              "$.users[0].name"
+            ],
+            "id_declarado": [],
+            "nome_declarado": [],
+            "historico_usuario": [
+              "$.messages[0].text"
+            ],
+            "historico_bot": [
+              "$.messages[1].text"
+            ],
+            "contexto": [],
+            "consulta": [
+              "$.users[0].state",
+              "$.messages[2].text",
+              "$.messages[3].text",
+              "$.audit_logs[1].metadata_info.estado_saida"
+            ],
+            "relato": []
+          }
+        },
+        "emissoes_com_relato": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "modo": "coletar",
+  "inicio_utc": "2026-11-15T02:11:08.967940+00:00",
+  "matriz_valida": true,
+  "dependencias": {
+    "dotenv": true,
+    "httpx": true,
+    "groq": true,
+    "sqlalchemy": true,
+    "langchain_core": true,
+    "langchain_groq": true,
+    "pytest": true
+  },
+  "observacoes_previstas": 14,
+  "observacoes_executadas": 14,
+  "coleta_completa": true,
+  "julgamento": "pendente_analise",
+  "erro_tipo": null,
+  "fontes_inalteradas": true,
+  "fim_utc": "2026-11-15T02:11:30.188853+00:00"
+}

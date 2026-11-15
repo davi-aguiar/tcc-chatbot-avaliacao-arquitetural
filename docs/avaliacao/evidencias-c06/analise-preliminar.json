@@ -1,0 +1,83 @@
+{
+  "cenario": "C06",
+  "lote": "20261114-231108-coletar-7b9bcf",
+  "natureza": "analise_preliminar_assistida_por_IA",
+  "estado": "pendente_revisao_autor",
+  "proposta_julgamento": "parcialmente_atendido_no_recorte",
+  "confirmacao_humana": null,
+  "base": {
+    "protocolo": "../C06-protocolo.md",
+    "validacao": "validacao-evidencias.json",
+    "observacoes_validas": 14,
+    "pedidos_serializados_locais": 12,
+    "controles_sem_inferencia": 2,
+    "tentativas_externas": 0,
+    "alteracao_funcional": false
+  },
+  "criterios": [
+    {
+      "numero": 1,
+      "nome": "minimizacao_automatica",
+      "tipo": "normativo",
+      "resultado_proposto": "atendido_na_amostra_com_inferencia",
+      "avaliados": 12,
+      "atendidos": 12,
+      "sem_pedido_para_avaliar": ["D07-R1", "D07-R2"],
+      "evidencia": "D01 a D06, ambas as rodadas: http[0].corpo e localizacoes.payload; ausencia de id_cadastrado, nome_cadastrado, historico_usuario e historico_bot.",
+      "limite": "Ausencia dos marcadores no corpo nao comprova ausencia no banco nem anonimato de todo o texto. O NLP recebe user_name separadamente e personaliza a resposta apos o RAG."
+    },
+    {
+      "numero": 2,
+      "nome": "texto_fornecido_pelo_usuario",
+      "tipo": "descritivo",
+      "resultado": "texto_livre_preservado_no_pedido",
+      "relato_no_corpo": ["D03-R1", "D04-R1", "D05-R1", "D06-R1", "D03-R2", "D04-R2", "D05-R2", "D06-R2"],
+      "nome_e_identificador_declarados_no_corpo": ["D05-R1", "D06-R1", "D05-R2", "D06-R2"],
+      "caminho": "http[0].corpo.messages[0].content",
+      "interpretacao": "Nao houve remocao desses marcadores do texto livre. Sua presenca tem origem na entrada, sem demonstrar adicao da identidade cadastrada. O transporte foi local, sem envio efetivo ao provedor."
+    },
+    {
+      "numero": 3,
+      "nome": "nao_duplicacao_da_consulta_em_logs",
+      "tipo": "normativo",
+      "resultado_proposto": "nao_atendido",
+      "observacoes_validas": 14,
+      "sem_consulta_integral_nos_logs": 10,
+      "com_consulta_integral_nos_logs": ["D04-R1", "D06-R1", "D04-R2", "D06-R2"],
+      "emissoes_com_relato": 4,
+      "evidencias": [
+        {"arquivo": "D04-R1.json", "caminhos": ["logs[2].mensagem", "logs[2].formatado"]},
+        {"arquivo": "D06-R1.json", "caminhos": ["logs[2].mensagem", "logs[2].formatado"]},
+        {"arquivo": "D04-R2.json", "caminhos": ["logs[2].mensagem", "logs[2].formatado"]},
+        {"arquivo": "D06-R2.json", "caminhos": ["logs[2].mensagem", "logs[2].formatado"]}
+      ],
+      "fonte": "api/services/chat_service.py:316, logger.exception recebe texto integral",
+      "interpretacao": "Mensagem e formatado sao duas representacoes da mesma emissao; nao sao oito incidentes. D06 inclui nome e identificador autodeclarados. Os 28 eventos audit_logs nao contem pergunta/relato, mas registram o identificador cadastrado. O erro sintetico generico nao ecoa a pergunta: o achado vem da mensagem da aplicacao."
+    },
+    {
+      "numero": 4,
+      "nome": "credenciais",
+      "tipo": "normativo",
+      "resultado_proposto": "atendido_no_recorte_instrumentado",
+      "avaliados": 14,
+      "diagnosticos_brutos_sem_ocorrencia": 14,
+      "autenticacao_presente_em_pedidos": 12,
+      "evidencia": "Todos os registros: credencial_em_dados_brutos vazio. Pedidos: http[0].autenticacao_presente true, sem persistencia de cabecalhos.",
+      "limite": "O marcador foi procurado antes da omissao pelo instrumento e descartado depois. A conferencia posterior valida diagnosticos e ausencia do marcador de omissao, mas nao pode recalcular a busca bruta sem o segredo original. Nao houve uso de chave real."
+    },
+    {
+      "numero": 5,
+      "nome": "persistencia",
+      "tipo": "descritivo",
+      "resultado": "mapeada_com_assimetria_transacional",
+      "users": "Identificador, nome cadastrado e estado presentes antes/depois em todas as observacoes. D07 muda o estado para WAITING_4_SERVICOS.",
+      "chats": "Vinculo user_id preservado em todas as observacoes.",
+      "messages": "D02, nas duas rodadas, conserva apenas o historico sem o par atual apos rollback. Os outros 12 registros persistem entrada integral e resposta/fallback, somadas as duas mensagens historicas.",
+      "audit_logs": "28 eventos: 14 MESSAGE_RECEIVED, 12 MESSAGE_SENT e 2 MESSAGE_FAILED. Identificador cadastrado nas mensagens operacionais; metadados separados, sem pergunta/relato no recorte.",
+      "evidencia": "antes/depois.users, chats, messages e audit_logs em cada registro; D02 comparado com D04/D06 nas duas rodadas.",
+      "limite": "SQLite em memoria por observacao; sem avaliacao de retencao, producao, PostgreSQL, autorizacao, criptografia ou conformidade juridica. MESSAGE_SENT tambem ocorre quando o NLP falha em texto livre e o sistema retorna o menu."
+    }
+  ],
+  "sintese": "Resultados normativos mistos: minimizacao automatica atendida nos 12 pedidos; nenhum marcador de credencial observado pelo instrumento; criterio de logs falha em quatro observacoes. Itens descritivos nao recebem aprovacao retrospectiva.",
+  "pendencia": "Revisao do autor sobre a sintese interpretativa e suas limitacoes, conforme protocolo. Nenhuma confirmacao humana de C06 foi registrada ate esta analise."
+}

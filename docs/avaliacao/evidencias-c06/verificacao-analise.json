@@ -1,0 +1,29 @@
+{
+  "cenario": "C06",
+  "etapa": "conferencia_posterior_a_coleta",
+  "verificacoes_estruturais": {
+    "aprovadas": 381,
+    "total": 381,
+    "arquivo": "validacao-evidencias.json"
+  },
+  "testes_conferencia": {
+    "comando": "python -m pytest -q docs/avaliacao/c06/test_conferencia.py",
+    "aprovados": 4,
+    "segundos": 1.6,
+    "contraprovas": [
+      "fonte copiada alterada",
+      "corpo HTTP alterado",
+      "diagnostico de marcador alterado"
+    ],
+    "lotes_oficiais_adicionais": 0
+  },
+  "lint": {
+    "comando": "python -m ruff check docs/avaliacao/c06/conferir_evidencias.py docs/avaliacao/c06/test_conferencia.py",
+    "resultado": "aprovado"
+  },
+  "fontes_posteriores_sha256": {
+    "docs/avaliacao/c06/conferir_evidencias.py": "60bf5caab8d5bae333cc51a964e6f3fa0cdda68347d33a115b935400058423e1",
+    "docs/avaliacao/c06/test_conferencia.py": "d7e4a0608ad1ae16b5ed7583201a2810f690522623315dd5390cb5132404a81d"
+  },
+  "observacao": "Nao substitui a verificacao do instrumento anterior nem a revisao interpretativa do autor. Nenhuma nova execucao da aplicacao nesta etapa."
+}

@@ -42,7 +42,7 @@ Não há avaliação completa de atomicidade, consistência sob falhas de banco 
 
 Os [modelos](../api/models/models.py) relacionam mensagens textuais, usuário, nome e identificador. O código inspecionado não aplica criptografia de campo nem define rotina de expurgo/prazo de retenção. Isso não permite concluir se a infraestrutura utiliza criptografia de disco, controles de backup ou acesso ao banco: esses controles não foram verificados.
 
-Caminhos de erro também podem registrar pergunta ou exceção em logs. [C06](avaliacao/arvore-de-utilidade.md#c06--segurançaconfidencialidade-fluxo-e-minimização-de-dados) permanece planejado para avaliar fluxo e minimização com dados sintéticos. Definições institucionais de retenção, acesso e uso dos dados continuam fora do que o código, isoladamente, comprova. A revisão técnica não constitui avaliação jurídica ou certificação de conformidade.
+[C06](avaliacao/C06-relatorio-execucao.md) reproduziu a gravação do texto livre integral em quatro emissões de erro operacional D04/D06, incluindo relato fictício e, em D06, nome/identificador autodeclarados. A origem é `logger.exception` no tratamento de falha do NLP; os eventos de auditoria não contêm a pergunta no recorte, mas incluem o identificador cadastrado. O relatório propõe parcialmente atendido, com revisão interpretativa pendente. Definições institucionais de retenção, acesso e uso dos dados continuam fora do que o código, isoladamente, comprova. A revisão técnica não constitui avaliação jurídica ou certificação de conformidade.
 
 ## 8. Testes de navegação não cobrem todo o núcleo RAG
 
