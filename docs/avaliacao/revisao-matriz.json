@@ -1,0 +1,33 @@
+{
+  "objeto": "matriz-sintese-arquitetural.md",
+  "estado": "revisao_parcial",
+  "metodo": "Revisao assistida na conversa, por achado apresentado.",
+  "confirmacoes": [
+    {
+      "achado": "M01",
+      "commit_versao_apresentada": "d09cf13d26146cb15061eb63970f11af82f1f2cd",
+      "matriz_sha256_versao_apresentada": "7106ff3fb8a07fe12124ee99e0b4bf1203a1e5996b6973370ca600593c371587",
+      "data_registro_utc": "2026-11-15T02:48:57.733033+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Evidencia favoravel a modificabilidade no cenario de extensao compativel exercitado, sem reducao de esforco humano quantificada; dependencia do provedor registrada como achado separado em M03.",
+      "prioridades_de_manutencao_confirmadas": false
+    }
+  ],
+  "achados_sem_confirmacao": [
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10",
+    "M11",
+    "M12",
+    "M13",
+    "M14"
+  ],
+  "limite": "A confirmacao de M01 nao aprova os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios."
+}

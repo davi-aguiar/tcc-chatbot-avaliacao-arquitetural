@@ -4,6 +4,8 @@ Versão 1, de 14/11/2026. Referência de consolidação: `0d02d1669edc233cc8b2c3
 
 As coletas C01–C06 estão encerradas, com os julgamentos e limites próprios. A matriz reúne seus achados sem nova execução ou mudança funcional. Os enquadramentos transversais e as prioridades abaixo são propostas analíticas elaboradas com assistência de IA, sujeitas à revisão do autor; não representam priorização validada com stakeholders nem alteram os fechamentos anteriores. Cada cenário conserva sua versão de corte, ambiente e configuração; os números de lotes distintos não formam uma amostra única.
 
+**Revisão parcial do autor:** interpretação de M01 confirmada na conversa. Os demais achados e as prioridades permanecem propostos, conforme o [registro de revisão](revisao-matriz.json). Essa confirmação não altera os resultados das coletas.
+
 ## Base de evidências
 
 Os relatórios abaixo identificam protocolos e artefatos primários. Os códigos E01–E07 são referências internas desta matriz, sem renomear os cenários.
