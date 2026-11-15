@@ -1,3 +1,15 @@
+# Fontes e copias instrumentais C03/C03-B foram medidas com LF.
+# Evita que core.autocrlf altere os bytes conferidos pelos manifestos.
+/docs/avaliacao/c03/** text eol=lf
+/docs/avaliacao/C03-protocolo.md text eol=lf
+/docs/avaliacao/evidencias-c03/*/C03-protocolo.md text eol=lf
+/docs/avaliacao/evidencias-c03/*/casos.json text eol=lf
+/docs/avaliacao/evidencias-c03/*/executar.py text eol=lf
+/docs/avaliacao/c03b/** text eol=lf
+/docs/avaliacao/C03-B-protocolo.md text eol=lf
+/docs/avaliacao/evidencias-c03-b/*/C03-B-protocolo.md text eol=lf
+/docs/avaliacao/evidencias-c03-b/*/executar.py text eol=lf
+/docs/avaliacao/evidencias-c03-b/*/servidor.py text eol=lf
 # Preserva os bytes das evidencias C04, incluindo os finais de linha coletados.
 /docs/avaliacao/evidencias-c04/** -text whitespace=cr-at-eol
 # Fontes e protocolo C04 foram medidos com LF; manter os hashes apos checkout.
