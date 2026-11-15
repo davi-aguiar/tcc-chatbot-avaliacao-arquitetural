@@ -34,11 +34,20 @@
       "interpretacao_confirmada": "Novas tentativas automaticas podem recuperar consultas recusadas temporariamente por quota, mas a espera sincrona contribui para bloqueio do atendimento compartilhado. O atraso observado nao foi atribuido exclusivamente aos retries.",
       "recomendacao_confirmada": "Definir limites de espera e concorrencia e isolar a espera para evitar prejudicar outras conversas, com verificacao futura das alternativas.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M05",
+      "commit_versao_apresentada": "fcd75f8a52f31fc87a698cda60d4a7176ecdc932",
+      "matriz_sha256_versao_apresentada": "1e2293c05cbca1545ad5a1a63883869deb8164b28d99c30b9b81697406db1427",
+      "data_registro_utc": "2026-11-15T03:13:06.639273+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de disponibilidade e desempenho associado ao compartilhamento do atendimento com operacoes bloqueantes na configuracao testada de um worker. Esperas de inferencia e envio atrasaram outras requisicoes, inclusive menus estaticos, sem encerramento inesperado do processo.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M05",
     "M06",
     "M07",
     "M08",

@@ -4,7 +4,7 @@ Versão 1, de 14/11/2026. Referência de consolidação: `0d02d1669edc233cc8b2c3
 
 As coletas C01–C06 estão encerradas, com os julgamentos e limites próprios. A matriz reúne seus achados sem nova execução ou mudança funcional. Os enquadramentos transversais e as prioridades abaixo são propostas analíticas elaboradas com assistência de IA, sujeitas à revisão do autor; não representam priorização validada com stakeholders nem alteram os fechamentos anteriores. Cada cenário conserva sua versão de corte, ambiente e configuração; os números de lotes distintos não formam uma amostra única.
 
-**Revisão parcial do autor:** interpretações de M01, M03 e M04 confirmadas na conversa; em M03, também foi confirmada a configuração do modelo por variável de ambiente; em M04, limites e isolamento da espera nas tentativas automáticas. Os demais achados e as prioridades permanecem propostos, conforme o [registro de revisão](revisao-matriz.json). Essas confirmações não alteram os resultados das coletas.
+**Revisão parcial do autor:** interpretações de M01, M03, M04 e M05 confirmadas na conversa; em M03, também foi confirmada a configuração do modelo por variável de ambiente; em M04, limites e isolamento da espera nas tentativas automáticas. Os demais achados e as prioridades permanecem propostos, conforme o [registro de revisão](revisao-matriz.json). Essas confirmações não alteram os resultados das coletas.
 
 ## Base de evidências
 
