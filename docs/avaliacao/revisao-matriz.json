@@ -117,11 +117,21 @@
       "interpretacao_resposta": "Confirmacao de M12 pelo termo sim, com caractere adicional na resposta.",
       "interpretacao_confirmada": "Evidencia favoravel a minimizacao automatica de nome, identificador cadastrados e historico nos 12 pedidos interceptados localmente em C06. Dados autodeclarados e relato presentes na pergunta permanecem no corpo. A personalizacao posterior usa o nome cadastrado, sem demonstrar envio desse campo ao modelo. Nao ha demonstracao de anonimizacao do texto livre nem envio real ao provedor nesta coleta.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M13",
+      "commit_versao_apresentada": "1a9dc738e5380d63b45ffcb16114c4f9d84003b2",
+      "matriz_sha256_versao_apresentada": "d4611215c90314f9bb11effb02d0975379676ddb22778c13f7fab7965dd96352",
+      "data_registro_utc": "2026-11-15T23:19:07.989733+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "s",
+      "interpretacao_resposta": "Confirmacao afirmativa abreviada do achado M13 apresentado imediatamente antes.",
+      "interpretacao_confirmada": "Risco observado de confidencialidade pela duplicacao da pergunta integral em quatro emissoes operacionais de erro em C06, incluindo relato ficticio e, em D06, nome e identificador autodeclarados. Os eventos de auditoria nao continham a pergunta no recorte; mensagem e traceback formatado representam a mesma emissao, sem duplicar a contagem.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M13",
     "M14"
   ],
   "limite": "As confirmacoes registradas nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao."
