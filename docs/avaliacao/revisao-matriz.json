@@ -128,11 +128,20 @@
       "interpretacao_resposta": "Confirmacao afirmativa abreviada do achado M13 apresentado imediatamente antes.",
       "interpretacao_confirmada": "Risco observado de confidencialidade pela duplicacao da pergunta integral em quatro emissoes operacionais de erro em C06, incluindo relato ficticio e, em D06, nome e identificador autodeclarados. Os eventos de auditoria nao continham a pergunta no recorte; mensagem e traceback formatado representam a mesma emissao, sem duplicar a contagem.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M14",
+      "commit_versao_apresentada": "0e4d91598279f6b94a82360ad2e3c16e19362f13",
+      "matriz_sha256_versao_apresentada": "b127006ff7858eae3a745bc94c2fa57d2de44be33db30bec20cca7598496e148",
+      "data_registro_utc": "2026-11-15T23:24:13.850053+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Limitacao do alcance das evidencias: os cenarios nao certificam autenticacao real dos canais, gateways, entrega ao cidadao pelo WhatsApp, integracoes completas de midia ou configuracao de producao. Esses aspectos ficam nao avaliados dinamicamente nesse recorte, sem atribuicao de aprovacao ou falha.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
-    "M02",
-    "M14"
+    "M02"
   ],
   "limite": "As confirmacoes registradas nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao."
 }
