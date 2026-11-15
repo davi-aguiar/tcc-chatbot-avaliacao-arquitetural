@@ -8,7 +8,7 @@ O [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.
 
 A [matriz de síntese](matriz-sintese-arquitetural.md) reúne 14 achados ligados às decisões D01–D12 e a práticas de curadoria/logging, com evidências de C01–C06. Distingue riscos, evidências favoráveis, sensibilidades indicadas, trade-offs observados/analíticos e aspectos não avaliados. Dez recomendações incluem prioridades propostas e formas de verificar uma manutenção futura.
 
-Esta é uma síntese técnica inicial para revisão do autor, sem priorização validada com stakeholders, novas coletas ou implementação das recomendações. Os fechamentos e as evidências dos cenários são preservados. A matriz subsidia a discussão e as melhorias no TCC; a articulação com a literatura e a conclusão acadêmica continuam como escrita posterior.
+Os 14 achados foram confirmados pelo autor em revisão assistida na conversa, conforme o [registro de revisão](revisao-matriz.json). As prioridades das dez recomendações continuam propostas e não revisadas; não houve priorização validada com stakeholders, novas coletas ou implementação das recomendações. Os fechamentos e as evidências dos cenários são preservados. A matriz subsidia a discussão e as melhorias no TCC; a articulação com a literatura e a conclusão acadêmica continuam como escrita posterior.
 
 ## C06 — Fluxo e minimização de dados
 

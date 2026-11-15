@@ -1,6 +1,6 @@
 {
   "objeto": "matriz-sintese-arquitetural.md",
-  "estado": "revisao_parcial",
+  "estado": "interpretacoes_revisadas",
   "metodo": "Revisao assistida na conversa, por achado apresentado.",
   "confirmacoes": [
     {
@@ -138,10 +138,26 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Limitacao do alcance das evidencias: os cenarios nao certificam autenticacao real dos canais, gateways, entrega ao cidadao pelo WhatsApp, integracoes completas de midia ou configuracao de producao. Esses aspectos ficam nao avaliados dinamicamente nesse recorte, sem atribuicao de aprovacao ou falha.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M02",
+      "commit_versao_apresentada": "f225c97cbb0d8341d036d8503532d1fc2b9e0f91",
+      "matriz_sha256_versao_apresentada": "61afa53399f091ea80c68d7370272bc30581612fa5b9744401ac688f2938eee6",
+      "data_registro_utc": "2026-11-15T23:29:51.968918+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim,",
+      "interpretacao_confirmada": "Tensao entre reaproveitamento do indice, atualizacao dos documentos e disponibilidade na inicializacao. Custo de montagem medido em C02, sem comparacao do ganho de persistencia; risco de falha na montagem impedir menus identificado por inspecao, sem injecao de falha de inicializacao.",
+      "recomendacao_confirmada": "Comparar alternativas de persistencia com invalidacao/atualizacao do indice e de inicializacao antes de modificar a arquitetura.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
-  "achados_sem_confirmacao": [
-    "M02"
-  ],
-  "limite": "As confirmacoes registradas nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao."
+  "achados_sem_confirmacao": [],
+  "limite": "As 14 interpretacoes foram confirmadas pelo autor em revisao assistida na conversa. Isso nao constitui revisao independente dos dados primarios nem aprovacao das prioridades A01-A10. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao.",
+  "data_conclusao_interpretacoes_utc": "2026-11-15T23:29:51.968918+00:00",
+  "resumo": {
+    "achados": 14,
+    "interpretacoes_confirmadas": 14,
+    "interpretacoes_sem_confirmacao": 0,
+    "prioridades": "propostas_nao_revisadas"
+  }
 }
