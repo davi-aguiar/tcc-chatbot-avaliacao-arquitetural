@@ -1,0 +1,36 @@
+{
+  "data_fechamento_utc": "2026-11-15T01:13:19.855954+00:00",
+  "lote": "20261114-205318-coletar-12c7f8",
+  "estado": "encerrado_com_ressalvas",
+  "julgamento_fidelidade": "atendido_na_amostra",
+  "julgamento_completude": "parcial",
+  "revisor": "Autor",
+  "metodo_revisao": "Revisão assistida na conversa, com apresentação das duas respostas de cada pergunta, trechos de apoio e confirmação explícita do autor em seis blocos.",
+  "criterios_previos": {
+    "respostas_obtidas": 12,
+    "respostas_revisadas_autor": 12,
+    "revisoes_pendentes": 0,
+    "afirmacoes_examinadas": 49,
+    "afirmacoes_sem_apoio_identificadas": 0,
+    "trocas_de_servicos_identificadas": 0,
+    "abstencoes_adequadas_em_casos_ausentes": 4,
+    "abstencoes_indevidas": 0
+  },
+  "completude_fatos_esperados": {
+    "presente": 28,
+    "parcial_sem_bairro_Centro": 1,
+    "omitido": 1
+  },
+  "ressalvas": [
+    "P06-R1 truncada pelo limite de saída: endereço do CAPS II parcial e endereço do CAPS AD III omitido, embora presentes no contexto.",
+    "Conflito de endereço do CAPS II no documento do Ambulatório permanece na base; as respostas seguiram o documento específico.",
+    "Modelo alternativo explícito e timeout adaptado no instrumento; o padrão não foi objeto de geração nesta série.",
+    "Revisão assistida pelo mesmo sistema que produziu a análise preliminar, sem avaliação cega ou revisor independente."
+  ],
+  "artefatos_primarios": {
+    "fichas": "20261114-205318-coletar-12c7f8/revisao.json",
+    "coleta": "20261114-205318-coletar-12c7f8/execucao.json",
+    "conferencia_atual": "validacao-revisao.json"
+  },
+  "proveniencia": "O registro execucao.json conserva o estado pendente ao término da coleta; este arquivo registra seu fechamento posterior. Respostas, prompts e manifesto da coleta não foram alterados."
+}

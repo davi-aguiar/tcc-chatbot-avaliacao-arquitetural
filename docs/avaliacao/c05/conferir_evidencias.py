@@ -93,8 +93,17 @@ def verify(batch):
     execution = load(batch / "execucao.json")
     checks["execucao_completa_e_instrumentada"] = execution["coleta_completa"] and execution["instrumentacao_valida"] and execution["respostas_obtidas"] == 12
     reviews = load(batch / "revisao.json")
-    checks["fichas_humanas_continuam_pendentes"] = [r["id"] for r in reviews] == expected_ids and all(
-        r["estado"] == "pendente" and r["revisor"] is None for r in reviews)
+    absent_ids = {f"{case['id']}-R{round_number}" for round_number, case in schedule
+                  if case["tipo"] == "ausente"}
+    checks["fichas_humanas_consistentes"] = [r["id"] for r in reviews] == expected_ids and all(
+        (r["estado"] == "pendente" and r["revisor"] is None) or
+        (r["estado"] == "revisado_autor" and r["revisor"] and r.get("parecer_autor")
+         and r.get("data_revisao_utc")
+         and (r["afirmacoes"] or (r["id"] in absent_ids and r["fatos_esperados"] == []
+                                 and r["abstencao_adequada"] is True))
+         and all(r.get(k) is not None for k in (
+             "recuperacao", "fidelidade", "completude", "abstencao_adequada",
+             "confusao_servicos", "ambiguidade_documental"))) for r in reviews)
     key = os.environ.get("GROQ_API_KEY") or dotenv_values(ROOT / ".env").get("GROQ_API_KEY")
     if key:
         checks["valor_credencial_ausente_dos_artefatos"] = all(
@@ -103,7 +112,9 @@ def verify(batch):
             "conferencia_estrutural_aprovada": all(checks.values()),
             "verificacoes": checks, "respostas": details,
             "credencial_disponivel_para_conferencia_local": bool(key),
-            "julgamento_semantico": "Não realizado por este conferidor; revisão humana permanece pendente."}
+            "resumo_revisao": {"revisadas_autor": sum(r["estado"] == "revisado_autor" for r in reviews),
+                               "pendentes": sum(r["estado"] == "pendente" for r in reviews)},
+            "julgamento_semantico": "O conferidor valida a estrutura das fichas; não atribui julgamento semântico."}
 
 
 def main():

@@ -1,340 +1,1122 @@
 [
   {
     "id": "P01-R1",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+        "fragmento_resposta": "1. **Solicitação médica** – O médico da sua Unidade Básica de Saúde (UBS) deve solicitar o exame durante a consulta.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Entregar a solicitação na unidade básica para agendamento.",
+        "fragmento_resposta": "2. **Entrega da solicitação** – Leve a solicitação de procedimento à própria UBS para que o agendamento seja feito.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Aguardar o contato da equipe da unidade básica.",
+        "fragmento_resposta": "3. **Aguarde o contato** – Espere a equipe da UBS entrar em contato informando a data e o horário disponíveis.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Comparecer ao CEMAE no dia e horário agendados.",
+        "fragmento_resposta": "4. **Compareça ao CEMAE** – No dia e horário agendados, vá ao CEMAE (Avenida Olívia Flores, 3000, Bairro Candeias) para realizar o exame.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O CEMAE fica na Avenida Olívia Flores, 3000, Bairro Candeias.",
+        "fragmento_resposta": "4. **Compareça ao CEMAE** – No dia e horário agendados, vá ao CEMAE (Avenida Olívia Flores, 3000, Bairro Candeias) para realizar o exame.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Avenida Olívia Flores, 3000, Bairro Candeias"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor aceitou as duas respostas e a interpretação do contato da UBS como informação/confirmação da data e do horário do agendamento.",
+    "data_revisao_utc": "2026-11-15T01:01:51.955673+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das duas respostas e dos trechos de apoio.",
+    "parecer_autor": "aceitável para mim"
   },
   {
     "id": "P02-R1",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "É necessário encaminhamento médico.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O encaminhamento deve conter diagnóstico de asma grave com CID.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário boleto de marcação.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário CPF.",
+        "fragmento_resposta": "- CPF e RG  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          },
+          {
+            "chunk": 2,
+            "fonte": "servico_marcacoes.txt",
+            "trecho_literal": "RG e CPF"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário RG.",
+        "fragmento_resposta": "- CPF e RG  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          },
+          {
+            "chunk": 2,
+            "fonte": "servico_marcacoes.txt",
+            "trecho_literal": "RG e CPF"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Cartão SUS.",
+        "fragmento_resposta": "- Cartão SUS  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Cartão SUS"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Comprovante de residência atualizado.",
+        "fragmento_resposta": "- Comprovante de residência atualizado",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Comprovante de residência atualizado"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "CPF / RG"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Cartão SUS"
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Comprovante de residência atualizado"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor aceitou as duas respostas como fieis e completas, incluindo CPF e RG com apoio no documento do programa e no trecho sobre qualquer marcacao.",
+    "data_revisao_utc": "2026-11-15T01:04:12.689519+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "Sim"
   },
   {
     "id": "P03-R1",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "O CAPS II fica na Avenida Régis Pacheco, 770, Centro.",
+        "fragmento_resposta": "Avenida Régis Pacheco, 770, Centro – [link no mapa](https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+        "fragmento_resposta": "Avenida Régis Pacheco, 770, Centro – [link no mapa](https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O CAPS II funciona de segunda a sexta-feira.",
+        "fragmento_resposta": "- Segunda a sexta‑feira: **08:00 às 18:00**  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Segunda a sexta-feira"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O horário geral do CAPS II é das 08:00 às 18:00.",
+        "fragmento_resposta": "- Segunda a sexta‑feira: **08:00 às 18:00**  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O funcionamento do CAPS II tem exceção na quinta-feira à tarde.",
+        "fragmento_resposta": "- **Exceção:** nas **quintas‑feiras à tarde** o serviço fica fechado devido a reunião interna da equipe.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "A exceção se deve à reunião interna da equipe.",
+        "fragmento_resposta": "- **Exceção:** nas **quintas‑feiras à tarde** o serviço fica fechado devido a reunião interna da equipe.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Segunda a sexta-feira"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": true,
+    "observacoes": "O autor aceitou as duas respostas como fieis e completas, incluindo a interpretacao da excecao semanal como fechamento. O conflito documental foi apresentado e permanece registrado como risco da base; as respostas seguem a fonte especifica do CAPS II.",
+    "data_revisao_utc": "2026-11-15T01:05:33.000260+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "Tá ok"
   },
   {
     "id": "P04-R1",
-    "estado": "pendente",
-    "revisor": null,
+    "estado": "revisado_autor",
+    "revisor": "Autor",
     "afirmacoes": [],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "pertinencia_tematica_sem_informacao_solicitada",
+    "fidelidade": "atendida",
+    "completude": "nao_aplicavel",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor considerou adequada a abstencao nas duas rodadas: a base nao informa exigencia nem duracao de jejum e as respostas nao acrescentam orientacoes inferidas.",
+    "data_revisao_utc": "2026-11-15T01:06:36.328700+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "sim"
   },
   {
     "id": "P05-R1",
-    "estado": "pendente",
-    "revisor": null,
+    "estado": "revisado_autor",
+    "revisor": "Autor",
     "afirmacoes": [],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "pertinencia_tematica_sem_informacao_solicitada",
+    "fidelidade": "atendida",
+    "completude": "nao_aplicavel",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor considerou adequada a abstencao nas duas rodadas: a base descreve solicitacao e agendamento, mas nao fixa prazo maximo em dias para realizar o eletrocardiograma.",
+    "data_revisao_utc": "2026-11-15T01:10:10.235844+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "s"
   },
   {
     "id": "P06-R1",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+        "fragmento_resposta": "- **CAPS II** – Cuida de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.  ",
+        "apoio": [
+          {
+            "chunk": 6,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+        "fragmento_resposta": "- **CAPS AD III** – Atende pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O endereço parcialmente apresentado para o CAPS II é Avenida Régis Pacheco, 770.",
+        "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770,",
+        "apoio": [
+          {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 6,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "parcial_sem_bairro_Centro",
+        "apoio_contexto": {
+          "chunk": 5,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ad_iii.txt",
+          "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "omitido",
+        "apoio_contexto": {
+          "chunk": 3,
+          "fonte": "servico_caps_ad_iii.txt",
+          "trecho_literal": "Rua T, 417, Bairro Felícia"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "parcial",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": true,
+    "observacoes": "O autor concordou com os dois julgamentos: P06-R1 apresenta conteudo sustentado, mas e incompleta por truncamento; P06-R2 e fiel e completa. Publicos diferentes distingue os perfis descritos, sem afirmar exclusividade ou ausencia de sobreposicao. O conflito documental permanece registrado.",
+    "data_revisao_utc": "2026-11-15T01:11:41.517679+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "sim"
   },
   {
     "id": "P01-R2",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+        "fragmento_resposta": "1. Durante a consulta na Unidade Básica de Saúde (UBS), o médico solicita o exame.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Entregar a solicitação na unidade básica para agendamento.",
+        "fragmento_resposta": "2. Leve a solicitação de procedimento à própria UBS para que o agendamento seja feito.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Aguardar o contato da equipe da unidade básica.",
+        "fragmento_resposta": "3. Aguarde o contato da equipe da UBS confirmando a data e o horário.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Comparecer ao CEMAE no dia e horário agendados.",
+        "fragmento_resposta": "4. Compareça ao CEMAE, na Avenida Olívia Flores, 3000 (Bairro Candeias), no dia e horário agendados.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O CEMAE fica na Avenida Olívia Flores, 3000, Bairro Candeias.",
+        "fragmento_resposta": "4. Compareça ao CEMAE, na Avenida Olívia Flores, 3000 (Bairro Candeias), no dia e horário agendados.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Avenida Olívia Flores, 3000, Bairro Candeias"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_espirometria.txt",
+          "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor aceitou as duas respostas e a interpretação do contato da UBS como informação/confirmação da data e do horário do agendamento.",
+    "data_revisao_utc": "2026-11-15T01:01:51.955673+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das duas respostas e dos trechos de apoio.",
+    "parecer_autor": "aceitável para mim"
   },
   {
     "id": "P02-R2",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "É necessário encaminhamento médico.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O encaminhamento deve conter diagnóstico de asma grave com CID.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário boleto de marcação.",
+        "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário CPF.",
+        "fragmento_resposta": "- CPF e RG  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          },
+          {
+            "chunk": 2,
+            "fonte": "servico_marcacoes.txt",
+            "trecho_literal": "RG e CPF"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "É necessário RG.",
+        "fragmento_resposta": "- CPF e RG  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          },
+          {
+            "chunk": 2,
+            "fonte": "servico_marcacoes.txt",
+            "trecho_literal": "RG e CPF"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Cartão SUS.",
+        "fragmento_resposta": "- Cartão SUS  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Cartão SUS"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Comprovante de residência atualizado.",
+        "fragmento_resposta": "- Comprovante de residência atualizado",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Comprovante de residência atualizado"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "CPF / RG"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Cartão SUS"
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_programa_asma_grave.txt",
+          "trecho_literal": "Comprovante de residência atualizado"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor aceitou as duas respostas como fieis e completas, incluindo CPF e RG com apoio no documento do programa e no trecho sobre qualquer marcacao.",
+    "data_revisao_utc": "2026-11-15T01:04:12.689519+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "Sim"
   },
   {
     "id": "P03-R2",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "O CAPS II fica na Avenida Régis Pacheco, 770, Centro.",
+        "fragmento_resposta": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+        "fragmento_resposta": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O CAPS II funciona de segunda a sexta-feira.",
+        "fragmento_resposta": "- Segunda a sexta‑feira: 08:00 às 18:00  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Segunda a sexta-feira"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O horário geral do CAPS II é das 08:00 às 18:00.",
+        "fragmento_resposta": "- Segunda a sexta‑feira: 08:00 às 18:00  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O funcionamento do CAPS II tem exceção na quinta-feira à tarde.",
+        "fragmento_resposta": "- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "A exceção se deve à reunião interna da equipe.",
+        "fragmento_resposta": "- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Segunda a sexta-feira"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": true,
+    "observacoes": "O autor aceitou as duas respostas como fieis e completas, incluindo a interpretacao da excecao semanal como fechamento. O conflito documental foi apresentado e permanece registrado como risco da base; as respostas seguem a fonte especifica do CAPS II.",
+    "data_revisao_utc": "2026-11-15T01:05:33.000260+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "Tá ok"
   },
   {
     "id": "P04-R2",
-    "estado": "pendente",
-    "revisor": null,
+    "estado": "revisado_autor",
+    "revisor": "Autor",
     "afirmacoes": [],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "pertinencia_tematica_sem_informacao_solicitada",
+    "fidelidade": "atendida",
+    "completude": "nao_aplicavel",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor considerou adequada a abstencao nas duas rodadas: a base nao informa exigencia nem duracao de jejum e as respostas nao acrescentam orientacoes inferidas.",
+    "data_revisao_utc": "2026-11-15T01:06:36.328700+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "sim"
   },
   {
     "id": "P05-R2",
-    "estado": "pendente",
-    "revisor": null,
+    "estado": "revisado_autor",
+    "revisor": "Autor",
     "afirmacoes": [],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "pertinencia_tematica_sem_informacao_solicitada",
+    "fidelidade": "atendida",
+    "completude": "nao_aplicavel",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": false,
+    "observacoes": "O autor considerou adequada a abstencao nas duas rodadas: a base descreve solicitacao e agendamento, mas nao fixa prazo maximo em dias para realizar o eletrocardiograma.",
+    "data_revisao_utc": "2026-11-15T01:10:10.235844+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "s"
   },
   {
     "id": "P06-R2",
-    "estado": "pendente",
-    "revisor": null,
-    "afirmacoes": [],
+    "estado": "revisado_autor",
+    "revisor": "Autor",
+    "afirmacoes": [
+      {
+        "afirmacao_atomica": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+        "fragmento_resposta": "- **CAPS II** – É um serviço especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.",
+        "apoio": [
+          {
+            "chunk": 6,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+        "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "CAPS II: Avenida Régis Pacheco, 770, Centro.",
+        "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).",
+        "apoio": [
+          {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "CAPS AD III: Rua T, 417, Bairro Felícia.",
+        "fragmento_resposta": "- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  ",
+        "apoio": [
+          {
+            "chunk": 3,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "Rua T, 417, Bairro Felícia"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O CAPS AD III oferece acompanhamento voltado à reabilitação psicossocial.",
+        "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários."
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O cuidado do CAPS AD III é orientado pela redução de danos.",
+        "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+        "apoio": [
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O link do mapa do CAPS AD III é https://maps.app.goo.gl/A73BUzkxT5gdbGTx5.",
+        "fragmento_resposta": "- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  ",
+        "apoio": [
+          {
+            "chunk": 3,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "https://maps.app.goo.gl/A73BUzkxT5gdbGTx5"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+        "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).",
+        "apoio": [
+          {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Os serviços têm públicos descritos de forma diferente, sem afirmar exclusividade ou ausência de sobreposição.",
+        "fragmento_resposta": "Portanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+        "apoio": [
+          {
+            "chunk": 6,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+          },
+          {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+          }
+        ],
+        "julgamento": "sustentada"
+      },
+      {
+        "afirmacao_atomica": "Os dois serviços ficam em endereços distintos.",
+        "fragmento_resposta": "Portanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+        "apoio": [
+          {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          },
+          {
+            "chunk": 3,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "Rua T, 417, Bairro Felícia"
+          }
+        ],
+        "julgamento": "sustentada"
+      }
+    ],
     "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
     "fatos_esperados": [
       {
         "id": "F01",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 6,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+        }
       },
       {
         "id": "F02",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 5,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        }
       },
       {
         "id": "F03",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 1,
+          "fonte": "servico_caps_ad_iii.txt",
+          "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+        }
       },
       {
         "id": "F04",
-        "presenca_resposta": null,
-        "apoio_contexto": null
+        "presenca_resposta": "presente",
+        "apoio_contexto": {
+          "chunk": 3,
+          "fonte": "servico_caps_ad_iii.txt",
+          "trecho_literal": "Rua T, 417, Bairro Felícia"
+        }
       }
     ],
-    "recuperacao": null,
-    "fidelidade": null,
-    "completude": null,
-    "abstencao_adequada": null,
-    "confusao_servicos": null,
-    "ambiguidade_documental": null,
-    "observacoes": null
+    "recuperacao": "suficiente_para_fatos_esperados",
+    "fidelidade": "atendida",
+    "completude": "completa",
+    "abstencao_adequada": true,
+    "confusao_servicos": false,
+    "ambiguidade_documental": true,
+    "observacoes": "O autor concordou com os dois julgamentos: P06-R1 apresenta conteudo sustentado, mas e incompleta por truncamento; P06-R2 e fiel e completa. Publicos diferentes distingue os perfis descritos, sem afirmar exclusividade ou ausencia de sobreposicao. O conflito documental permanece registrado.",
+    "data_revisao_utc": "2026-11-15T01:11:41.517679+00:00",
+    "origem_revisao": "Revisão assistida na conversa, após apresentação das respostas e dos trechos de apoio.",
+    "parecer_autor": "sim"
   }
 ]

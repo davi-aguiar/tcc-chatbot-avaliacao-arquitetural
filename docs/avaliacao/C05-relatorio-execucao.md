@@ -1,6 +1,8 @@
-# C05 — Relatório de execução e análise preliminar
+# C05 — Relatório de execução e julgamento
 
-Coleta realizada em 14/11/2026, com assistência de IA, conforme o [protocolo prévio](C05-protocolo.md). **As 12 respostas reais foram obtidas; a revisão semântica pelo autor e o julgamento final permanecem pendentes.** A análise assistida encontrou apoio documental para as afirmações examinadas, quatro abstenções adequadas e uma resposta incompleta por truncamento. Isso não autoriza aprovação global nem garante ausência de alucinação fora da amostra.
+Coleta realizada em 14/11/2026, com assistência de IA, conforme o [protocolo prévio](C05-protocolo.md). **C05 encerrado com ressalvas: fidelidade atendida apenas na amostra, com completude parcial.** As 12 respostas foram revisadas e seus julgamentos confirmados pelo autor na conversa. Não foram identificadas afirmações sem apoio ou trocas de serviços; as quatro consultas sem informação tiveram abstenção adequada. P06-R1 ficou incompleta por truncamento. O resultado não garante ausência de alucinação fora da amostra.
+
+**Revisão humana concluída:** 12 fichas confirmadas pelo autor e nenhuma pendente, em [revisao.json](evidencias-c05/20261114-205318-coletar-12c7f8/revisao.json). O [julgamento final](evidencias-c05/julgamento-final.json) aplica os critérios prévios às fichas confirmadas, separando fidelidade de completude. A [conferência após a revisão](evidencias-c05/validacao-revisao.json) mantém as 167 verificações estruturais aprovadas. A revisão foi assistida, sem cegamento ou avaliador independente.
 
 ## Referência e procedimento
 
@@ -32,7 +34,7 @@ As 12 invocações lógicas tiveram resposta textual não vazia e nenhuma exceç
 
 A [conferência posterior](evidencias-c05/validacao-evidencias.json), feita sem novas inferências, aprovou 167 verificações estruturais: hashes/cópias, pesos locais, corpus, ordem, conteúdo/origem dos chunks, configuração, prompt, adaptação NLP, tentativas HTTP e fichas humanas pendentes. O serializer estruturado do coletor guarda conteúdo/metadados; os IDs atribuídos pelo FAISS permanecem no prompt exato e são extraídos dele para reconstrução pelo [conferidor](c05/conferir_evidencias.py). O conferidor foi criado depois do início da coleta, não foi usado nas inferências e não integra seu manifesto prévio. Nenhum arquivo listado nesse manifesto mudou.
 
-## Resultados observados e leitura preliminar
+## Resultados observados e revisão pelo autor
 
 | Caso | Recuperação em cada rodada | Rodada 1 | Rodada 2 |
 |---|---|---|---|
@@ -70,6 +72,6 @@ São relações exploratórias entre decisões e comportamentos observados, não
 
 As 14 verificações prévias do instrumento passaram em 9,19 s; separadamente, os 244 testes existentes passaram em 5,23 s. Esses testes não fazem parte das 12 respostas e não julgam seu conteúdo. O registro das verificações posteriores, incluindo conferência de evidências e análise de integridade, está no [índice](evidencias-c05/README.md).
 
-Uma máquina, um modelo alternativo, seis perguntas e duas rodadas sequenciais não estabelecem taxa populacional de alucinação, robustez a perguntas adversariais, causalidade, validade clínica, atualidade municipal, comportamento concorrente ou entrega final. As duas rodadas compartilham corpus, índice e configuração e não são uma amostra aleatória de uso. Não houve avaliação cega, revisão humana concluída ou comparação de modelos. A configuração padrão segue não avaliada por geração nesta sessão, pois não estava listada.
+Uma máquina, um modelo alternativo, seis perguntas e duas rodadas sequenciais não estabelecem taxa populacional de alucinação, robustez a perguntas adversariais, causalidade, validade clínica, atualidade municipal, comportamento concorrente ou entrega final. As duas rodadas compartilham corpus, índice e configuração e não são uma amostra aleatória de uso. Houve revisão humana assistida concluída; não houve avaliação cega, avaliador independente ou comparação de modelos. A configuração padrão segue não avaliada por geração nesta sessão, pois não estava listada.
 
-**Estado de encerramento desta execução: coleta e conferência técnica concluídas; análise assistida entregue; revisão do autor e julgamento final do C05 pendentes.** C06 permanece planejado, com seu próprio protocolo de inspeção sem transmissão de dados sintéticos ao provedor.
+**Estado final: C05 encerrado com ressalvas; critério de fidelidade atendido apenas na amostra, com completude parcial.** O protocolo exige reportar completude separadamente; o truncamento não foi apagado ou substituído pela segunda resposta. Nenhuma nova coleta ou correção funcional foi necessária para esse fechamento. C06 passa à preparação com protocolo próprio, sem transmissão dos dados sintéticos ao provedor.

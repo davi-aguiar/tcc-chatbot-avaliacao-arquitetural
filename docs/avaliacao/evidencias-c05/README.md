@@ -1,17 +1,19 @@
 # C05 — Evidências de preparação e coleta
 
-**Estado em 14/11/2026: 12 respostas reais coletadas e conferidas; análise de IA preliminar entregue; revisão humana e julgamento final pendentes.** Referência funcional `ffcd30fe07cbf281a030a14d481d3eee5533db5c`; [protocolo](../C05-protocolo.md), [matriz](../c05/casos.json) e [relatório](../C05-relatorio-execucao.md).
+**Estado: C05 encerrado com ressalvas em 14/11/2026.** Coleta completa e 12 fichas confirmadas pelo autor; fidelidade atendida apenas na amostra, completude parcial. Referência funcional `ffcd30fe07cbf281a030a14d481d3eee5533db5c`; [protocolo](../C05-protocolo.md), [matriz](../c05/casos.json), [relatório](../C05-relatorio-execucao.md) e [julgamento final](julgamento-final.json).
+
+**Revisão humana concluída:** 12 fichas confirmadas pelo autor na conversa, nenhuma pendente. A [conferência após a revisão](validacao-revisao.json) valida a estrutura atual das fichas sem atribuir julgamento semântico. A conferência original da coleta e a análise preliminar de IA permanecem preservadas como registros anteriores ao fechamento.
 
 ## Coleta real de 14/11/2026
 
 Lote [20261114-205318-coletar-12c7f8](20261114-205318-coletar-12c7f8/execucao.json), sobre o commit de preparação `c3df19c`, sem diferenças funcionais/corpus em relação ao corte. Modelo alternativo explícito `openai/gpt-oss-120b`; o padrão não estava listado na conta. Temperatura 0,1, 500 tokens, timeout de 60 s, dois retries, embeddings semânticos locais e FAISS reais. Uma recuperação e uma geração lógica por consulta; 23 tentativas HTTP de geração, sendo 12 HTTP 200 e 11 HTTP 429. Não houve repetição seletiva.
 
-As 12 respostas são não vazias, sem exceção final. Os 15 trechos esperados chegaram ao contexto em ambas as rodadas. A leitura assistida identificou apoio para 49 afirmações e quatro abstenções exatas, sem troca de serviços observada. Completude: 28 fatos esperados presentes, um parcial e um omitido. P06-R1 terminou com `finish_reason=length`; a revisão pelo autor continua necessária e não há aprovação global.
+As 12 respostas são não vazias, sem exceção final. Os 15 trechos esperados chegaram ao contexto em ambas as rodadas. A leitura assistida identificou apoio para 49 afirmações e quatro abstenções exatas, sem troca de serviços observada. Completude: 28 fatos esperados presentes, um parcial e um omitido. P06-R1 terminou com `finish_reason=length`; a revisão do autor confirmou o conteúdo apresentado como sustentado e a resposta como incompleta. O julgamento de fidelidade é atendido apenas na amostra, com essa ressalva de completude.
 
 - [Verificação anterior às inferências](verificacao-previa-20261114.json): leitura do corpus, lacunas, teste do instrumento e escolha explícita do modelo.
 - [Ambiente e hashes](20261114-205318-coletar-12c7f8/ambiente.json), [configuração](20261114-205318-coletar-12c7f8/configuracao.json), [modelos disponíveis](20261114-205318-coletar-12c7f8/modelos-disponiveis.json) e [integridade](20261114-205318-coletar-12c7f8/integridade-fontes.json).
 - `P01-R1.json` a `P06-R2.json` no lote: pergunta, contexto, prompt exato, resposta original, saída NLP, metadados, erros e tentativas HTTP. Exemplo de incompletude preservada: [P06-R1](20261114-205318-coletar-12c7f8/P06-R1.json).
-- [revisao.json](20261114-205318-coletar-12c7f8/revisao.json): 12 fichas humanas ainda pendentes, sem assinatura atribuída ao autor.
+- [revisao.json](20261114-205318-coletar-12c7f8/revisao.json): 12 fichas revisadas com confirmação do autor e nenhuma pendente, com a incompletude de P06-R1 registrada.
 - [Análise preliminar de IA](analise-preliminar-ia.json): afirmações com trechos literais/chunks, completude e ambiguidades, separadas das fichas humanas.
 - [Conferência posterior](validacao-evidencias.json): 167 verificações estruturais aprovadas, sem julgar conteúdo semanticamente ou repetir inferências; [conferidor](../c05/conferir_evidencias.py) criado após o início da coleta.
 - [Verificações da sessão](verificacoes-20261114.json): suíte existente, instrumento, lint, compilação e verificações negativas do conferidor.

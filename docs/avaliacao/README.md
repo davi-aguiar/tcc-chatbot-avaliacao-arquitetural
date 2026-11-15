@@ -1,14 +1,16 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 tem coleta completa e análise preliminar, com revisão humana pendente; C06 permanece planejado.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C05 estão encerrados com ressalvas; C06 passa à preparação.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
 
 ## C05 — Fidelidade ao contexto documental
 
-**Estado em 14/11/2026: 12 respostas reais coletadas; análise assistida entregue; revisão humana e julgamento final pendentes.** O [protocolo](C05-protocolo.md) foi executado com embeddings semânticos/FAISS reais e modelo alternativo explícito `openai/gpt-oss-120b`, pois o padrão não estava listado na conta. As 14 verificações do instrumento e os 244 testes existentes passaram separadamente. A conferência posterior aprovou 167 verificações estruturais.
+**Estado: encerrado com ressalvas em 14/11/2026.** As 12 respostas foram revisadas pelo autor: fidelidade atendida apenas na amostra; completude parcial em P06-R1. O [protocolo](C05-protocolo.md) foi executado com embeddings/FAISS reais e modelo alternativo explícito `openai/gpt-oss-120b`. As 14 verificações do instrumento e os 244 testes existentes passaram separadamente; a conferência estrutural mantém 167 verificações aprovadas.
 
-A leitura preliminar identificou apoio para as afirmações examinadas, quatro abstenções exatas e nenhuma troca de serviços observada. P06-R1 foi truncada no limite de 500 tokens, apesar de contexto suficiente: 28 fatos esperados presentes, um parcial e um omitido no conjunto. O conflito de endereço do CAPS II permaneceu no contexto, mas o modelo escolheu o documento específico nas duas rodadas. O [relatório](C05-relatorio-execucao.md) apresenta os resultados e seus limites; o [índice de evidências](evidencias-c05/README.md) separa preparação histórica, coleta real, análise de IA e fichas humanas pendentes. Não há aprovação global do C05.
+O [julgamento final](evidencias-c05/julgamento-final.json) registra 12 fichas confirmadas, nenhuma revisão pendente, quatro abstenções adequadas e nenhuma afirmação sem apoio ou troca de serviços identificada. A revisão foi assistida e não cega.
+
+A leitura preliminar identificou apoio para as afirmações examinadas, quatro abstenções exatas e nenhuma troca de serviços observada. P06-R1 foi truncada no limite de 500 tokens, apesar de contexto suficiente: 28 fatos esperados presentes, um parcial e um omitido no conjunto. O conflito de endereço do CAPS II permaneceu no contexto, mas o modelo escolheu o documento específico nas duas rodadas. O [relatório](C05-relatorio-execucao.md) apresenta resultados e limites; o [índice de evidências](evidencias-c05/README.md) separa preparação histórica, coleta real, análise preliminar de IA e revisão concluída pelo autor. O julgamento vale somente para a amostra adaptada.
 
 ## C04 — Testabilidade do núcleo RAG sem rede
 
