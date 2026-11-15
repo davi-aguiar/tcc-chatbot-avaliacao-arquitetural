@@ -64,11 +64,20 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Risco observado de consistencia e rastreabilidade entre historico, auditoria e resposta devolvida. No erro de consulta pelo menu, auditoria persiste sem o par atual de mensagens, enquanto texto livre persiste entrada e fallback. O recorte nao avalia atomicidade completa ou todas as falhas de banco.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M08",
+      "commit_versao_apresentada": "08513eac46c708c6762a66d3078960fd95ef2991",
+      "matriz_sha256_versao_apresentada": "9041be6a6a0670cd89167c21c2fdee2b9a3599e77dd73bdf28086381283ac9c3",
+      "data_registro_utc": "2026-11-15T23:01:14.847116+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Evidencia favoravel a testabilidade pelos 16 casos offline de C04 com componentes internos selecionados reais e substitutos nas fronteiras; risco de manutencao pela dependencia dos testes de detalhes internos, incluindo caminho de documentos e cache global do cliente gerador. O esforco humano dessa dependencia nao foi quantificado.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M08",
     "M09",
     "M10",
     "M11",
