@@ -1,6 +1,6 @@
 # 10 — Problemas conhecidos e limitações abertas
 
-Revisão em 08/11/2026, sobre `65e28a0`, após C01–C03. O conteúdo funcional permanece igual ao corte `666b601`. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nesta revisão.
+Registro inicial de 08/11/2026, sobre `65e28a0`, após C01–C03; atualizado com os fechamentos de C04–C06 e a síntese de 14/11/2026. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nessas atualizações. A [matriz de síntese](avaliacao/matriz-sintese-arquitetural.md) relaciona os achados às decisões e propõe prioridades de manutenção para revisão do autor.
 
 ## 1. Operações síncronas bloqueiam outras requisições
 
@@ -48,4 +48,4 @@ Os [modelos](../api/models/models.py) relacionam mensagens textuais, usuário, n
 
 O [CI](../.github/workflows/ci.yml) não instala `app/requirements.txt`; seus testes e cobertura de API não avaliam toda a recuperação/geração. Os instrumentos locais C03 exercitaram componentes reais com substituição de fronteiras, mas isso não equivale a cobertura sistemática do núcleo ou avaliação da qualidade documental.
 
-C04 e C05 permanecem planejados para isolamento/testabilidade e fidelidade, respectivamente. As versões livres do stack RAG também exigem consultar o inventário de cada execução; versões do ambiente do autor e do CI não devem ser presumidas iguais.
+[C04](avaliacao/C04-relatorio-execucao.md) concluiu 16 casos locais offline com componentes internos reais e substitutos nas fronteiras; isso não demonstra execução dessa suíte no CI. [C05](avaliacao/C05-relatorio-execucao.md) concluiu a amostra de fidelidade com revisão assistida e completude parcial. As versões livres do stack RAG exigem consultar o inventário de cada execução; versões do ambiente do autor e do CI não devem ser presumidas iguais. Incorporar a suíte offline ao CI permanece proposta de manutenção, como registrado em A07 da matriz.

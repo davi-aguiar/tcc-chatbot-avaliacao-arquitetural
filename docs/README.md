@@ -9,7 +9,7 @@ busca semântica sobre documentos oficiais.
 | Documento | Conteúdo |
 |---|---|
 | [01 — Visão Geral](01-visao-geral.md) | O que o sistema faz, atores, glossário |
-| [02 — Arquitetura](02-arquitetura.md) | Componentes e fontes, camadas/dependências, decisões D01–D12, inicialização, sequência e implantação; adendo após C04 |
+| [02 — Arquitetura](02-arquitetura.md) | Componentes e fontes, camadas/dependências, decisões D01–D12, inicialização, sequência e implantação, com evidências de C01–C06 |
 | [03 — Instalação e Execução](03-instalacao-e-execucao.md) | Dependências, variáveis de ambiente, como rodar |
 | [04 — Referência da API](04-api-referencia.md) | Endpoints HTTP, payloads, respostas |
 | [05 — Fluxo de Conversa](05-fluxo-conversa.md) | Máquina de estados, menus, comandos |
@@ -20,14 +20,15 @@ busca semântica sobre documentos oficiais.
 | [10 — Problemas Conhecidos](10-problemas-conhecidos.md) | Limitações abertas de concorrência, inferência, persistência e ciclo de vida, com fontes e evidências |
 | [11 — Integração Contínua](11-ci.md) | GitHub Actions, testes, cobertura, como rodar os checks localmente |
 | [12 — Instrumentação e Medições](12-instrumentacao-e-medicoes.md) | Latência, cobertura e tempo de indexação: o que é medido, como coletar, o que fica de fora |
+| [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md) | Fronteiras, contratos, efeitos transacionais e evidências dos cenários |
 
 ## Avaliação arquitetural
 
 O objetivo de documentar a arquitetura atual está organizado em [02 — Arquitetura](02-arquitetura.md), com responsabilidades, dependências e decisões rastreáveis ao código. As fronteiras estão detalhadas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), atualizado após C01–C04 e usado como referência para C05–C06. A documentação distingue implementação, resultados observados e propostas de manutenção.
 
-Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01 a C04 e orienta a leitura. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md), [C03-B](avaliacao/evidencias-c03-b/README.md) e [C04](avaliacao/evidencias-c04/README.md).
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01 a C06, encerrados com as ressalvas próprias. A [matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) relaciona decisões, evidências, riscos, sensibilidades, trade-offs e recomendações; seus enquadramentos e prioridades são propostas para revisão do autor. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md), [C03-B](avaliacao/evidencias-c03-b/README.md), [C04](avaliacao/evidencias-c04/README.md), [C05](avaliacao/evidencias-c05/README.md) e [C06](avaliacao/evidencias-c06/README.md).
 
-O escopo dos próximos cenários está na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos seis atributos previstos no projeto de pesquisa.
+O plano dos seis cenários e seus resultados estão na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos atributos previstos no projeto de pesquisa. As coletas originais permanecem preservadas; esta síntese não introduz correções funcionais ou novas medições.
 
 | Documento | Conteúdo |
 |---|---|
@@ -42,6 +43,11 @@ O escopo dos próximos cenários está na [árvore de utilidade refinada](avalia
 | [C03-B — Relatório de execução](avaliacao/C03-B-relatorio-execucao.md) | Bloqueio de outras conversas, menu em 194 s e timeout de cliente; sem queda do processo no ensaio |
 | [C04 — Protocolo](avaliacao/C04-protocolo.md) | 16 casos do núcleo RAG com rede bloqueada, caches vazios e substitutos nas fronteiras |
 | [C04 — Relatório de execução](avaliacao/C04-relatorio-execucao.md) | 16/16 aprovados sem Python funcional alterado; cobertura, ajustes de isolamento e limitações |
+| [C05 — Protocolo](avaliacao/C05-protocolo.md) | Amostra de fidelidade documental, recuperação e revisão de respostas reais |
+| [C05 — Relatório de execução](avaliacao/C05-relatorio-execucao.md) | Fidelidade atendida apenas na amostra; completude parcial e revisão assistida concluída |
+| [C06 — Protocolo](avaliacao/C06-protocolo.md) | Captura local de pedidos, persistência e logs com dados sintéticos |
+| [C06 — Relatório de execução](avaliacao/C06-relatorio-execucao.md) | Parcialmente atendido no recorte; exposição em logs e revisão interpretativa concluída |
+| [Matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) | 14 achados transversais e 10 recomendações com prioridades propostas e verificação futura |
 
 ## Início rápido
 

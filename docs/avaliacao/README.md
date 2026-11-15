@@ -2,7 +2,13 @@
 
 O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C06 estão encerrados com as ressalvas documentadas em cada cenário.
 
-Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+O [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md) identifica as fronteiras e lacunas usadas nos protocolos e confrontadas com os resultados.
+
+## Síntese arquitetural conjunta
+
+A [matriz de síntese](matriz-sintese-arquitetural.md) reúne 14 achados ligados às decisões D01–D12 e a práticas de curadoria/logging, com evidências de C01–C06. Distingue riscos, evidências favoráveis, sensibilidades indicadas, trade-offs observados/analíticos e aspectos não avaliados. Dez recomendações incluem prioridades propostas e formas de verificar uma manutenção futura.
+
+Esta é uma síntese técnica inicial para revisão do autor, sem priorização validada com stakeholders, novas coletas ou implementação das recomendações. Os fechamentos e as evidências dos cenários são preservados. A matriz subsidia a discussão e as melhorias no TCC; a articulação com a literatura e a conclusão acadêmica continuam como escrita posterior.
 
 ## C06 — Fluxo e minimização de dados
 
