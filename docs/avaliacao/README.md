@@ -1,14 +1,14 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C05 estão encerrados com ressalvas; C06 tem coleta concluída e revisão interpretativa pendente.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C06 estão encerrados com as ressalvas documentadas em cada cenário.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
 
 ## C06 — Fluxo e minimização de dados
 
-**Estado: coleta concluída em 14/11/2026; análise preliminar propõe parcialmente atendido no recorte, com revisão do autor pendente.** O [protocolo](C06-protocolo.md) foi executado em 14 observações válidas, com 12 pedidos serializados pelo SDK e interceptados localmente, dois controles estáticos e zero tentativas externas. Nenhuma chave real ou envio externo foi usado.
+**Estado: encerrado com ressalvas em 14/11/2026; parcialmente atendido no recorte, com revisão interpretativa do autor concluída.** O [protocolo](C06-protocolo.md) foi executado em 14 observações válidas, com 12 pedidos serializados pelo SDK e interceptados localmente, dois controles estáticos e zero tentativas externas. Nenhuma chave real ou envio externo foi usado.
 
-O [relatório](C06-relatorio-execucao.md) registra ausência de nome/identificador cadastrados e histórico nos 12 pedidos, preservação dos dados digitados na pergunta e falha de logs: texto integral em quatro observações D04/D06. Banco, auditoria e logs operacionais são examinados separadamente. A [análise por critério](evidencias-c06/analise-preliminar.json) aguarda revisão humana. As 381 verificações estruturais e quatro testes do verificador passaram; o [índice de evidências](evidencias-c06/README.md) conserva também a preparação histórica (13 verificações do instrumento e 244 testes existentes aprovados).
+O [relatório](C06-relatorio-execucao.md) registra ausência de nome/identificador cadastrados e histórico nos 12 pedidos, preservação dos dados digitados na pergunta e falha de logs: texto integral em quatro observações D04/D06. Banco, auditoria e logs operacionais são examinados separadamente. O [julgamento final](evidencias-c06/julgamento-final.json) registra a concordância explícita do autor com a síntese e seus limites; a [análise preliminar](evidencias-c06/analise-preliminar.json) conserva seu estado histórico. As 381 verificações estruturais e quatro testes do verificador passaram; o [índice de evidências](evidencias-c06/README.md) conserva também a preparação histórica (13 verificações do instrumento e 244 testes existentes aprovados).
 
 ## C05 — Fidelidade ao contexto documental
 

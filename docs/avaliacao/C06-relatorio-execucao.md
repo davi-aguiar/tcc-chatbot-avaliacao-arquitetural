@@ -1,6 +1,6 @@
-# C06 — Execução e análise preliminar de confidencialidade
+# C06 — Execução e julgamento de confidencialidade
 
-**Estado: coleta concluída; análise preliminar propõe parcialmente atendido no recorte. Revisão interpretativa do autor pendente.** As 14 observações foram válidas, com 12 pedidos serializados para transporte local, dois controles sem inferência, zero tentativas externas e nenhuma alteração funcional. O critério de logs falhou em quatro observações: a aplicação registrou o texto livre integral quando o NLP lançou exceção.
+**Estado: encerrado com ressalvas; parcialmente atendido no recorte, com revisão interpretativa do autor concluída.** As 14 observações foram válidas, com 12 pedidos serializados para transporte local, dois controles sem inferência, zero tentativas externas e nenhuma alteração funcional. O critério de logs falhou em quatro observações: a aplicação registrou o texto livre integral quando o NLP lançou exceção.
 
 ## Referência e integridade
 
@@ -34,7 +34,7 @@ São 46 emissões de log operacional, 28 eventos de auditoria e 52 mensagens som
 
 ## Critérios do protocolo
 
-| Critério | Resultado preliminar | Evidência e alcance |
+| Critério | Resultado confirmado na revisão da síntese | Evidência e alcance |
 |---|---|---|
 | 1. Minimização automática | Atendido nos 12 pedidos | Nome/identificador cadastrados e histórico anterior ausentes do corpo; D07 sem pedido para avaliar |
 | 2. Texto fornecido pelo usuário | Descritivo: preservado | Relato em oito pedidos D03–D06; nome/identificador autodeclarados em quatro D05/D06; sem remoção desses marcadores |
@@ -68,10 +68,12 @@ Em D02 o erro alcança o tratamento externo, o par atual de mensagens sofre roll
 
 Assim, `MESSAGE_SENT` comprova o retorno produzido pelo fluxo de conversa, sem demonstrar sucesso da inferência. O resultado reproduz a assimetria de tratamento observada no C03; não é uma auditoria completa de atomicidade transacional.
 
-## Limites e pendência
+## Limites e fechamento
 
 O diagnóstico de credencial foi calculado antes da omissão pelo instrumento. Como o segredo sintético foi descartado, a conferência posterior não pode refazer essa busca bruta; ela confere os diagnósticos e a ausência do marcador de omissão, além dos testes do instrumento. A remoção pelo instrumento não foi contada como proteção da aplicação.
 
 O cenário observa a fronteira ChatService com SQLite em memória e captura INFO/exceções. Não avalia gateways, HTTP de entrada, autenticação real, WhatsApp, PostgreSQL, DEBUG, agregadores, produção, backups, retenção, autorização, criptografia ou práticas internas do provedor. O erro controlado não cobre respostas de provedor que ecoem dados de entrada. Duas rodadas demonstram repetição dos percursos, sem estimativa estatística de segurança.
 
-Há resultados normativos mistos, sustentando a proposta **parcialmente atendido no recorte**. A revisão interpretativa do autor ainda é necessária para fechar o C06; não foi registrada confirmação humana nesta etapa. O `execucao.json` original mantém seu estado histórico `pendente_analise`; esta análise posterior não o sobrescreve. As fontes coletadas permanecem preservadas, e nenhuma correção de logging ou mudança funcional foi aplicada ao corte avaliado.
+O [julgamento final](evidencias-c06/julgamento-final.json) registra **C06 encerrado com ressalvas; parcialmente atendido no recorte**. O autor confirmou explicitamente a síntese e os limites apresentados na conversa, respondendo “Sim” após a exposição dos resultados e da proposta de classificação. A revisão foi assistida, sem avaliação cega ou revisor independente; não equivale a revisão individual dos 14 registros brutos. Não há revisão interpretativa obrigatória pendente.
+
+O `execucao.json` original e a `analise-preliminar.json` preservam seus estados históricos anteriores ao fechamento; o julgamento final registra a confirmação posterior e os hashes desses artefatos. As fontes coletadas permanecem preservadas, e nenhuma correção de logging ou mudança funcional foi aplicada ao corte avaliado. A falha observada continua documentada; eventual correção e nova medição constituem manutenção posterior.
