@@ -54,11 +54,20 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Risco observado de comunicacao e rastreabilidade: falha tecnica no texto livre pode retornar opcao invalida e registrar MESSAGE_SENT, sem distinguir sucesso de inferencia. Preservam-se as evidencias favoraveis de reconhecimento das quatro abstencoes de C05 e retomada dos menus em C03-A, dentro dos respectivos recortes.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M07",
+      "commit_versao_apresentada": "5f970486f9ecb732136ed62f4d8f2465c24b160f",
+      "matriz_sha256_versao_apresentada": "fd486046ef235af04fa2886dedd5d68b79ebf193590525736431eb1af9004932",
+      "data_registro_utc": "2026-11-15T22:44:03.986185+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de consistencia e rastreabilidade entre historico, auditoria e resposta devolvida. No erro de consulta pelo menu, auditoria persiste sem o par atual de mensagens, enquanto texto livre persiste entrada e fallback. O recorte nao avalia atomicidade completa ou todas as falhas de banco.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M07",
     "M08",
     "M09",
     "M10",
