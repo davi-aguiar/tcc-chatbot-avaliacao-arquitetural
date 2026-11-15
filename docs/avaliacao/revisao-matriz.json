@@ -85,11 +85,20 @@
       "interpretacao_confirmada": "Recuperacao favoravel na amostra de C05 pela presenca dos trechos esperados, com conteudo de outros servicos e conflitos tambem recuperados. Quantidade e selecao do contexto relacionam-se a cobertura e consumo de tokens, mas k e chunking nao foram variados para medir seus efeitos.",
       "recomendacao_confirmada": "Comparar alternativas de recuperacao por presenca dos fatos, fidelidade, consumo e tempo antes de escolher uma mudanca.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M10",
+      "commit_versao_apresentada": "ed1339d67303e15c9ca6f591d3f497136287d239",
+      "matriz_sha256_versao_apresentada": "380577bc830470a532fe314a2813c4c67c3f6906f30e876cc61e38f5774e9403",
+      "data_registro_utc": "2026-11-15T23:06:34.999878+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de resposta incompleta por truncamento em P06-R1 de C05, mesmo com contexto suficiente e conteudo apresentado com apoio documental. A resposta atingiu 500 tokens de saida, com 406 de raciocinio informados pelo provedor na configuracao adaptada. Fidelidade e completude permanecem criterios distintos; nao houve comparacao de outros limites.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M10",
     "M11",
     "M12",
     "M13",
