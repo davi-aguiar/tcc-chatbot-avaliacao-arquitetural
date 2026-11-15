@@ -12,11 +12,21 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Evidencia favoravel a modificabilidade no cenario de extensao compativel exercitado, sem reducao de esforco humano quantificada; dependencia do provedor registrada como achado separado em M03.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M03",
+      "commit_versao_apresentada": "04826707884eb768aac39007444fea3a4902451e",
+      "matriz_sha256_versao_apresentada": "2fe14d54fb4a247c602950b5069fea2e4a2adecf0a14df271d45684807556663",
+      "data_registro_utc": "2026-11-15T02:58:50.986299+00:00",
+      "revisor": "Autor",
+      "trecho_confirmacao": "Sim, o modelo deveria ser definido nas env e não em código, como ocorre hoje.",
+      "interpretacao_confirmada": "Risco observado de disponibilidade associado ao modelo configurado nos ensaios e dificuldade adicional de manutencao pelo identificador fixo no codigo.",
+      "recomendacao_confirmada": "Definir o identificador do modelo por variavel de ambiente.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M03",
     "M04",
     "M05",
     "M06",
@@ -29,5 +39,5 @@
     "M13",
     "M14"
   ],
-  "limite": "A confirmacao de M01 nao aprova os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios."
+  "limite": "As confirmacoes de M01 e M03 nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. A recomendacao de configuracao por variavel de ambiente foi confirmada em M03; nenhuma implementacao foi realizada nesta revisao."
 }

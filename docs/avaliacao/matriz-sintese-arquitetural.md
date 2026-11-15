@@ -4,7 +4,7 @@ Versão 1, de 14/11/2026. Referência de consolidação: `0d02d1669edc233cc8b2c3
 
 As coletas C01–C06 estão encerradas, com os julgamentos e limites próprios. A matriz reúne seus achados sem nova execução ou mudança funcional. Os enquadramentos transversais e as prioridades abaixo são propostas analíticas elaboradas com assistência de IA, sujeitas à revisão do autor; não representam priorização validada com stakeholders nem alteram os fechamentos anteriores. Cada cenário conserva sua versão de corte, ambiente e configuração; os números de lotes distintos não formam uma amostra única.
 
-**Revisão parcial do autor:** interpretação de M01 confirmada na conversa. Os demais achados e as prioridades permanecem propostos, conforme o [registro de revisão](revisao-matriz.json). Essa confirmação não altera os resultados das coletas.
+**Revisão parcial do autor:** interpretações de M01 e M03 confirmadas na conversa; em M03, também foi confirmada a recomendação de definir o modelo por variável de ambiente. Os demais achados e as prioridades permanecem propostos, conforme o [registro de revisão](revisao-matriz.json). Essas confirmações não alteram os resultados das coletas.
 
 ## Base de evidências
 
@@ -66,7 +66,7 @@ Todas as ações abaixo permanecem propostas: não foram implementadas nesta sí
 | Ação e prioridade | Base | Mudança proposta | Verificação de uma versão futura |
 |---|---|---|---|
 | A01 — Alta | M13 | Remover texto integral de consultas dos logs de erro; restringir dados diagnósticos | Repetir percursos de sucesso/falha com marcadores e procurar conteúdo em mensagem, traceback, metadados e auditoria; conferir utilidade diagnóstica e proteção de credenciais |
-| A02 — Alta | M03 | Configurar modelo e parâmetros identificáveis, com verificação de acesso em etapa própria | Exercitar configuração válida/inválida e falha controlada; registrar conta/data/configuração em ensaio externo autorizado, sem expor segredo |
+| A02 — Alta | M03 | Definir o modelo por variável de ambiente, registrar parâmetros efetivos e verificar acesso em etapa própria | Exercitar configuração válida/inválida e falha controlada; registrar conta/data/configuração em ensaio externo autorizado, sem expor segredo |
 | A03 — Alta | M06 | Distinguir ausência documental, falha técnica e resposta válida no contrato e nos consumidores | Exercitar menu/texto livre nas três condições; conferir mensagem ao usuário, tipo de resultado, evento de auditoria e retomada |
 | A04 — Alta | M04/M05 | Isolar operações bloqueantes, incluindo envio; definir concorrência, espera e retry segundo quota | Usar sondas de menu/saúde durante espera e backoff; medir conclusão e timeout por fronteira. Fila, se escolhida, também exige ordenação, idempotência e controle de admissão |
 | A05 — Alta | M11 | Corrigir atribuição conflitante do corpus e registrar origem/serviço/versão | Conferir fontes, reconstruir índice e verificar os contextos/respostas das perguntas afetadas, mantendo a evidência da base anterior |
