@@ -26,7 +26,7 @@ busca semântica sobre documentos oficiais.
 
 O objetivo de documentar a arquitetura atual está organizado em [02 — Arquitetura](02-arquitetura.md), com responsabilidades, dependências e decisões rastreáveis ao código. As fronteiras estão detalhadas em [13 — Interfaces e contratos atuais](13-interfaces-e-contratos.md), atualizado após C01–C04 e usado como referência para C05–C06. A documentação distingue implementação, resultados observados e propostas de manutenção.
 
-Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01 a C06, encerrados com as ressalvas próprias. A [matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) relaciona decisões, evidências, riscos, sensibilidades, trade-offs e recomendações; seus 14 enquadramentos foram confirmados pelo autor em revisão assistida, enquanto as prioridades continuam propostas e não revisadas. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md), [C03-B](avaliacao/evidencias-c03-b/README.md), [C04](avaliacao/evidencias-c04/README.md), [C05](avaliacao/evidencias-c05/README.md) e [C06](avaliacao/evidencias-c06/README.md).
+Comece pelo [resumo da avaliação](avaliacao/README.md), que reúne os resultados de C01 a C06, encerrados com as ressalvas próprias. A [matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) relaciona decisões, evidências, riscos, sensibilidades, trade-offs e recomendações; seus 14 enquadramentos e a divisão das dez recomendações em prioridades foram confirmados pelo autor em revisão assistida; as melhorias permanecem propostas de manutenção não implementadas. Os arquivos técnicos estão explicados nos índices de evidências de [C01](avaliacao/evidencias-c01/README.md), [C02](avaliacao/evidencias-c02/README.md), [C03-A](avaliacao/evidencias-c03/README.md), [C03-B](avaliacao/evidencias-c03-b/README.md), [C04](avaliacao/evidencias-c04/README.md), [C05](avaliacao/evidencias-c05/README.md) e [C06](avaliacao/evidencias-c06/README.md).
 
 O plano dos seis cenários e seus resultados estão na [árvore de utilidade refinada](avaliacao/arvore-de-utilidade.md), alinhada aos atributos previstos no projeto de pesquisa. As coletas originais permanecem preservadas; esta síntese não introduz correções funcionais ou novas medições.
 
@@ -47,7 +47,7 @@ O plano dos seis cenários e seus resultados estão na [árvore de utilidade ref
 | [C05 — Relatório de execução](avaliacao/C05-relatorio-execucao.md) | Fidelidade atendida apenas na amostra; completude parcial e revisão assistida concluída |
 | [C06 — Protocolo](avaliacao/C06-protocolo.md) | Captura local de pedidos, persistência e logs com dados sintéticos |
 | [C06 — Relatório de execução](avaliacao/C06-relatorio-execucao.md) | Parcialmente atendido no recorte; exposição em logs e revisão interpretativa concluída |
-| [Matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) | 14 achados transversais e 10 recomendações com prioridades propostas e verificação futura |
+| [Matriz de síntese arquitetural](avaliacao/matriz-sintese-arquitetural.md) | 14 achados e prioridades das 10 recomendações revisados pelo autor; verificação futura das melhorias |
 
 ## Início rápido
 

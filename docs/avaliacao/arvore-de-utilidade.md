@@ -11,9 +11,9 @@ O recorte contempla seis cenários, um por atributo previsto no projeto. Eles co
 | Documentar a arquitetura atual | [Documentação arquitetural](../02-arquitetura.md), conferida contra o código da versão de corte |
 | Sistematizar atributos e cenários, incluindo segurança/confidencialidade | Esta árvore, com seis cenários e justificativas de prioridade |
 | Aplicar avaliação baseada no ATAM | Protocolos e relatórios por cenário, com evidências e limitações |
-| Identificar riscos, sensibilidades e trade-offs e propor melhorias | [Matriz de síntese dos seis cenários](matriz-sintese-arquitetural.md), com 14 enquadramentos confirmados pelo autor e prioridades de manutenção ainda propostas |
+| Identificar riscos, sensibilidades e trade-offs e propor melhorias | [Matriz de síntese dos seis cenários](matriz-sintese-arquitetural.md), com 14 enquadramentos e prioridades das dez recomendações confirmados pelo autor, sem implementação nesta etapa |
 
-**Síntese após as coletas:** a matriz, criada em 14/11/2026, reúne 14 achados e 10 propostas de manutenção com verificação futura. A [revisão assistida dos 14 enquadramentos](revisao-matriz.json) foi concluída pelo autor; as prioridades continuam propostas. A síntese não altera o plano original ou os julgamentos dos cenários. A revisão das prioridades, a discussão com a literatura e a conclusão do TCC permanecem etapas de análise/redação posteriores.
+**Síntese após as coletas:** a matriz, criada em 14/11/2026, reúne 14 achados e 10 propostas de manutenção com verificação futura. A [revisão assistida](revisao-matriz.json) dos 14 enquadramentos e das prioridades das dez recomendações foi concluída pelo autor; as melhorias continuam propostas de manutenção não implementadas. A síntese não altera o plano original ou os julgamentos dos cenários. A discussão com a literatura e a conclusão do TCC permanecem etapas de análise/redação posteriores.
 
 ## Estrutura e prioridades
 

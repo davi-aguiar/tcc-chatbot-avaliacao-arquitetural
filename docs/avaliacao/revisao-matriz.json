@@ -1,6 +1,6 @@
 {
   "objeto": "matriz-sintese-arquitetural.md",
-  "estado": "interpretacoes_revisadas",
+  "estado": "revisao_concluida",
   "metodo": "Revisao assistida na conversa, por achado apresentado.",
   "confirmacoes": [
     {
@@ -152,12 +152,49 @@
     }
   ],
   "achados_sem_confirmacao": [],
-  "limite": "As 14 interpretacoes foram confirmadas pelo autor em revisao assistida na conversa. Isso nao constitui revisao independente dos dados primarios nem aprovacao das prioridades A01-A10. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao.",
+  "limite": "As 14 interpretacoes e a divisao das dez melhorias em grupos de prioridade foram confirmadas pelo autor em revisao assistida na conversa. Isso nao constitui revisao independente dos dados primarios, validacao institucional ou demonstracao dos beneficios das melhorias. Os campos prioridades_de_manutencao_confirmadas em cada registro de achado conservam o estado historico daquela confirmacao; a revisao posterior das prioridades esta registrada separadamente. Nenhuma implementacao foi realizada nesta revisao.",
   "data_conclusao_interpretacoes_utc": "2026-11-15T23:29:51.968918+00:00",
   "resumo": {
     "achados": 14,
     "interpretacoes_confirmadas": 14,
     "interpretacoes_sem_confirmacao": 0,
-    "prioridades": "propostas_nao_revisadas"
-  }
+    "prioridades": "confirmadas_pelo_autor",
+    "recomendacoes_com_prioridade_confirmada": 10
+  },
+  "revisao_prioridades": {
+    "commit_versao_apresentada": "a102c8b473f83169c098f6a65f9a15de338174cb",
+    "matriz_sha256_versao_apresentada": "c7857a03f8c4e7748cbee375097d9eb077771d7cd5dd8d84b50d7e35957ab701",
+    "data_registro_utc": "2026-11-15T23:42:39.931017+00:00",
+    "revisor": "Autor",
+    "resposta_literal": "sim",
+    "metodo": "Revisao assistida na conversa, apos apresentacao conjunta das dez melhorias, justificativas e tres grupos de prioridade.",
+    "escopo": "Concordancia com o conteudo resumido das dez melhorias e sua divisao em cinco altas, tres medias e duas exploratorias, sem ordem interna de implementacao validada.",
+    "grupos": {
+      "alta": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "media": [
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "exploratoria": [
+        "A09",
+        "A10"
+      ]
+    },
+    "criterios": {
+      "alta": "Problemas observados de exposicao de conteudo, impedimento funcional, bloqueio, comunicacao inadequada ou inconsistencia documental.",
+      "media": "Consistencia, manutencao e completude que exigem desenho e verificacao proprios.",
+      "exploratoria": "Comparacao necessaria antes de escolher a mudanca."
+    },
+    "limites": "Priorizacao qualitativa do autor, sem workshop com stakeholders, estimativa de custo ou comparacao de beneficios implementados. Os procedimentos de verificacao futura da matriz permanecem propostas tecnicas.",
+    "implementacao_realizada": false,
+    "beneficios_medidos": false
+  },
+  "data_conclusao_revisao_utc": "2026-11-15T23:42:39.931017+00:00"
 }

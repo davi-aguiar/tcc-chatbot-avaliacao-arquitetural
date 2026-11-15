@@ -1,6 +1,6 @@
 # 10 — Problemas conhecidos e limitações abertas
 
-Registro inicial de 08/11/2026, sobre `65e28a0`, após C01–C03; atualizado com os fechamentos de C04–C06 e a síntese de 14/11/2026. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nessas atualizações. A [matriz de síntese](avaliacao/matriz-sintese-arquitetural.md) relaciona os achados às decisões e propõe prioridades de manutenção para revisão do autor.
+Registro inicial de 08/11/2026, sobre `65e28a0`, após C01–C03; atualizado com os fechamentos de C04–C06 e a síntese de 14/11/2026. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nessas atualizações. A [matriz de síntese](avaliacao/matriz-sintese-arquitetural.md) relaciona os achados às decisões e registra as prioridades de manutenção confirmadas pelo autor; as melhorias não foram implementadas nesta etapa.
 
 ## 1. Operações síncronas bloqueiam outras requisições
 
