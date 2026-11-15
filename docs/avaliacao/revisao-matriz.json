@@ -106,11 +106,21 @@
       "interpretacao_referencia": "A referencia m1 foi interpretada como M11 pelo contexto imediato da revisao e da contagem dos achados. M01 ja estava confirmado. Essa interpretacao foi comunicada ao autor antes do registro.",
       "interpretacao_confirmada": "Risco observado de confiabilidade da base pela existencia de enderecos conflitantes atribuidos ao CAPS II nos documentos recuperados em C05. As respostas seguiram a fonte especifica na amostra, sem eliminar a inconsistencia documental ou garantir resolucao de outros conflitos.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M12",
+      "commit_versao_apresentada": "25960aecdaba7815142c80b7dc1c62c61ccedbb6",
+      "matriz_sha256_versao_apresentada": "ac4537a1e8af2333aed3b6a182e8a2de28a173f725f27c1a1265898868ac531c",
+      "data_registro_utc": "2026-11-15T23:11:57.906347+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim7",
+      "interpretacao_resposta": "Confirmacao de M12 pelo termo sim, com caractere adicional na resposta.",
+      "interpretacao_confirmada": "Evidencia favoravel a minimizacao automatica de nome, identificador cadastrados e historico nos 12 pedidos interceptados localmente em C06. Dados autodeclarados e relato presentes na pergunta permanecem no corpo. A personalizacao posterior usa o nome cadastrado, sem demonstrar envio desse campo ao modelo. Nao ha demonstracao de anonimizacao do texto livre nem envio real ao provedor nesta coleta.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M12",
     "M13",
     "M14"
   ],
