@@ -74,11 +74,21 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Evidencia favoravel a testabilidade pelos 16 casos offline de C04 com componentes internos selecionados reais e substitutos nas fronteiras; risco de manutencao pela dependencia dos testes de detalhes internos, incluindo caminho de documentos e cache global do cliente gerador. O esforco humano dessa dependencia nao foi quantificado.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M09",
+      "commit_versao_apresentada": "8535f6956ca5ff7c80da40c8de76b4cf6f93b8ae",
+      "matriz_sha256_versao_apresentada": "8fd0e39c4e22a2df691936304c36f33beeaa4f5714b05506e9bd757d8fefe521",
+      "data_registro_utc": "2026-11-15T23:05:33.469851+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Recuperacao favoravel na amostra de C05 pela presenca dos trechos esperados, com conteudo de outros servicos e conflitos tambem recuperados. Quantidade e selecao do contexto relacionam-se a cobertura e consumo de tokens, mas k e chunking nao foram variados para medir seus efeitos.",
+      "recomendacao_confirmada": "Comparar alternativas de recuperacao por presenca dos fatos, fidelidade, consumo e tempo antes de escolher uma mudanca.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M09",
     "M10",
     "M11",
     "M12",
