@@ -44,11 +44,20 @@
       "resposta_literal": "sim",
       "interpretacao_confirmada": "Risco observado de disponibilidade e desempenho associado ao compartilhamento do atendimento com operacoes bloqueantes na configuracao testada de um worker. Esperas de inferencia e envio atrasaram outras requisicoes, inclusive menus estaticos, sem encerramento inesperado do processo.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M06",
+      "commit_versao_apresentada": "da43239c9db66aca6f5936e02c6e263b62ce86ac",
+      "matriz_sha256_versao_apresentada": "c28bb72b6d112b5abeb1e400af431f5091d20f6691a67197c98e227be8c25588",
+      "data_registro_utc": "2026-11-15T03:14:50.056388+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de comunicacao e rastreabilidade: falha tecnica no texto livre pode retornar opcao invalida e registrar MESSAGE_SENT, sem distinguir sucesso de inferencia. Preservam-se as evidencias favoraveis de reconhecimento das quatro abstencoes de C05 e retomada dos menus em C03-A, dentro dos respectivos recortes.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M06",
     "M07",
     "M08",
     "M09",
