@@ -1,14 +1,14 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 está em preparação, sem respostas reais coletadas, e C06 permanece planejado.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 tem coleta completa e análise preliminar, com revisão humana pendente; C06 permanece planejado.
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
 
 ## C05 — Fidelidade ao contexto documental
 
-**Estado: preparação iniciada em 12/11/2026; geração e julgamento pendentes.** O [protocolo](C05-protocolo.md) fixa seis perguntas, duas rodadas, fatos esperados e critérios separados de recuperação, geração, abstenção e completude. A preparação local com embeddings semânticos e FAISS reais recuperou as fontes esperadas das seis perguntas e os 15 trechos de referência dos quatro casos respondíveis/distinção. Isso não comprova fidelidade de respostas.
+**Estado em 14/11/2026: 12 respostas reais coletadas; análise assistida entregue; revisão humana e julgamento final pendentes.** O [protocolo](C05-protocolo.md) foi executado com embeddings semânticos/FAISS reais e modelo alternativo explícito `openai/gpt-oss-120b`, pois o padrão não estava listado na conta. As 14 verificações do instrumento e os 244 testes existentes passaram separadamente. A conferência posterior aprovou 167 verificações estruturais.
 
-A preparação confirmou que uma seção ambígua do documento do Ambulatório, que pergunta pelo CAPS II e fornece outro endereço, aparece no contexto de P03/P06. A revisão deve distinguir essa inconsistência documental de geração sem apoio. As [evidências de preparação](evidencias-c05/README.md) preservam contexto, fontes e inventário. Nenhuma chave Groq estava configurada; as 12 respostas reais ainda não foram coletadas. As 14 verificações do instrumento passaram separadamente, incluindo SDK com transporte sintético.
+A leitura preliminar identificou apoio para as afirmações examinadas, quatro abstenções exatas e nenhuma troca de serviços observada. P06-R1 foi truncada no limite de 500 tokens, apesar de contexto suficiente: 28 fatos esperados presentes, um parcial e um omitido no conjunto. O conflito de endereço do CAPS II permaneceu no contexto, mas o modelo escolheu o documento específico nas duas rodadas. O [relatório](C05-relatorio-execucao.md) apresenta os resultados e seus limites; o [índice de evidências](evidencias-c05/README.md) separa preparação histórica, coleta real, análise de IA e fichas humanas pendentes. Não há aprovação global do C05.
 
 ## C04 — Testabilidade do núcleo RAG sem rede
 

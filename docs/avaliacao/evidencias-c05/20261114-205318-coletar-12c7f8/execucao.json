@@ -1,0 +1,13 @@
+{
+  "inicio_utc": "2026-11-14T23:53:20.562197+00:00",
+  "modo": "coletar",
+  "credencial_presente": true,
+  "respostas_previstas": 12,
+  "respostas_obtidas": 12,
+  "julgamento": "pendente_revisao",
+  "coleta_completa": true,
+  "erro_tipo": null,
+  "instrumentacao_valida": true,
+  "fontes_inalteradas": true,
+  "fim_utc": "2026-11-14T23:58:54.166580+00:00"
+}

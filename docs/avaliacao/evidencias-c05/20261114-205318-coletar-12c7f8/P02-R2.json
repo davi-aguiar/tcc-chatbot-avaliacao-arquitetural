@@ -1,0 +1,165 @@
+{
+  "id": "P02-R2",
+  "caso": "P02",
+  "rodada": 2,
+  "pergunta": "Quais documentos são necessários para participar do Programa Asma Grave?",
+  "inicio_utc": "2026-11-14T23:57:20.321719+00:00",
+  "contexto": [
+    {
+      "indice": 1,
+      "conteudo": "Serviço: Programa Asma Grave \n\nO que é esse serviço?\nTrata-se de um programa voltado ao acompanhamento de pessoas com diagnóstico de asma grave. O objetivo é garantir o acompanhamento por médico especialista (pneumologista) para controlar os sintomas da doença e reduzir internações. \n\nO que preciso para fazer parte do Programa Asma Grave?\n1. Procure a unidade básica de saúde do seu território e solicite o agendamento de uma consulta médica para avaliação para o Programa Asma Grave.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_programa_asma_grave.txt"
+      }
+    },
+    {
+      "indice": 2,
+      "conteudo": "Quais documentos são obrigatórios para qualquer marcação?\nO usuário deve apresentar:\n- Cartão do SUS (CNS) atualizado\n- RG e CPF\n- Comprovante de residência\n- Telefone de contato\n- Solicitação médica assinada e carimbada\n- Justificativa clínica ou CID no pedido\n\nQuais documentos são exigidos em procedimentos específicos?\nNa Central de Regulação (CRPEE): \n- Tomografia, ressonância, cintilografia: exigem APAC\n- Biópsias: anexar resultado de ultrassonografia\n- Arteriografias: exames laboratoriais + APAC + relatório médico\n- Oxigenoterapia: relatório médico detalhado\n- Exames com sedação: ureia e creatinina recentes + questionário\n- Pacientes especiais: apresentar documentos como:\n* Carteira de oncologia\n* Laudo de Tratamento Fora do Domicílio (TFD)\n* Relatório de alta hospitalar\n* Comprovante de hemodiálise",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_marcacoes.txt"
+      }
+    },
+    {
+      "indice": 3,
+      "conteudo": "Serviço: Marcação de Consultas, Exames e Procedimentos (SUS – Vitória da Conquista)\n\n1. Onde posso agendar Exames e Consultas?\nExames simples, consultas básicas e ultrassonografias = procure sua Unidade de Saúde\nExames mais complexos, especialistas ou cirurgias = será encaminhado para a Central de Regulação (CRPEE)\n\nO que eu posso agendar na Unidade de Saúde da Família (USF) ou UBS?\nO usuário deve procurar a sua Unidade de Saúde da Família (USF) ou UBS para agendamento de:\n- Exames laboratoriais\n- Ultrassonografias (básicas)\n- Consultas ambulatoriais e algumas especialidades (conforme cota da unidade)\n- Atendimentos médicos, de enfermagem e odontologia\n- Atendimento com fisioteteapeuta, farmacêutico, nutricionista, psicólogo e profissional de educação física;\n- Procedimentos simples (curativos, aferição de pressão arterial, glicemia, medidas de peso, altura)",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_marcacoes.txt"
+      }
+    },
+    {
+      "indice": 4,
+      "conteudo": "Quais os documentos necessários para o cadastro?\n1. Cópias legíveis (xerox):\n- Identidade (RG) e CPF do paciente\n- Cartão do SUS do paciente (frente e verso)\n- Conta da Coelba atualizada (da residência onde o paciente reside e fará uso do oxigênio)\n- Identidade (RG), CPF e conta da Coelba do responsável (quando aplicável)\n2. Originais obrigatórios:\n- Relatório médico do SUS recente (com no máximo 30 dias), contendo:\n* Diagnóstico com CID 10\n* Fluxo de oxigênio em litros por minuto\n* Número de horas por dia de uso\n* Tipo de equipamento necessário\n* Identificação do médico (nome completo, especialidade e CRM legível)\n\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77) 3229-3069\nE-mail: pmvccemae@yahoo.com.br",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_programa_oxigenoterapia_domiciliar_prolongada.txt"
+      }
+    },
+    {
+      "indice": 5,
+      "conteudo": "Serviço: Concessão de Bolsas de Ostomia e Adjuvantes\n\nO que é esse serviço?\nEste serviço assegura o fornecimento de bolsas de ostomia e produtos adjuvantes a pessoas com ostomias (colostomia, ileostomia, urostomia), garantindo mais conforto, segurança e qualidade de vida. \n\nO que preciso fazer para ter acesso?\n1. Vá até o CEMERF com todos os documentos exigidos.\n2. Realize o cadastro com o serviço social.\n3. Após aprovação, o paciente retira os materiais no próprio serviço, mensalmente.\n\nQuais os documentos necessários para o cadastro?\n- CPF/RG\n- Cartão SUS\n- Comprovante de residência atualizado\n- Relatório médico com indicação e prescrição\n\nOnde fica o CEMERF?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77)  98856-4371 (WhatsApp)\nE-mail: cemerf.pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_concessao_bolsas_ostomia_e_adjuvantes.txt"
+      }
+    },
+    {
+      "indice": 6,
+      "conteudo": "Serviço: Espirometria\n\nO que é esse serviço?\nA espirometria é um exame que avalia a capacidade respiratória do paciente, auxiliando no diagnóstico de doenças pulmonares como Asma e DPOC (Doença Pulmonar Obstrutiva Crônica). \n\nO que preciso fazer para realizar o exame Espirometria?\n1. O médico solicita o exame durante a consulta na unidade básica de saúde.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Solicitação médica com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77) 3229-3069\nE-mail: pmvccemae@yahoo.com.br",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_espirometria.txt"
+      }
+    },
+    {
+      "indice": 7,
+      "conteudo": "Serviço: CEMERF\n\nO que é esse serviço?\nEste serviço oferece acompanhamento clínico e terapias de reabilitação física e auditiva, voltadas à promoção da funcionalidade, autonomia e qualidade de vida de pessoas com deficiência. O CEMERF oferece atendimentos especializados, com equipe multiprofissional. \n\nO que preciso fazer para ter acesso a esse serviço?\n1. Dirija-se ao CEMERF com os documentos exigidos.\n2. Realize atendimento inicial com o serviço social.\n3. Aguarde o agendamento da avaliação clínica, momento em que será verificado se o caso se enquadra no perfil do serviço. \n4. Após análise, será definido o plano terapêutico singular e o cronograma de atendimentos.\n\nQuais os documentos necessários?\n- CPF/RG\n- Cartão SUS\n- Comprovante de residência atualizado\n- Encaminhamento médico com indicação para reabilitação (física e/ou auditiva)\n- Exames recentes (se houver)\n\nOnde fica o CEMERF?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_cemerf.txt"
+      }
+    },
+    {
+      "indice": 8,
+      "conteudo": "Serviço: Oxigenoterapia \n\nO que é esse serviço?\nA Oxigenoterapia Domiciliar Prolongada é indicada para pacientes com diagnóstico clínico que requerem suporte contínuo de oxigênio em casa. \n\nO que preciso fazer para solicitar esse serviço?\n1. Reúna todos os documentos exigidos (originais e cópias).\n2. Vá até o CEMAE para entrega da documentação, cadastro e abertura do protocolo.\n3. Aguarde o agendamento da visita do assistente social.\n4. Após a avaliação dos documentos e visita do assistente social, a solicitação será enviada à Secretaria de Saúde do Estado (SESAB).\n5. O paciente será informado pela SESAB sobre o andamento e a liberação do fornecimento.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_programa_oxigenoterapia_domiciliar_prolongada.txt"
+      }
+    },
+    {
+      "indice": 9,
+      "conteudo": "Serviço: CEMAE\n\nO que é esse serviço?\nO CEMAE caracteriza-se como uma policlínica que oferece atendimentos médicos especializados, reunindo diversas especialidades em um único serviço, com o objetivo de garantir assistência integral, resolutiva e de qualidade à população. \n\nO que preciso fazer para ter acesso a esse serviço?\n1. O médico solicita a consulta com médico especialista durante a consulta na unidade básica de saúde.\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\n3. Aguarde o contato da equipe da unidade básica de saúde.\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\n\nQuais os documentos necessários?\n- Solicitação médica com boleto de marcação\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n\nOnde fica o CEMAE?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_cemae.txt"
+      }
+    },
+    {
+      "indice": 10,
+      "conteudo": "O que eu posso agendar na Central de Regulação CRPEE?\n- Exames e procedimentos:\n* Ressonância magnética\n* Tomografia (com ou sem contraste)\n* Cintilografias\n* Densitometria óssea\n* Eletroneuromiografia\n* Colonoscopia e endoscopia (casos específicos)\n* Biópsias (mama, tireoide, próstata, medula óssea)\n* Ecocardiogramas especializados\n* Mamografia\n* Holter\n* MAPA\n* Teste ergométrico\n* Oxigenoterapia hiperbárica\n* Arteriografias (cerebral, renal, membros, carótidas)\n* Exames com sedação\n\n- Especialidades médicas:\n* Angiologia\n* Cardiologia\n* Dermatologia\n* Endocrinologia\n* Gastroenterologia\n* Geriatria\n* Ginecologia\n* Mastologia\n* Nefrologia\n* Neurologia\n* Oftalmologia\n* Ortopedia\n* Otorrinolaringologia\n* Pneumologia\n* Proctologia\n* Urologia\n* Infectologia",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_marcacoes.txt"
+      }
+    }
+  ],
+  "prompt": "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='c888c8eb-d230-4d5b-8075-49baf5aca132', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_programa_asma_grave.txt'}, page_content='Serviço: Programa Asma Grave \\n\\nO que é esse serviço?\\nTrata-se de um programa voltado ao acompanhamento de pessoas com diagnóstico de asma grave. O objetivo é garantir o acompanhamento por médico especialista (pneumologista) para controlar os sintomas da doença e reduzir internações. \\n\\nO que preciso para fazer parte do Programa Asma Grave?\\n1. Procure a unidade básica de saúde do seu território e solicite o agendamento de uma consulta médica para avaliação para o Programa Asma Grave.\\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\\n3. Aguarde o contato da equipe da unidade básica de saúde.\\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\\n\\nQuais os documentos necessários?\\n- Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n\\nOnde fica o CEMAE?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8'), Document(id='29798aa5-8aa2-4ffe-929b-73b08f400882', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_marcacoes.txt'}, page_content='Quais documentos são obrigatórios para qualquer marcação?\\nO usuário deve apresentar:\\n- Cartão do SUS (CNS) atualizado\\n- RG e CPF\\n- Comprovante de residência\\n- Telefone de contato\\n- Solicitação médica assinada e carimbada\\n- Justificativa clínica ou CID no pedido\\n\\nQuais documentos são exigidos em procedimentos específicos?\\nNa Central de Regulação (CRPEE): \\n- Tomografia, ressonância, cintilografia: exigem APAC\\n- Biópsias: anexar resultado de ultrassonografia\\n- Arteriografias: exames laboratoriais + APAC + relatório médico\\n- Oxigenoterapia: relatório médico detalhado\\n- Exames com sedação: ureia e creatinina recentes + questionário\\n- Pacientes especiais: apresentar documentos como:\\n* Carteira de oncologia\\n* Laudo de Tratamento Fora do Domicílio (TFD)\\n* Relatório de alta hospitalar\\n* Comprovante de hemodiálise'), Document(id='d1b7eb65-c8b3-4b92-b0f0-22859321dc69', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_marcacoes.txt'}, page_content='Serviço: Marcação de Consultas, Exames e Procedimentos (SUS – Vitória da Conquista)\\n\\n1. Onde posso agendar Exames e Consultas?\\nExames simples, consultas básicas e ultrassonografias = procure sua Unidade de Saúde\\nExames mais complexos, especialistas ou cirurgias = será encaminhado para a Central de Regulação (CRPEE)\\n\\nO que eu posso agendar na Unidade de Saúde da Família (USF) ou UBS?\\nO usuário deve procurar a sua Unidade de Saúde da Família (USF) ou UBS para agendamento de:\\n- Exames laboratoriais\\n- Ultrassonografias (básicas)\\n- Consultas ambulatoriais e algumas especialidades (conforme cota da unidade)\\n- Atendimentos médicos, de enfermagem e odontologia\\n- Atendimento com fisioteteapeuta, farmacêutico, nutricionista, psicólogo e profissional de educação física;\\n- Procedimentos simples (curativos, aferição de pressão arterial, glicemia, medidas de peso, altura)'), Document(id='5f086a0d-64fb-44cf-8125-215747a64731', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_programa_oxigenoterapia_domiciliar_prolongada.txt'}, page_content='Quais os documentos necessários para o cadastro?\\n1. Cópias legíveis (xerox):\\n- Identidade (RG) e CPF do paciente\\n- Cartão do SUS do paciente (frente e verso)\\n- Conta da Coelba atualizada (da residência onde o paciente reside e fará uso do oxigênio)\\n- Identidade (RG), CPF e conta da Coelba do responsável (quando aplicável)\\n2. Originais obrigatórios:\\n- Relatório médico do SUS recente (com no máximo 30 dias), contendo:\\n* Diagnóstico com CID 10\\n* Fluxo de oxigênio em litros por minuto\\n* Número de horas por dia de uso\\n* Tipo de equipamento necessário\\n* Identificação do médico (nome completo, especialidade e CRM legível)\\n\\n\\nOnde fica o CEMAE?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3069\\nE-mail: pmvccemae@yahoo.com.br'), Document(id='cefbd8de-f848-41f6-9a43-9433224cb24b', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_concessao_bolsas_ostomia_e_adjuvantes.txt'}, page_content='Serviço: Concessão de Bolsas de Ostomia e Adjuvantes\\n\\nO que é esse serviço?\\nEste serviço assegura o fornecimento de bolsas de ostomia e produtos adjuvantes a pessoas com ostomias (colostomia, ileostomia, urostomia), garantindo mais conforto, segurança e qualidade de vida. \\n\\nO que preciso fazer para ter acesso?\\n1. Vá até o CEMERF com todos os documentos exigidos.\\n2. Realize o cadastro com o serviço social.\\n3. Após aprovação, o paciente retira os materiais no próprio serviço, mensalmente.\\n\\nQuais os documentos necessários para o cadastro?\\n- CPF/RG\\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Relatório médico com indicação e prescrição\\n\\nOnde fica o CEMERF?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h\\n\\nQuais os contatos? \\nTelefone: (77)  98856-4371 (WhatsApp)\\nE-mail: cemerf.pmvc@gmail.com'), Document(id='ed986ba2-8681-4e51-b13f-29bdb78bdb88', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_espirometria.txt'}, page_content='Serviço: Espirometria\\n\\nO que é esse serviço?\\nA espirometria é um exame que avalia a capacidade respiratória do paciente, auxiliando no diagnóstico de doenças pulmonares como Asma e DPOC (Doença Pulmonar Obstrutiva Crônica). \\n\\nO que preciso fazer para realizar o exame Espirometria?\\n1. O médico solicita o exame durante a consulta na unidade básica de saúde.\\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\\n3. Aguarde o contato da equipe da unidade básica de saúde.\\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\\n\\nQuais os documentos necessários?\\n- Solicitação médica com boleto de marcação\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n\\nOnde fica o CEMAE?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3069\\nE-mail: pmvccemae@yahoo.com.br'), Document(id='7010055c-5b8a-4a83-9d1b-977b5ef452c5', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_cemerf.txt'}, page_content='Serviço: CEMERF\\n\\nO que é esse serviço?\\nEste serviço oferece acompanhamento clínico e terapias de reabilitação física e auditiva, voltadas à promoção da funcionalidade, autonomia e qualidade de vida de pessoas com deficiência. O CEMERF oferece atendimentos especializados, com equipe multiprofissional. \\n\\nO que preciso fazer para ter acesso a esse serviço?\\n1. Dirija-se ao CEMERF com os documentos exigidos.\\n2. Realize atendimento inicial com o serviço social.\\n3. Aguarde o agendamento da avaliação clínica, momento em que será verificado se o caso se enquadra no perfil do serviço. \\n4. Após análise, será definido o plano terapêutico singular e o cronograma de atendimentos.\\n\\nQuais os documentos necessários?\\n- CPF/RG\\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Encaminhamento médico com indicação para reabilitação (física e/ou auditiva)\\n- Exames recentes (se houver)\\n\\nOnde fica o CEMERF?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8'), Document(id='1d1a41fd-b6db-464d-bec0-ab8beaf2460a', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_programa_oxigenoterapia_domiciliar_prolongada.txt'}, page_content='Serviço: Oxigenoterapia \\n\\nO que é esse serviço?\\nA Oxigenoterapia Domiciliar Prolongada é indicada para pacientes com diagnóstico clínico que requerem suporte contínuo de oxigênio em casa. \\n\\nO que preciso fazer para solicitar esse serviço?\\n1. Reúna todos os documentos exigidos (originais e cópias).\\n2. Vá até o CEMAE para entrega da documentação, cadastro e abertura do protocolo.\\n3. Aguarde o agendamento da visita do assistente social.\\n4. Após a avaliação dos documentos e visita do assistente social, a solicitação será enviada à Secretaria de Saúde do Estado (SESAB).\\n5. O paciente será informado pela SESAB sobre o andamento e a liberação do fornecimento.'), Document(id='68adad86-e3c6-48ba-9066-91bba092458c', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_cemae.txt'}, page_content='Serviço: CEMAE\\n\\nO que é esse serviço?\\nO CEMAE caracteriza-se como uma policlínica que oferece atendimentos médicos especializados, reunindo diversas especialidades em um único serviço, com o objetivo de garantir assistência integral, resolutiva e de qualidade à população. \\n\\nO que preciso fazer para ter acesso a esse serviço?\\n1. O médico solicita a consulta com médico especialista durante a consulta na unidade básica de saúde.\\n2. Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado.\\n3. Aguarde o contato da equipe da unidade básica de saúde.\\n4. Após agendamento, compareça ao CEMAE no dia e horário agendados.\\n\\nQuais os documentos necessários?\\n- Solicitação médica com boleto de marcação\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n\\nOnde fica o CEMAE?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h'), Document(id='393721f5-b88d-49df-88ea-054b6b835fd1', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_marcacoes.txt'}, page_content='O que eu posso agendar na Central de Regulação CRPEE?\\n- Exames e procedimentos:\\n* Ressonância magnética\\n* Tomografia (com ou sem contraste)\\n* Cintilografias\\n* Densitometria óssea\\n* Eletroneuromiografia\\n* Colonoscopia e endoscopia (casos específicos)\\n* Biópsias (mama, tireoide, próstata, medula óssea)\\n* Ecocardiogramas especializados\\n* Mamografia\\n* Holter\\n* MAPA\\n* Teste ergométrico\\n* Oxigenoterapia hiperbárica\\n* Arteriografias (cerebral, renal, membros, carótidas)\\n* Exames com sedação\\n\\n- Especialidades médicas:\\n* Angiologia\\n* Cardiologia\\n* Dermatologia\\n* Endocrinologia\\n* Gastroenterologia\\n* Geriatria\\n* Ginecologia\\n* Mastologia\\n* Nefrologia\\n* Neurologia\\n* Oftalmologia\\n* Ortopedia\\n* Otorrinolaringologia\\n* Pneumologia\\n* Proctologia\\n* Urologia\\n* Infectologia')]\n\nPERGUNTA:\nQuais documentos são necessários para participar do Programa Asma Grave?\n\nRESPOSTA (Seja direto e útil):\n",
+  "resposta_original": "Os documentos necessários são:\n\n- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  \n- CPF e RG  \n- Cartão SUS  \n- Comprovante de residência atualizado",
+  "saida_nlp": "Os documentos necessários são:\n\n- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  \n- CPF e RG  \n- Cartão SUS  \n- Comprovante de residência atualizado",
+  "erro_tipo": null,
+  "chamadas_recuperador": 1,
+  "chamadas_gerador": 1,
+  "metadados_geracao": {
+    "model_name": "openai/gpt-oss-120b",
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 3568,
+      "total_tokens": 3726,
+      "completion_time": 0.326043196,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "prompt_time": 0.014906718,
+      "prompt_tokens_details": {
+        "cached_tokens": 3328
+      },
+      "queue_time": 0.309681362,
+      "total_time": 0.340949914
+    },
+    "system_fingerprint": "fp_a655021f7d"
+  },
+  "uso_tokens": {
+    "input_tokens": 3568,
+    "output_tokens": 158,
+    "total_tokens": 3726,
+    "input_token_details": {
+      "cache_read": 3328
+    },
+    "output_token_details": {
+      "reasoning": 107
+    }
+  },
+  "frase_ausencia_exata": false,
+  "ausencia_reconhecida": false,
+  "diagnostico_recuperacao": {
+    "fontes_esperadas_presentes": {
+      "servico_programa_asma_grave.txt": true
+    },
+    "trechos_literais": [
+      {
+        "fato": "F01",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F02",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F03",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F04",
+        "chunks": [
+          1
+        ]
+      }
+    ],
+    "aviso": "Diagnóstico literal, sem julgamento semântico; outras fontes exigem revisão."
+  },
+  "fim_utc": "2026-11-14T23:57:49.193504+00:00",
+  "tentativas_http": [
+    {
+      "tentativa": 1,
+      "inicio_utc": "2026-11-14T23:57:20.364297+00:00",
+      "status": 429,
+      "fim_utc": "2026-11-14T23:57:20.414809+00:00"
+    },
+    {
+      "tentativa": 2,
+      "inicio_utc": "2026-11-14T23:57:48.415394+00:00",
+      "status": 200,
+      "fim_utc": "2026-11-14T23:57:49.181440+00:00"
+    }
+  ]
+}

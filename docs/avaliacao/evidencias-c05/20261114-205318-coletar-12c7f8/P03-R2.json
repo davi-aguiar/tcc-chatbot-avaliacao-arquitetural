@@ -1,0 +1,148 @@
+{
+  "id": "P03-R2",
+  "caso": "P03",
+  "rodada": 2,
+  "pergunta": "Qual é o endereço do CAPS II e quais são seus dias e horários de funcionamento, incluindo a exceção semanal?",
+  "inicio_utc": "2026-11-14T23:57:49.199577+00:00",
+  "contexto": [
+    {
+      "indice": 1,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver)\n- Histórico clínico (quando disponível)\n\nOnde fica o CAPS II?\nAvenida Régis Pacheco, 770, Centro, https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\n\nQuais os contatos? \nTelefone: (77) 3229-3055\nE-mail: caps2.pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      }
+    },
+    {
+      "indice": 2,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver)\n- Histórico clínico (quando disponível)\n\nOnde fica o CAPS AD III?\nRua T, 417, Bairro Felícia, https://maps.app.goo.gl/A73BUzkxT5gdbGTx5\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\n\nQuais os contatos? \nTelefone: (77) 3229-3053 Recepção / (77) 98834-9898 (Whatsapp)\nE-mail: capsad3pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 3,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver);\n- Histórico clínico (quando disponível).\n\nOnde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n08:00 às 17:00h \n\nQuais os contatos? \nTelefone: (77) 3429-3481\nE-mail: ambsaudmental@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt"
+      }
+    },
+    {
+      "indice": 4,
+      "conteudo": "Servico: CAPS II - CENTRO DE ATENÇÃO PSICOSSOCIAL\n\nO que é esse serviço?\nO CAPS II é um serviço de saúde especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes, baseado nos princípios da Reforma Psiquiátrica e Luta Antimanicomial.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      }
+    },
+    {
+      "indice": 5,
+      "conteudo": "Como são os atendimentos?\nO CAPS AD III oferece atendimento multiprofissional, podendo também, realizar acolhimento intensivo 24h. O cuidado oferecido pelo CAPS AD III é norteado pelo Plano Terapêutico Singular - PTS, com base no território construído entre a equipe, família/rede de apoio e usuário do serviço, definindo-se, portanto, como um serviço de saúde de caráter voluntário. O cuidado realizado por uma equipe multiprofissional pode incluir:\n- Acompanhamento pela mini-equipe de referência;\n- Atividades de reabilitação psicossocial;\n- Oficinas terapêuticas;\n- Acompanhamento médico-psiquiátrico;\n- Acompanhamento psicológico individual e em grupo;\n- Aconselhamento e intervenções em Redução de Danos;\n- Apoio familiar e orientação sociofamiliar;\n- Atendimento em situações de crise;\n- Articulação com a rede intersetorial (assistência social, educação, trabalho).",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 6,
+      "conteudo": "Quais os dias e horários de funcionamento?\nSegunda a sexta-feira\n08:00 às 18:00h\n\nQuais os contatos? \nTelefone: (77) 3229-3144\nE-mail: saude@pmvc.ba.gov.br",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\secretaria_municipal_de_saude.txt"
+      }
+    },
+    {
+      "indice": 7,
+      "conteudo": "Serviço: CAPS AD III\n\nO que é esse serviço?\nO CAPS AD III, consiste em serviço de atenção psicossocial específico para cuidado e atenção integral a pessoas com necessidades específicas decorrente do uso de álcool e outras drogas. Funciona como um dispositivo estratégico da Rede de Atenção Psicossocial (RAPS), baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos e atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 8,
+      "conteudo": "SERVIÇO EXPERIMENTAL C01 - DOCUMENTO SINTÉTICO DE TESTE\n\nFinalidade: verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01.\nEste serviço é fictício. Não oferece atendimento real, orientação clínica, agendamento ou contato.\nIdentificador de verificação: C01-DOC-TESTE-2026.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_experimental_c01.txt"
+      }
+    },
+    {
+      "indice": 9,
+      "conteudo": "Onde fica o CEO?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77) 3429-3477",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_ceo.txt"
+      }
+    },
+    {
+      "indice": 10,
+      "conteudo": "Onde fica o CEMERF?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 17:00h\n\nQuais os contatos? \nTelefone: (77) 3229-3463 (Serviço Social)\nE-mail: cemerf.pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_concessao_meios_auxiliares_de_locomoção.txt"
+      }
+    }
+  ],
+  "prompt": "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='9f73a514-51fd-479b-a3d4-5cbfb383fe69', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ii_centro_atencao_psicossocial.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver)\\n- Histórico clínico (quando disponível)\\n\\nOnde fica o CAPS II?\\nAvenida Régis Pacheco, 770, Centro, https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3055\\nE-mail: caps2.pmvc@gmail.com'), Document(id='a8470960-c815-4d45-9e1f-00324b6fc695', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver)\\n- Histórico clínico (quando disponível)\\n\\nOnde fica o CAPS AD III?\\nRua T, 417, Bairro Felícia, https://maps.app.goo.gl/A73BUzkxT5gdbGTx5\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3053 Recepção / (77) 98834-9898 (Whatsapp)\\nE-mail: capsad3pmvc@gmail.com'), Document(id='216ff54f-9697-4106-94ad-45147c32a6f8', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver);\\n- Histórico clínico (quando disponível).\\n\\nOnde fica o CAPS II?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n08:00 às 17:00h \\n\\nQuais os contatos? \\nTelefone: (77) 3429-3481\\nE-mail: ambsaudmental@gmail.com'), Document(id='20ac3f01-ebcf-4b08-b78d-31a7bb18b97e', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ii_centro_atencao_psicossocial.txt'}, page_content='Servico: CAPS II - CENTRO DE ATENÇÃO PSICOSSOCIAL\\n\\nO que é esse serviço?\\nO CAPS II é um serviço de saúde especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes, baseado nos princípios da Reforma Psiquiátrica e Luta Antimanicomial.'), Document(id='f30249b7-34ef-4a3b-ada6-1a9b4f273da9', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Como são os atendimentos?\\nO CAPS AD III oferece atendimento multiprofissional, podendo também, realizar acolhimento intensivo 24h. O cuidado oferecido pelo CAPS AD III é norteado pelo Plano Terapêutico Singular - PTS, com base no território construído entre a equipe, família/rede de apoio e usuário do serviço, definindo-se, portanto, como um serviço de saúde de caráter voluntário. O cuidado realizado por uma equipe multiprofissional pode incluir:\\n- Acompanhamento pela mini-equipe de referência;\\n- Atividades de reabilitação psicossocial;\\n- Oficinas terapêuticas;\\n- Acompanhamento médico-psiquiátrico;\\n- Acompanhamento psicológico individual e em grupo;\\n- Aconselhamento e intervenções em Redução de Danos;\\n- Apoio familiar e orientação sociofamiliar;\\n- Atendimento em situações de crise;\\n- Articulação com a rede intersetorial (assistência social, educação, trabalho).'), Document(id='d64633de-157b-48ba-b0c5-60c0ea2321b4', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\secretaria_municipal_de_saude.txt'}, page_content='Quais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n08:00 às 18:00h\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3144\\nE-mail: saude@pmvc.ba.gov.br'), Document(id='d1c5b024-ae79-478e-95b1-2f45cb6856ea', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Serviço: CAPS AD III\\n\\nO que é esse serviço?\\nO CAPS AD III, consiste em serviço de atenção psicossocial específico para cuidado e atenção integral a pessoas com necessidades específicas decorrente do uso de álcool e outras drogas. Funciona como um dispositivo estratégico da Rede de Atenção Psicossocial (RAPS), baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos e atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários.'), Document(id='d924fef9-3a49-40f5-8125-c1bedba932c8', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_experimental_c01.txt'}, page_content='SERVIÇO EXPERIMENTAL C01 - DOCUMENTO SINTÉTICO DE TESTE\\n\\nFinalidade: verificar a inclusão de um serviço no menu e o encaminhamento de consulta documental na avaliação arquitetural C01.\\nEste serviço é fictício. Não oferece atendimento real, orientação clínica, agendamento ou contato.\\nIdentificador de verificação: C01-DOC-TESTE-2026.'), Document(id='217200ab-b813-4fc2-bcd5-5308c4e3caa2', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_ceo.txt'}, page_content='Onde fica o CEO?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h\\n\\nQuais os contatos? \\nTelefone: (77) 3429-3477'), Document(id='a2db1dab-dd0b-4fb5-945c-c054d6ec0805', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_concessao_meios_auxiliares_de_locomoção.txt'}, page_content='Onde fica o CEMERF?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 17:00h\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3463 (Serviço Social)\\nE-mail: cemerf.pmvc@gmail.com')]\n\nPERGUNTA:\nQual é o endereço do CAPS II e quais são seus dias e horários de funcionamento, incluindo a exceção semanal?\n\nRESPOSTA (Seja direto e útil):\n",
+  "resposta_original": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  \n\n**Dias e horários de funcionamento:**  \n- Segunda a sexta‑feira: 08:00 às 18:00  \n- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+  "saida_nlp": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  \n\n**Dias e horários de funcionamento:**  \n- Segunda a sexta‑feira: 08:00 às 18:00  \n- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+  "erro_tipo": null,
+  "chamadas_recuperador": 1,
+  "chamadas_gerador": 1,
+  "metadados_geracao": {
+    "model_name": "openai/gpt-oss-120b",
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 378,
+      "prompt_tokens": 2297,
+      "total_tokens": 2675,
+      "completion_time": 0.787866179,
+      "completion_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "prompt_time": 0.143795467,
+      "prompt_tokens_details": null,
+      "queue_time": 0.208645263,
+      "total_time": 0.931661646
+    },
+    "system_fingerprint": "fp_90620edd96"
+  },
+  "uso_tokens": {
+    "input_tokens": 2297,
+    "output_tokens": 378,
+    "total_tokens": 2675,
+    "output_token_details": {
+      "reasoning": 274
+    }
+  },
+  "frase_ausencia_exata": false,
+  "ausencia_reconhecida": false,
+  "diagnostico_recuperacao": {
+    "fontes_esperadas_presentes": {
+      "servico_caps_ii_centro_atencao_psicossocial.txt": true
+    },
+    "trechos_literais": [
+      {
+        "fato": "F01",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F02",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F03",
+        "chunks": [
+          1
+        ]
+      }
+    ],
+    "aviso": "Diagnóstico literal, sem julgamento semântico; outras fontes exigem revisão."
+  },
+  "fim_utc": "2026-11-14T23:57:50.444200+00:00",
+  "tentativas_http": [
+    {
+      "tentativa": 1,
+      "inicio_utc": "2026-11-14T23:57:49.254308+00:00",
+      "status": 200,
+      "fim_utc": "2026-11-14T23:57:50.441726+00:00"
+    }
+  ]
+}

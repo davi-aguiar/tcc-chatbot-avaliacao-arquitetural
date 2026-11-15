@@ -1,0 +1,340 @@
+[
+  {
+    "id": "P01-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P02-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P03-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P04-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P05-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P06-R1",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P01-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P02-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P03-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P04-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P05-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  },
+  {
+    "id": "P06-R2",
+    "estado": "pendente",
+    "revisor": null,
+    "afirmacoes": [],
+    "instrucao_afirmacoes": "Para cada afirmação: texto, sustentada/não sustentada/contraditória/ambígua, chunk e trecho literal.",
+    "fatos_esperados": [
+      {
+        "id": "F01",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F02",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F03",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      },
+      {
+        "id": "F04",
+        "presenca_resposta": null,
+        "apoio_contexto": null
+      }
+    ],
+    "recuperacao": null,
+    "fidelidade": null,
+    "completude": null,
+    "abstencao_adequada": null,
+    "confusao_servicos": null,
+    "ambiguidade_documental": null,
+    "observacoes": null
+  }
+]
