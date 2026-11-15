@@ -34,7 +34,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
 | C04 | Média | Média | Encerrado com ressalvas: 16/16 casos do núcleo RAG sem rede/credenciais/pesos; isolamento depende de ajustes em estado global e diretório |
 | C05 | Alta | Alta | Encerrado com ressalvas: 12 respostas revisadas pelo autor; fidelidade atendida na amostra, quatro abstenções e uma resposta truncada com completude parcial |
-| C06 | Alta | Média | Fluxo externo e persistência podem expor dados além do necessário; planejado |
+| C06 | Alta | Média | Preparado: protocolo/matriz de 14 observações e instrumento local verificados; coleta e julgamento pendentes |
 
 ## C01 — Modificabilidade: inclusão de serviço
 
@@ -126,6 +126,8 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 **Limites:** avaliação de fidelidade documental pelo autor, não validação clínica, experiência do cidadão ou garantia de ausência de alucinação. A resposta única do C01 é evidência daquele percurso, não resultado deste conjunto.
 
 ## C06 — Segurança/confidencialidade: fluxo e minimização de dados
+
+**Atualização de 14/11/2026:** [protocolo e matriz definidos](C06-protocolo.md) após o fechamento de C05; [preparação local concluída](evidencias-c06/README.md), com 13 verificações do instrumento e 244 testes existentes aprovados. Coleta oficial não executada, zero observações da amostra e nenhum resultado de confidencialidade atribuído. O plano original abaixo permanece como referência prospectiva.
 
 | Elemento do cenário | Definição |
 |---|---|

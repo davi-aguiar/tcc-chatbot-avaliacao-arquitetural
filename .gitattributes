@@ -19,3 +19,7 @@
 /docs/avaliacao/evidencias-c05/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /docs/avaliacao/c05/** text eol=lf
 /docs/avaliacao/C05-protocolo.md text eol=lf
+# Preserva os bytes e finais de linha do novo instrumento C06.
+/docs/avaliacao/evidencias-c06/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/docs/avaliacao/c06/** text eol=lf
+/docs/avaliacao/C06-protocolo.md text eol=lf

@@ -4,6 +4,12 @@ O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidad
 
 Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
 
+## C06 — Fluxo e minimização de dados
+
+**Estado: preparação concluída em 14/11/2026; coleta e julgamento não executados.** O [protocolo](C06-protocolo.md) fixa 14 observações em duas rodadas, com menu/texto livre, sucesso/falha, dados autodeclarados e controle estático. Pedidos devem ser serializados pelo SDK real e interceptados localmente, sem credencial real ou envio externo; snapshots de banco e logs ficam separados do payload de inferência.
+
+As 13 verificações do instrumento e os 244 testes existentes passaram. O modo de preparação confirmou matriz, dependências e integridade, com zero observações da amostra. O [índice de evidências](evidencias-c06/README.md) preserva esse estado sem atribuir resultados de confidencialidade.
+
 ## C05 — Fidelidade ao contexto documental
 
 **Estado: encerrado com ressalvas em 14/11/2026.** As 12 respostas foram revisadas pelo autor: fidelidade atendida apenas na amostra; completude parcial em P06-R1. O [protocolo](C05-protocolo.md) foi executado com embeddings/FAISS reais e modelo alternativo explícito `openai/gpt-oss-120b`. As 14 verificações do instrumento e os 244 testes existentes passaram separadamente; a conferência estrutural mantém 167 verificações aprovadas.
