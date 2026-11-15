@@ -23,11 +23,21 @@
       "interpretacao_confirmada": "Risco observado de disponibilidade associado ao modelo configurado nos ensaios e dificuldade adicional de manutencao pelo identificador fixo no codigo.",
       "recomendacao_confirmada": "Definir o identificador do modelo por variavel de ambiente.",
       "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M04",
+      "commit_versao_apresentada": "a84a4a3fa7f7a340b3159651e1d26f268a3ffb44",
+      "matriz_sha256_versao_apresentada": "6f04218036837687fd137ffeb42a86e387c518707c90804cff1740dc62b7a3a6",
+      "data_registro_utc": "2026-11-15T03:11:17.695876+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Novas tentativas automaticas podem recuperar consultas recusadas temporariamente por quota, mas a espera sincrona contribui para bloqueio do atendimento compartilhado. O atraso observado nao foi atribuido exclusivamente aos retries.",
+      "recomendacao_confirmada": "Definir limites de espera e concorrencia e isolar a espera para evitar prejudicar outras conversas, com verificacao futura das alternativas.",
+      "prioridades_de_manutencao_confirmadas": false
     }
   ],
   "achados_sem_confirmacao": [
     "M02",
-    "M04",
     "M05",
     "M06",
     "M07",
@@ -39,5 +49,5 @@
     "M13",
     "M14"
   ],
-  "limite": "As confirmacoes de M01 e M03 nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. A recomendacao de configuracao por variavel de ambiente foi confirmada em M03; nenhuma implementacao foi realizada nesta revisao."
+  "limite": "As confirmacoes registradas nao aprovam os demais achados, as prioridades A01-A10 ou revisao independente dos dados primarios. Recomendacoes confirmadas estao delimitadas em cada registro; nenhuma implementacao foi realizada nesta revisao."
 }
