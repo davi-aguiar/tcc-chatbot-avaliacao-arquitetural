@@ -14,6 +14,12 @@ Na visão de componentes, setas indicam uso ou acesso; na sequência, chamadas e
 
 ## Visão de componentes
 
+Visão sintética da fronteira do backend, dos recursos locais e dos serviços externos:
+
+![Visão geral da arquitetura do chatbot](figuras/arquitetura/visao-geral.png)
+
+*Figura: visão geral da arquitetura. Os pacotes `api/` e `app/` executam no mesmo processo; o índice vetorial é montado a partir dos documentos e embeddings locais.*
+
 ```mermaid
 flowchart TD
     GW["Evolution API ou Twilio"]
@@ -77,6 +83,14 @@ O limite externo reúne dois pacotes no mesmo processo, sem separação em micro
 | Persistência e auditoria | Manter usuário, estado, mensagens, configuração, mídia e eventos no banco relacional; emitir logs | [modelos](../api/models/models.py), [sessão](../api/db/database.py), [DbLogger](../api/utils/logger.py), [migrações](../api/alembic/versions/) |
 
 **Caminho separado do Gradio:** `frontend/gradio_app.py` chama `setup_system()` e `generate_response()` diretamente em seu processo, chegando a `run_rag`. Não usa a rota REST, o ChatService ou a persistência de conversas do backend. Testes também podem chamar serviços diretamente, conforme seu escopo.
+
+## Fluxo híbrido de atendimento
+
+O diagrama resume como o `ChatService` combina comandos, onboarding e navegação local com consultas documentais. Opções de menu com `query` usam a pergunta configurada; texto livre usa a mensagem recebida.
+
+![Fluxo híbrido de menu e consulta documental](figuras/arquitetura/fluxo-hibrido.png)
+
+*Figura: fluxo híbrido de atendimento. A navegação e as respostas locais não acionam o RAG; consultas documentais passam pelo FAISS e pela geração externa.*
 
 ## Visão de inicialização
 

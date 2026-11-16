@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="106.667mm" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">Visão geral da arquitetura do chatbot</title>
+  <desc id="description">WhatsApp por Evolution ou Twilio interage com um backend Python. Conversa e menus, núcleo RAG e índice FAISS local pertencem ao mesmo processo. Documentos e embeddings alimentam o índice. O banco relacional registra estado e histórico; a Groq é o serviço externo de geração.</desc>
+  <rect width="1200" height="800" fill="white" />
+  <rect x="330" y="25" width="490" height="750" rx="16" fill="#f5f5f5" stroke="#707070" stroke-width="2" />
+  <text x="575" y="77.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#202020">Backend Python</text>
+  <text x="575" y="111.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#202020">api/ e app/ no mesmo processo</text>
+  <rect x="20" y="175" width="245" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="142.5" y="223.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">WhatsApp</text>
+  <text x="142.5" y="254.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Evolution ou Twilio</text>
+  <rect x="380" y="170" width="390" height="120" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="575.0" y="222.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202020">Conversa e menus</text>
+  <text x="575.0" y="257.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202020">api/</text>
+  <rect x="380" y="400" width="390" height="120" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="575.0" y="452.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202020">Núcleo RAG</text>
+  <text x="575.0" y="487.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202020">app/</text>
+  <rect x="405" y="650" width="340" height="95" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="575.0" y="689.875" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">Índice FAISS</text>
+  <text x="575.0" y="723.625" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">local, em memória</text>
+  <rect x="20" y="610" width="245" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="142.5" y="658.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Documentos TXT</text>
+  <text x="142.5" y="689.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">e modelos locais</text>
+  <rect x="900" y="170" width="280" height="120" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="1040.0" y="222.75" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020">Banco relacional</text>
+  <text x="1040.0" y="255.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#202020">Estado e registros</text>
+  <rect x="900" y="400" width="280" height="120" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="1040.0" y="452.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Groq</text>
+  <text x="1040.0" y="487.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Geração externa</text>
+  <polyline points="265,230 380,230" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="265,230 277.0,225.0 277.0,235.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="380,230 368.0,235.0 368.0,225.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polyline points="770,230 900,230" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="770,230 782.0,225.0 782.0,235.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="900,230 888.0,235.0 888.0,225.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="835" y="174.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#202020">leitura /</text>
+  <text x="835" y="199.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#202020">gravação</text>
+  <polyline points="575,290 575,400" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="575,290 580.0,302.0 570.0,302.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="575,400 570.0,388.0 580.0,388.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="675" y="338.75" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#202020">consulta</text>
+  <text x="675" y="366.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#202020">documental</text>
+  <polyline points="770,460 900,460" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="770,460 782.0,455.0 782.0,465.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="900,460 888.0,465.0 888.0,455.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="835" y="442.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#202020">inferência</text>
+  <polyline points="575,520 575,650" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="575,520 580.0,532.0 570.0,532.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="575,650 570.0,638.0 580.0,638.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="670" y="593.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#202020">busca local</text>
+  <polyline points="265,665 405,665" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="405,665 393.0,670.0 393.0,660.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="335" y="636.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#202020">gera índice</text>
+</svg>

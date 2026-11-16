@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="176.000mm" viewBox="0 0 1200 1320" role="img" aria-labelledby="title description">
+  <title id="title">Fluxo híbrido de menu e consulta documental</title>
+  <desc id="description">O ChatService trata comandos, onboarding e estado da conversa. Respostas locais e navegação não usam o RAG. Uma opção de menu com consulta usa a pergunta do JSON; texto livre usa a pergunta digitada. Os dois caminhos documentais recuperam contexto no FAISS e solicitam geração externa na Groq. O backend adapta o resultado, persiste e devolve ao adaptador do canal.</desc>
+  <rect width="1200" height="1320" fill="white" />
+  <rect x="430" y="25" width="340" height="90" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="600.0" y="62.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">Mensagem recebida</text>
+  <text x="600.0" y="96.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">ChatService</text>
+  <polyline points="600,115 600,170" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="600,170 595.0,158.0 605.0,158.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <polygon points="600,170 765,255 600,340 435,255" fill="#f0f0f0" stroke="#202020" stroke-width="2" stroke-linejoin="round" />
+  <text x="600" y="248.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Comando, estado</text>
+  <text x="600" y="279.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">e tipo de entrada</text>
+  <polyline points="435,255 190,255 190,425" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="190,425 185.0,413.0 195.0,413.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="310" y="226.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#202020">Sem consulta ao RAG</text>
+  <polyline points="600,340 600,425" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="600,425 595.0,413.0 605.0,413.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="690" y="373.625" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#202020">Menu com</text>
+  <text x="690" y="402.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#202020">consulta</text>
+  <polyline points="765,255 1010,255 1010,425" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="1010,425 1005.0,413.0 1015.0,413.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="890" y="226.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#202020">Texto livre</text>
+  <rect x="35" y="425" width="310" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="190.0" y="473.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Comando, onboarding</text>
+  <text x="190.0" y="504.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">ou resposta de menu</text>
+  <rect x="445" y="425" width="310" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="600.0" y="473.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Pergunta</text>
+  <text x="600.0" y="504.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">configurada no JSON</text>
+  <rect x="855" y="425" width="310" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="1010.0" y="472.375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">Pergunta em</text>
+  <text x="1010.0" y="506.125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" fill="#202020">texto livre</text>
+  <polyline points="600,535 600,585 805,585" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polyline points="1010,535 1010,585 805,585" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polyline points="805,585 805,635" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="805,635 800.0,623.0 810.0,623.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <rect x="520" y="635" width="570" height="110" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="805.0" y="682.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Recuperar trechos no FAISS</text>
+  <text x="805.0" y="717.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Montar pergunta + contexto</text>
+  <polyline points="805,745 805,825" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="805,825 800.0,813.0 810.0,813.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <rect x="575" y="825" width="460" height="95" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="805.0" y="864.75" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Gerar resposta</text>
+  <text x="805.0" y="899.75" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Groq externa</text>
+  <polyline points="805,920 805,1000" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="805,1000 800.0,988.0 810.0,988.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <rect x="540" y="1000" width="530" height="95" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="805.0" y="1040.625" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Adaptar resultado</text>
+  <text x="805.0" y="1071.875" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#202020">Personalização ou resposta de ausência</text>
+  <polyline points="805,1095 805,1145 660,1145 660,1190" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="660,1190 655.0,1178.0 665.0,1178.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <rect x="385" y="1190" width="550" height="100" rx="12" fill="white" stroke="#202020" stroke-width="2" />
+  <text x="660.0" y="1232.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Persistir resposta e auditoria</text>
+  <text x="660.0" y="1267.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#202020">Devolver ao adaptador</text>
+  <polyline points="190,535 190,1240 385,1240" fill="none" stroke="#202020" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="385,1240 373.0,1245.0 373.0,1235.0" fill="#202020" stroke="#202020" stroke-width="1" stroke-linejoin="round" />
+  <text x="330" y="863.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#202020">Sem consulta</text>
+  <text x="330" y="893.25" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#202020">documental</text>
+</svg>
