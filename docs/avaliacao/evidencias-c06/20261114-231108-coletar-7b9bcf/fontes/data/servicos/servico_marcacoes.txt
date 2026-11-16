@@ -1,0 +1,80 @@
+Serviço: Marcação de Consultas, Exames e Procedimentos (SUS – Vitória da Conquista)
+
+1. Onde posso agendar Exames e Consultas?
+Exames simples, consultas básicas e ultrassonografias = procure sua Unidade de Saúde
+Exames mais complexos, especialistas ou cirurgias = será encaminhado para a Central de Regulação (CRPEE)
+
+O que eu posso agendar na Unidade de Saúde da Família (USF) ou UBS?
+O usuário deve procurar a sua Unidade de Saúde da Família (USF) ou UBS para agendamento de:
+- Exames laboratoriais
+- Ultrassonografias (básicas)
+- Consultas ambulatoriais e algumas especialidades (conforme cota da unidade)
+- Atendimentos médicos, de enfermagem e odontologia
+- Atendimento com fisioteteapeuta, farmacêutico, nutricionista, psicólogo e profissional de educação física;
+- Procedimentos simples (curativos, aferição de pressão arterial, glicemia, medidas de peso, altura)
+
+O que eu posso agendar na Central de Regulação CRPEE?
+- Exames e procedimentos:
+* Ressonância magnética
+* Tomografia (com ou sem contraste)
+* Cintilografias
+* Densitometria óssea
+* Eletroneuromiografia
+* Colonoscopia e endoscopia (casos específicos)
+* Biópsias (mama, tireoide, próstata, medula óssea)
+* Ecocardiogramas especializados
+* Mamografia
+* Holter
+* MAPA
+* Teste ergométrico
+* Oxigenoterapia hiperbárica
+* Arteriografias (cerebral, renal, membros, carótidas)
+* Exames com sedação
+
+- Especialidades médicas:
+* Angiologia
+* Cardiologia
+* Dermatologia
+* Endocrinologia
+* Gastroenterologia
+* Geriatria
+* Ginecologia
+* Mastologia
+* Nefrologia
+* Neurologia
+* Oftalmologia
+* Ortopedia
+* Otorrinolaringologia
+* Pneumologia
+* Proctologia
+* Urologia
+* Infectologia
+
+Quais documentos são obrigatórios para qualquer marcação?
+O usuário deve apresentar:
+- Cartão do SUS (CNS) atualizado
+- RG e CPF
+- Comprovante de residência
+- Telefone de contato
+- Solicitação médica assinada e carimbada
+- Justificativa clínica ou CID no pedido
+
+Quais documentos são exigidos em procedimentos específicos?
+Na Central de Regulação (CRPEE): 
+- Tomografia, ressonância, cintilografia: exigem APAC
+- Biópsias: anexar resultado de ultrassonografia
+- Arteriografias: exames laboratoriais + APAC + relatório médico
+- Oxigenoterapia: relatório médico detalhado
+- Exames com sedação: ureia e creatinina recentes + questionário
+- Pacientes especiais: apresentar documentos como:
+* Carteira de oncologia
+* Laudo de Tratamento Fora do Domicílio (TFD)
+* Relatório de alta hospitalar
+* Comprovante de hemodiálise
+
+Pacientes oncológicos têm prioridade na marcação?
+Têm prioridade no agendamento na Central de Regulação (CRPEE):
+- Pacientes já em tratamento (com cadastro na UNACON)
+- Casos com diagnóstico confirmado (biópsia)
+- Casos com forte suspeita por exame de imagem
+OBSERVAÇÃO: A fila é gerenciada pela equipe de regulação conforme gravidade clínica.

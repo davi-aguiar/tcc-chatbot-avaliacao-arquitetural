@@ -2,7 +2,7 @@
 
 Versão 1, de 19/10/2026. Base: objetivos, metodologia e árvore preliminar do `PROJETO_DE_PESQUISA.docx`, consultado na pasta superior ao repositório. O documento de pesquisa não é alterado por este plano.
 
-O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 iniciou preparação em 12/11/2026, com [protocolo próprio](C05-protocolo.md), sem respostas reais ou julgamento de fidelidade; C06 permanece prospectivo.
+O recorte contempla seis cenários, um por atributo previsto no projeto. Eles combinam execução controlada e inspeção arquitetural; não são seis experimentos de mesma dimensão. C01 permanece encerrado. C02 foi encerrado com ressalvas em 05/11/2026; seus resultados estão no [relatório](C02-relatorio-execucao.md). C03 concluiu em 08/11/2026 a coleta de [falhas imediatas, C03-A](C03-relatorio-execucao.md), e o [adendo de concorrência, C03-B](C03-B-relatorio-execucao.md), solicitado posteriormente pelo autor. C03-A atende ao critério de retomada; C03-B demonstra bloqueio e timeout, sem aprovação geral de disponibilidade. C04 foi encerrado com ressalvas em 09/11/2026: [16 casos offline aprovados](C04-relatorio-execucao.md), com componentes internos reais e substitutos externos. As definições originais abaixo são mantidas como plano prévio, com resultados e ampliação de escopo indicados separadamente. C05 foi encerrado com revisão assistida do autor em 14/11/2026: [fidelidade atendida apenas na amostra e completude parcial](C05-relatorio-execucao.md). C06 foi encerrado com ressalvas: parcialmente atendido no recorte, com revisão interpretativa do autor concluída.
 
 ## Relação com os objetivos
 
@@ -11,7 +11,9 @@ O recorte contempla seis cenários, um por atributo previsto no projeto. Eles co
 | Documentar a arquitetura atual | [Documentação arquitetural](../02-arquitetura.md), conferida contra o código da versão de corte |
 | Sistematizar atributos e cenários, incluindo segurança/confidencialidade | Esta árvore, com seis cenários e justificativas de prioridade |
 | Aplicar avaliação baseada no ATAM | Protocolos e relatórios por cenário, com evidências e limitações |
-| Identificar riscos, sensibilidades e trade-offs e propor melhorias | Síntese conjunta após a avaliação dos seis cenários, distinguindo achados de recomendações |
+| Identificar riscos, sensibilidades e trade-offs e propor melhorias | [Matriz de síntese dos seis cenários](matriz-sintese-arquitetural.md), com 14 enquadramentos e prioridades das dez recomendações confirmados pelo autor, sem implementação nesta etapa |
+
+**Síntese após as coletas:** a matriz, criada em 14/11/2026, reúne 14 achados e 10 propostas de manutenção com verificação futura. A [revisão assistida](revisao-matriz.json) dos 14 enquadramentos e das prioridades das dez recomendações foi concluída pelo autor; as melhorias continuam propostas de manutenção não implementadas. A síntese não altera o plano original ou os julgamentos dos cenários. A discussão com a literatura e a conclusão do TCC permanecem etapas de análise/redação posteriores.
 
 ## Estrutura e prioridades
 
@@ -33,8 +35,8 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 | C02 | Alta | Média | Dependência de inferência externa e reconstrução do índice; encerrado com ressalvas, análise descritiva |
 | C03 | Alta | Média | Coletas concluídas: retomada após falhas imediatas preservada; concorrência apresenta bloqueio e timeout, sem aprovação geral de disponibilidade |
 | C04 | Média | Média | Encerrado com ressalvas: 16/16 casos do núcleo RAG sem rede/credenciais/pesos; isolamento depende de ajustes em estado global e diretório |
-| C05 | Alta | Alta | Geração não determinística exige conferir cada resposta contra seu contexto; em preparação, sem respostas reais coletadas |
-| C06 | Alta | Média | Fluxo externo e persistência podem expor dados além do necessário; planejado |
+| C05 | Alta | Alta | Encerrado com ressalvas: 12 respostas revisadas pelo autor; fidelidade atendida na amostra, quatro abstenções e uma resposta truncada com completude parcial |
+| C06 | Alta | Média | Encerrado com ressalvas: parcialmente atendido por falha de logs em D04/D06; revisão interpretativa concluída |
 
 ## C01 — Modificabilidade: inclusão de serviço
 
@@ -108,7 +110,7 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 
 ## C05 — Confiabilidade: fidelidade ao contexto documental
 
-**Atualização de 12/11/2026:** [protocolo e matriz fixados](C05-protocolo.md); [preparação local preservada](evidencias-c05/README.md). Recuperação verificada nas seis perguntas; geração real e revisão pelo autor pendentes. O plano original abaixo permanece como referência prospectiva.
+**Atualização de 14/11/2026:** [protocolo e matriz](C05-protocolo.md) executados em duas rodadas, com 12 respostas do modelo alternativo explícito `openai/gpt-oss-120b`. A [análise preliminar](C05-relatorio-execucao.md) identificou apoio nas afirmações examinadas, quatro abstenções exatas e uma resposta truncada: 28 fatos esperados completos, um parcial e um omitido, com contexto suficiente. As [evidências](evidencias-c05/README.md) preservam a preparação histórica e o novo lote. Conferência técnica e revisão assistida do autor concluídas: [fidelidade atendida apenas na amostra e completude parcial](evidencias-c05/julgamento-final.json), sem revisões pendentes. O plano original abaixo permanece como referência prospectiva.
 
 | Elemento do cenário | Definição |
 |---|---|
@@ -126,6 +128,8 @@ As prioridades de importância retomam a proposta; as dificuldades são estimati
 **Limites:** avaliação de fidelidade documental pelo autor, não validação clínica, experiência do cidadão ou garantia de ausência de alucinação. A resposta única do C01 é evidência daquele percurso, não resultado deste conjunto.
 
 ## C06 — Segurança/confidencialidade: fluxo e minimização de dados
+
+**Atualização de 14/11/2026:** [coleta concluída](C06-relatorio-execucao.md) conforme [protocolo prévio](C06-protocolo.md): 14 observações válidas, 12 pedidos locais, dois controles e zero tentativas externas. Minimização automática atendida nos pedidos; texto livre integral exposto em quatro logs de falha D04/D06. O [julgamento final](evidencias-c06/julgamento-final.json) confirma parcialmente atendido no recorte, após concordância explícita do autor com a síntese e os limites apresentados. Foram aprovadas 381 verificações estruturais e quatro testes de conferência. A [preparação histórica](evidencias-c06/README.md) permanece separada; o plano original abaixo é mantido.
 
 | Elemento do cenário | Definição |
 |---|---|

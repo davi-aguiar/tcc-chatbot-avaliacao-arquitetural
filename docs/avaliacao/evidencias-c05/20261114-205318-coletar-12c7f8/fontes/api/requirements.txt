@@ -1,0 +1,13 @@
+# Versoes fixadas para o build ser reproduzivel: sem isso o CI quebra sozinho
+# no dia em que qualquer uma destas lancar versao nova.
+# Para atualizar: instale sem os pins num venv limpo e rode `pip freeze`.
+fastapi==0.140.13
+uvicorn==0.51.0
+sqlalchemy==2.0.51
+alembic==1.18.5
+psycopg2-binary==2.9.12
+pydantic==2.13.4
+python-dotenv==1.2.2
+python-multipart==0.0.32
+requests==2.34.2
+twilio==9.10.9

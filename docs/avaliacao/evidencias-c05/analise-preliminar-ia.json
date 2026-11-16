@@ -1,0 +1,1196 @@
+{
+  "lote": "20261114-205318-coletar-12c7f8",
+  "natureza": "Leitura semântica preliminar pelo assistente de IA, formatada com apoio de script; não é avaliação humana ou nota automática do executor.",
+  "aprovacao_global": "pendente_revisao_humana",
+  "fichas_humanas_preservadas": true,
+  "resumo": {
+    "respostas": 12,
+    "afirmacoes_examinadas_ia": 49,
+    "fatos_esperados": {
+      "presente": 28,
+      "parcial_sem_bairro_Centro": 1,
+      "omitido": 1
+    },
+    "abstencoes_exatas": 4,
+    "respostas_truncadas": 1,
+    "tentativas_http": 23,
+    "status_http": {
+      "200": 12,
+      "429": 11
+    }
+  },
+  "revisoes": [
+    {
+      "id": "P01-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+          "fragmento_resposta": "1. **Solicitação médica** – O médico da sua Unidade Básica de Saúde (UBS) deve solicitar o exame durante a consulta.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Entregar a solicitação na unidade básica para agendamento.",
+          "fragmento_resposta": "2. **Entrega da solicitação** – Leve a solicitação de procedimento à própria UBS para que o agendamento seja feito.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Aguardar o contato da equipe da unidade básica.",
+          "fragmento_resposta": "3. **Aguarde o contato** – Espere a equipe da UBS entrar em contato informando a data e o horário disponíveis.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Comparecer ao CEMAE no dia e horário agendados.",
+          "fragmento_resposta": "4. **Compareça ao CEMAE** – No dia e horário agendados, vá ao CEMAE (Avenida Olívia Flores, 3000, Bairro Candeias) para realizar o exame.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O CEMAE fica na Avenida Olívia Flores, 3000, Bairro Candeias.",
+          "fragmento_resposta": "4. **Compareça ao CEMAE** – No dia e horário agendados, vá ao CEMAE (Avenida Olívia Flores, 3000, Bairro Candeias) para realizar o exame.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Avenida Olívia Flores, 3000, Bairro Candeias"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "Entregar a solicitação na unidade básica para agendamento.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Aguardar o contato da equipe da unidade básica.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "Comparecer ao CEMAE no dia e horário agendados.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "O contato que informa/confirma data e horário foi interpretado como paráfrase conjunta de aguardar contato e comparecer após agendamento, não como nova etapa."
+      ]
+    },
+    {
+      "id": "P02-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "É necessário encaminhamento médico.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O encaminhamento deve conter diagnóstico de asma grave com CID.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário boleto de marcação.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário CPF.",
+          "fragmento_resposta": "- CPF e RG  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "CPF / RG"
+            },
+            {
+              "chunk": 2,
+              "fonte": "servico_marcacoes.txt",
+              "trecho_literal": "RG e CPF"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário RG.",
+          "fragmento_resposta": "- CPF e RG  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "CPF / RG"
+            },
+            {
+              "chunk": 2,
+              "fonte": "servico_marcacoes.txt",
+              "trecho_literal": "RG e CPF"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Cartão SUS.",
+          "fragmento_resposta": "- Cartão SUS  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Cartão SUS"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Comprovante de residência atualizado.",
+          "fragmento_resposta": "- Comprovante de residência atualizado",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Comprovante de residência atualizado"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "CPF / RG.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Cartão SUS.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Cartão SUS"
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "Comprovante de residência atualizado.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Comprovante de residência atualizado"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "CPF e RG normaliza CPF / RG da fonte do programa; o chunk 2, sobre documentos para qualquer marcação, também diz RG e CPF. Não foram acrescentados requisitos de outros serviços."
+      ]
+    },
+    {
+      "id": "P03-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "O CAPS II fica na Avenida Régis Pacheco, 770, Centro.",
+          "fragmento_resposta": "Avenida Régis Pacheco, 770, Centro – [link no mapa](https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+          "fragmento_resposta": "Avenida Régis Pacheco, 770, Centro – [link no mapa](https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O CAPS II funciona de segunda a sexta-feira.",
+          "fragmento_resposta": "- Segunda a sexta‑feira: **08:00 às 18:00**  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Segunda a sexta-feira"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O horário geral do CAPS II é das 08:00 às 18:00.",
+          "fragmento_resposta": "- Segunda a sexta‑feira: **08:00 às 18:00**  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O funcionamento do CAPS II tem exceção na quinta-feira à tarde.",
+          "fragmento_resposta": "- **Exceção:** nas **quintas‑feiras à tarde** o serviço fica fechado devido a reunião interna da equipe.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "A exceção se deve à reunião interna da equipe.",
+          "fragmento_resposta": "- **Exceção:** nas **quintas‑feiras à tarde** o serviço fica fechado devido a reunião interna da equipe.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "Avenida Régis Pacheco, 770, Centro.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "Segunda a sexta-feira.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Segunda a sexta-feira"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Das 08:00 às 18:00, exceto quinta-feira à tarde por reunião interna da equipe.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": {
+        "conflito_presente_no_contexto": true,
+        "trecho_conflitante": {
+          "chunk": 3,
+          "fonte": "servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+          "trecho_literal": "Onde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias"
+        },
+        "fonte_especifica": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        },
+        "observacao_ia": "O texto produzido escolheu a fonte específica do CAPS II; o conflito de curadoria permanece na base."
+      },
+      "observacoes": []
+    },
+    {
+      "id": "P04-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [],
+      "fatos_esperados": [],
+      "recuperacao_ia": "pertinencia_tematica_sem_informacao_solicitada",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "nao_aplicavel",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "A frase de ausência é metalinguística e não acrescenta fatos sobre o serviço; a lacuna foi conferida na leitura do corpus antes da geração. Contexto temático não contém resposta à pergunta."
+      ]
+    },
+    {
+      "id": "P05-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [],
+      "fatos_esperados": [],
+      "recuperacao_ia": "pertinencia_tematica_sem_informacao_solicitada",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "nao_aplicavel",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "A frase de ausência é metalinguística e não acrescenta fatos sobre o serviço; a lacuna foi conferida na leitura do corpus antes da geração. Contexto temático não contém resposta à pergunta."
+      ]
+    },
+    {
+      "id": "P06-R1",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+          "fragmento_resposta": "- **CAPS II** – Cuida de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 6,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+          "fragmento_resposta": "- **CAPS AD III** – Atende pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O endereço parcialmente apresentado para o CAPS II é Avenida Régis Pacheco, 770.",
+          "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770,",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 5,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 6,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "CAPS II: Avenida Régis Pacheco, 770, Centro.",
+          "presenca_resposta_ia": "parcial_sem_bairro_Centro",
+          "apoio_contexto": {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "CAPS AD III: Rua T, 417, Bairro Felícia.",
+          "presenca_resposta_ia": "omitido",
+          "apoio_contexto": {
+            "chunk": 3,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "Rua T, 417, Bairro Felícia"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "parcial",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": {
+        "conflito_presente_no_contexto": true,
+        "trecho_conflitante": {
+          "chunk": 4,
+          "fonte": "servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+          "trecho_literal": "Onde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias"
+        },
+        "fonte_especifica": {
+          "chunk": 5,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        },
+        "observacao_ia": "O texto produzido escolheu a fonte específica do CAPS II; o conflito de curadoria permanece na base."
+      },
+      "observacoes": [
+        "finish_reason=length; 500 tokens de saída, 406 classificados pelo provedor como raciocínio. O endereço do CAPS II termina após 770, sem Centro; endereço do CAPS AD III omitido. Contexto suficiente: incompletude na geração/configuração, sem falha de recuperação para esses fatos."
+      ]
+    },
+    {
+      "id": "P01-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+          "fragmento_resposta": "1. Durante a consulta na Unidade Básica de Saúde (UBS), o médico solicita o exame.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Entregar a solicitação na unidade básica para agendamento.",
+          "fragmento_resposta": "2. Leve a solicitação de procedimento à própria UBS para que o agendamento seja feito.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Aguardar o contato da equipe da unidade básica.",
+          "fragmento_resposta": "3. Aguarde o contato da equipe da UBS confirmando a data e o horário.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Comparecer ao CEMAE no dia e horário agendados.",
+          "fragmento_resposta": "4. Compareça ao CEMAE, na Avenida Olívia Flores, 3000 (Bairro Candeias), no dia e horário agendados.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O CEMAE fica na Avenida Olívia Flores, 3000, Bairro Candeias.",
+          "fragmento_resposta": "4. Compareça ao CEMAE, na Avenida Olívia Flores, 3000 (Bairro Candeias), no dia e horário agendados.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_espirometria.txt",
+              "trecho_literal": "Avenida Olívia Flores, 3000, Bairro Candeias"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "O médico solicita o exame durante consulta na unidade básica de saúde.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "O médico solicita o exame durante a consulta na unidade básica de saúde."
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "Entregar a solicitação na unidade básica para agendamento.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Entregue a solicitação de procedimento na unidade básica de saúde para que seja agendado."
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Aguardar o contato da equipe da unidade básica.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Aguarde o contato da equipe da unidade básica de saúde."
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "Comparecer ao CEMAE no dia e horário agendados.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_espirometria.txt",
+            "trecho_literal": "Após agendamento, compareça ao CEMAE no dia e horário agendados."
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "O contato que informa/confirma data e horário foi interpretado como paráfrase conjunta de aguardar contato e comparecer após agendamento, não como nova etapa."
+      ]
+    },
+    {
+      "id": "P02-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "É necessário encaminhamento médico.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O encaminhamento deve conter diagnóstico de asma grave com CID.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário boleto de marcação.",
+          "fragmento_resposta": "- Encaminhamento médico com diagnóstico de asma grave (CID) e boleto de marcação  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário CPF.",
+          "fragmento_resposta": "- CPF e RG  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "CPF / RG"
+            },
+            {
+              "chunk": 2,
+              "fonte": "servico_marcacoes.txt",
+              "trecho_literal": "RG e CPF"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "É necessário RG.",
+          "fragmento_resposta": "- CPF e RG  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "CPF / RG"
+            },
+            {
+              "chunk": 2,
+              "fonte": "servico_marcacoes.txt",
+              "trecho_literal": "RG e CPF"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Cartão SUS.",
+          "fragmento_resposta": "- Cartão SUS  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Cartão SUS"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Comprovante de residência atualizado.",
+          "fragmento_resposta": "- Comprovante de residência atualizado",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_programa_asma_grave.txt",
+              "trecho_literal": "Comprovante de residência atualizado"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Encaminhamento médico com diagnóstico de asma grave (CID) com boleto de marcação"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "CPF / RG.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "CPF / RG"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Cartão SUS.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Cartão SUS"
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "Comprovante de residência atualizado.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_programa_asma_grave.txt",
+            "trecho_literal": "Comprovante de residência atualizado"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "CPF e RG normaliza CPF / RG da fonte do programa; o chunk 2, sobre documentos para qualquer marcação, também diz RG e CPF. Não foram acrescentados requisitos de outros serviços."
+      ]
+    },
+    {
+      "id": "P03-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "O CAPS II fica na Avenida Régis Pacheco, 770, Centro.",
+          "fragmento_resposta": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+          "fragmento_resposta": "**Endereço do CAPS II:** Avenida Régis Pacheco, 770 – Centro (https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6)  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O CAPS II funciona de segunda a sexta-feira.",
+          "fragmento_resposta": "- Segunda a sexta‑feira: 08:00 às 18:00  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Segunda a sexta-feira"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O horário geral do CAPS II é das 08:00 às 18:00.",
+          "fragmento_resposta": "- Segunda a sexta‑feira: 08:00 às 18:00  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O funcionamento do CAPS II tem exceção na quinta-feira à tarde.",
+          "fragmento_resposta": "- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "A exceção se deve à reunião interna da equipe.",
+          "fragmento_resposta": "- **Exceção:** nas quintas‑feiras à tarde o serviço fica fechado devido a reunião interna da equipe.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "Avenida Régis Pacheco, 770, Centro.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "Segunda a sexta-feira.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Segunda a sexta-feira"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "Das 08:00 às 18:00, exceto quinta-feira à tarde por reunião interna da equipe.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": {
+        "conflito_presente_no_contexto": true,
+        "trecho_conflitante": {
+          "chunk": 3,
+          "fonte": "servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+          "trecho_literal": "Onde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias"
+        },
+        "fonte_especifica": {
+          "chunk": 1,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        },
+        "observacao_ia": "O texto produzido escolheu a fonte específica do CAPS II; o conflito de curadoria permanece na base."
+      },
+      "observacoes": []
+    },
+    {
+      "id": "P04-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [],
+      "fatos_esperados": [],
+      "recuperacao_ia": "pertinencia_tematica_sem_informacao_solicitada",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "nao_aplicavel",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "A frase de ausência é metalinguística e não acrescenta fatos sobre o serviço; a lacuna foi conferida na leitura do corpus antes da geração. Contexto temático não contém resposta à pergunta."
+      ]
+    },
+    {
+      "id": "P05-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [],
+      "fatos_esperados": [],
+      "recuperacao_ia": "pertinencia_tematica_sem_informacao_solicitada",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "nao_aplicavel",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": null,
+      "observacoes": [
+        "A frase de ausência é metalinguística e não acrescenta fatos sobre o serviço; a lacuna foi conferida na leitura do corpus antes da geração. Contexto temático não contém resposta à pergunta."
+      ]
+    },
+    {
+      "id": "P06-R2",
+      "estado": "preliminar_ia_pendente_autor",
+      "revisor": "Assistente de IA",
+      "afirmacoes": [
+        {
+          "afirmacao_atomica": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+          "fragmento_resposta": "- **CAPS II** – É um serviço especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 6,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+          "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "CAPS II: Avenida Régis Pacheco, 770, Centro.",
+          "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 5,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "CAPS AD III: Rua T, 417, Bairro Felícia.",
+          "fragmento_resposta": "- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 3,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "Rua T, 417, Bairro Felícia"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O CAPS AD III oferece acompanhamento voltado à reabilitação psicossocial.",
+          "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários."
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O cuidado do CAPS AD III é orientado pela redução de danos.",
+          "fragmento_resposta": "- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O link do mapa do CAPS AD III é https://maps.app.goo.gl/A73BUzkxT5gdbGTx5.",
+          "fragmento_resposta": "- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  ",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 3,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "https://maps.app.goo.gl/A73BUzkxT5gdbGTx5"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "O link do mapa do CAPS II é https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6.",
+          "fragmento_resposta": "- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 5,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Os serviços têm públicos descritos de forma diferente, sem afirmar exclusividade ou ausência de sobreposição.",
+          "fragmento_resposta": "Portanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 6,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+            },
+            {
+              "chunk": 1,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+            }
+          ]
+        },
+        {
+          "afirmacao_atomica": "Os dois serviços ficam em endereços distintos.",
+          "fragmento_resposta": "Portanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+          "julgamento_ia": "sustentada",
+          "apoio": [
+            {
+              "chunk": 5,
+              "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+              "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+            },
+            {
+              "chunk": 3,
+              "fonte": "servico_caps_ad_iii.txt",
+              "trecho_literal": "Rua T, 417, Bairro Felícia"
+            }
+          ]
+        }
+      ],
+      "fatos_esperados": [
+        {
+          "id": "F01",
+          "fato": "CAPS II: adultos de 18 anos ou mais com transtornos mentais graves e persistentes.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 6,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "adultos (18 anos ou mais) com transtornos mentais graves e persistentes"
+          }
+        },
+        {
+          "id": "F02",
+          "fato": "CAPS II: Avenida Régis Pacheco, 770, Centro.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 5,
+            "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+            "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+          }
+        },
+        {
+          "id": "F03",
+          "fato": "CAPS AD III: pessoas com necessidades decorrentes do uso de álcool e outras drogas.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 1,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "pessoas com necessidades específicas decorrente do uso de álcool e outras drogas"
+          }
+        },
+        {
+          "id": "F04",
+          "fato": "CAPS AD III: Rua T, 417, Bairro Felícia.",
+          "presenca_resposta_ia": "presente",
+          "apoio_contexto": {
+            "chunk": 3,
+            "fonte": "servico_caps_ad_iii.txt",
+            "trecho_literal": "Rua T, 417, Bairro Felícia"
+          }
+        }
+      ],
+      "recuperacao_ia": "suficiente_para_fatos_esperados",
+      "fidelidade_ia": "nenhuma_afirmacao_sem_apoio_identificada",
+      "completude_ia": "completa",
+      "abstencao_adequada_ia": true,
+      "confusao_servicos_observada_ia": false,
+      "ambiguidade_documental": {
+        "conflito_presente_no_contexto": true,
+        "trecho_conflitante": {
+          "chunk": 4,
+          "fonte": "servico_ambulatorio_saude_mental_atencao_a_adultos.txt",
+          "trecho_literal": "Onde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias"
+        },
+        "fonte_especifica": {
+          "chunk": 5,
+          "fonte": "servico_caps_ii_centro_atencao_psicossocial.txt",
+          "trecho_literal": "Avenida Régis Pacheco, 770, Centro"
+        },
+        "observacao_ia": "O texto produzido escolheu a fonte específica do CAPS II; o conflito de curadoria permanece na base."
+      },
+      "observacoes": []
+    }
+  ]
+}

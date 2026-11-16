@@ -1,0 +1,34 @@
+{
+  "data_utc": "2026-11-15T00:05:11.164065+00:00",
+  "lote": "20261114-205318-coletar-12c7f8",
+  "testes_instrumento": {
+    "comando": "python -m pytest -q docs/avaliacao/c05/test_instrumento.py",
+    "aprovados": 14,
+    "duracao_s": 9.19,
+    "momento": "antes_da_coleta"
+  },
+  "suite_existente": {
+    "comando": "python -m pytest -q tests",
+    "aprovados": 244,
+    "duracao_s": 5.23,
+    "momento": "separada_durante_a_coleta"
+  },
+  "lint_conferidor": "aprovado",
+  "compilacao_conferidor": "aprovada",
+  "git_diff_check": "aprovado",
+  "conferidor_negativos_em_copia_temporaria": {
+    "prompt_alterado_rejeitado": true,
+    "copia_corrompida_rejeitada": true
+  },
+  "analise_preliminar": {
+    "fichas": 12,
+    "afirmacoes": 49,
+    "apoios_literais_conferidos": 93,
+    "fragmentos_resposta_conferidos": true,
+    "aviso": "Conferencia de correspondencia textual, sem substituir revisao semantica humana."
+  },
+  "fichas_humanas_pendentes": true,
+  "credencial_ausente_dos_artefatos_verificados": true,
+  "env_ignorado_pelo_git": true,
+  "codigo_funcional_corpus_testes_sem_diff": true
+}

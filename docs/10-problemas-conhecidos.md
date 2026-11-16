@@ -1,6 +1,6 @@
 # 10 — Problemas conhecidos e limitações abertas
 
-Revisão em 08/11/2026, sobre `65e28a0`, após C01–C03. O conteúdo funcional permanece igual ao corte `666b601`. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nesta revisão.
+Registro inicial de 08/11/2026, sobre `65e28a0`, após C01–C03; atualizado com os fechamentos de C04–C06 e a síntese de 14/11/2026. Os itens distinguem implementação inspecionada, problemas observados e funcionalidades ausentes; não atribuem intenção histórica sem registro. Nenhuma correção funcional foi aplicada nessas atualizações. A [matriz de síntese](avaliacao/matriz-sintese-arquitetural.md) relaciona os achados às decisões e registra as prioridades de manutenção confirmadas pelo autor; as melhorias não foram implementadas nesta etapa.
 
 ## 1. Operações síncronas bloqueiam outras requisições
 
@@ -42,10 +42,10 @@ Não há avaliação completa de atomicidade, consistência sob falhas de banco 
 
 Os [modelos](../api/models/models.py) relacionam mensagens textuais, usuário, nome e identificador. O código inspecionado não aplica criptografia de campo nem define rotina de expurgo/prazo de retenção. Isso não permite concluir se a infraestrutura utiliza criptografia de disco, controles de backup ou acesso ao banco: esses controles não foram verificados.
 
-Caminhos de erro também podem registrar pergunta ou exceção em logs. [C06](avaliacao/arvore-de-utilidade.md#c06--segurançaconfidencialidade-fluxo-e-minimização-de-dados) permanece planejado para avaliar fluxo e minimização com dados sintéticos. Definições institucionais de retenção, acesso e uso dos dados continuam fora do que o código, isoladamente, comprova. A revisão técnica não constitui avaliação jurídica ou certificação de conformidade.
+[C06](avaliacao/C06-relatorio-execucao.md) reproduziu a gravação do texto livre integral em quatro emissões de erro operacional D04/D06, incluindo relato fictício e, em D06, nome/identificador autodeclarados. A origem é `logger.exception` no tratamento de falha do NLP; os eventos de auditoria não contêm a pergunta no recorte, mas incluem o identificador cadastrado. O cenário foi encerrado como parcialmente atendido no recorte, com revisão interpretativa do autor concluída; a falha não foi corrigida no corte avaliado. Definições institucionais de retenção, acesso e uso dos dados continuam fora do que o código, isoladamente, comprova. A revisão técnica não constitui avaliação jurídica ou certificação de conformidade.
 
 ## 8. Testes de navegação não cobrem todo o núcleo RAG
 
 O [CI](../.github/workflows/ci.yml) não instala `app/requirements.txt`; seus testes e cobertura de API não avaliam toda a recuperação/geração. Os instrumentos locais C03 exercitaram componentes reais com substituição de fronteiras, mas isso não equivale a cobertura sistemática do núcleo ou avaliação da qualidade documental.
 
-C04 e C05 permanecem planejados para isolamento/testabilidade e fidelidade, respectivamente. As versões livres do stack RAG também exigem consultar o inventário de cada execução; versões do ambiente do autor e do CI não devem ser presumidas iguais.
+[C04](avaliacao/C04-relatorio-execucao.md) concluiu 16 casos locais offline com componentes internos reais e substitutos nas fronteiras; isso não demonstra execução dessa suíte no CI. [C05](avaliacao/C05-relatorio-execucao.md) concluiu a amostra de fidelidade com revisão assistida e completude parcial. As versões livres do stack RAG exigem consultar o inventário de cada execução; versões do ambiente do autor e do CI não devem ser presumidas iguais. Incorporar a suíte offline ao CI permanece proposta de manutenção, como registrado em A07 da matriz.

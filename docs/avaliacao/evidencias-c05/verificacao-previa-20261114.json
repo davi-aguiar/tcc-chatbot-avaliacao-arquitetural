@@ -1,0 +1,23 @@
+{
+  "data_local": "2026-11-14",
+  "commit_preparacao": "c3df19c",
+  "referencia_funcional": "ffcd30fe07cbf281a030a14d481d3eee5533db5c",
+  "momento": "Antes das 12 inferências reais desta sessão",
+  "testes_instrumento": {"comando": "python -m pytest -q docs/avaliacao/c05/test_instrumento.py", "aprovados": 14, "duracao_s": 9.19},
+  "python_funcional_e_corpus_sem_diff_entre_commits": true,
+  "pesos_locais_presentes": true,
+  "credencial_local_presente": true,
+  "consulta_modelos_http_status": 200,
+  "modelo_padrao_listado": false,
+  "modelo_escolhido": "openai/gpt-oss-120b",
+  "modelo_escolhido_listado": true,
+  "configuracao_adaptada": true,
+  "justificativa_modelo": "Modelo padrão ausente da listagem atual da conta; alternativo previsto no protocolo e escolhido explicitamente antes da coleta, sem alterar a aplicação.",
+  "leitura_corpus": {
+    "documentos_txt_lidos": 17,
+    "responsavel": "Assistente de IA; conferência humana permanece prevista no protocolo",
+    "P04": "O corpus descreve acesso, finalidade e documentos da espirometria, mas não exige nem dispensa jejum e não informa duração de preparo.",
+    "P05": "O corpus descreve solicitação, entrega na UBS, espera pelo contato e comparecimento agendado para eletrocardiograma; não fixa prazo máximo em dias. A descrição de exame rápido não estabelece prazo de agendamento. Os 30 dias do relatório de oxigenoterapia referem-se a outro serviço e à idade do documento.",
+    "P03_P06": "Preservada a seção conflitante sobre endereço do CAPS II no documento do Ambulatório; não será corrigida durante o ensaio."
+  }
+}

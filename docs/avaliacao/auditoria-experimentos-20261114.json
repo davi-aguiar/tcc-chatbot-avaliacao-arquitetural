@@ -1,0 +1,97 @@
+{
+  "data_utc": "2026-11-15T00:24:16.854156+00:00",
+  "commit_referencia": "83e54b4e0b70faa8108e4e87c07edebcc938b3a5",
+  "metodo": "Leitura de protocolos, relatorios, indices e artefatos; conferencia local de JSON, links, hashes, matrizes e verificadores existentes. Sem repetir coletas ou chamar provedores.",
+  "jsons_validos": 141,
+  "documentos_com_links_locais_conferidos": 19,
+  "links_ausentes": [],
+  "cenarios": [
+    {
+      "cenario": "C01",
+      "estado": "encerrado_com_ressalvas",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "etapas_A": 13,
+        "etapas_B": 18,
+        "etapas_integracao_real_adaptada": 6
+      },
+      "ressalvas": "C01-B parcial na configuracao original; integracao completa no ensaio adaptado. Modelo padrao e custos nao medidos permanecem limites/manutencao."
+    },
+    {
+      "cenario": "C02",
+      "estado": "encerrado_descritivo_com_ressalvas",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "mensagens_medidas_adaptado": 45,
+        "sucessos_medidos_adaptado": 45,
+        "inicializacoes": 3,
+        "hashes_por_lote_principal": 67
+      },
+      "ressalvas": "Sem requisito previo de latencia para aprovacao. Falhas do padrao e impedimentos historicos preservados; protocolos antigos conferidos na versao de cada lote."
+    },
+    {
+      "cenario": "C03-A",
+      "estado": "encerrado_com_ressalvas",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "casos": 12,
+        "criterios_atendidos": 12,
+        "mensagens_retomada": 48,
+        "hashes_conferidos": 68
+      },
+      "ressalvas": "Assimetria de comunicacao/auditoria e alcance de falhas imediatas sao resultados, sem aprovacao geral de disponibilidade."
+    },
+    {
+      "cenario": "C03-B",
+      "estado": "encerrado_com_ressalvas",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "rajadas_controladas": 21,
+        "rajadas_reais": 2,
+        "verificacoes_atuais_por_lote": 11,
+        "dois_lotes_validos": true
+      },
+      "ressalvas": "Bloqueio e timeout sob concorrencia demonstrados; causa exata do incidente anterior nao comprovada; filas e alteracoes de arquitetura nao comparadas."
+    },
+    {
+      "cenario": "C04",
+      "estado": "encerrado_com_ressalvas",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "casos": 16,
+        "aprovados": 16,
+        "verificacoes_atuais": 18,
+        "lote_valido": true
+      },
+      "ressalvas": "Isolamento com substitutos externos; cobertura nao comprova fidelidade geral."
+    },
+    {
+      "cenario": "C05",
+      "estado": "coleta_completa_julgamento_pendente",
+      "pendencias_de_coleta": [],
+      "evidencia": {
+        "respostas_reais": 12,
+        "verificacoes_atuais": 167,
+        "lote_valido": true,
+        "fichas_humanas_pendentes": 12
+      },
+      "pendencias_de_fechamento": [
+        "Revisao semantica das 12 respostas pelo autor conforme C05-protocolo.md.",
+        "Registro do julgamento final e atualizacao coerente do relatorio e dos indices."
+      ],
+      "ressalvas": "Truncamento de P06-R1 e conflito documental sao achados preservados; nao exigem repeticao seletiva nem correcao funcional para encerrar a amostra."
+    }
+  ],
+  "reprodutibilidade": {
+    "problema_identificado": "Conversao LF para CRLF no checkout de fontes e copias instrumentais C03/C03-B.",
+    "correcao": "Restaurados os finais LF somente apos correspondencia exata ao SHA-256 original; regras eol=lf adicionadas ao .gitattributes.",
+    "arquivos_locais_com_bytes_restaurados": 17,
+    "conteudo_textual_alterado": false,
+    "resultados_originais_alterados": false,
+    "coletas_repetidas": false
+  },
+  "pendencias_experimentais_obrigatorias": [
+    "C05: revisao humana e julgamento final."
+  ],
+  "C06_preparacao_iniciada": false
+}

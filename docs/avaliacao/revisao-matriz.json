@@ -1,0 +1,200 @@
+{
+  "objeto": "matriz-sintese-arquitetural.md",
+  "estado": "revisao_concluida",
+  "metodo": "Revisao assistida na conversa, por achado apresentado.",
+  "confirmacoes": [
+    {
+      "achado": "M01",
+      "commit_versao_apresentada": "d09cf13d26146cb15061eb63970f11af82f1f2cd",
+      "matriz_sha256_versao_apresentada": "7106ff3fb8a07fe12124ee99e0b4bf1203a1e5996b6973370ca600593c371587",
+      "data_registro_utc": "2026-11-15T02:48:57.733033+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Evidencia favoravel a modificabilidade no cenario de extensao compativel exercitado, sem reducao de esforco humano quantificada; dependencia do provedor registrada como achado separado em M03.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M03",
+      "commit_versao_apresentada": "04826707884eb768aac39007444fea3a4902451e",
+      "matriz_sha256_versao_apresentada": "2fe14d54fb4a247c602950b5069fea2e4a2adecf0a14df271d45684807556663",
+      "data_registro_utc": "2026-11-15T02:58:50.986299+00:00",
+      "revisor": "Autor",
+      "trecho_confirmacao": "Sim, o modelo deveria ser definido nas env e não em código, como ocorre hoje.",
+      "interpretacao_confirmada": "Risco observado de disponibilidade associado ao modelo configurado nos ensaios e dificuldade adicional de manutencao pelo identificador fixo no codigo.",
+      "recomendacao_confirmada": "Definir o identificador do modelo por variavel de ambiente.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M04",
+      "commit_versao_apresentada": "a84a4a3fa7f7a340b3159651e1d26f268a3ffb44",
+      "matriz_sha256_versao_apresentada": "6f04218036837687fd137ffeb42a86e387c518707c90804cff1740dc62b7a3a6",
+      "data_registro_utc": "2026-11-15T03:11:17.695876+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Novas tentativas automaticas podem recuperar consultas recusadas temporariamente por quota, mas a espera sincrona contribui para bloqueio do atendimento compartilhado. O atraso observado nao foi atribuido exclusivamente aos retries.",
+      "recomendacao_confirmada": "Definir limites de espera e concorrencia e isolar a espera para evitar prejudicar outras conversas, com verificacao futura das alternativas.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M05",
+      "commit_versao_apresentada": "fcd75f8a52f31fc87a698cda60d4a7176ecdc932",
+      "matriz_sha256_versao_apresentada": "1e2293c05cbca1545ad5a1a63883869deb8164b28d99c30b9b81697406db1427",
+      "data_registro_utc": "2026-11-15T03:13:06.639273+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de disponibilidade e desempenho associado ao compartilhamento do atendimento com operacoes bloqueantes na configuracao testada de um worker. Esperas de inferencia e envio atrasaram outras requisicoes, inclusive menus estaticos, sem encerramento inesperado do processo.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M06",
+      "commit_versao_apresentada": "da43239c9db66aca6f5936e02c6e263b62ce86ac",
+      "matriz_sha256_versao_apresentada": "c28bb72b6d112b5abeb1e400af431f5091d20f6691a67197c98e227be8c25588",
+      "data_registro_utc": "2026-11-15T03:14:50.056388+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de comunicacao e rastreabilidade: falha tecnica no texto livre pode retornar opcao invalida e registrar MESSAGE_SENT, sem distinguir sucesso de inferencia. Preservam-se as evidencias favoraveis de reconhecimento das quatro abstencoes de C05 e retomada dos menus em C03-A, dentro dos respectivos recortes.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M07",
+      "commit_versao_apresentada": "5f970486f9ecb732136ed62f4d8f2465c24b160f",
+      "matriz_sha256_versao_apresentada": "fd486046ef235af04fa2886dedd5d68b79ebf193590525736431eb1af9004932",
+      "data_registro_utc": "2026-11-15T22:44:03.986185+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de consistencia e rastreabilidade entre historico, auditoria e resposta devolvida. No erro de consulta pelo menu, auditoria persiste sem o par atual de mensagens, enquanto texto livre persiste entrada e fallback. O recorte nao avalia atomicidade completa ou todas as falhas de banco.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M08",
+      "commit_versao_apresentada": "08513eac46c708c6762a66d3078960fd95ef2991",
+      "matriz_sha256_versao_apresentada": "9041be6a6a0670cd89167c21c2fdee2b9a3599e77dd73bdf28086381283ac9c3",
+      "data_registro_utc": "2026-11-15T23:01:14.847116+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Evidencia favoravel a testabilidade pelos 16 casos offline de C04 com componentes internos selecionados reais e substitutos nas fronteiras; risco de manutencao pela dependencia dos testes de detalhes internos, incluindo caminho de documentos e cache global do cliente gerador. O esforco humano dessa dependencia nao foi quantificado.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M09",
+      "commit_versao_apresentada": "8535f6956ca5ff7c80da40c8de76b4cf6f93b8ae",
+      "matriz_sha256_versao_apresentada": "8fd0e39c4e22a2df691936304c36f33beeaa4f5714b05506e9bd757d8fefe521",
+      "data_registro_utc": "2026-11-15T23:05:33.469851+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Recuperacao favoravel na amostra de C05 pela presenca dos trechos esperados, com conteudo de outros servicos e conflitos tambem recuperados. Quantidade e selecao do contexto relacionam-se a cobertura e consumo de tokens, mas k e chunking nao foram variados para medir seus efeitos.",
+      "recomendacao_confirmada": "Comparar alternativas de recuperacao por presenca dos fatos, fidelidade, consumo e tempo antes de escolher uma mudanca.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M10",
+      "commit_versao_apresentada": "ed1339d67303e15c9ca6f591d3f497136287d239",
+      "matriz_sha256_versao_apresentada": "380577bc830470a532fe314a2813c4c67c3f6906f30e876cc61e38f5774e9403",
+      "data_registro_utc": "2026-11-15T23:06:34.999878+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Risco observado de resposta incompleta por truncamento em P06-R1 de C05, mesmo com contexto suficiente e conteudo apresentado com apoio documental. A resposta atingiu 500 tokens de saida, com 406 de raciocinio informados pelo provedor na configuracao adaptada. Fidelidade e completude permanecem criterios distintos; nao houve comparacao de outros limites.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M11",
+      "commit_versao_apresentada": "688180537113ac04c2808a64560b45287314098a",
+      "matriz_sha256_versao_apresentada": "ffac5435455e958e6fa7f64fc05883b608c010d0eae59b8dd3571cb60ceb7b54",
+      "data_registro_utc": "2026-11-15T23:09:12.033684+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "tá pode regitrar m1",
+      "interpretacao_referencia": "A referencia m1 foi interpretada como M11 pelo contexto imediato da revisao e da contagem dos achados. M01 ja estava confirmado. Essa interpretacao foi comunicada ao autor antes do registro.",
+      "interpretacao_confirmada": "Risco observado de confiabilidade da base pela existencia de enderecos conflitantes atribuidos ao CAPS II nos documentos recuperados em C05. As respostas seguiram a fonte especifica na amostra, sem eliminar a inconsistencia documental ou garantir resolucao de outros conflitos.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M12",
+      "commit_versao_apresentada": "25960aecdaba7815142c80b7dc1c62c61ccedbb6",
+      "matriz_sha256_versao_apresentada": "ac4537a1e8af2333aed3b6a182e8a2de28a173f725f27c1a1265898868ac531c",
+      "data_registro_utc": "2026-11-15T23:11:57.906347+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim7",
+      "interpretacao_resposta": "Confirmacao de M12 pelo termo sim, com caractere adicional na resposta.",
+      "interpretacao_confirmada": "Evidencia favoravel a minimizacao automatica de nome, identificador cadastrados e historico nos 12 pedidos interceptados localmente em C06. Dados autodeclarados e relato presentes na pergunta permanecem no corpo. A personalizacao posterior usa o nome cadastrado, sem demonstrar envio desse campo ao modelo. Nao ha demonstracao de anonimizacao do texto livre nem envio real ao provedor nesta coleta.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M13",
+      "commit_versao_apresentada": "1a9dc738e5380d63b45ffcb16114c4f9d84003b2",
+      "matriz_sha256_versao_apresentada": "d4611215c90314f9bb11effb02d0975379676ddb22778c13f7fab7965dd96352",
+      "data_registro_utc": "2026-11-15T23:19:07.989733+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "s",
+      "interpretacao_resposta": "Confirmacao afirmativa abreviada do achado M13 apresentado imediatamente antes.",
+      "interpretacao_confirmada": "Risco observado de confidencialidade pela duplicacao da pergunta integral em quatro emissoes operacionais de erro em C06, incluindo relato ficticio e, em D06, nome e identificador autodeclarados. Os eventos de auditoria nao continham a pergunta no recorte; mensagem e traceback formatado representam a mesma emissao, sem duplicar a contagem.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M14",
+      "commit_versao_apresentada": "0e4d91598279f6b94a82360ad2e3c16e19362f13",
+      "matriz_sha256_versao_apresentada": "b127006ff7858eae3a745bc94c2fa57d2de44be33db30bec20cca7598496e148",
+      "data_registro_utc": "2026-11-15T23:24:13.850053+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim",
+      "interpretacao_confirmada": "Limitacao do alcance das evidencias: os cenarios nao certificam autenticacao real dos canais, gateways, entrega ao cidadao pelo WhatsApp, integracoes completas de midia ou configuracao de producao. Esses aspectos ficam nao avaliados dinamicamente nesse recorte, sem atribuicao de aprovacao ou falha.",
+      "prioridades_de_manutencao_confirmadas": false
+    },
+    {
+      "achado": "M02",
+      "commit_versao_apresentada": "f225c97cbb0d8341d036d8503532d1fc2b9e0f91",
+      "matriz_sha256_versao_apresentada": "61afa53399f091ea80c68d7370272bc30581612fa5b9744401ac688f2938eee6",
+      "data_registro_utc": "2026-11-15T23:29:51.968918+00:00",
+      "revisor": "Autor",
+      "resposta_literal": "sim,",
+      "interpretacao_confirmada": "Tensao entre reaproveitamento do indice, atualizacao dos documentos e disponibilidade na inicializacao. Custo de montagem medido em C02, sem comparacao do ganho de persistencia; risco de falha na montagem impedir menus identificado por inspecao, sem injecao de falha de inicializacao.",
+      "recomendacao_confirmada": "Comparar alternativas de persistencia com invalidacao/atualizacao do indice e de inicializacao antes de modificar a arquitetura.",
+      "prioridades_de_manutencao_confirmadas": false
+    }
+  ],
+  "achados_sem_confirmacao": [],
+  "limite": "As 14 interpretacoes e a divisao das dez melhorias em grupos de prioridade foram confirmadas pelo autor em revisao assistida na conversa. Isso nao constitui revisao independente dos dados primarios, validacao institucional ou demonstracao dos beneficios das melhorias. Os campos prioridades_de_manutencao_confirmadas em cada registro de achado conservam o estado historico daquela confirmacao; a revisao posterior das prioridades esta registrada separadamente. Nenhuma implementacao foi realizada nesta revisao.",
+  "data_conclusao_interpretacoes_utc": "2026-11-15T23:29:51.968918+00:00",
+  "resumo": {
+    "achados": 14,
+    "interpretacoes_confirmadas": 14,
+    "interpretacoes_sem_confirmacao": 0,
+    "prioridades": "confirmadas_pelo_autor",
+    "recomendacoes_com_prioridade_confirmada": 10
+  },
+  "revisao_prioridades": {
+    "commit_versao_apresentada": "a102c8b473f83169c098f6a65f9a15de338174cb",
+    "matriz_sha256_versao_apresentada": "c7857a03f8c4e7748cbee375097d9eb077771d7cd5dd8d84b50d7e35957ab701",
+    "data_registro_utc": "2026-11-15T23:42:39.931017+00:00",
+    "revisor": "Autor",
+    "resposta_literal": "sim",
+    "metodo": "Revisao assistida na conversa, apos apresentacao conjunta das dez melhorias, justificativas e tres grupos de prioridade.",
+    "escopo": "Concordancia com o conteudo resumido das dez melhorias e sua divisao em cinco altas, tres medias e duas exploratorias, sem ordem interna de implementacao validada.",
+    "grupos": {
+      "alta": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "media": [
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "exploratoria": [
+        "A09",
+        "A10"
+      ]
+    },
+    "criterios": {
+      "alta": "Problemas observados de exposicao de conteudo, impedimento funcional, bloqueio, comunicacao inadequada ou inconsistencia documental.",
+      "media": "Consistencia, manutencao e completude que exigem desenho e verificacao proprios.",
+      "exploratoria": "Comparacao necessaria antes de escolher a mudanca."
+    },
+    "limites": "Priorizacao qualitativa do autor, sem workshop com stakeholders, estimativa de custo ou comparacao de beneficios implementados. Os procedimentos de verificacao futura da matriz permanecem propostas tecnicas.",
+    "implementacao_realizada": false,
+    "beneficios_medidos": false
+  },
+  "data_conclusao_revisao_utc": "2026-11-15T23:42:39.931017+00:00"
+}

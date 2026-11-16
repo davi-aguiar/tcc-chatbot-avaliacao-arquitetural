@@ -14,6 +14,12 @@ Na visão de componentes, setas indicam uso ou acesso; na sequência, chamadas e
 
 ## Visão de componentes
 
+Visão sintética da fronteira do backend, dos recursos locais e dos serviços externos:
+
+![Visão geral da arquitetura do chatbot](figuras/arquitetura/visao-geral.png)
+
+*Figura: visão geral da arquitetura. Os pacotes `api/` e `app/` executam no mesmo processo; o índice vetorial é montado a partir dos documentos e embeddings locais.*
+
 ```mermaid
 flowchart TD
     GW["Evolution API ou Twilio"]
@@ -77,6 +83,14 @@ O limite externo reúne dois pacotes no mesmo processo, sem separação em micro
 | Persistência e auditoria | Manter usuário, estado, mensagens, configuração, mídia e eventos no banco relacional; emitir logs | [modelos](../api/models/models.py), [sessão](../api/db/database.py), [DbLogger](../api/utils/logger.py), [migrações](../api/alembic/versions/) |
 
 **Caminho separado do Gradio:** `frontend/gradio_app.py` chama `setup_system()` e `generate_response()` diretamente em seu processo, chegando a `run_rag`. Não usa a rota REST, o ChatService ou a persistência de conversas do backend. Testes também podem chamar serviços diretamente, conforme seu escopo.
+
+## Fluxo híbrido de atendimento
+
+O diagrama resume como o `ChatService` combina comandos, onboarding e navegação local com consultas documentais. Opções de menu com `query` usam a pergunta configurada; texto livre usa a mensagem recebida.
+
+![Fluxo híbrido de menu e consulta documental](figuras/arquitetura/fluxo-hibrido.png)
+
+*Figura: fluxo híbrido de atendimento. A navegação e as respostas locais não acionam o RAG; consultas documentais passam pelo FAISS e pela geração externa.*
 
 ## Visão de inicialização
 
@@ -308,7 +322,7 @@ O quadro registra escolhas materializadas na implementação e seus efeitos. Nã
 | D01 | API e RAG no mesmo processo, conectados durante a importação | [api.main](../api/main.py), [app.main](../app/main.py) | As chamadas são diretas; falha na montagem do RAG impede concluir a importação da aplicação. Não há inicialização alternativa só com menus |
 | D02 | Conversação híbrida, com estado/opções em JSON e consultas documentais | [ChatService](../api/services/chat_service.py), [interpretador](../api/services/menu_handlers.py), [JSON](../api/services/menu_texts.json) | Extensões compatíveis podem ficar em JSON/TXT, como C01 demonstrou. Novos tipos de operação podem exigir Python; o JSON é carregado na importação |
 | D03 | Documentos locais e índice FAISS em memória, reconstruído na montagem | [ingestão](../app/core/ingestion.py), [setup](../app/main.py), [vector store](../app/adapters/vector_store.py) | Evita reutilizar um índice persistido desatualizado, mas exige reconstrução e recursos por processo. C02 mediu custo de montagem; benefício de persistir índice não foi comparado |
-| D04 | Embeddings locais e inferência externa | [embeddings](../app/adapters/embeddings.py), [pipeline](../app/core/rag_pipeline.py) | Modelo de embeddings padrão multilíngue e configurável por `EMBEDDINGS_MODEL`; o prompt documental inclui pergunta e contexto para inferência externa. C06 ainda avaliará o payload efetivo |
+| D04 | Embeddings locais e inferência externa | [embeddings](../app/adapters/embeddings.py), [pipeline](../app/core/rag_pipeline.py) | Modelo de embeddings padrão multilíngue e configurável por `EMBEDDINGS_MODEL`; o prompt documental inclui pergunta e contexto para inferência externa. C06 confirmou ausência de identidade cadastrada/histórico em 12 corpos locais; texto livre autodeclarado foi preservado |
 | D05 | Cliente ChatGroq global reutilizado, modelo fixo e parâmetros definidos no código | [get_llm](../app/core/rag_pipeline.py) | O cache reaproveita o cliente, não respostas. O padrão segue `llama-3.3-70b-versatile`; sua chamada falhou nos ensaios. O alternativo usado em C02/C03-B não foi incorporado à aplicação |
 | D06 | Geração por pergunta/contexto, sem histórico de turnos na cadeia | [run_rag](../app/core/rag_pipeline.py), [generate_response](../app/core/conversation.py), [NLPService](../api/services/nlp_service.py) | Histórico persistido e estado do menu não equivalem a memória do LLM. O nome é usado na personalização local; o parâmetro `historico` do caminho Gradio não é utilizado |
 | D07 | Sessão de banco compartilhada entre conversa, serviços auxiliares e auditoria | [get_db](../api/db/database.py), [ChatService](../api/services/chat_service.py), [DbLogger](../api/utils/logger.py), [FlowMediaService](../api/services/flow_media_service.py) | Há commits/rollbacks fora do fluxo principal; não existe garantia de transação única. C03-A observou erro de menu devolvido sem o par de mensagens salvo |
@@ -327,8 +341,9 @@ O quadro registra escolhas materializadas na implementação e seus efeitos. Nã
 | [C03-A](avaliacao/C03-relatorio-execucao.md) | Dois tratamentos de falha: menu devolve erro interno com `MESSAGE_FAILED`; texto livre devolve opção inválida com `MESSAGE_SENT` | Injeção imediata e sequencial; não mede concorrência nem falha de boot |
 | [C03-B](avaliacao/C03-B-relatorio-execucao.md) | Em um worker, inferência/retry/envio bloquearam outras requisições; menu de outro usuário levou 193,832 s na rajada real de dez | Modelo adaptado, SQLite e saída WhatsApp interceptada; processo não encerrou e a causa exata do incidente anterior não foi demonstrada |
 | [C04](avaliacao/C04-relatorio-execucao.md) | Ingestão, chunking, FAISS, montagem, prompt/parser e NLP reais exercitados em 16/16 casos sem rede, credenciais ou pesos | Embeddings/gerador locais; ajuste de `__file__` e estado global no teste; não avalia qualidade de um modelo real nem implementa injeção pública |
+| [C06](avaliacao/C06-relatorio-execucao.md) | 14 observações válidas; identidade cadastrada/histórico ausentes dos 12 pedidos locais; texto integral em quatro logs de falha D04/D06 | Recuperação e respostas sintéticas, SQLite em memória; parcialmente atendido no recorte, com revisão interpretativa do autor concluída |
 
-Esses achados atualizam a descrição do sistema existente. Persistência do índice, memória de conversa, processamento em fila e política uniforme de erros são possibilidades de manutenção, não componentes implementados. A topologia de desenvolvimento não comprova a configuração de produção. C04 demonstrou isolamento no recorte de teste definido; qualidade das respostas e confidencialidade ainda dependem dos cenários próprios C05–C06.
+Esses achados atualizam a descrição do sistema existente. Persistência do índice, memória de conversa, processamento em fila e política uniforme de erros são possibilidades de manutenção, não componentes implementados. A topologia de desenvolvimento não comprova a configuração de produção. C04 demonstrou isolamento no recorte de teste definido. [C05](avaliacao/C05-relatorio-execucao.md) coletou 12 respostas reais em configuração adaptada: a análise preliminar identificou apoio documental e quatro abstenções, com uma resposta truncada apesar de contexto suficiente. O conflito de endereço na base chegou ao prompt e permanece risco de curadoria. A revisão assistida do autor concluiu C05 com fidelidade atendida apenas na amostra e completude parcial; C06 foi encerrado como parcialmente atendido no recorte, com falha de logs reproduzida em D04/D06 e revisão interpretativa do autor concluída.
 
 ## Rastreabilidade do objetivo de documentação
 

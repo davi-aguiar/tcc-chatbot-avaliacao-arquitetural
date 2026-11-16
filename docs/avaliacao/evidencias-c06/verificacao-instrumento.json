@@ -1,0 +1,22 @@
+{
+  "data_utc": "2026-11-15T01:21:11.527039+00:00",
+  "lote_preparacao": "20261114-222034-preparar-2f7d16",
+  "testes_instrumento": {
+    "comando": "python -m pytest -q docs/avaliacao/c06/test_instrumento.py",
+    "aprovados": 13,
+    "duracao_s": 3.39
+  },
+  "testes_existentes": {
+    "comando": "python -m pytest -q tests",
+    "aprovados": 244,
+    "duracao_s": 2.7
+  },
+  "lint": "aprovado",
+  "compilacao": "aprovada",
+  "hashes_da_preparacao_conferidos": 68,
+  "fontes_preservadas": true,
+  "observacoes_oficiais_executadas": 0,
+  "links_locais_ausentes": [],
+  "codigo_funcional_corpus_testes_existentes_inalterados": true,
+  "julgamento_c06": "nao_avaliado"
+}

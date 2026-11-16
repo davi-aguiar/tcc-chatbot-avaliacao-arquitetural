@@ -1,0 +1,161 @@
+{
+  "id": "P06-R2",
+  "caso": "P06",
+  "rodada": 2,
+  "pergunta": "CAPS II e CAPS AD III atendem o mesmo público e ficam no mesmo endereço? Diferencie o público e o endereço de cada um.",
+  "inicio_utc": "2026-11-14T23:58:33.461520+00:00",
+  "contexto": [
+    {
+      "indice": 1,
+      "conteudo": "Serviço: CAPS AD III\n\nO que é esse serviço?\nO CAPS AD III, consiste em serviço de atenção psicossocial específico para cuidado e atenção integral a pessoas com necessidades específicas decorrente do uso de álcool e outras drogas. Funciona como um dispositivo estratégico da Rede de Atenção Psicossocial (RAPS), baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos e atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 2,
+      "conteudo": "Como são os atendimentos?\nO CAPS AD III oferece atendimento multiprofissional, podendo também, realizar acolhimento intensivo 24h. O cuidado oferecido pelo CAPS AD III é norteado pelo Plano Terapêutico Singular - PTS, com base no território construído entre a equipe, família/rede de apoio e usuário do serviço, definindo-se, portanto, como um serviço de saúde de caráter voluntário. O cuidado realizado por uma equipe multiprofissional pode incluir:\n- Acompanhamento pela mini-equipe de referência;\n- Atividades de reabilitação psicossocial;\n- Oficinas terapêuticas;\n- Acompanhamento médico-psiquiátrico;\n- Acompanhamento psicológico individual e em grupo;\n- Aconselhamento e intervenções em Redução de Danos;\n- Apoio familiar e orientação sociofamiliar;\n- Atendimento em situações de crise;\n- Articulação com a rede intersetorial (assistência social, educação, trabalho).",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 3,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver)\n- Histórico clínico (quando disponível)\n\nOnde fica o CAPS AD III?\nRua T, 417, Bairro Felícia, https://maps.app.goo.gl/A73BUzkxT5gdbGTx5\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n07:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\n\nQuais os contatos? \nTelefone: (77) 3229-3053 Recepção / (77) 98834-9898 (Whatsapp)\nE-mail: capsad3pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 4,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver);\n- Histórico clínico (quando disponível).\n\nOnde fica o CAPS II?\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n08:00 às 17:00h \n\nQuais os contatos? \nTelefone: (77) 3429-3481\nE-mail: ambsaudmental@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt"
+      }
+    },
+    {
+      "indice": 5,
+      "conteudo": "Quais os documentos necessários?\n- CPF / RG \n- Cartão SUS\n- Comprovante de residência atualizado\n- Laudo ou relatório de encaminhamento (se houver)\n- Histórico clínico (quando disponível)\n\nOnde fica o CAPS II?\nAvenida Régis Pacheco, 770, Centro, https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6\n\nQuais os dias e horários de funcionamento?\nSegunda a sexta-feira\n08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\n\nQuais os contatos? \nTelefone: (77) 3229-3055\nE-mail: caps2.pmvc@gmail.com",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      }
+    },
+    {
+      "indice": 6,
+      "conteudo": "Servico: CAPS II - CENTRO DE ATENÇÃO PSICOSSOCIAL\n\nO que é esse serviço?\nO CAPS II é um serviço de saúde especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes, baseado nos princípios da Reforma Psiquiátrica e Luta Antimanicomial.",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      }
+    },
+    {
+      "indice": 7,
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso seja identificada uma necessidade de maior complexidade (sofrimento grave), o ambulatório realiza o encaminhamento adequado para o CAPS II ou outro serviço de referência que se fizer necessário.\n \nComo são os atendimentos?",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt"
+      }
+    },
+    {
+      "indice": 8,
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\n \nComo são os atendimentos?",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ad_iii.txt"
+      }
+    },
+    {
+      "indice": 9,
+      "conteudo": "Como posso acessar esse serviço? \nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\n \nComo funciona o Acolhimento?\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\n \nComo são os atendimentos?\nO cuidado é prestado por uma equipe multiprofissional por meio de um projeto terapêutico singular (PTS), que organiza um plano de acompanhamento individualizado. A assistência integra:\n- Acompanhamento médico-psiquiátrico;\n- Acompanhamento psicológico;",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_caps_ii_centro_atencao_psicossocial.txt"
+      }
+    },
+    {
+      "indice": 10,
+      "conteudo": "Quais documentos são obrigatórios para qualquer marcação?\nO usuário deve apresentar:\n- Cartão do SUS (CNS) atualizado\n- RG e CPF\n- Comprovante de residência\n- Telefone de contato\n- Solicitação médica assinada e carimbada\n- Justificativa clínica ou CID no pedido\n\nQuais documentos são exigidos em procedimentos específicos?\nNa Central de Regulação (CRPEE): \n- Tomografia, ressonância, cintilografia: exigem APAC\n- Biópsias: anexar resultado de ultrassonografia\n- Arteriografias: exames laboratoriais + APAC + relatório médico\n- Oxigenoterapia: relatório médico detalhado\n- Exames com sedação: ureia e creatinina recentes + questionário\n- Pacientes especiais: apresentar documentos como:\n* Carteira de oncologia\n* Laudo de Tratamento Fora do Domicílio (TFD)\n* Relatório de alta hospitalar\n* Comprovante de hemodiálise",
+      "metadados": {
+        "source": "C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\data\\servicos\\servico_marcacoes.txt"
+      }
+    }
+  ],
+  "prompt": "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(id='d1c5b024-ae79-478e-95b1-2f45cb6856ea', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Serviço: CAPS AD III\\n\\nO que é esse serviço?\\nO CAPS AD III, consiste em serviço de atenção psicossocial específico para cuidado e atenção integral a pessoas com necessidades específicas decorrente do uso de álcool e outras drogas. Funciona como um dispositivo estratégico da Rede de Atenção Psicossocial (RAPS), baseado nos princípios da Reforma Psiquiátrica e da Redução de Danos e atua no acompanhamento visando a reabilitação psicossocial e a reinserção social dos usuários.'), Document(id='f30249b7-34ef-4a3b-ada6-1a9b4f273da9', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Como são os atendimentos?\\nO CAPS AD III oferece atendimento multiprofissional, podendo também, realizar acolhimento intensivo 24h. O cuidado oferecido pelo CAPS AD III é norteado pelo Plano Terapêutico Singular - PTS, com base no território construído entre a equipe, família/rede de apoio e usuário do serviço, definindo-se, portanto, como um serviço de saúde de caráter voluntário. O cuidado realizado por uma equipe multiprofissional pode incluir:\\n- Acompanhamento pela mini-equipe de referência;\\n- Atividades de reabilitação psicossocial;\\n- Oficinas terapêuticas;\\n- Acompanhamento médico-psiquiátrico;\\n- Acompanhamento psicológico individual e em grupo;\\n- Aconselhamento e intervenções em Redução de Danos;\\n- Apoio familiar e orientação sociofamiliar;\\n- Atendimento em situações de crise;\\n- Articulação com a rede intersetorial (assistência social, educação, trabalho).'), Document(id='a8470960-c815-4d45-9e1f-00324b6fc695', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver)\\n- Histórico clínico (quando disponível)\\n\\nOnde fica o CAPS AD III?\\nRua T, 417, Bairro Felícia, https://maps.app.goo.gl/A73BUzkxT5gdbGTx5\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n07:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3053 Recepção / (77) 98834-9898 (Whatsapp)\\nE-mail: capsad3pmvc@gmail.com'), Document(id='216ff54f-9697-4106-94ad-45147c32a6f8', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver);\\n- Histórico clínico (quando disponível).\\n\\nOnde fica o CAPS II?\\nAvenida Olívia Flores, 3000, Bairro Candeias, https://maps.app.goo.gl/Q61N7DgkEXPx3Qrk8\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n08:00 às 17:00h \\n\\nQuais os contatos? \\nTelefone: (77) 3429-3481\\nE-mail: ambsaudmental@gmail.com'), Document(id='9f73a514-51fd-479b-a3d4-5cbfb383fe69', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ii_centro_atencao_psicossocial.txt'}, page_content='Quais os documentos necessários?\\n- CPF / RG \\n- Cartão SUS\\n- Comprovante de residência atualizado\\n- Laudo ou relatório de encaminhamento (se houver)\\n- Histórico clínico (quando disponível)\\n\\nOnde fica o CAPS II?\\nAvenida Régis Pacheco, 770, Centro, https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6\\n\\nQuais os dias e horários de funcionamento?\\nSegunda a sexta-feira\\n08:00 às 18:00h (exceto quinta-feira a tarde quando ocorre reunião interna de equipe)\\n\\nQuais os contatos? \\nTelefone: (77) 3229-3055\\nE-mail: caps2.pmvc@gmail.com'), Document(id='20ac3f01-ebcf-4b08-b78d-31a7bb18b97e', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ii_centro_atencao_psicossocial.txt'}, page_content='Servico: CAPS II - CENTRO DE ATENÇÃO PSICOSSOCIAL\\n\\nO que é esse serviço?\\nO CAPS II é um serviço de saúde especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes, baseado nos princípios da Reforma Psiquiátrica e Luta Antimanicomial.'), Document(id='1229bf46-edf9-4d11-ac01-24cdecf7b94c', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_ambulatorio_saude_mental_atencao_a_adultos.txt'}, page_content='Como posso acessar esse serviço? \\nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\\n \\nComo funciona o Acolhimento?\\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso seja identificada uma necessidade de maior complexidade (sofrimento grave), o ambulatório realiza o encaminhamento adequado para o CAPS II ou outro serviço de referência que se fizer necessário.\\n \\nComo são os atendimentos?'), Document(id='d726070c-5044-4a7d-894e-4ade7db55190', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ad_iii.txt'}, page_content='Como posso acessar esse serviço? \\nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\\n \\nComo funciona o Acolhimento?\\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\\n \\nComo são os atendimentos?'), Document(id='e08d7361-d137-4620-8b80-4783ec28e507', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_caps_ii_centro_atencao_psicossocial.txt'}, page_content='Como posso acessar esse serviço? \\nO acesso pode ser feito por demanda espontânea, através de acolhimento inicial, ou por encaminhamento da Rede de Atenção Psicossocial (RAPS), serviços socioassistenciais e do sistema judiciário. Acolhimentos agendados são realizados em casos específicos, mediante avaliação da equipe.\\n \\nComo funciona o Acolhimento?\\nNo acolhimento inicial, é realizada uma escuta qualificada para avaliação da demanda. Sendo identificado o perfil para o serviço, o usuário é cadastrado e tem um Projeto Terapêutico Singular (PTS) elaborado, com o objetivo de promover autonomia e cuidado em liberdade. Caso contrário, é realizado o encaminhamento adequado na rede de serviços.\\n \\nComo são os atendimentos?\\nO cuidado é prestado por uma equipe multiprofissional por meio de um projeto terapêutico singular (PTS), que organiza um plano de acompanhamento individualizado. A assistência integra:\\n- Acompanhamento médico-psiquiátrico;\\n- Acompanhamento psicológico;'), Document(id='29798aa5-8aa2-4ffe-929b-73b08f400882', metadata={'source': 'C:\\\\Users\\\\davia\\\\OneDrive\\\\Área de Trabalho\\\\TCC\\\\tcc-chatbot-avaliacao-arquitetural\\\\data\\\\servicos\\\\servico_marcacoes.txt'}, page_content='Quais documentos são obrigatórios para qualquer marcação?\\nO usuário deve apresentar:\\n- Cartão do SUS (CNS) atualizado\\n- RG e CPF\\n- Comprovante de residência\\n- Telefone de contato\\n- Solicitação médica assinada e carimbada\\n- Justificativa clínica ou CID no pedido\\n\\nQuais documentos são exigidos em procedimentos específicos?\\nNa Central de Regulação (CRPEE): \\n- Tomografia, ressonância, cintilografia: exigem APAC\\n- Biópsias: anexar resultado de ultrassonografia\\n- Arteriografias: exames laboratoriais + APAC + relatório médico\\n- Oxigenoterapia: relatório médico detalhado\\n- Exames com sedação: ureia e creatinina recentes + questionário\\n- Pacientes especiais: apresentar documentos como:\\n* Carteira de oncologia\\n* Laudo de Tratamento Fora do Domicílio (TFD)\\n* Relatório de alta hospitalar\\n* Comprovante de hemodiálise')]\n\nPERGUNTA:\nCAPS II e CAPS AD III atendem o mesmo público e ficam no mesmo endereço? Diferencie o público e o endereço de cada um.\n\nRESPOSTA (Seja direto e útil):\n",
+  "resposta_original": "**Público atendido**\n\n- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  \n- **CAPS II** – É um serviço especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.\n\n**Endereço**\n\n- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  \n- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).\n\nPortanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+  "saida_nlp": "**Público atendido**\n\n- **CAPS AD III** – Destina‑se a pessoas que apresentam necessidades específicas decorrentes do uso de álcool e outras drogas, oferecendo acompanhamento voltado à reabilitação psicossocial e à redução de danos.  \n- **CAPS II** – É um serviço especializado no cuidado de adultos (18 anos ou mais) com transtornos mentais graves e persistentes.\n\n**Endereço**\n\n- **CAPS AD III:** Rua T, 417, Bairro Felícia (link https://maps.app.goo.gl/A73BUzkxT5gdbGTx5).  \n- **CAPS II:** Avenida Régis Pacheco, 770, Centro (link https://maps.app.goo.gl/KExmRRK9XD7ZBF7R6).\n\nPortanto, os dois CAPS atendem públicos diferentes e estão localizados em endereços distintos.",
+  "erro_tipo": null,
+  "chamadas_recuperador": 1,
+  "chamadas_gerador": 1,
+  "metadados_geracao": {
+    "model_name": "openai/gpt-oss-120b",
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 394,
+      "prompt_tokens": 2746,
+      "total_tokens": 3140,
+      "completion_time": 0.819347551,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "prompt_time": 0.212495793,
+      "prompt_tokens_details": null,
+      "queue_time": 0.215236967,
+      "total_time": 1.031843344
+    },
+    "system_fingerprint": "fp_90620edd96"
+  },
+  "uso_tokens": {
+    "input_tokens": 2746,
+    "output_tokens": 394,
+    "total_tokens": 3140,
+    "output_token_details": {
+      "reasoning": 186
+    }
+  },
+  "frase_ausencia_exata": false,
+  "ausencia_reconhecida": false,
+  "diagnostico_recuperacao": {
+    "fontes_esperadas_presentes": {
+      "servico_caps_ii_centro_atencao_psicossocial.txt": true,
+      "servico_caps_ad_iii.txt": true
+    },
+    "trechos_literais": [
+      {
+        "fato": "F01",
+        "chunks": [
+          6
+        ]
+      },
+      {
+        "fato": "F02",
+        "chunks": [
+          5
+        ]
+      },
+      {
+        "fato": "F03",
+        "chunks": [
+          1
+        ]
+      },
+      {
+        "fato": "F04",
+        "chunks": [
+          3
+        ]
+      }
+    ],
+    "aviso": "Diagnóstico literal, sem julgamento semântico; outras fontes exigem revisão."
+  },
+  "fim_utc": "2026-11-14T23:58:53.958437+00:00",
+  "tentativas_http": [
+    {
+      "tentativa": 1,
+      "inicio_utc": "2026-11-14T23:58:33.515465+00:00",
+      "status": 429,
+      "fim_utc": "2026-11-14T23:58:33.567135+00:00"
+    },
+    {
+      "tentativa": 2,
+      "inicio_utc": "2026-11-14T23:58:52.567909+00:00",
+      "status": 200,
+      "fim_utc": "2026-11-14T23:58:53.945438+00:00"
+    }
+  ]
+}

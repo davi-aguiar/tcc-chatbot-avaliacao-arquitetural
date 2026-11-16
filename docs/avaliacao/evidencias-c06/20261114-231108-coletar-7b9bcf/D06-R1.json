@@ -1,0 +1,267 @@
+{
+  "id": "D06-R1",
+  "inicio_utc": "2026-11-15T02:11:20.340202+00:00",
+  "caso": "D06",
+  "rodada": 1,
+  "entrada": "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?",
+  "fixture": {
+    "id_cadastrado": "000000006060",
+    "nome_cadastrado": "Pessoa Sintetica Cseis",
+    "id_declarado": "000000009999",
+    "nome_declarado": "Nome Declarado Cseis",
+    "historico_usuario": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior.",
+    "historico_bot": "BOT_C06_ANTERIOR resposta ficticia anterior.",
+    "contexto": "CONTEXTO_C06_DOCUMENTAL: documento sintetico para observar campos enviados a inferencia; nao contem identidade ou historico do usuario.",
+    "resposta_sintetica": "Olá! RESPOSTA_C06_SINTETICA."
+  },
+  "http": [
+    {
+      "metodo": "POST",
+      "url": "https://api.groq.com/openai/v1/chat/completions",
+      "autenticacao_presente": true,
+      "corpo": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(metadata={'source': 'c06-documento-sintetico.txt'}, page_content='CONTEXTO_C06_DOCUMENTAL: documento sintetico para observar campos enviados a inferencia; nao contem identidade ou historico do usuario.')]\n\nPERGUNTA:\nPERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?\n\nRESPOSTA (Seja direto e útil):\n"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "max_tokens": 500,
+        "n": 1,
+        "reasoning_effort": null,
+        "reasoning_format": null,
+        "service_tier": "on_demand",
+        "stop": null,
+        "stream": false,
+        "temperature": 0.1
+      },
+      "status_sintetico": 400
+    }
+  ],
+  "nlp": [
+    {
+      "consulta": "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?",
+      "user_name_recebido": "Pessoa Sintetica Cseis",
+      "erro_tipo": "BadRequestError"
+    }
+  ],
+  "recuperacoes": [
+    "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?"
+  ],
+  "erro_instrumento": null,
+  "antes": {
+    "users": [
+      {
+        "id": 1,
+        "id_wpp": "000000006060",
+        "name": "Pessoa Sintetica Cseis",
+        "state": "WAITING_MAIN_MENU"
+      }
+    ],
+    "chats": [
+      {
+        "id": 1,
+        "user_id": 1
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "chat_id": 1,
+        "sender": "user",
+        "text": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior."
+      },
+      {
+        "id": 2,
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "BOT_C06_ANTERIOR resposta ficticia anterior."
+      }
+    ],
+    "audit_logs": []
+  },
+  "resposta_chamador": {
+    "text": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:",
+    "image_url": null
+  },
+  "depois": {
+    "users": [
+      {
+        "id": 1,
+        "id_wpp": "000000006060",
+        "name": "Pessoa Sintetica Cseis",
+        "state": "WAITING_MAIN_MENU"
+      }
+    ],
+    "chats": [
+      {
+        "id": 1,
+        "user_id": 1
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "chat_id": 1,
+        "sender": "user",
+        "text": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior."
+      },
+      {
+        "id": 2,
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "BOT_C06_ANTERIOR resposta ficticia anterior."
+      },
+      {
+        "id": 3,
+        "chat_id": 1,
+        "sender": "user",
+        "text": "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?"
+      },
+      {
+        "id": 4,
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "Opção inválida. Por favor, digite um número válido:\n\n🏥 *MENU PRINCIPAL*\nEscolha uma das opções abaixo:\n\n1️⃣ - Agendamento\n2️⃣ - Acesso aos medicamentos e materiais\n3️⃣ - Procedimentos e Vacinas\n4️⃣ - Serviços\n5️⃣ - Emergências\n6️⃣ - Outros\n\nDigite o número da opção desejada:"
+      }
+    ],
+    "audit_logs": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "event_type": "MESSAGE_RECEIVED",
+        "level": "INFO",
+        "message": "Mensagem recebida de 000000006060",
+        "metadata_info": {}
+      },
+      {
+        "id": 2,
+        "user_id": 1,
+        "event_type": "MESSAGE_SENT",
+        "level": "INFO",
+        "message": "Resposta enviada para 000000006060",
+        "metadata_info": {
+          "duracao_total_ms": 689.04,
+          "estado_entrada": "WAITING_MAIN_MENU",
+          "estado_saida": "WAITING_MAIN_MENU",
+          "chamou_rag": true,
+          "chamadas_rag": 1,
+          "tem_imagem": false,
+          "tamanho_resposta": 275,
+          "duracao_rag_ms": 666.21
+        }
+      }
+    ]
+  },
+  "logs": [
+    {
+      "logger": "AppLogger",
+      "nivel": "INFO",
+      "mensagem": "[INFO] MESSAGE_RECEIVED: Mensagem recebida de 000000006060",
+      "formatado": "[INFO] MESSAGE_RECEIVED: Mensagem recebida de 000000006060"
+    },
+    {
+      "logger": "httpx",
+      "nivel": "INFO",
+      "mensagem": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 400 Bad Request\"",
+      "formatado": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 400 Bad Request\""
+    },
+    {
+      "logger": "AppLogger",
+      "nivel": "ERROR",
+      "mensagem": "NLPService falhou para: 'PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?'",
+      "formatado": "NLPService falhou para: 'PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?'\nTraceback (most recent call last):\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 314, in _perguntar_ao_rag\n    return self.nlp.process(texto, user_name=user_name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 55, in process\n    return self._nlp.process(text, user_name=user_name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\c06\\executar.py\", line 200, in process\n    answer = self.real.process(text, user_name=user_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\nlp_service.py\", line 24, in process\n    rag_response = run_rag(retriever=self.retriever, question=text)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\app\\core\\rag_pipeline.py\", line 65, in run_rag\n    return build_rag_chain(retriever).invoke(question)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 3460, in invoke\n    input_ = context.run(step.invoke, input_, config)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_groq\\chat_models.py\", line 627, in _generate\n    response = self.client.create(messages=message_dicts, **params)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\resources\\chat\\completions.py\", line 461, in create\n    return self._post(\n           ^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\_base_client.py\", line 1242, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\_base_client.py\", line 1044, in request\n    raise self._make_status_error_from_response(err.response) from None\ngroq.BadRequestError: Error code: 400 - {'error': {'message': 'ERRO_C06_SINTETICO', 'type': 'invalid_request_error', 'code': 'c06_sintetico'}}"
+    },
+    {
+      "logger": "AppLogger",
+      "nivel": "INFO",
+      "mensagem": "[INFO] MESSAGE_SENT: Resposta enviada para 000000006060",
+      "formatado": "[INFO] MESSAGE_SENT: Resposta enviada para 000000006060"
+    }
+  ],
+  "tentativas_externas": [],
+  "localizacoes": {
+    "payload": {
+      "id_cadastrado": [],
+      "nome_cadastrado": [],
+      "id_declarado": [
+        "$[0].messages[0].content"
+      ],
+      "nome_declarado": [
+        "$[0].messages[0].content"
+      ],
+      "historico_usuario": [],
+      "historico_bot": [],
+      "contexto": [
+        "$[0].messages[0].content"
+      ],
+      "consulta": [
+        "$[0].messages[0].content"
+      ],
+      "relato": [
+        "$[0].messages[0].content"
+      ]
+    },
+    "logs": {
+      "id_cadastrado": [
+        "$[0].mensagem",
+        "$[0].formatado",
+        "$[3].mensagem",
+        "$[3].formatado"
+      ],
+      "nome_cadastrado": [],
+      "id_declarado": [
+        "$[2].mensagem",
+        "$[2].formatado"
+      ],
+      "nome_declarado": [
+        "$[2].mensagem",
+        "$[2].formatado"
+      ],
+      "historico_usuario": [],
+      "historico_bot": [],
+      "contexto": [],
+      "consulta": [
+        "$[2].mensagem",
+        "$[2].formatado"
+      ],
+      "relato": [
+        "$[2].mensagem",
+        "$[2].formatado"
+      ]
+    },
+    "persistencia": {
+      "id_cadastrado": [
+        "$.users[0].id_wpp",
+        "$.audit_logs[0].message",
+        "$.audit_logs[1].message"
+      ],
+      "nome_cadastrado": [
+        "$.users[0].name"
+      ],
+      "id_declarado": [
+        "$.messages[2].text"
+      ],
+      "nome_declarado": [
+        "$.messages[2].text"
+      ],
+      "historico_usuario": [
+        "$.messages[0].text"
+      ],
+      "historico_bot": [
+        "$.messages[1].text"
+      ],
+      "contexto": [],
+      "consulta": [
+        "$.messages[2].text"
+      ],
+      "relato": [
+        "$.messages[2].text"
+      ]
+    }
+  },
+  "credencial_em_dados_brutos": [],
+  "fim_utc": "2026-11-15T02:11:21.076610+00:00",
+  "observacao_valida": true
+}

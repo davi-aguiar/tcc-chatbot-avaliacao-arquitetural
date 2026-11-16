@@ -1,0 +1,225 @@
+{
+  "id": "D02-R2",
+  "inicio_utc": "2026-11-15T02:11:21.938269+00:00",
+  "caso": "D02",
+  "rodada": 2,
+  "entrada": "1",
+  "fixture": {
+    "id_cadastrado": "000000006060",
+    "nome_cadastrado": "Pessoa Sintetica Cseis",
+    "id_declarado": "000000009999",
+    "nome_declarado": "Nome Declarado Cseis",
+    "historico_usuario": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior.",
+    "historico_bot": "BOT_C06_ANTERIOR resposta ficticia anterior.",
+    "contexto": "CONTEXTO_C06_DOCUMENTAL: documento sintetico para observar campos enviados a inferencia; nao contem identidade ou historico do usuario.",
+    "resposta_sintetica": "Olá! RESPOSTA_C06_SINTETICA."
+  },
+  "http": [
+    {
+      "metodo": "POST",
+      "url": "https://api.groq.com/openai/v1/chat/completions",
+      "autenticacao_presente": true,
+      "corpo": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "\nVocê é um assistente oficial da Secretaria de Saúde de Vitória da Conquista.\nSua missão é responder dúvidas sobre serviços de saúde com precisão absoluta.\n\nINSTRUÇÕES RIGOROSAS:\n1. Use APENAS as informações fornecidas no CONTEXTO abaixo.\n2. O contexto pode conter textos de vários serviços diferentes. IDENTIFIQUE sobre qual serviço o usuário está perguntando e use APENAS o trecho correspondente.\n3. Não invente links, formulários ou passos que não estejam descritos explicitamente no texto correto.\n4. SE A RESPOSTA NÃO ESTIVER NO CONTEXTO: RESPONDA EXATAMENTE COM A FRASE ABAIXO E FINALIZE A RESPOSTA.\n\n\"Desculpe, não encontrei essa informação específica nos meus documentos.\"\n\nCONTEXTO:\n[Document(metadata={'source': 'c06-documento-sintetico.txt'}, page_content='CONTEXTO_C06_DOCUMENTAL: documento sintetico para observar campos enviados a inferencia; nao contem identidade ou historico do usuario.')]\n\nPERGUNTA:\nQual é a finalidade do Serviço Experimental C01?\n\nRESPOSTA (Seja direto e útil):\n"
+          }
+        ],
+        "model": "llama-3.3-70b-versatile",
+        "max_tokens": 500,
+        "n": 1,
+        "reasoning_effort": null,
+        "reasoning_format": null,
+        "service_tier": "on_demand",
+        "stop": null,
+        "stream": false,
+        "temperature": 0.1
+      },
+      "status_sintetico": 400
+    }
+  ],
+  "nlp": [
+    {
+      "consulta": "Qual é a finalidade do Serviço Experimental C01?",
+      "user_name_recebido": "Pessoa Sintetica Cseis",
+      "erro_tipo": "BadRequestError"
+    }
+  ],
+  "recuperacoes": [
+    "Qual é a finalidade do Serviço Experimental C01?"
+  ],
+  "erro_instrumento": null,
+  "antes": {
+    "users": [
+      {
+        "id": 1,
+        "id_wpp": "000000006060",
+        "name": "Pessoa Sintetica Cseis",
+        "state": "WAITING_4_17_C01"
+      }
+    ],
+    "chats": [
+      {
+        "id": 1,
+        "user_id": 1
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "chat_id": 1,
+        "sender": "user",
+        "text": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior."
+      },
+      {
+        "id": 2,
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "BOT_C06_ANTERIOR resposta ficticia anterior."
+      }
+    ],
+    "audit_logs": []
+  },
+  "resposta_chamador": {
+    "text": "Desculpe, ocorreu um erro interno.",
+    "image_url": null
+  },
+  "depois": {
+    "users": [
+      {
+        "id": 1,
+        "id_wpp": "000000006060",
+        "name": "Pessoa Sintetica Cseis",
+        "state": "WAITING_4_17_C01"
+      }
+    ],
+    "chats": [
+      {
+        "id": 1,
+        "user_id": 1
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "chat_id": 1,
+        "sender": "user",
+        "text": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior."
+      },
+      {
+        "id": 2,
+        "chat_id": 1,
+        "sender": "bot",
+        "text": "BOT_C06_ANTERIOR resposta ficticia anterior."
+      }
+    ],
+    "audit_logs": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "event_type": "MESSAGE_RECEIVED",
+        "level": "INFO",
+        "message": "Mensagem recebida de 000000006060",
+        "metadata_info": {}
+      },
+      {
+        "id": 2,
+        "user_id": 1,
+        "event_type": "MESSAGE_FAILED",
+        "level": "ERROR",
+        "message": "Falha ao processar mensagem: Error code: 400 - {'error': {'message': 'ERRO_C06_SINTETICO', 'type': 'invalid_request_error', 'code': 'c06_sintetico'}}",
+        "metadata_info": {
+          "id_wpp": "000000006060",
+          "erro": "BadRequestError",
+          "duracao_total_ms": 1472.01,
+          "duracao_rag_ms": 1442.41
+        }
+      }
+    ]
+  },
+  "logs": [
+    {
+      "logger": "AppLogger",
+      "nivel": "INFO",
+      "mensagem": "[INFO] MESSAGE_RECEIVED: Mensagem recebida de 000000006060",
+      "formatado": "[INFO] MESSAGE_RECEIVED: Mensagem recebida de 000000006060"
+    },
+    {
+      "logger": "httpx",
+      "nivel": "INFO",
+      "mensagem": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 400 Bad Request\"",
+      "formatado": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions \"HTTP/1.1 400 Bad Request\""
+    },
+    {
+      "logger": "AppLogger",
+      "nivel": "ERROR",
+      "mensagem": "Falha ao processar mensagem de 000000006060",
+      "formatado": "Falha ao processar mensagem de 000000006060\nTraceback (most recent call last):\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 101, in process_message\n    response = self._responder(user, clean_text)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 221, in _responder\n    return self._dentro_do_menu(user, clean_text)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 284, in _dentro_do_menu\n    return handle_dynamic_menu(user, clean_text, self.nlp, self.db)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\menu_handlers.py\", line 59, in handle_dynamic_menu\n    rag_answer = nlp_service.process(query, user_name=user.name)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\chat_service.py\", line 55, in process\n    return self._nlp.process(text, user_name=user_name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\docs\\avaliacao\\c06\\executar.py\", line 200, in process\n    answer = self.real.process(text, user_name=user_name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\api\\services\\nlp_service.py\", line 24, in process\n    rag_response = run_rag(retriever=self.retriever, question=text)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\app\\core\\rag_pipeline.py\", line 65, in run_rag\n    return build_rag_chain(retriever).invoke(question)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\runnables\\base.py\", line 3460, in invoke\n    input_ = context.run(step.invoke, input_, config)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 529, in invoke\n    self.generate_prompt(\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1920, in generate_prompt\n    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 1727, in generate\n    self._generate_with_cache(\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_core\\language_models\\chat_models.py\", line 2065, in _generate_with_cache\n    result = self._generate(\n             ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\langchain_groq\\chat_models.py\", line 627, in _generate\n    response = self.client.create(messages=message_dicts, **params)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\resources\\chat\\completions.py\", line 461, in create\n    return self._post(\n           ^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\_base_client.py\", line 1242, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\davia\\OneDrive\\Área de Trabalho\\TCC\\tcc-chatbot-avaliacao-arquitetural\\.venv\\Lib\\site-packages\\groq\\_base_client.py\", line 1044, in request\n    raise self._make_status_error_from_response(err.response) from None\ngroq.BadRequestError: Error code: 400 - {'error': {'message': 'ERRO_C06_SINTETICO', 'type': 'invalid_request_error', 'code': 'c06_sintetico'}}"
+    },
+    {
+      "logger": "AppLogger",
+      "nivel": "ERROR",
+      "mensagem": "[ERROR] MESSAGE_FAILED: Falha ao processar mensagem: Error code: 400 - {'error': {'message': 'ERRO_C06_SINTETICO', 'type': 'invalid_request_error', 'code': 'c06_sintetico'}}",
+      "formatado": "[ERROR] MESSAGE_FAILED: Falha ao processar mensagem: Error code: 400 - {'error': {'message': 'ERRO_C06_SINTETICO', 'type': 'invalid_request_error', 'code': 'c06_sintetico'}}"
+    }
+  ],
+  "tentativas_externas": [],
+  "localizacoes": {
+    "payload": {
+      "id_cadastrado": [],
+      "nome_cadastrado": [],
+      "id_declarado": [],
+      "nome_declarado": [],
+      "historico_usuario": [],
+      "historico_bot": [],
+      "contexto": [
+        "$[0].messages[0].content"
+      ],
+      "consulta": [
+        "$[0].messages[0].content"
+      ],
+      "relato": []
+    },
+    "logs": {
+      "id_cadastrado": [
+        "$[0].mensagem",
+        "$[0].formatado",
+        "$[2].mensagem",
+        "$[2].formatado"
+      ],
+      "nome_cadastrado": [],
+      "id_declarado": [],
+      "nome_declarado": [],
+      "historico_usuario": [],
+      "historico_bot": [],
+      "contexto": [],
+      "consulta": [],
+      "relato": []
+    },
+    "persistencia": {
+      "id_cadastrado": [
+        "$.users[0].id_wpp",
+        "$.audit_logs[0].message",
+        "$.audit_logs[1].metadata_info.id_wpp"
+      ],
+      "nome_cadastrado": [
+        "$.users[0].name"
+      ],
+      "id_declarado": [],
+      "nome_declarado": [],
+      "historico_usuario": [
+        "$.messages[0].text"
+      ],
+      "historico_bot": [
+        "$.messages[1].text"
+      ],
+      "contexto": [],
+      "consulta": [],
+      "relato": []
+    }
+  },
+  "credencial_em_dados_brutos": [],
+  "fim_utc": "2026-11-15T02:11:23.460724+00:00",
+  "observacao_valida": true
+}

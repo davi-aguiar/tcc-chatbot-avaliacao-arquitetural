@@ -1,0 +1,22 @@
+{
+  "modo": "preparar",
+  "inicio_utc": "2026-11-15T01:20:34.515826+00:00",
+  "matriz_valida": true,
+  "dependencias": {
+    "dotenv": true,
+    "httpx": true,
+    "groq": true,
+    "sqlalchemy": true,
+    "langchain_core": true,
+    "langchain_groq": true,
+    "pytest": true
+  },
+  "observacoes_previstas": 14,
+  "observacoes_executadas": 0,
+  "coleta_completa": false,
+  "julgamento": "nao_avaliado",
+  "erro_tipo": null,
+  "preparacao_completa": true,
+  "fontes_inalteradas": true,
+  "fim_utc": "2026-11-15T01:20:34.523100+00:00"
+}

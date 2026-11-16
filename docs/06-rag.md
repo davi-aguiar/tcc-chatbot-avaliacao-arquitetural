@@ -50,7 +50,7 @@ pela variável `EMBEDDINGS_MODEL`.
 
 O comentário do adaptador justifica a escolha multilíngue pela base em português. O adaptador não fixa o dispositivo de execução; C03-B registrou uso de CPU. Os pesos são carregados do cache ou obtidos pelo stack HuggingFace quando necessário. Nos ensaios offline foi preciso apontar `EMBEDDINGS_MODEL` para o snapshot local já existente, conforme os relatórios de C02/C03-B. Trocar o valor permite selecionar outro modelo, mas compatibilidade e qualidade exigem nova verificação.
 
-> C01 verificou a recuperação de um documento sintético específico. Isso não equivale a avaliar a qualidade geral da recuperação. A amostra de fidelidade de respostas permanece no escopo de C05; cobertura de testes e facilidade de configuração também não comprovam qualidade.
+> C01 verificou a recuperação de um documento sintético específico. Isso não equivale a avaliar a qualidade geral da recuperação. [C05](avaliacao/C05-relatorio-execucao.md) coletou 12 respostas reais com modelo alternativo: a análise preliminar identificou apoio documental e quatro abstenções, mas uma resposta ficou incompleta por truncamento. Revisão assistida do autor concluída, com fidelidade atendida na amostra e completude parcial; cobertura de testes e facilidade de configuração também não comprovam qualidade.
 
 ### 4. Vector store — `app/adapters/vector_store.py`
 
@@ -172,4 +172,4 @@ Com resposta válida, personaliza a saudação:
 um deles quebrado havia tempo por importar um módulo inexistente. Os testes reais vivem
 em `tests/` — ver [doc 11](11-ci.md).
 
-Do pipeline RAG, o CI exercita a lógica que não exige LangChain, como `e_saudacao` e `sem_contexto`; não instala o stack completo de `app/`. Os instrumentos locais de C03 preservaram a cadeia/NLP reais com transporte de geração controlado, e C03-B também fez uma série com recuperação e provedor reais. Isso não equivale a cobertura de todo o núcleo ou avaliação de qualidade. C04 avaliará sistematicamente isolamento sem rede/credenciais, e C05 tratará fidelidade documental.
+Do pipeline RAG, o CI exercita a lógica que não exige LangChain, como `e_saudacao` e `sem_contexto`; não instala o stack completo de `app/`. Os instrumentos locais de C03 preservaram a cadeia/NLP reais com transporte de geração controlado, e C03-B também fez uma série com recuperação e provedor reais. Isso não equivale a cobertura de todo o núcleo ou avaliação de qualidade. [C04](avaliacao/C04-relatorio-execucao.md) demonstrou isolamento em 16 casos offline com substitutos externos. [C05](avaliacao/C05-relatorio-execucao.md) realizou a amostra de fidelidade com gerador e embeddings semânticos reais, com análise preliminar de IA preservada e revisão assistida do autor concluída, sem generalização além da amostra.

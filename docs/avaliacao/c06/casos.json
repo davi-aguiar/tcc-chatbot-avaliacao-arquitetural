@@ -1,0 +1,27 @@
+{
+  "cenario": "C06",
+  "versao": 1,
+  "data_definicao": "2026-11-14",
+  "referencia": "92e48ab6eb76608904a3367a3b596ad34b12590d",
+  "repeticoes": 2,
+  "ordem": "D01 a D07 na primeira rodada; D01 a D07 na segunda rodada",
+  "fixture": {
+    "id_cadastrado": "000000006060",
+    "nome_cadastrado": "Pessoa Sintetica Cseis",
+    "id_declarado": "000000009999",
+    "nome_declarado": "Nome Declarado Cseis",
+    "historico_usuario": "HIST_C06_ANTERIOR relato ficticio de saude em mensagem anterior.",
+    "historico_bot": "BOT_C06_ANTERIOR resposta ficticia anterior.",
+    "contexto": "CONTEXTO_C06_DOCUMENTAL: documento sintetico para observar campos enviados a inferencia; nao contem identidade ou historico do usuario.",
+    "resposta_sintetica": "Olá! RESPOSTA_C06_SINTETICA."
+  },
+  "casos": [
+    {"id": "D01", "percurso": "menu", "estado": "WAITING_4_17_C01", "entrada": "1", "consulta_esperada": "Qual é a finalidade do Serviço Experimental C01?", "http_status": 200, "chamadas_previstas": 1},
+    {"id": "D02", "percurso": "menu", "estado": "WAITING_4_17_C01", "entrada": "1", "consulta_esperada": "Qual é a finalidade do Serviço Experimental C01?", "http_status": 400, "chamadas_previstas": 1},
+    {"id": "D03", "percurso": "livre", "estado": "WAITING_MAIN_MENU", "entrada": "PERGUNTA_C06_LIVRE RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?", "http_status": 200, "chamadas_previstas": 1},
+    {"id": "D04", "percurso": "livre", "estado": "WAITING_MAIN_MENU", "entrada": "PERGUNTA_C06_LIVRE RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?", "http_status": 400, "chamadas_previstas": 1},
+    {"id": "D05", "percurso": "autodeclarado", "estado": "WAITING_MAIN_MENU", "entrada": "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?", "http_status": 200, "chamadas_previstas": 1},
+    {"id": "D06", "percurso": "autodeclarado", "estado": "WAITING_MAIN_MENU", "entrada": "PERGUNTA_C06_DECLARADA Sou Nome Declarado Cseis, identificador 000000009999. RELATO_C06_FICTICIO tosse inventada. Como acessar a espirometria municipal?", "http_status": 400, "chamadas_previstas": 1},
+    {"id": "D07", "percurso": "estatico", "estado": "WAITING_MAIN_MENU", "entrada": "4", "http_status": null, "chamadas_previstas": 0}
+  ]
+}

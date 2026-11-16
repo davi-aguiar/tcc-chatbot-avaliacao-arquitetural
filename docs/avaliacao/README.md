@@ -1,14 +1,28 @@
 # Avaliação arquitetural
 
-O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C04 estão encerrados com ressalvas; C05 está em preparação, sem respostas reais coletadas, e C06 permanece planejado.
+O planejamento geral está na [árvore de utilidade refinada](arvore-de-utilidade.md): seis cenários alinhados ao projeto de pesquisa, com prioridades, critérios e evidências previstas. C01 a C06 estão encerrados com as ressalvas documentadas em cada cenário.
 
-Antes dos próximos cenários, revisar o [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md), produzido por inspeção do código. Ele identifica as fronteiras e lacunas que devem orientar os protocolos.
+O [levantamento das interfaces e contratos atuais](../13-interfaces-e-contratos.md) identifica as fronteiras e lacunas usadas nos protocolos e confrontadas com os resultados.
+
+## Síntese arquitetural conjunta
+
+A [matriz de síntese](matriz-sintese-arquitetural.md) reúne 14 achados ligados às decisões D01–D12 e a práticas de curadoria/logging, com evidências de C01–C06. Distingue riscos, evidências favoráveis, sensibilidades indicadas, trade-offs observados/analíticos e aspectos não avaliados. Dez recomendações incluem prioridades propostas e formas de verificar uma manutenção futura.
+
+Os 14 achados foram confirmados pelo autor em revisão assistida na conversa, conforme o [registro de revisão](revisao-matriz.json). As dez recomendações e sua divisão em prioridades também foram confirmadas: cinco altas, três médias e duas exploratórias, sem ordem interna de implementação validada. Não houve priorização validada com stakeholders, novas coletas ou implementação das recomendações; seus benefícios ainda não foram medidos. Os fechamentos e as evidências dos cenários são preservados. A matriz subsidia a discussão e as melhorias no TCC; a articulação com a literatura e a conclusão acadêmica continuam como escrita posterior.
+
+## C06 — Fluxo e minimização de dados
+
+**Estado: encerrado com ressalvas em 14/11/2026; parcialmente atendido no recorte, com revisão interpretativa do autor concluída.** O [protocolo](C06-protocolo.md) foi executado em 14 observações válidas, com 12 pedidos serializados pelo SDK e interceptados localmente, dois controles estáticos e zero tentativas externas. Nenhuma chave real ou envio externo foi usado.
+
+O [relatório](C06-relatorio-execucao.md) registra ausência de nome/identificador cadastrados e histórico nos 12 pedidos, preservação dos dados digitados na pergunta e falha de logs: texto integral em quatro observações D04/D06. Banco, auditoria e logs operacionais são examinados separadamente. O [julgamento final](evidencias-c06/julgamento-final.json) registra a concordância explícita do autor com a síntese e seus limites; a [análise preliminar](evidencias-c06/analise-preliminar.json) conserva seu estado histórico. As 381 verificações estruturais e quatro testes do verificador passaram; o [índice de evidências](evidencias-c06/README.md) conserva também a preparação histórica (13 verificações do instrumento e 244 testes existentes aprovados).
 
 ## C05 — Fidelidade ao contexto documental
 
-**Estado: preparação iniciada em 12/11/2026; geração e julgamento pendentes.** O [protocolo](C05-protocolo.md) fixa seis perguntas, duas rodadas, fatos esperados e critérios separados de recuperação, geração, abstenção e completude. A preparação local com embeddings semânticos e FAISS reais recuperou as fontes esperadas das seis perguntas e os 15 trechos de referência dos quatro casos respondíveis/distinção. Isso não comprova fidelidade de respostas.
+**Estado: encerrado com ressalvas em 14/11/2026.** As 12 respostas foram revisadas pelo autor: fidelidade atendida apenas na amostra; completude parcial em P06-R1. O [protocolo](C05-protocolo.md) foi executado com embeddings/FAISS reais e modelo alternativo explícito `openai/gpt-oss-120b`. As 14 verificações do instrumento e os 244 testes existentes passaram separadamente; a conferência estrutural mantém 167 verificações aprovadas.
 
-A preparação confirmou que uma seção ambígua do documento do Ambulatório, que pergunta pelo CAPS II e fornece outro endereço, aparece no contexto de P03/P06. A revisão deve distinguir essa inconsistência documental de geração sem apoio. As [evidências de preparação](evidencias-c05/README.md) preservam contexto, fontes e inventário. Nenhuma chave Groq estava configurada; as 12 respostas reais ainda não foram coletadas. As 14 verificações do instrumento passaram separadamente, incluindo SDK com transporte sintético.
+O [julgamento final](evidencias-c05/julgamento-final.json) registra 12 fichas confirmadas, nenhuma revisão pendente, quatro abstenções adequadas e nenhuma afirmação sem apoio ou troca de serviços identificada. A revisão foi assistida e não cega.
+
+A leitura preliminar identificou apoio para as afirmações examinadas, quatro abstenções exatas e nenhuma troca de serviços observada. P06-R1 foi truncada no limite de 500 tokens, apesar de contexto suficiente: 28 fatos esperados presentes, um parcial e um omitido no conjunto. O conflito de endereço do CAPS II permaneceu no contexto, mas o modelo escolheu o documento específico nas duas rodadas. O [relatório](C05-relatorio-execucao.md) apresenta resultados e limites; o [índice de evidências](evidencias-c05/README.md) separa preparação histórica, coleta real, análise preliminar de IA e revisão concluída pelo autor. O julgamento vale somente para a amostra adaptada.
 
 ## C04 — Testabilidade do núcleo RAG sem rede
 
